@@ -12,15 +12,12 @@ const supportHref = supportPath(lang);
 ---
 
 
-<div class="ambient" aria-hidden="true"><i></i><i></i><i></i></div>
-
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <defs><linearGradient id="g" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#0E95EE"/><stop offset="1" stop-color="#27C9F5"/></linearGradient></defs>
   <symbol id="es-mark" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8V6a2 2 0 0 1 2-2h2M16 4h2a2 2 0 0 1 2 2v2M20 16v2a2 2 0 0 1-2 2h-2M8 20H6a2 2 0 0 1-2-2v-2"/></g><circle cx="12" cy="12" r="3.6" fill="currentColor"/></symbol>
 </svg>
 
 <header class="top">
-  <div class="wrap nav">
+  <div class="nav">
     <a class="brand wm" href={pagePath(lang)} dir="ltr"><img src="/icon.png" width="30" height="30" alt=""><span>Easy<span class="s">Shoot</span></span></a>
     <nav class="links">
       <a href={home + "#features"}>{t("nav.features")}</a>
@@ -51,18 +48,17 @@ const supportHref = supportPath(lang);
 <slot />
 
 <footer class="site-foot">
-  <div class="wrap">
-    <div class="foot-card">
+  <div class="foot-in">
+    <div class="foot-top">
       <div class="foot-brand">
-        <a class="brand wm" href={pagePath(lang)} dir="ltr"><img src="/icon.png" width="40" height="40" alt="" loading="lazy"><span>Easy<span class="s">Shoot</span></span></a>
+        <a class="brand wm" href={pagePath(lang)} dir="ltr"><img src="/icon.png" width="26" height="26" alt="" loading="lazy"><span>Easy<span class="s">Shoot</span></span></a>
         <p>{t("foot.about")}</p>
-        <a class="btn btn-dark" href={storeHref}><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span>{t("hero.cta")}</span></a>
       </div>
       <nav class="foot-cols" aria-label={t("foot.product")}>
-        <div><h4>{t("foot.product")}</h4><ul><li><a href={home + "#features"}>{t("nav.features")}</a></li><li><a href={home + "#tools"}>{t("nav.tools")}</a></li><li><a href={home + "#privacy"}>{t("nav.privacy")}</a></li><li><a href={home + "#faq"}>{t("nav.faq")}</a></li></ul></div>
-        <div><h4>{t("foot.guides")}</h4><ul>{GUIDES.map(a => <li><a href={articlePath(lang, a)}>{a.short[lang]}</a></li>)}</ul></div>
-        <div><h4>{t("foot.compare")}</h4><ul>{COMPARES.map(a => <li><a href={articlePath(lang, a)}>{a.short[lang]}</a></li>)}</ul></div>
-        <div><h4>{t("foot.help")}</h4><ul><li><a href={home + "docs/"}>{t("nav.docs")}</a></li><li><a href={supportHref}>{t("foot.support")}</a></li><li><a href={privacyHref}>{t("foot.privacy")}</a></li><li><a href={home + "changelog/"}>{t("foot.changelog")}</a></li><li><a href={home + "press/"}>{t("foot.press")}</a></li><li><a href={home + "sitemap/"}>{t("map.title")}</a></li></ul></div>
+        <div><h2>{t("foot.product")}</h2><ul><li><a href={home + "#features"}>{t("nav.features")}</a></li><li><a href={home + "#tools"}>{t("nav.tools")}</a></li><li><a href={home + "#privacy"}>{t("nav.privacy")}</a></li><li><a href={home + "#faq"}>{t("nav.faq")}</a></li></ul></div>
+        <div><h2>{t("foot.guides")}</h2><ul>{GUIDES.map(a => <li><a href={articlePath(lang, a)}>{a.short[lang]}</a></li>)}</ul></div>
+        <div><h2>{t("foot.compare")}</h2><ul>{COMPARES.map(a => <li><a href={articlePath(lang, a)}>{a.short[lang]}</a></li>)}</ul></div>
+        <div><h2>{t("foot.help")}</h2><ul><li><a href={home + "docs/"}>{t("nav.docs")}</a></li><li><a href={supportHref}>{t("foot.support")}</a></li><li><a href={privacyHref}>{t("foot.privacy")}</a></li><li><a href={home + "changelog/"}>{t("foot.changelog")}</a></li><li><a href={home + "press/"}>{t("foot.press")}</a></li><li><a href={home + "sitemap/"}>{t("map.title")}</a></li></ul></div>
       </nav>
     </div>
     <div class="foot-bar">

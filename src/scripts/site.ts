@@ -1,4 +1,5 @@
-import { animate, inView, press, scroll, stagger } from "motion";
+import { animate, press } from "motion";
+import { initLiveEditor } from "./live-editor";
 
 const root = document.documentElement;
 const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -61,34 +62,23 @@ if (tocLinks.length && "IntersectionObserver" in window) {
   byId.forEach((_, id) => { const el = document.getElementById(id); if (el) spy.observe(el); });
 }
 
-// Live inspector in the feature rows: each control sets a CSS variable on its figure, so the window and its close-ups change together.
-document.querySelectorAll<HTMLElement>(".feat-art").forEach(fig => {
+// Live inspector controls: each sets a CSS variable on its figure, so whatever it holds changes with it.
+document.querySelectorAll<HTMLElement>("[data-controls]").forEach(fig => {
+  const out = () => (fig.dataset.target ? document.querySelector<HTMLElement>(fig.dataset.target) : fig) ?? fig;
   fig.querySelectorAll<HTMLButtonElement>("button[data-ctl]").forEach(b => b.addEventListener("click", () => {
     fig.querySelectorAll<HTMLButtonElement>(`button[data-ctl="${b.dataset.ctl}"]`).forEach(x => {
       x.classList.toggle("on", x === b);
       x.setAttribute("aria-pressed", String(x === b));
     });
-    fig.style.setProperty(`--${b.dataset.ctl}`, b.dataset.v!);
+    out().style.setProperty(`--${b.dataset.ctl}`, b.dataset.v!);
   }));
   fig.querySelectorAll<HTMLInputElement>("input[data-ctl]").forEach(i => i.addEventListener("input", () => {
     i.style.setProperty("--v", `${i.value}%`);
-    fig.style.setProperty(`--${i.dataset.ctl}`, String(+i.value / 100));
+    out().style.setProperty(`--${i.dataset.ctl}`, String(+i.value / 100));
   }));
 });
 
-// Close-ups: a copy of the drawing beside them (or the first one), magnified and centred on the mark it is about.
-// They are filled here rather than in the HTML so the page's text doesn't repeat the drawing many times.
-const firstDash = document.querySelector<HTMLElement>(".feat-art .ed .dash-wrap");
-document.querySelectorAll<HTMLElement>(".zc").forEach(zc => {
-  const source = zc.closest(".feat-art")?.querySelector<HTMLElement>(".ed .dash-wrap") ?? firstDash;
-  if (!source) return;
-  zc.append(source.cloneNode(true));
-  const shot = zc.querySelector<HTMLElement>(".dash"), el = zc.querySelector<HTMLElement>(zc.dataset.focus ?? "");
-  if (!shot || !el) return;
-  const s = shot.getBoundingClientRect(), r = el.getBoundingClientRect(), em = parseFloat(getComputedStyle(shot).fontSize);
-  zc.style.setProperty("--fx", ((r.left + r.width / 2 - s.left) / em).toFixed(2));
-  zc.style.setProperty("--fy", ((r.top + r.height / 2 - s.top) / em).toFixed(2));
-});
+document.querySelectorAll<HTMLElement>("[data-live]").forEach(initLiveEditor);
 
 // Quick Access card: Copy and Save confirm, Edit opens the tools, Close slides the thumbnail away and back.
 document.querySelectorAll<HTMLElement>(".qa-live").forEach(card => {
@@ -104,62 +94,85 @@ document.querySelectorAll<HTMLElement>(".qa-live").forEach(card => {
     }
   }));
   // Shows the controls once when the card comes into view, so visitors know they are there.
-  inView(card, () => {
+  new IntersectionObserver((es, o) => {
+    if (!es[0].isIntersecting) return;
+    o.disconnect();
     card.classList.add("on");
     setTimeout(() => card.classList.remove("on"), 2600);
-  });
+  }).observe(card);
 });
 
-// Tool row: one pressed tool at a time, with a small spring.
-const tools = [...document.querySelectorAll<HTMLButtonElement>(".tool")];
-tools.forEach(b => b.addEventListener("click", () => {
-  tools.forEach(x => x.setAttribute("aria-pressed", String(x === b)));
-  if (!reduce) animate(b.querySelector(".ic")!, { scale: [0.86, 1] }, { type: "spring", bounce: 0.5, duration: 0.5 });
+// The pinned window follows the statement in view.
+const steps = [...document.querySelectorAll<HTMLElement>(".pin-step")];
+const wins = [...document.querySelectorAll<HTMLElement>(".pin-win")];
+if (steps.length) {
+  steps[0].classList.add("on");
+  const spy = new IntersectionObserver(es => es.forEach(e => {
+    if (!e.isIntersecting) return;
+    steps.forEach(x => x.classList.toggle("on", x === e.target));
+    wins.forEach((w, i) => w.classList.toggle("on", i === +(e.target as HTMLElement).dataset.step!));
+  }), { rootMargin: "-40% 0px -50% 0px" });
+  steps.forEach(x => spy.observe(x));
+}
+
+// Notes beside the style panel: level with the control they explain, which they light up while pointed at.
+const plate = document.querySelector<HTMLElement>(".plate-panel");
+if (plate) {
+  const notes = [...document.querySelectorAll<HTMLElement>(".note")];
+  const partOf = (n: HTMLElement) => plate.querySelector<HTMLElement>(`[data-part="${n.dataset.note}"]`);
+  const align = () => {
+    const wide = innerWidth > 1100;
+    const floor = new Map<Element, number>();
+    notes.forEach(n => {
+      n.classList.toggle("placed", wide);
+      const part = partOf(n), side = n.parentElement;
+      if (!wide || !part || !side) return n.style.removeProperty("top");
+      const lowest = floor.get(side) ?? 0;
+      const top = Math.max(part.getBoundingClientRect().top - side.getBoundingClientRect().top, lowest);
+      n.style.top = `${top}px`;
+      floor.set(side, top + n.offsetHeight + 16);
+    });
+  };
+  align();
+  addEventListener("resize", align);
+  notes.forEach(n => {
+    n.addEventListener("pointerenter", () => { n.classList.add("hot"); partOf(n)?.classList.add("hot"); });
+    n.addEventListener("pointerleave", () => { n.classList.remove("hot"); partOf(n)?.classList.remove("hot"); });
+  });
+}
+
+// Languages: each name brings up the same line and the same page in that language.
+document.querySelectorAll<HTMLButtonElement>("[data-show]").forEach((b, _, all) => b.addEventListener("click", () => {
+  all.forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+  document.querySelectorAll<HTMLElement>(".tongue").forEach(p => p.classList.toggle("on", p.dataset.lang === b.dataset.show));
 }));
 
 // Every button and control gives a small spring when pressed.
 if (!reduce) {
-  press(".btn, .chip-btn, .faq summary, .lang-menu a, .links a, .foot-cols a, .foot-langs a, .pill-tag", el => {
+  press(".btn, .chip-btn, .faq summary, .lang-menu a, .links a, .foot-cols a, .foot-langs a, .pill-tag, .tongues-names button", el => {
     animate(el, { scale: 0.94 }, { type: "spring", stiffness: 600, damping: 30 });
     return () => animate(el, { scale: 1 }, { type: "spring", bounce: 0.55, duration: 0.45 });
   });
 }
 
-if (reduce || document.hidden) {
-  document.querySelectorAll<HTMLElement>(".reveal").forEach(el => (el.style.opacity = "1"));
-} else {
-  const ease = [0.2, 0.8, 0.2, 1] as const;
-
-  animate(".desk", { opacity: [0, 1], y: [40, 0], scale: [0.97, 1] }, { duration: 1, delay: 0.55, ease });
-  animate(".editor-win", { opacity: [0, 1], y: [24, 0] }, { duration: 0.8, delay: 0.8, ease });
-  animate(".editor-win .mk", { opacity: [0, 1] }, { duration: 0.35, delay: stagger(0.18, { startDelay: 1.5 }) });
-  animate(".hero-icon", { opacity: [0, 1], y: [36, 0], scale: [0.8, 1] }, { type: "spring", bounce: 0.45, duration: 0.9 });
-  animate(".hero-copy > *", { opacity: [0, 1], y: [16, 0] }, { duration: 0.6, delay: stagger(0.08, { startDelay: 0.15 }), ease });
-
-  // The editor drifts up a little as the hero scrolls away.
-  const hero = document.querySelector(".hero");
-  const win = document.querySelector<HTMLElement>(".editor-win");
-  if (hero && win) scroll(animate(win, { y: [0, -36] }, { ease: "linear" }), { target: hero, offset: ["start start", "end start"] });
-
-  // Sections rise in once, with siblings staggered.
-  inView(".reveal", el => {
-    const siblings = [...(el.parentElement?.children ?? [])].filter(c => c.classList.contains("reveal"));
-    const i = Math.max(0, siblings.indexOf(el));
-    animate(el, { opacity: [0, 1], y: [26, 0] }, { duration: 0.7, delay: Math.min(i, 6) * 0.07, ease });
-  }, { margin: "0px 0px -10% 0px" });
-
-  // If the animation clock stalls (a throttled or background tab), never leave visible content hidden.
-  setTimeout(() => {
-    document.querySelectorAll<HTMLElement>(".reveal, .hero-copy > *, .hero-icon, .desk, .editor-win").forEach(el => {
-      if (el.getBoundingClientRect().top < innerHeight && +getComputedStyle(el).opacity < 0.5) {
-        el.getAnimations().forEach(an => an.finish());
-        el.style.opacity = "1";
-      }
-    });
-  }, 1800);
-
-  // Floating tool icons settle into place one after another.
-  inView(".toolrow", row => {
-    animate(row.querySelectorAll(".tool"), { opacity: [0, 1], y: [18, 0], scale: [0.9, 1] }, { type: "spring", bounce: 0.35, duration: 0.7, delay: stagger(0.05) });
+// Parts of a section rise in once, in reading order. Hidden here rather than in the CSS, so nothing stays hidden if this script never runs.
+if (!reduce && !document.hidden && "IntersectionObserver" in window) {
+  const parts = [...document.querySelectorAll<HTMLElement>(".rise, .reveal")];
+  parts.forEach(p => {
+    p.classList.add("rise", "wait");
+    const sibs = [...(p.parentElement?.children ?? [])].filter(c => c.classList.contains("rise"));
+    p.style.setProperty("--d", `${Math.min(Math.max(0, sibs.indexOf(p)), 5) * 0.075}s`);
   });
+  const show = new IntersectionObserver((es, o) => es.forEach(e => {
+    if (!e.isIntersecting) return;
+    (e.target as HTMLElement).classList.remove("wait");
+    o.unobserve(e.target);
+  }), { rootMargin: "0px 0px -8% 0px" });
+  parts.forEach(p => show.observe(p));
+  // A throttled or background tab may never report them in view: never leave what is on screen hidden.
+  setTimeout(() => parts.forEach(p => {
+    if (!p.classList.contains("wait") || p.getBoundingClientRect().top >= innerHeight) return;
+    p.style.transition = "none";
+    p.classList.remove("wait");
+  }), 1800);
 }
