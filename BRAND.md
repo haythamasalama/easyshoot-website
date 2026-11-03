@@ -2,7 +2,7 @@
 
 ![EasyShoot icon](public/icon.png)
 
-This file describes the brand as the website ships it (November 2026). The values below are read from the live tokens in `src/styles/global.css`; change them there and here together. The app repository still has the older "Graphite Crosshair" guide in `Branding/BRAND.md`; this one replaces it for the website and marketing until the app adopts the new icon.
+This file describes the brand as the website ships it (November 2026). The values below are read from the live tokens in `src/styles/global.css` and `src/styles/home.css`; change them there and here together. Drawn pieces of the app are styled in `src/styles/drawn.css`. `Branding/BRAND.md` in the app repository says how the app itself applies the brand.
 
 ## Idea
 
@@ -15,6 +15,7 @@ Principles:
 3. **Light is light, dark is dark.** Each theme has one complete colour set. Nothing white inside dark mode, nothing black inside light mode (the main download button is the only deliberate inverse).
 4. **Native, not decorated.** macOS window shapes, Liquid Glass where macOS itself uses it (the floating navigation and the drawn app). No ornaments that macOS wouldn't use.
 5. **Every language is first class.** Arabic reads right to left with its own spacing; no page mixes languages.
+6. **Soft and simple.** Modest type, round tiles, room to breathe. When something feels busy, remove parts until one idea is left.
 
 ## Logo
 
@@ -59,7 +60,8 @@ All pairs below meet WCAG AA for the text sizes they are used at.
 | `--bg` | `#FFFFFF` | `#0A0A0B` | Page |
 | `--surface` | `#F6F8FA` | `#121214` | Tiles |
 | `--surface2` / `--surface3` | `#EDF1F5` / `#E2E8EF` | `#18191C` / `#1F2024` | Hover and selected steps, keys |
-| `--card` | `#FFFFFF` | `#151517` | Selected chips and solid cards |
+| `--card` | `#FFFFFF` | `#151517` | Solid cards on inner pages |
+| `--chip` | `#FFFFFF` | `#27282D` | Keys and file icons on a tile |
 | `--ink` | `#0A0A0B` | `#F5F5F7` | Headings and body |
 | `--ink2` | `#2E3036` | `#D1D2D6` | Secondary strong text |
 | `--muted` | `#565A63` (6.9:1) | `#9A9CA4` (7.2:1) | Descriptions |
@@ -90,13 +92,15 @@ The app always sits on a sky, never on a coloured panel.
 
 | Element | Radius |
 |:--|:--|
-| Sky fields | 28 px |
-| Tiles, sky tiles | 24 px |
+| The close, small-things tiles | 28 px |
+| Sky tiles | 24 px |
+| Pictures inside a small-things tile | 20 px |
 | FAQ tiles | 18 px |
-| Chips, keys | 7–11 px |
+| Keys | 7–16 px |
 | Buttons, nav, segments | Full pill (999 px) |
 
-- Content width 1240 px with side margins of 16–32 px; sections 88–148 px apart; tile gaps 16 px, tile padding 24 px.
+- Content width 1240 px with side margins of 16–32 px; sections 88–148 px apart; tile gaps 16 px.
+- Buttons are 44 px tall, weight 500. The navigation is a floating capsule 52 px tall, 1040 px wide at most.
 - Page elements have no shadows at rest, except the floating navigation. Drawn app pieces keep their own.
 
 ## Type
@@ -111,18 +115,18 @@ The app always sits on a sky, never on a coloured panel.
 - The app is shown as a **drawn** macOS editor (`src/lib/editor.ts`) holding an everyday page (a checkout, or the dashboard in `src/lib/dash.ts`), in the page's language and theme. The hero's window works: its tools draw on the page (`src/scripts/live-editor.ts`).
 - The sky (`public/art/sky-day.svg`, `sky-night.svg`) is an original drawing: a soft gradient with three blurred dunes, in the brand's blues with a warm glow.
 - The flow's four pictures tell one story with the same checkout page (`src/lib/flow.ts`): it is selected, floats in the corner, gets marked up, then lands in a chat.
-- The small-things tiles each hold a scene of their feature (`moreArt` in `src/lib/flow.ts`), in tiles of different widths.
+- The small-things tiles each hold a scene of their feature (`moreArt` in `src/lib/flow.ts`), in tiles of different widths. Each scene says one thing: no tilted layers, no extra marks, no detail that needs a second look. Zoom is one large button and its percentage; Presets is three straight frames with their names.
 - The privacy drawing puts the icon's four selection corners around a padlock, in white on the sky.
 - Marks inside pictures: one box, two numbered steps, one short arrow, one short note. Steps sit beside what they mark, never on text.
 
 ## Motion
 
-Library: Motion (`src/scripts/site.ts`).
+Library: Motion (`src/scripts/site.ts`) for presses and the theme icon; CSS and the browser's own animations for the rest (`src/styles/home.css`, `src/scripts/live-editor.ts`).
 
 | Moment | Motion |
 |:--|:--|
 | Page load and scroll | The parts of a section rise 16 px and fade in once, 75 ms apart |
-| Hero | The sky settles into a rounded tile over the first 420 px of scroll. Once, a pointer picks a tool and marks the page in the window; touching the window stops it |
+| Hero | The sky settles into a rounded tile over the first 420 px of scroll. Once, a pointer picks a tool and marks the page in the window; moving over or touching the window stops it. The hint sits quietly in the window's title bar, never as a pill on the canvas |
 | Flow pictures | Each plays once as it appears: the selection is dragged, the thumbnail slides in, the marks land, the messages rise |
 | Tools section | The window holds while three statements pass and change it (wide screens only) |
 | Press | Every button and control springs to 94% and back (stiffness 600, bounce 0.55) |
