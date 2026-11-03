@@ -1,6 +1,7 @@
 import data from "../i18n/data.json";
 
 const ED: Record<string, any> = data.ed;
+const UI = data.ui as Record<string, Record<string, string>>;
 
 // Line glyphs drawn on a 20-point grid, standing in for the SF Symbols the app uses.
 const G: Record<string, string> = {
@@ -23,7 +24,7 @@ const G: Record<string, string> = {
   check: '<circle cx="10" cy="10" r="8" fill="#34C759"/><path d="M6.5 10.2l2.4 2.4 4.6-5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>',
   chevron: '<path d="M6 8l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>',
 };
-const glyph = (k: string) => `<svg viewBox="0 0 20 20" aria-hidden="true">${G[k]}</svg>`;
+export const glyph = (k: string) => `<svg viewBox="0 0 20 20" aria-hidden="true">${G[k]}</svg>`;
 
 const O: Record<string, string> = {
   thin: '<path d="M3 10h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>',
@@ -37,6 +38,13 @@ const O: Record<string, string> = {
 };
 const opt = (k: string) => `<svg viewBox="0 0 20 20" aria-hidden="true">${O[k]}</svg>`;
 
+// The tools the hero's window really runs, with the keys the app uses.
+const LIVE_TOOLS: Record<string, { key?: string; label: string }> = {
+  select: { label: "t.select" }, arrow: { key: "A", label: "t.arrow" }, rectangle: { key: "R", label: "t.rect" },
+  diamond: { key: "D", label: "t.diamond" }, ellipse: { key: "O", label: "t.ellipse" }, text: { key: "T", label: "t.text" },
+  counter: { key: "N", label: "t.counter" }, pen: { key: "P", label: "t.pen" }, pixelate: { key: "B", label: "t.pixel" },
+};
+
 const TOOL_GROUPS = [["select", "crop"], ["arrow", "line", "rectangle", "diamond", "ellipse"], ["text", "counter"], ["pen", "pixelate"]];
 const ACTIVE_TOOL: Record<string, string> = { mark: "rectangle", shape: "rectangle", pixel: "pixelate", bg: "select", ar: "text" };
 
@@ -49,7 +57,7 @@ export function shotHTML(mode, lang) {
   return `<div class="shot" dir="${dir}">
   <div class="col">
     <div class="brand"><i></i>${s.store}</div>
-    <h5>${s.sum}</h5>
+    <b class="h5">${s.sum}</b>
     <div class="item"><i></i><div><b>${s.item}</b><span>${s.itemSub}</span></div></div>
     <div class="line"><span>${s.sub}</span><span class="num">$48.00</span></div>
     <div class="line"><span>${s.tax}</span><span class="num">$0.00</span></div>
@@ -58,7 +66,7 @@ export function shotHTML(mode, lang) {
     </div>
   </div>
   <div class="col">
-    <h5>${s.pay}</h5>
+    <b class="h5">${s.pay}</b>
     <div><label>${s.email}</label><div class="in"><span class="num">sara@example.com</span></div></div>
     <div class="card"><label>${s.card}</label><div class="in" style="position:relative"><span class="num">4242 4242 4242 4242</span><span class="mosaic"></span><span class="mk mk-pix"></span></div></div>
     <div><label>${s.promo}</label><div class="promo"><div class="in"><span class="ph">${s.promoPh}</span></div><div class="apply">${s.apply}</div><span class="mk mk-box"><i></i><i></i><i></i><i></i></span><span class="mk mk-n mk-n1">1</span><span class="mk mk-note">${s.note}</span></div></div>
@@ -76,9 +84,9 @@ const swatches = (colors: string[], on: number, none = false, ctl?: string, titl
   const tag = ctl ? "button" : "i";
   return `<div class="ed-sw">${none ? `<i class="none${on === -1 ? " on" : ""}"></i>` : ""}${colors.map((c, i) => `<${tag} class="${i === on ? "on" : ""}" style="--c:${c}" ${pick(ctl, c, i === on, `${title} ${i + 1}`)}></${tag}>`).join("")}</div>`;
 };
-const options = (keys: string[], on: number, ctl?: string, title = "") => {
+const options = (keys: string[], on: number, ctl?: string, title = "", values: string[] = keys) => {
   const tag = ctl ? "button" : "b";
-  return `<div class="ed-opts">${keys.map((k, i) => `<${tag} class="${i === on ? "on" : ""}" ${pick(ctl, k, i === on, `${title} ${i + 1}`)}>${opt(k)}</${tag}>`).join("")}</div>`;
+  return `<div class="ed-opts">${keys.map((k, i) => `<${tag} class="${i === on ? "on" : ""}" ${pick(ctl, values[i], i === on, `${title} ${i + 1}`)}>${opt(k)}</${tag}>`).join("")}</div>`;
 };
 const slider = (v: number, ctl?: string, title = "") => ctl
   ? `<input class="ed-sl ed-range" type="range" min="0" max="100" value="${v}" style="--v:${v}%" data-ctl="${ctl}" aria-label="${title}">`
@@ -90,13 +98,13 @@ function inspectorHTML(mode: string, s: any, lang: string, live = false) {
   const c = (name: string) => (live ? name : undefined);
   const tabs = seg([s.style, s.bg, s.exp], mode === "bg" ? 1 : 0);
   if (mode === "bg") {
-    const fills = ["linear-gradient(135deg,#E9EDF2,#C9D1DC)", "linear-gradient(135deg,#84B6FF,#4790FB)", "linear-gradient(135deg,#FFE79D,#FFA666)", "linear-gradient(135deg,#B0E8BA,#0AA99B)", "linear-gradient(135deg,#E2CCFF,#7C83FA)", "#1C1F24", "linear-gradient(135deg,#FFC4DE,#DD5DA1)", "linear-gradient(135deg,#FEF3EB,#ECD2C0)"];
-    const rows = [[s.padding, "56", 55], [s.radius, "12", 30], [s.shadow, "30", 40]] as const;
+    const fills = ["#E9EDF2", "#4790FB", "#FFA666", "#0AA99B", "#C1D9FE", "#1C1F24", "#DD5DA1", "#ECD2C0"];
+    const rows = [[s.padding, "56", 55, "pad"], [s.radius, "12", 30, "rad"], [s.shadow, "30", 40, "shd"]] as const;
     return tabs
-      + sec(s.fill, seg([s.grad, s.solid, s.custom, s.none], 0) + `<div class="ed-sw ed-sw-grid">${fills.map((f, i) => live
+      + sec(s.fill, seg([s.grad, s.solid, s.custom, s.none], 1) + `<div class="ed-sw ed-sw-grid">${fills.map((f, i) => live
       ? `<button class="sq${i === 1 ? " on" : ""}" style="--c:${f}" ${pick("fill", f, i === 1, `${s.fill} ${i + 1}`)}></button>`
       : `<i class="sq${i === 0 ? " on" : ""}" style="--c:${f}"></i>`).join("")}</div>`)
-      + sec(s.layout, `<div class="ed-group">${rows.map(([l, v, p], i) => `<div class="ed-cap"><span>${l}</span><em>${v}</em></div>${slider(p, i === 0 ? c("pad") : undefined, l)}`).join("")}</div>`);
+      + sec(s.layout, `<div class="ed-group">${rows.map(([l, v, p, ctl]) => `<div class="ed-cap"><span>${l}</span><em>${v}</em></div>${slider(p, c(ctl), l)}`).join("")}</div>`);
   }
   if (mode === "pixel") return tabs + sec(s.look, seg([s.pixels, s.blur], 1)) + sec(s.strength, slider(38, c("blur"), s.strength), "12");
   if (mode === "ar") return tabs + sec(s.color, swatches(STROKES, 1))
@@ -110,16 +118,44 @@ function inspectorHTML(mode: string, s: any, lang: string, live = false) {
     + sec(s.opacity, slider(100), "100%");
 }
 
-// `shot` swaps the drawn page inside the canvas; `live` makes the inspector controls work.
-export function edHTML(mode, lang, { shot = shotHTML(mode, lang), live = false } = {}) {
+// The inspector on its own, at true size.
+export function inspectorPanelHTML(mode: string, lang: string) {
+  return `<div class="ed-in ed-panel" dir="${lang === "ar" ? "rtl" : "ltr"}"><div class="ed-side">${inspectorHTML(mode, ED[lang], lang, true)}</div></div>`;
+}
+
+// The Style tab as a plate: a sample mark above the six controls the notes beside it explain.
+export function stylePanelHTML(lang: string) {
   const s = ED[lang];
-  const on = ACTIVE_TOOL[mode];
-  const capsule = (keys: string[]) => `<span class="kc">${keys.map(k => `<b class="${k === on ? "on" : ""}">${glyph(k)}</b>`).join("")}</span>`;
-  const status = mode === "mark" && !live ? `<span class="ed-status">${glyph("check")}${s.copied}</span>` : "";
+  const row = (id: string, title: string, body: string) => `<div data-part="${id}">${sec(title, body)}</div>`;
+  return `<div class="ed-in ed-panel ed-plate" dir="${lang === "ar" ? "rtl" : "ltr"}"><div class="ed-side">
+    <div class="plate-sample" aria-hidden="true"><i></i></div>
+    ${row("stroke", s.stroke, swatches(STROKES, 1, false, "box", s.stroke))}
+    ${row("fill", s.bg, `<div class="ed-sw">${["transparent", ...FILLS].map((c, i) => `<button class="${i === 3 ? "on" : ""}${i === 0 ? " none" : ""}" style="--c:${c}" ${pick("fillc", c, i === 3, `${s.bg} ${i + 1}`)}></button>`).join("")}</div>`)}
+    ${row("width", s.strokeW, options(["thin", "medium", "bold"], 1, "sw", s.strokeW, ["2px", "3.5px", "6px"]))}
+    ${row("style", s.strokeS, options(["solid", "dashed", "dotted"], 1, "dashes", s.strokeS))}
+    ${row("edges", s.edges, options(["sharp", "round"], 1, "corner", s.edges, ["2px", "22px"]))}
+    ${row("opacity", s.opacity, slider(100, "op", s.opacity))}
+  </div></div>`;
+}
+
+// `shot` swaps the drawn page inside the canvas; `live` makes the inspector controls work.
+export function edHTML(mode, lang, { shot = shotHTML(mode, lang), live = false, tools = false } = {}) {
+  const s = ED[lang];
+  const on = tools ? "counter" : ACTIVE_TOOL[mode];
+  const toolButton = (k: string) => {
+    const t = LIVE_TOOLS[k], label = UI[lang][t.label] ?? UI.en[t.label];
+    return `<button type="button" class="${k === on ? "on" : ""}" data-tool="${k}" aria-pressed="${k === on}" aria-label="${label}${t.key ? ` (${t.key})` : ""}" title="${label}${t.key ? ` (${t.key})` : ""}">${glyph(k)}</button>`;
+  };
+  const capsule = (keys: string[]) => `<span class="kc">${keys.map(k => tools && LIVE_TOOLS[k] ? toolButton(k) : `<b class="${k === on ? "on" : ""}">${glyph(k)}</b>`).join("")}</span>`;
+  const history = tools
+    ? `<span class="kc"><button type="button" data-act="undo" aria-label="${UI[lang]["live.undo"]}" title="${UI[lang]["live.undo"]}">${glyph("undo")}</button><button type="button" data-act="redo" aria-label="${UI[lang]["live.redo"]}" title="${UI[lang]["live.redo"]}">${glyph("redo")}</button></span>`
+    : `<span class="kc"><b>${glyph("undo")}</b><b>${glyph("redo")}</b></span>`;
+  const status = !tools && mode === "mark" && !live ? `<span class="ed-status">${glyph("check")}${s.copied}</span>` : "";
   return `<div class="ed-in" dir="${lang === "ar" ? "rtl" : "ltr"}">
   <div class="ed-bar">
     <span class="ed-tl"><i></i><i></i><i></i></span>
     <span class="ed-name">EasyShoot</span>
+    ${tools ? `<span class="ed-hint" role="status">${UI[lang]["live.try"]}</span>` : ""}
     <span class="ed-acts">
       <span class="kc"><span class="pop">${s.presets}${glyph("chevron")}</span><span class="pop" dir="ltr">100%${glyph("chevron")}</span></span>
       <span class="kc"><b>${glyph("inspector")}</b></span>
@@ -128,7 +164,7 @@ export function edHTML(mode, lang, { shot = shotHTML(mode, lang), live = false }
   </div>
   <div class="ed-body">
     <div class="ed-canvas">
-      <div class="ed-tools">${TOOL_GROUPS.map(capsule).join("")}<span class="kc"><b>${glyph("undo")}</b><b>${glyph("redo")}</b></span></div>
+      <div class="ed-tools">${TOOL_GROUPS.map(capsule).join("")}${history}</div>
       <div class="frame">${shot}</div>
       ${status}
     </div>

@@ -39,7 +39,7 @@ export function dashHTML(lang: string) {
     ${acct(s.s2, "+966 54 903 1126")}
   </aside>
   <div class="d-main">
-    <div class="d-head"><div><h5>${s.title}</h5><span>${s.since}</span></div><span class="d-tools">${I.sync}<b>EN</b>${I.out}${I.sun}</span></div>
+    <div class="d-head"><div><b class="h5">${s.title}</b><span>${s.since}</span></div><span class="d-tools">${I.sync}<b>EN</b>${I.out}${I.sun}</span></div>
     <div class="d-cards">
       ${card("d-cost", I.bill, s.c1, "$186.09", s.c1s, '<span class="mk mk-box"><i></i><i></i><i></i><i></i></span><span class="mk mk-n mk-n1">1</span>')}
       ${card("", I.send, s.c2, "12,823", s.c2s)}

@@ -43,7 +43,7 @@ const graph = [
       {d.blocks.map((b: { h2?: string; html: string; art?: string; alt?: string }) => (
         <section class="doc-section">
           {b.h2 && <h2>{b.h2}</h2>}
-          {b.art && <figure class="doc-figure"><div class={`ed m-${b.art}`} role="img" aria-label={b.alt} set:html={edHTML(b.art, lang)} /></figure>}
+          {b.art && <figure class="doc-figure" data-ui><div class={`ed m-${b.art}`} role="img" aria-label={b.alt} set:html={edHTML(b.art, lang)} /></figure>}
           <div class="prose" set:html={b.html} />
         </section>
       ))}
