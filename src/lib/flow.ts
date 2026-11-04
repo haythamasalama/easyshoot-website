@@ -56,14 +56,14 @@ export function moreArt(lang: string) {
   const shot = page(rows());
   const total = `<div class="cap-line"><span>${ED[lang].total}</span><b class="num">$48.00</b></div>`;
   const frame = (cls: string, name: string) => `<div class="ma-preset ${cls}"><div class="ma-frame"><div class="ma-sheet">${total}</div></div><span>${name}</span></div>`;
-  const keys = (list: string[], big = false) => `<span class="ma-keys${big ? " big" : ""}" dir="ltr">${list.map(k => `<kbd>${k}</kbd>`).join("")}</span>`;
+  const keys = (list: string[]) => `<span class="ma-keys" dir="ltr">${list.map(k => `<kbd>${k}</kbd>`).join("")}</span>`;
   const sun = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>';
   const moon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>';
   return {
     presets: `<div class="ma ma-presets" dir="${dir}">${frame("p1 on", t["pr.plain"])}${frame("p2", t["pr.dark"])}${frame("p3", "Social 16:9")}</div>`,
     crop: `<div class="ma ma-crop" dir="${dir}"><div class="ma-cropped"><div class="ma-sheet"><div class="cap">${rows()}</div></div><span class="ma-cropbox"><i></i><i></i><i></i><i></i></span><span class="ma-size" dir="ltr">1600 × 900</span></div></div>`,
     zoom: `<div class="ma ma-zoom" dir="ltr"><span class="cap-pay">${ED[lang].payBtn}</span><span class="ma-zoomctl"><i>−</i><b>200%</b><i>+</i></span></div>`,
-    keys: `<div class="ma ma-shortcut" dir="${dir}"><div><span>${t["mode.area"]}</span>${keys(["⌥", "⇧", "⌘", "4"], true)}</div><div><span>${t["mode.window"]}</span>${keys(["⌥", "⇧", "⌘", "5"])}</div></div>`,
+    keys: `<div class="ma ma-shortcut" dir="${dir}"><div><span>${t["mode.area"]}</span>${keys(["⌥", "⇧", "⌘", "4"])}</div><div><span>${t["mode.window"]}</span>${keys(["⌥", "⇧", "⌘", "5"])}</div></div>`,
     formats: `<div class="ma ma-formats" dir="ltr">${fileIcon("JPEG")}${fileIcon("PNG", true)}${fileIcon("HEIC")}${fileIcon("TIFF")}</div>`,
     theme: `<div class="ma ma-theme" dir="${dir}"><div class="ma-half light"><span class="ma-sheet">${shot}</span></div><div class="ma-half dark"><span class="ma-sheet">${shot}</span></div><span class="ma-sw"><i>${sun}</i><i>${moon}</i></span></div>`,
   };
