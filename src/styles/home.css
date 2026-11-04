@@ -201,12 +201,13 @@ main kbd { display: inline-grid; place-items: center; min-width: 24px; height: 2
 /* Presets: three saved looks, side by side */
 [data-ui] .ma-presets { display: flex; justify-content: center; align-items: center; gap: clamp(10px, 3cqw, 24px); padding-inline: 16px; }
 [data-ui] .ma-preset { flex: 1; max-width: 220px; min-width: 0; display: grid; gap: 10px; justify-items: center; color: var(--on-sky); font-size: 14px; font-weight: 600; text-align: center; }
-[data-ui] .ma-frame { width: 100%; padding: clamp(12px, 3.4cqw, 26px) clamp(10px, 2.6cqw, 20px); border-radius: 14px; box-shadow: 0 18px 30px -20px rgba(5,15,40,.6); }
+[data-ui] .ma-frame { width: 100%; padding: clamp(12px, 3.4cqw, 26px) clamp(10px, 2.6cqw, 20px); border-radius: 14px; box-shadow: 0 0 0 .5px rgba(255,255,255,.18), 0 18px 30px -20px rgba(5,15,40,.6); }
 [data-ui] .ma-preset.p1 .ma-frame { background: #E9EDF2; }
-[data-ui] .ma-preset.p2 .ma-frame { background: #1C1F24; }
-[data-ui] .ma-preset.p3 .ma-frame { background: #4790FB; }
+[data-ui] .ma-preset.p2 .ma-frame { background: linear-gradient(135deg, #2A2D33, #17191D); } /* taste-skill-ignore: the app's Graphite gradient */
+[data-ui] .ma-preset.p3 .ma-frame { background: linear-gradient(135deg, #3554D9, #7A5CE6, #F06A7A); } /* taste-skill-ignore: the app's Dusk gradient */
 [data-ui] .ma-preset.on .ma-frame { outline: 2px solid var(--on-sky); outline-offset: 3px; }
-[data-ui] .ma-frame .ma-sheet { padding: .7em .8em; border-radius: 8px; font-size: clamp(10px, 2.2cqw, 13px); box-shadow: 0 8px 16px -10px rgba(0,0,0,.45); }
+/* The same light page in every frame, whatever the site's theme, so only the background changes. */
+[data-ui] .ma-frame .ma-sheet { --s-bg: #FFFFFF; --s-ink: #18181B; padding: .7em .8em; border-radius: 8px; font-size: clamp(10px, 2.2cqw, 13px); box-shadow: 0 8px 16px -10px rgba(0,0,0,.45); }
 [data-ui] .ma-frame .cap-line { gap: .5em; flex-wrap: wrap; }
 
 /* Crop: handles around the picture and its size */
