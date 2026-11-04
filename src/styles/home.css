@@ -171,7 +171,7 @@ main kbd { display: inline-grid; place-items: center; min-width: 24px; height: 2
 [data-ui].plate-panel .ed-solo { width: 100%; }
 [data-ui] .ed-plate .ed-side { padding: 16px; gap: 20px; }
 [data-ui] .plate-sample { display: grid; place-items: center; height: 160px; border-radius: 10px; background: var(--ed-canvas); }
-[data-ui] .plate-sample i { width: 62%; height: 60%; border-radius: var(--corner, 22px); border: var(--sw, 3.5px) var(--dashes, dashed) var(--box, #EA5E59); background: var(--fillc, color-mix(in srgb, #C1D9FE 70%, transparent)); opacity: var(--op, 1); transition: border-radius .2s; }
+[data-ui] .plate-sample i { width: 62%; height: 60%; border-radius: var(--corner, 22px); border: var(--sw, 2px) var(--dashes, solid) var(--box, #1C1F24); background: var(--fillc, #B0E8BA); opacity: var(--op, 1); transition: border-radius .2s; }
 [data-ui] [data-part] { border-radius: 8px; outline: 2px solid transparent; outline-offset: 6px; transition: outline-color .15s; }
 [data-ui] [data-part].hot { outline-color: var(--ed-blue); }
 [data-ui] .ed-sw button.none { background: linear-gradient(to top right, transparent 46%, #FF383C 46% 54%, transparent 54%), #FFFFFF; } /* taste-skill-ignore: the system's "no colour" slash */
