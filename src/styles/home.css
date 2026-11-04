@@ -227,13 +227,12 @@ main kbd { display: inline-grid; place-items: center; min-width: 24px; height: 2
 [data-ui] .ma-zoomctl i { font-style: normal; padding: 2px 9px; }
 [data-ui] .ma-zoomctl b { padding: 2px 10px; border-radius: 99px; background: var(--accent-fill); color: #FFFFFF; font-weight: 600; }
 
-/* Shortcuts: keys big enough to feel under the fingers */
-[data-ui] .ma-shortcut { align-content: center; gap: 22px; color: var(--ink); }
-[data-ui] .ma-shortcut > div { display: flex; align-items: center; justify-content: center; gap: 18px; flex-wrap: wrap; font-size: 15px; font-weight: 600; }
-[data-ui] .ma-keys { display: inline-flex; gap: 7px; }
-[data-ui] .ma-keys kbd { min-width: 42px; height: 42px; border-radius: 10px; background: var(--chip); font: 500 18px -apple-system, BlinkMacSystemFont, "Plus Jakarta Sans", sans-serif; box-shadow: 0 2px 0 rgba(10,20,40,.16), 0 0 0 .5px rgba(128,128,128,.3); }
-[data-ui] .ma-keys.big kbd { min-width: 72px; height: 72px; border-radius: 16px; font-size: 30px; box-shadow: 0 4px 0 rgba(10,20,40,.18), 0 14px 22px -14px rgba(10,20,40,.4), 0 0 0 .5px rgba(128,128,128,.3); }
-@media (max-width: 620px) { [data-ui] .ma-keys.big kbd { min-width: 54px; height: 54px; font-size: 24px; border-radius: 13px; } [data-ui] .ma-keys kbd { min-width: 34px; height: 34px; font-size: 15px; } }
+/* Shortcuts */
+[data-ui] .ma-shortcut { grid-template-columns: auto auto; justify-content: center; align-content: center; justify-items: start; gap: 12px 20px; color: var(--ink); font-size: 15px; font-weight: 600; }
+[data-ui] .ma-shortcut > div { display: contents; }
+[data-ui] .ma-keys { display: inline-flex; gap: 6px; }
+[data-ui] .ma-keys kbd { min-width: 40px; height: 40px; padding: 0; border-radius: 10px; background: var(--chip); font: 500 17px -apple-system, BlinkMacSystemFont, "Plus Jakarta Sans", sans-serif; box-shadow: 0 1px 2px rgba(10,20,40,.12), 0 0 0 .5px rgba(128,128,128,.3); }
+@media (max-width: 620px) { [data-ui] .ma-keys kbd { min-width: 34px; height: 34px; border-radius: 9px; font-size: 15px; } }
 
 /* Formats: the file you get, with the chosen one lifted */
 [data-ui] .ma-formats { display: flex; justify-content: center; align-items: center; gap: clamp(8px, 3cqw, 22px); }
