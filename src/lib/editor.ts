@@ -78,9 +78,8 @@ const options = (keys: string[], on: number, ctl?: string, title = "", values: s
   const tag = ctl ? "button" : "b";
   return `<div class="ed-opts">${keys.map((k, i) => `<${tag} class="${i === on ? "on" : ""}" ${pick(ctl, values[i], i === on, `${title} ${i + 1}`)}>${opt(k)}</${tag}>`).join("")}</div>`;
 };
-const slider = (v: number, ctl?: string, title = "") => ctl
-  ? `<input class="ed-sl ed-range" type="range" min="0" max="100" value="${v}" style="--v:${v}%" data-ctl="${ctl}" aria-label="${title}">`
-  : `<div class="ed-sl" style="--v:${v}%"></div>`;
+const slider = (value: number, ctl?: string, title = "", min = 0, max = 100) =>
+  `<input class="ed-range" type="range" min="${min}" max="${max}" value="${value}" style="--v:${((value - min) / (max - min)) * 100}%" ${ctl ? `data-ctl="${ctl}" aria-label="${title}"` : 'disabled aria-hidden="true"'}>`;
 const seg = (labels: string[], on: number) =>
   `<div class="ed-seg">${labels.map((l, i) => `<span class="${i === on ? "on" : ""}">${l}</span>`).join("")}</div>`;
 
@@ -89,14 +88,15 @@ function inspectorHTML(mode: string, s: any, lang: string, live = false) {
   const tabs = seg([s.style, s.bg, s.exp], mode === "bg" ? 1 : 0);
   if (mode === "bg") {
     const fills = ["#E9EDF2", "#4790FB", "#FFA666", "#0AA99B", "#C1D9FE", "#1C1F24", "#DD5DA1", "#ECD2C0"];
-    const rows = [[s.padding, "56", 55, "pad"], [s.radius, "12", 30, "rad"], [s.shadow, "30", 40, "shd"]] as const;
+    // The app's own ranges (LabeledSlider in EditorView.swift).
+    const rows = [[s.padding, 56, 240, "pad"], [s.radius, 12, 48, "rad"], [s.shadow, 30, 100, "shd"]] as const;
     return tabs
       + sec(s.fill, seg([s.grad, s.solid, s.custom, s.none], 1) + `<div class="ed-sw ed-sw-grid">${fills.map((f, i) => live
       ? `<button class="sq${i === 1 ? " on" : ""}" style="--c:${f}" ${pick("fill", f, i === 1, `${s.fill} ${i + 1}`)}></button>`
       : `<i class="sq${i === 0 ? " on" : ""}" style="--c:${f}"></i>`).join("")}</div>`)
-      + sec(s.layout, `<div class="ed-group">${rows.map(([l, v, p, ctl]) => `<div class="ed-cap"><span>${l}</span><em>${v}</em></div>${slider(p, c(ctl), l)}`).join("")}</div>`);
+      + sec(s.layout, `<div class="ed-group">${rows.map(([l, v, max, ctl]) => `<div class="ed-cap"><span>${l}</span><em>${v}</em></div>${slider(v, c(ctl), l, 0, max)}`).join("")}</div>`);
   }
-  if (mode === "pixel") return tabs + sec(s.look, seg([s.pixels, s.blur], 1)) + sec(s.strength, slider(38, c("blur"), s.strength), "12");
+  if (mode === "pixel") return tabs + sec(s.look, seg([s.pixels, s.blur], 1)) + sec(s.strength, slider(12, c("blur"), s.strength, 3, 30), "12");
   if (mode === "ar") return tabs + sec(s.color, swatches(STROKES, 1))
     + sec(s.font, `<div class="ed-pop"><span>${lang === "ar" ? "SF Arabic" : "SF Pro"}</span>${glyph("chevron")}</div>`)
     + sec(s.size, slider(42), "28") + sec(s.look, seg([s.plain, s.bubble, s.outline], 1)) + sec(s.dir, seg([s.auto, "LTR", "RTL"], 0));
@@ -116,7 +116,7 @@ export function inspectorPanelHTML(mode: string, lang: string) {
 // The Style tab as a plate: a sample mark above the six controls the notes beside it explain.
 export function stylePanelHTML(lang: string) {
   const s = ED[lang];
-  const row = (id: string, title: string, body: string) => `<div data-part="${id}">${sec(title, body)}</div>`;
+  const row = (id: string, title: string, body: string, value = "") => `<div data-part="${id}">${sec(title, body, value)}</div>`;
   return `<div class="ed-in ed-panel ed-plate" dir="${lang === "ar" ? "rtl" : "ltr"}"><div class="ed-side">
     <div class="plate-sample" aria-hidden="true"><i></i></div>
     ${row("stroke", s.stroke, swatches(STROKES, 1, false, "box", s.stroke))}
@@ -124,7 +124,7 @@ export function stylePanelHTML(lang: string) {
     ${row("width", s.strokeW, options(["thin", "medium", "bold"], 1, "sw", s.strokeW, ["2px", "3.5px", "6px"]))}
     ${row("style", s.strokeS, options(["solid", "dashed", "dotted"], 1, "dashes", s.strokeS))}
     ${row("edges", s.edges, options(["sharp", "round"], 1, "corner", s.edges, ["2px", "22px"]))}
-    ${row("opacity", s.opacity, slider(100, "op", s.opacity))}
+    ${row("opacity", s.opacity, slider(100, "op", s.opacity, 10), "100%")}
   </div></div>`;
 }
 

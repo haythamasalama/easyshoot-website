@@ -153,8 +153,9 @@ main kbd { display: inline-grid; place-items: center; min-width: 24px; height: 2
 [data-ui] .ed-panel { --p: 1px; aspect-ratio: auto; display: block; box-shadow: 0 0 0 .5px rgba(0,0,0,.16), 0 18px 40px -22px rgba(10,30,60,.4); }
 [data-ui] .ed-panel .ed-side { border: 0; }
 [data-ui] .ed-panel .ed-sw-grid { grid-template-columns: repeat(4, 44px); }
-[data-ui] .bg-out { container-type: inline-size; padding: calc(12px + var(--pad, .55) * 60px); border-radius: 12px; background: var(--fill, #4790FB); transition: padding .12s; }
-[data-ui] .bg-out .shot { font-size: calc(100cqw / 46); border-radius: calc(var(--rad, .3) * 40px); box-shadow: 0 calc(var(--shd, .4) * 30px) calc(var(--shd, .4) * 80px) calc(var(--shd, .4) * -10px) rgba(10,30,60,.55); overflow: hidden; }
+/* A fixed frame: the page shrinks inside it, so the controls never move away from the pointer during a drag. */
+[data-ui] .bg-out { container-type: inline-size; aspect-ratio: 16 / 10; display: grid; align-content: center; padding-inline: calc(var(--pad, .233) * 25%); border-radius: 12px; background: var(--fill, #4790FB); transition: padding .12s; }
+[data-ui] .bg-out .shot { font-size: calc(100cqw / 46); border-radius: calc(var(--rad, .25) * 48px); box-shadow: 0 calc(var(--shd, .3) * 40px) calc(var(--shd, .3) * 110px) calc(var(--shd, .3) * -12px) rgba(10,30,60,.55); overflow: hidden; }
 @media (max-width: 860px) { .twin-row { grid-template-columns: minmax(0, 1fr); } .twin-in { padding: 20px; } }
 
 /* One panel with notes in both margins */
