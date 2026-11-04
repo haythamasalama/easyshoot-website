@@ -1,7 +1,6 @@
 import data from "../i18n/data.json";
 
 const ED: Record<string, any> = data.ed;
-const UI = data.ui as Record<string, Record<string, string>>;
 
 // Line glyphs drawn on a 20-point grid, standing in for the SF Symbols the app uses.
 const G: Record<string, string> = {
@@ -38,15 +37,8 @@ const O: Record<string, string> = {
 };
 const opt = (k: string) => `<svg viewBox="0 0 20 20" aria-hidden="true">${O[k]}</svg>`;
 
-// The tools the hero's window really runs, with the keys the app uses.
-const LIVE_TOOLS: Record<string, { key?: string; label: string }> = {
-  select: { label: "t.select" }, arrow: { key: "A", label: "t.arrow" }, rectangle: { key: "R", label: "t.rect" },
-  diamond: { key: "D", label: "t.diamond" }, ellipse: { key: "O", label: "t.ellipse" }, text: { key: "T", label: "t.text" },
-  counter: { key: "N", label: "t.counter" }, pen: { key: "P", label: "t.pen" }, pixelate: { key: "B", label: "t.pixel" },
-};
-
 const TOOL_GROUPS = [["select", "crop"], ["arrow", "line", "rectangle", "diamond", "ellipse"], ["text", "counter"], ["pen", "pixelate"]];
-const ACTIVE_TOOL: Record<string, string> = { mark: "rectangle", shape: "rectangle", pixel: "pixelate", bg: "select", ar: "text" };
+const ACTIVE_TOOL: Record<string, string> = { shape: "rectangle", pixel: "pixelate", bg: "select", ar: "text" };
 
 // The app's own palette (scripts/generate-palette.py in the app repository).
 const STROKES = ["#1C1F24", "#EA5E59", "#EF852E", "#1AAE54", "#4790FB"];
@@ -139,23 +131,16 @@ export function stylePanelHTML(lang: string) {
 }
 
 // `shot` swaps the drawn page inside the canvas; `live` makes the inspector controls work.
-export function edHTML(mode, lang, { shot = shotHTML(mode, lang), live = false, tools = false } = {}) {
+export function edHTML(mode, lang, { shot = shotHTML(mode, lang), live = false } = {}) {
   const s = ED[lang];
-  const on = tools ? "counter" : ACTIVE_TOOL[mode];
-  const toolButton = (k: string) => {
-    const t = LIVE_TOOLS[k], label = UI[lang][t.label] ?? UI.en[t.label];
-    return `<button type="button" class="${k === on ? "on" : ""}" data-tool="${k}" aria-pressed="${k === on}" aria-label="${label}${t.key ? ` (${t.key})` : ""}" title="${label}${t.key ? ` (${t.key})` : ""}">${glyph(k)}</button>`;
-  };
-  const capsule = (keys: string[]) => `<span class="kc">${keys.map(k => tools && LIVE_TOOLS[k] ? toolButton(k) : `<b class="${k === on ? "on" : ""}">${glyph(k)}</b>`).join("")}</span>`;
-  const history = tools
-    ? `<span class="kc"><button type="button" data-act="undo" aria-label="${UI[lang]["live.undo"]}" title="${UI[lang]["live.undo"]}">${glyph("undo")}</button><button type="button" data-act="redo" aria-label="${UI[lang]["live.redo"]}" title="${UI[lang]["live.redo"]}">${glyph("redo")}</button></span>`
-    : `<span class="kc"><b>${glyph("undo")}</b><b>${glyph("redo")}</b></span>`;
-  const status = !tools && mode === "mark" && !live ? `<span class="ed-status">${glyph("check")}${s.copied}</span>` : "";
+  const on = ACTIVE_TOOL[mode];
+  const capsule = (keys: string[]) => `<span class="kc">${keys.map(k => `<b class="${k === on ? "on" : ""}">${glyph(k)}</b>`).join("")}</span>`;
+  const history = `<span class="kc"><b>${glyph("undo")}</b><b>${glyph("redo")}</b></span>`;
+  const status = mode === "mark" && !live ? `<span class="ed-status">${glyph("check")}${s.copied}</span>` : "";
   return `<div class="ed-in" dir="${lang === "ar" ? "rtl" : "ltr"}">
   <div class="ed-bar">
     <span class="ed-tl"><i></i><i></i><i></i></span>
     <span class="ed-name">EasyShoot</span>
-    ${tools ? `<span class="ed-hint" role="status">${UI[lang]["live.try"]}</span>` : ""}
     <span class="ed-acts">
       <span class="kc"><span class="pop">${s.presets}${glyph("chevron")}</span><span class="pop" dir="ltr">100%${glyph("chevron")}</span></span>
       <span class="kc"><b>${glyph("inspector")}</b></span>

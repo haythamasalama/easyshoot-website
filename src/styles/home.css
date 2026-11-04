@@ -24,8 +24,6 @@ main > section:not(.hero) { max-width: calc(var(--page) + 2 * var(--gutter)); ma
 .hero-act { display: flex; flex-direction: column; align-items: center; gap: 10px; margin-top: 24px; }
 .hero-act p { margin: 0; font-size: 14px; color: var(--on-sky2); }
 .hero-win { max-width: 1180px; margin: clamp(32px, 4vw, 52px) auto 0; }
-.live-ed .ed-canvas { touch-action: pan-y; cursor: crosshair; }
-.live-ed .ed-canvas:focus-visible { outline: 2px solid var(--accent); outline-offset: -4px; }
 /* The sky settles into a rounded tile as the page moves on. */
 @supports (animation-timeline: scroll()) {
   @media (prefers-reduced-motion: no-preference) {
@@ -292,33 +290,14 @@ main kbd { display: inline-grid; place-items: center; min-width: 24px; height: 2
 .close-sky .h2 { max-width: 16em; }
 .close-sky p { margin: 0; font-size: 14px; color: var(--on-sky2); }
 
-/* Marks the visitor adds in the hero's window */
-[data-ui] .frame { position: relative; }
-[data-ui] .mk-layer { position: absolute; inset: 0; z-index: 1; pointer-events: none; }
-[data-ui] .mk-layer svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
-[data-ui] .mk-layer text { font-family: inherit; }
-[data-ui] .mk-text { position: absolute; padding: .3em .7em; border-radius: .5em; color: #FFFFFF; font-size: 1.1em; font-weight: 600; white-space: nowrap; pointer-events: auto; outline: 0; translate: -10% -50%; }
-[data-ui] .mk-blur { position: absolute; border-radius: 4px; -webkit-backdrop-filter: blur(7px); backdrop-filter: blur(7px); }
-[data-ui] .kc button { width: calc(32 * var(--p)); height: calc(28 * var(--p)); padding: 0; border: 0; display: grid; place-items: center; border-radius: 999px; background: none; color: inherit; cursor: pointer; transition: background .12s; }
-[data-ui] .kc button svg { width: calc(17 * var(--p)); height: calc(17 * var(--p)); }
-[data-ui] .kc button:hover { background: var(--ed-f2); }
-[data-ui] .kc button.on { background: var(--ed-sel); color: var(--ed-blue); }
-[data-ui] .kc button:active { scale: .92; }
-[data-ui] .kc button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
-[data-ui] .ed-hint { flex: 1; min-width: 0; text-align: center; color: var(--ed-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-[data-ui] .ed-hint[hidden] { visibility: hidden; display: block; }
-[data-ui] .demo-pointer { position: absolute; left: 0; top: 0; z-index: 5; width: 24px; height: 24px; margin: -3px 0 0 -5px; pointer-events: none; filter: drop-shadow(0 2px 3px rgba(0,0,0,.4)); }
-[data-ui] .demo-pointer svg { width: 100%; height: 100%; }
-[data-ui] .demo-pointer path { fill: #FFFFFF; stroke: #111111; stroke-width: 1.4; stroke-linejoin: round; }
-[data-ui] .mk-ghost { opacity: .55; pointer-events: none; }
-[data-ui] .live-ed .ed-in { aspect-ratio: auto; }
-[data-ui] .live-ed .ed-canvas { align-content: start; }
-[data-ui] .live-ed .ed-canvas .frame { padding: 0; }
-/* A phone shows the part of the page the marks are on, at a size that can be read and tapped. */
+.hero-win[data-ui] .ed-in { aspect-ratio: auto; }
+.hero-win[data-ui] .ed-canvas { align-content: start; padding-bottom: calc(64 * var(--p)); }
+.hero-win[data-ui] .ed-canvas .frame { padding: 0; }
+/* A phone shows the part of the page the marks are on, at a size that can be read. */
 @container (max-width: 640px) {
-  [data-ui] .live-ed .ed-in { --p: calc(100cqw / 540); }
-  [data-ui] .live-ed .shot { grid-template-columns: minmax(0, 1fr); font-size: 1.1em; }
-  [data-ui] .live-ed .shot .col:first-child { display: none; }
-  [data-ui] .live-ed .shot .col { padding: 1.4em 2.4em 1.6em 3em; }
-  [data-ui] .live-ed .ed-acts .kc:first-child { display: none; }
+  .hero-win[data-ui] .ed-in { --p: calc(100cqw / 540); }
+  .hero-win[data-ui] .shot { grid-template-columns: minmax(0, 1fr); font-size: 1.1em; }
+  .hero-win[data-ui] .shot .col:first-child { display: none; }
+  .hero-win[data-ui] .shot .col { padding: 1.4em 2.4em 1.6em 3em; }
+  .hero-win[data-ui] .ed-acts .kc:first-child { display: none; }
 }

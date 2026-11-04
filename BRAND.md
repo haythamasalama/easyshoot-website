@@ -112,7 +112,7 @@ The app always sits on a sky, never on a coloured panel.
 
 ## Imagery
 
-- The app is shown as a **drawn** macOS editor (`src/lib/editor.ts`) holding an everyday page (a checkout, or the dashboard in `src/lib/dash.ts`), in the page's language and theme. The hero's window works: its tools draw on the page (`src/scripts/live-editor.ts`).
+- The app is shown as a **drawn** macOS editor (`src/lib/editor.ts`) holding an everyday page (a checkout, or the dashboard in `src/lib/dash.ts`), in the page's language and theme. The hero's window is a picture: no tool is selected in it.
 - The sky (`public/art/sky-day.svg`, `sky-night.svg`) is an original drawing: a soft gradient with three blurred dunes, in the brand's blues with a warm glow.
 - The flow's four pictures tell one story with the same checkout page (`src/lib/flow.ts`): it is selected, floats in the corner, gets marked up, then lands in a chat.
 - The small-things tiles each hold a scene of their feature (`moreArt` in `src/lib/flow.ts`), in tiles of different widths. Each scene says one thing: no tilted layers, no extra marks, no detail that needs a second look. Zoom is one large button and its percentage; Presets is three straight frames with their names.
@@ -121,12 +121,12 @@ The app always sits on a sky, never on a coloured panel.
 
 ## Motion
 
-Library: Motion (`src/scripts/site.ts`) for presses and the theme icon; CSS and the browser's own animations for the rest (`src/styles/home.css`, `src/scripts/live-editor.ts`).
+Library: Motion (`src/scripts/site.ts`) for presses and the theme icon; CSS for the rest (`src/styles/home.css`).
 
 | Moment | Motion |
 |:--|:--|
 | Page load and scroll | The parts of a section rise 16 px and fade in once, 75 ms apart |
-| Hero | The sky settles into a rounded tile over the first 420 px of scroll. Once, a pointer picks a tool and marks the page in the window; moving over or touching the window stops it. The hint sits quietly in the window's title bar, never as a pill on the canvas |
+| Hero | The sky settles into a rounded tile over the first 420 px of scroll. |
 | Flow pictures | Each plays once as it appears: the selection is dragged, the thumbnail slides in, the marks land, the messages rise |
 | Tools section | The window holds while three statements pass and change it (wide screens only) |
 | Press | Every button and control springs to 94% and back (stiffness 600, bounce 0.55) |

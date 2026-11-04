@@ -1,5 +1,4 @@
 import { animate, press } from "motion";
-import { initLiveEditor } from "./live-editor";
 
 const root = document.documentElement;
 const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -77,8 +76,6 @@ document.querySelectorAll<HTMLElement>("[data-controls]").forEach(fig => {
     out().style.setProperty(`--${i.dataset.ctl}`, String(+i.value / 100));
   }));
 });
-
-document.querySelectorAll<HTMLElement>("[data-live]").forEach(initLiveEditor);
 
 // Quick Access card: Copy and Save confirm, Edit opens the tools, Close slides the thumbnail away and back.
 document.querySelectorAll<HTMLElement>(".qa-live").forEach(card => {
