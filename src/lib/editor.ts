@@ -119,10 +119,10 @@ export function stylePanelHTML(lang: string) {
   const row = (id: string, title: string, body: string, value = "") => `<div data-part="${id}">${sec(title, body, value)}</div>`;
   return `<div class="ed-in ed-panel ed-plate" dir="${lang === "ar" ? "rtl" : "ltr"}"><div class="ed-side">
     <div class="plate-sample" aria-hidden="true"><i></i></div>
-    ${row("stroke", s.stroke, swatches(STROKES, 1, false, "box", s.stroke))}
-    ${row("fill", s.bg, `<div class="ed-sw">${["transparent", ...FILLS].map((c, i) => `<button class="${i === 3 ? "on" : ""}${i === 0 ? " none" : ""}" style="--c:${c}" ${pick("fillc", c, i === 3, `${s.bg} ${i + 1}`)}></button>`).join("")}</div>`)}
-    ${row("width", s.strokeW, options(["thin", "medium", "bold"], 1, "sw", s.strokeW, ["2px", "3.5px", "6px"]))}
-    ${row("style", s.strokeS, options(["solid", "dashed", "dotted"], 1, "dashes", s.strokeS))}
+    ${row("stroke", s.stroke, swatches(STROKES, 0, false, "box", s.stroke))}
+    ${row("fill", s.bg, `<div class="ed-sw">${["transparent", ...FILLS].map((c, i) => `<button class="${i === 2 ? "on" : ""}${i === 0 ? " none" : ""}" style="--c:${c}" ${pick("fillc", c, i === 2, `${s.bg} ${i + 1}`)}></button>`).join("")}</div>`)}
+    ${row("width", s.strokeW, options(["thin", "medium", "bold"], 0, "sw", s.strokeW, ["2px", "3.5px", "6px"]))}
+    ${row("style", s.strokeS, options(["solid", "dashed", "dotted"], 0, "dashes", s.strokeS))}
     ${row("edges", s.edges, options(["sharp", "round"], 1, "corner", s.edges, ["2px", "22px"]))}
     ${row("opacity", s.opacity, slider(100, "op", s.opacity, 10), "100%")}
   </div></div>`;
