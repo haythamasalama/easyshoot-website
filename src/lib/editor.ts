@@ -1,7 +1,6 @@
 import data from "../i18n/data.json";
 
 const ED: Record<string, any> = data.ed;
-const UI = data.ui as Record<string, Record<string, string>>;
 
 // Line glyphs drawn on a 20-point grid, standing in for the SF Symbols the app uses.
 const G: Record<string, string> = {
@@ -38,15 +37,8 @@ const O: Record<string, string> = {
 };
 const opt = (k: string) => `<svg viewBox="0 0 20 20" aria-hidden="true">${O[k]}</svg>`;
 
-// The tools the hero's window really runs, with the keys the app uses.
-const LIVE_TOOLS: Record<string, { key?: string; label: string }> = {
-  select: { label: "t.select" }, arrow: { key: "A", label: "t.arrow" }, rectangle: { key: "R", label: "t.rect" },
-  diamond: { key: "D", label: "t.diamond" }, ellipse: { key: "O", label: "t.ellipse" }, text: { key: "T", label: "t.text" },
-  counter: { key: "N", label: "t.counter" }, pen: { key: "P", label: "t.pen" }, pixelate: { key: "B", label: "t.pixel" },
-};
-
 const TOOL_GROUPS = [["select", "crop"], ["arrow", "line", "rectangle", "diamond", "ellipse"], ["text", "counter"], ["pen", "pixelate"]];
-const ACTIVE_TOOL: Record<string, string> = { mark: "rectangle", shape: "rectangle", pixel: "pixelate", bg: "select", ar: "text" };
+const ACTIVE_TOOL: Record<string, string> = { shape: "rectangle", pixel: "pixelate", bg: "select", ar: "text" };
 
 // The app's own palette (scripts/generate-palette.py in the app repository).
 const STROKES = ["#1C1F24", "#EA5E59", "#EF852E", "#1AAE54", "#4790FB"];
@@ -61,9 +53,7 @@ export function shotHTML(mode, lang) {
     <div class="item"><i></i><div><b>${s.item}</b><span>${s.itemSub}</span></div></div>
     <div class="line"><span>${s.sub}</span><span class="num">$48.00</span></div>
     <div class="line"><span>${s.tax}</span><span class="num">$0.00</span></div>
-    <div class="line total"><span>${s.total}</span><span class="num tot">$48.00<span class="mk mk-ell"></span></span>
-      <svg class="mk mk-arrow" viewBox="0 0 60 44" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4C22 6 38 16 50 34"/><path d="M38 31l12 4 2-12"/></svg>
-    </div>
+    <div class="line total"><span>${s.total}</span><span class="num tot">$48.00<span class="mk mk-ell"></span><svg class="mk mk-arrow" viewBox="0 0 64 34" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5C22 3 42 9 58 25"/><path d="M45.4 21.6L58 25L54.6 12.4"/></svg></span></div>
   </div>
   <div class="col">
     <b class="h5">${s.pay}</b>
@@ -88,9 +78,8 @@ const options = (keys: string[], on: number, ctl?: string, title = "", values: s
   const tag = ctl ? "button" : "b";
   return `<div class="ed-opts">${keys.map((k, i) => `<${tag} class="${i === on ? "on" : ""}" ${pick(ctl, values[i], i === on, `${title} ${i + 1}`)}>${opt(k)}</${tag}>`).join("")}</div>`;
 };
-const slider = (v: number, ctl?: string, title = "") => ctl
-  ? `<input class="ed-sl ed-range" type="range" min="0" max="100" value="${v}" style="--v:${v}%" data-ctl="${ctl}" aria-label="${title}">`
-  : `<div class="ed-sl" style="--v:${v}%"></div>`;
+const slider = (value: number, ctl?: string, title = "", min = 0, max = 100) =>
+  `<input class="ed-range" type="range" min="${min}" max="${max}" value="${value}" style="--v:${((value - min) / (max - min)) * 100}%" ${ctl ? `data-ctl="${ctl}" aria-label="${title}"` : 'disabled aria-hidden="true"'}>`;
 const seg = (labels: string[], on: number) =>
   `<div class="ed-seg">${labels.map((l, i) => `<span class="${i === on ? "on" : ""}">${l}</span>`).join("")}</div>`;
 
@@ -99,14 +88,15 @@ function inspectorHTML(mode: string, s: any, lang: string, live = false) {
   const tabs = seg([s.style, s.bg, s.exp], mode === "bg" ? 1 : 0);
   if (mode === "bg") {
     const fills = ["#E9EDF2", "#4790FB", "#FFA666", "#0AA99B", "#C1D9FE", "#1C1F24", "#DD5DA1", "#ECD2C0"];
-    const rows = [[s.padding, "56", 55, "pad"], [s.radius, "12", 30, "rad"], [s.shadow, "30", 40, "shd"]] as const;
+    // The app's own ranges (LabeledSlider in EditorView.swift).
+    const rows = [[s.padding, 56, 240, "pad"], [s.radius, 12, 48, "rad"], [s.shadow, 30, 100, "shd"]] as const;
     return tabs
       + sec(s.fill, seg([s.grad, s.solid, s.custom, s.none], 1) + `<div class="ed-sw ed-sw-grid">${fills.map((f, i) => live
       ? `<button class="sq${i === 1 ? " on" : ""}" style="--c:${f}" ${pick("fill", f, i === 1, `${s.fill} ${i + 1}`)}></button>`
       : `<i class="sq${i === 0 ? " on" : ""}" style="--c:${f}"></i>`).join("")}</div>`)
-      + sec(s.layout, `<div class="ed-group">${rows.map(([l, v, p, ctl]) => `<div class="ed-cap"><span>${l}</span><em>${v}</em></div>${slider(p, c(ctl), l)}`).join("")}</div>`);
+      + sec(s.layout, `<div class="ed-group">${rows.map(([l, v, max, ctl]) => `<div class="ed-cap"><span>${l}</span><em>${v}</em></div>${slider(v, c(ctl), l, 0, max)}`).join("")}</div>`);
   }
-  if (mode === "pixel") return tabs + sec(s.look, seg([s.pixels, s.blur], 1)) + sec(s.strength, slider(38, c("blur"), s.strength), "12");
+  if (mode === "pixel") return tabs + sec(s.look, seg([s.pixels, s.blur], 1)) + sec(s.strength, slider(12, c("blur"), s.strength, 3, 30), "12");
   if (mode === "ar") return tabs + sec(s.color, swatches(STROKES, 1))
     + sec(s.font, `<div class="ed-pop"><span>${lang === "ar" ? "SF Arabic" : "SF Pro"}</span>${glyph("chevron")}</div>`)
     + sec(s.size, slider(42), "28") + sec(s.look, seg([s.plain, s.bubble, s.outline], 1)) + sec(s.dir, seg([s.auto, "LTR", "RTL"], 0));
@@ -126,36 +116,29 @@ export function inspectorPanelHTML(mode: string, lang: string) {
 // The Style tab as a plate: a sample mark above the six controls the notes beside it explain.
 export function stylePanelHTML(lang: string) {
   const s = ED[lang];
-  const row = (id: string, title: string, body: string) => `<div data-part="${id}">${sec(title, body)}</div>`;
+  const row = (id: string, title: string, body: string, value = "") => `<div data-part="${id}">${sec(title, body, value)}</div>`;
   return `<div class="ed-in ed-panel ed-plate" dir="${lang === "ar" ? "rtl" : "ltr"}"><div class="ed-side">
     <div class="plate-sample" aria-hidden="true"><i></i></div>
-    ${row("stroke", s.stroke, swatches(STROKES, 1, false, "box", s.stroke))}
-    ${row("fill", s.bg, `<div class="ed-sw">${["transparent", ...FILLS].map((c, i) => `<button class="${i === 3 ? "on" : ""}${i === 0 ? " none" : ""}" style="--c:${c}" ${pick("fillc", c, i === 3, `${s.bg} ${i + 1}`)}></button>`).join("")}</div>`)}
-    ${row("width", s.strokeW, options(["thin", "medium", "bold"], 1, "sw", s.strokeW, ["2px", "3.5px", "6px"]))}
-    ${row("style", s.strokeS, options(["solid", "dashed", "dotted"], 1, "dashes", s.strokeS))}
+    ${row("stroke", s.stroke, swatches(STROKES, 0, false, "box", s.stroke))}
+    ${row("fill", s.bg, `<div class="ed-sw">${["transparent", ...FILLS].map((c, i) => `<button class="${i === 2 ? "on" : ""}${i === 0 ? " none" : ""}" style="--c:${c}" ${pick("fillc", c, i === 2, `${s.bg} ${i + 1}`)}></button>`).join("")}</div>`)}
+    ${row("width", s.strokeW, options(["thin", "medium", "bold"], 0, "sw", s.strokeW, ["2px", "3.5px", "6px"]))}
+    ${row("style", s.strokeS, options(["solid", "dashed", "dotted"], 0, "dashes", s.strokeS))}
     ${row("edges", s.edges, options(["sharp", "round"], 1, "corner", s.edges, ["2px", "22px"]))}
-    ${row("opacity", s.opacity, slider(100, "op", s.opacity))}
+    ${row("opacity", s.opacity, slider(100, "op", s.opacity, 10), "100%")}
   </div></div>`;
 }
 
 // `shot` swaps the drawn page inside the canvas; `live` makes the inspector controls work.
-export function edHTML(mode, lang, { shot = shotHTML(mode, lang), live = false, tools = false } = {}) {
+export function edHTML(mode, lang, { shot = shotHTML(mode, lang), live = false } = {}) {
   const s = ED[lang];
-  const on = tools ? "counter" : ACTIVE_TOOL[mode];
-  const toolButton = (k: string) => {
-    const t = LIVE_TOOLS[k], label = UI[lang][t.label] ?? UI.en[t.label];
-    return `<button type="button" class="${k === on ? "on" : ""}" data-tool="${k}" aria-pressed="${k === on}" aria-label="${label}${t.key ? ` (${t.key})` : ""}" title="${label}${t.key ? ` (${t.key})` : ""}">${glyph(k)}</button>`;
-  };
-  const capsule = (keys: string[]) => `<span class="kc">${keys.map(k => tools && LIVE_TOOLS[k] ? toolButton(k) : `<b class="${k === on ? "on" : ""}">${glyph(k)}</b>`).join("")}</span>`;
-  const history = tools
-    ? `<span class="kc"><button type="button" data-act="undo" aria-label="${UI[lang]["live.undo"]}" title="${UI[lang]["live.undo"]}">${glyph("undo")}</button><button type="button" data-act="redo" aria-label="${UI[lang]["live.redo"]}" title="${UI[lang]["live.redo"]}">${glyph("redo")}</button></span>`
-    : `<span class="kc"><b>${glyph("undo")}</b><b>${glyph("redo")}</b></span>`;
-  const status = !tools && mode === "mark" && !live ? `<span class="ed-status">${glyph("check")}${s.copied}</span>` : "";
+  const on = ACTIVE_TOOL[mode];
+  const capsule = (keys: string[]) => `<span class="kc">${keys.map(k => `<b class="${k === on ? "on" : ""}">${glyph(k)}</b>`).join("")}</span>`;
+  const history = `<span class="kc"><b>${glyph("undo")}</b><b>${glyph("redo")}</b></span>`;
+  const status = mode === "mark" && !live ? `<span class="ed-status">${glyph("check")}${s.copied}</span>` : "";
   return `<div class="ed-in" dir="${lang === "ar" ? "rtl" : "ltr"}">
   <div class="ed-bar">
     <span class="ed-tl"><i></i><i></i><i></i></span>
     <span class="ed-name">EasyShoot</span>
-    ${tools ? `<span class="ed-hint" role="status">${UI[lang]["live.try"]}</span>` : ""}
     <span class="ed-acts">
       <span class="kc"><span class="pop">${s.presets}${glyph("chevron")}</span><span class="pop" dir="ltr">100%${glyph("chevron")}</span></span>
       <span class="kc"><b>${glyph("inspector")}</b></span>

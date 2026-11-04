@@ -32,8 +32,8 @@
 [data-ui] .mk-n { width: 1.55em; height: 1.55em; border-radius: 50%; background: var(--mk); color: #fff; font-weight: 700; font-size: .82em; place-items: center; border: .14em solid #fff; box-shadow: 0 .15em .4em rgba(0,0,0,.2); }
 [data-ui] .mk-n1 { top: 50%; translate: 0 -50%; inset-inline-start: -2.35em; }
 [data-ui] .mk-n2 { top: 50%; translate: 0 -50%; inset-inline-start: -2.35em; }
-[data-ui] .mk-arrow { width: 3.8em; height: 2.9em; inset-inline-end: 3.8em; bottom: 108%; color: var(--mk); opacity: .9; }
-[data-ui] .shot[dir="rtl"] .mk-arrow { transform: scaleX(-1); }
+[data-ui] .mk-arrow { width: 3.4em; height: 1.8em; right: calc(100% + .5em); top: calc(50% - 1.32em); color: var(--mk); }
+[data-ui] .shot[dir="rtl"] .mk-arrow { right: auto; left: calc(100% + .5em); transform: scaleX(-1); }
 [data-ui] .mk-note { top: -2.25em; inset-inline-end: -.4em; font-size: .66em !important; padding: .3em .6em !important; font-weight: 600 !important; padding: .45em .8em; border-radius: .6em; background: var(--mk); color: #fff; font-weight: 700; font-size: .95em; white-space: nowrap; box-shadow: 0 .3em .8em -.2em rgba(0,0,0,.35); }
 [data-ui] .m-mark .mk-box, [data-ui] .m-mark .mk-n, [data-ui] .m-mark .mk-arrow, [data-ui] .m-mark .mk-note { display: block; }
 [data-ui] .m-mark .mk-n { display: grid; }
@@ -110,10 +110,6 @@
 [data-ui] .ed-opts b { width: calc(32 * var(--p)); height: calc(28 * var(--p)); display: grid; place-items: center; border-radius: calc(8 * var(--p)); background: var(--ed-f2); color: var(--ed-ink); }
 [data-ui] .ed-opts b svg { width: calc(18 * var(--p)); height: calc(18 * var(--p)); }
 [data-ui] .ed-opts b.on { background: color-mix(in srgb, var(--ed-blue) 18%, transparent); color: var(--ed-blue); }
-[data-ui] .ed-sl { position: relative; height: calc(4 * var(--p)); margin: calc(7 * var(--p)) calc(9 * var(--p)); border-radius: 999px; background: var(--ed-f1); }
-[data-ui] .ed-sl::before { content: ""; position: absolute; inset-block: 0; inset-inline-start: 0; width: var(--v, 40%); border-radius: inherit; background: var(--ed-blue); }
-[data-ui] .ed-sl::after { content: ""; position: absolute; inset-inline-start: var(--v, 40%); top: 50%; translate: -50% -50%; width: calc(18 * var(--p)); height: calc(14 * var(--p)); border-radius: 999px; background: #FFFFFF; box-shadow: 0 calc(.5 * var(--p)) calc(6 * var(--p)) rgba(0,0,0,.12), 0 0 0 .5px rgba(0,0,0,.08); }
-[dir="rtl"] [data-ui] .ed-sl::after { translate: 50% -50%; }
 [data-ui] .ed-group { display: flex; flex-direction: column; gap: calc(8 * var(--p)); padding: calc(12 * var(--p)) calc(10 * var(--p)); border-radius: calc(12 * var(--p)); background: var(--ed-f4); }
 [data-ui] .ed-group .ed-cap { font-size: 1em; font-weight: 500; color: var(--ed-ink); }
 [data-ui] .ed-group .ed-cap em { color: var(--ed-2); }
@@ -166,7 +162,7 @@
 [data-ui] .d-acct > div { min-width: 0; }
 [data-ui] .d-acct b { display: block; font-size: .8em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 [data-ui] .d-phone { position: relative; display: block; width: fit-content; font-size: .74em; color: var(--s-muted); }
-[data-ui] .d-phone .num { display: block; filter: blur(calc(.08em + var(--blur, .4) * .5em)); }
+[data-ui] .d-phone .num { display: block; filter: blur(calc(.08em + var(--blur, .33) * .5em)); }
 [data-ui] .d-main { padding: 1.6em; display: flex; flex-direction: column; gap: 1em; min-width: 0; }
 [data-ui] .d-head { display: flex; justify-content: space-between; align-items: flex-start; }
 [data-ui] .d-head .h5 { display: block; font-size: 1.5em; }
@@ -247,9 +243,12 @@
 [data-ui] .ed-opts button svg { width: calc(18 * var(--p)); height: calc(18 * var(--p)); }
 [data-ui] .ed-opts button.on { background: color-mix(in srgb, var(--ed-blue) 18%, transparent); color: var(--ed-blue); }
 [data-ui] .ed-sw button:focus-visible, [data-ui] .ed-opts button:focus-visible, [data-ui] .ed-range:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-[data-ui] .ed-range { -webkit-appearance: none; appearance: none; display: block; width: calc(100% - 18 * var(--p)); height: calc(4 * var(--p)); margin: calc(7 * var(--p)) calc(9 * var(--p)); padding: 0; border-radius: 999px; background: linear-gradient(to right, var(--ed-blue) var(--v), var(--ed-f1) 0); cursor: pointer; } /* taste-skill-ignore */
-[dir="rtl"] [data-ui] .ed-range { background: linear-gradient(to left, var(--ed-blue) var(--v), var(--ed-f1) 0); } /* taste-skill-ignore */
-[data-ui] .ed-range::-webkit-slider-thumb { -webkit-appearance: none; width: calc(18 * var(--p)); height: calc(14 * var(--p)); border-radius: 999px; background: #FFFFFF; box-shadow: 0 calc(.5 * var(--p)) calc(6 * var(--p)) rgba(0,0,0,.18), 0 0 0 .5px rgba(0,0,0,.1); }
+[data-ui] .ed-range { -webkit-appearance: none; appearance: none; display: block; width: 100%; height: calc(18 * var(--p)); margin: 0; padding: 0; border-radius: 999px; background: none; cursor: pointer; --track: linear-gradient(to right, var(--ed-blue) var(--v), var(--ed-f1) 0); } /* taste-skill-ignore */
+[dir="rtl"] [data-ui] .ed-range { --track: linear-gradient(to left, var(--ed-blue) var(--v), var(--ed-f1) 0); } /* taste-skill-ignore */
+[data-ui] .ed-range:disabled { opacity: 1; cursor: default; }
+[data-ui] .ed-range::-webkit-slider-runnable-track { height: calc(4 * var(--p)); border-radius: 999px; background: var(--track); }
+[data-ui] .ed-range::-moz-range-track { height: calc(4 * var(--p)); border-radius: 999px; background: var(--track); }
+[data-ui] .ed-range::-webkit-slider-thumb { -webkit-appearance: none; width: calc(18 * var(--p)); height: calc(14 * var(--p)); margin-top: calc(-5 * var(--p)); border-radius: 999px; background: #FFFFFF; box-shadow: 0 calc(.5 * var(--p)) calc(6 * var(--p)) rgba(0,0,0,.18), 0 0 0 .5px rgba(0,0,0,.1); }
 [data-ui] .ed-range::-moz-range-thumb { width: calc(18 * var(--p)); height: calc(14 * var(--p)); border: 0; border-radius: 999px; background: #FFFFFF; box-shadow: 0 calc(.5 * var(--p)) calc(6 * var(--p)) rgba(0,0,0,.18), 0 0 0 .5px rgba(0,0,0,.1); }
 /* Quick Access, as the app draws it: a 180 pt thumbnail whose controls show on hover */
 [data-ui] .qa-live { position: absolute; inset-inline-end: 18px; bottom: 18px; width: min(180px, 70%); aspect-ratio: 1; border-radius: 12px; overflow: hidden; isolation: isolate; box-shadow: 0 0 0 .5px rgba(0,0,0,.25), 0 18px 40px -12px rgba(0,0,0,.5); transition: transform .4s cubic-bezier(.2,.8,.2,1), opacity .3s; }

@@ -45,10 +45,8 @@ const bigLine = (l: Lang) => UI[l]["ar.big"].split("<small>")[0];
         <p>{t("hero.meta")}</p>
       </div>
     </div>
-    <div class="hero-win rise" data-ui data-controls>
-      <div class="live-ed" data-live data-note={t("live.note")}>
-        <div class="ed m-mark" role="group" aria-label={t("hero.alt")} set:html={edHTML("mark", lang, { live: true, tools: true }).replace('class="ed-canvas"', `class="ed-canvas" tabindex="0" role="button" aria-label="${t("live.canvas")}"`)} />
-      </div>
+    <div class="hero-win rise" data-ui>
+      <div class="ed m-mark" role="img" aria-label={t("hero.alt")} set:html={edHTML("mark", lang)} />
     </div>
   </div>
 </section>

@@ -1,5 +1,4 @@
 import { animate, press } from "motion";
-import { initLiveEditor } from "./live-editor";
 
 const root = document.documentElement;
 const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -73,12 +72,13 @@ document.querySelectorAll<HTMLElement>("[data-controls]").forEach(fig => {
     out().style.setProperty(`--${b.dataset.ctl}`, b.dataset.v!);
   }));
   fig.querySelectorAll<HTMLInputElement>("input[data-ctl]").forEach(i => i.addEventListener("input", () => {
-    i.style.setProperty("--v", `${i.value}%`);
-    out().style.setProperty(`--${i.dataset.ctl}`, String(+i.value / 100));
+    const share = (+i.value - +i.min) / (+i.max - +i.min);
+    i.style.setProperty("--v", `${share * 100}%`);
+    out().style.setProperty(`--${i.dataset.ctl}`, String(share));
+    const shown = i.previousElementSibling?.querySelector("em");
+    if (shown) shown.textContent = shown.textContent!.replace(/\d+/, i.value);
   }));
 });
-
-document.querySelectorAll<HTMLElement>("[data-live]").forEach(initLiveEditor);
 
 // Quick Access card: Copy and Save confirm, Edit opens the tools, Close slides the thumbnail away and back.
 document.querySelectorAll<HTMLElement>(".qa-live").forEach(card => {

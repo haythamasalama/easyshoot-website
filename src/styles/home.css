@@ -24,8 +24,6 @@ main > section:not(.hero) { max-width: calc(var(--page) + 2 * var(--gutter)); ma
 .hero-act { display: flex; flex-direction: column; align-items: center; gap: 10px; margin-top: 24px; }
 .hero-act p { margin: 0; font-size: 14px; color: var(--on-sky2); }
 .hero-win { max-width: 1180px; margin: clamp(32px, 4vw, 52px) auto 0; }
-.live-ed .ed-canvas { touch-action: pan-y; cursor: crosshair; }
-.live-ed .ed-canvas:focus-visible { outline: 2px solid var(--accent); outline-offset: -4px; }
 /* The sky settles into a rounded tile as the page moves on. */
 @supports (animation-timeline: scroll()) {
   @media (prefers-reduced-motion: no-preference) {
@@ -155,8 +153,9 @@ main kbd { display: inline-grid; place-items: center; min-width: 24px; height: 2
 [data-ui] .ed-panel { --p: 1px; aspect-ratio: auto; display: block; box-shadow: 0 0 0 .5px rgba(0,0,0,.16), 0 18px 40px -22px rgba(10,30,60,.4); }
 [data-ui] .ed-panel .ed-side { border: 0; }
 [data-ui] .ed-panel .ed-sw-grid { grid-template-columns: repeat(4, 44px); }
-[data-ui] .bg-out { container-type: inline-size; padding: calc(12px + var(--pad, .55) * 60px); border-radius: 12px; background: var(--fill, #4790FB); transition: padding .12s; }
-[data-ui] .bg-out .shot { font-size: calc(100cqw / 46); border-radius: calc(var(--rad, .3) * 40px); box-shadow: 0 calc(var(--shd, .4) * 30px) calc(var(--shd, .4) * 80px) calc(var(--shd, .4) * -10px) rgba(10,30,60,.55); overflow: hidden; }
+/* A fixed frame: the page shrinks inside it, so the controls never move away from the pointer during a drag. */
+[data-ui] .bg-out { container-type: inline-size; aspect-ratio: 16 / 10; display: grid; align-content: center; padding-inline: calc(var(--pad, .233) * 25%); border-radius: 12px; background: var(--fill, #4790FB); transition: padding .12s; }
+[data-ui] .bg-out .shot { font-size: calc(100cqw / 46); border-radius: calc(var(--rad, .25) * 48px); box-shadow: 0 calc(var(--shd, .3) * 40px) calc(var(--shd, .3) * 110px) calc(var(--shd, .3) * -12px) rgba(10,30,60,.55); overflow: hidden; }
 @media (max-width: 860px) { .twin-row { grid-template-columns: minmax(0, 1fr); } .twin-in { padding: 20px; } }
 
 /* One panel with notes in both margins */
@@ -172,7 +171,7 @@ main kbd { display: inline-grid; place-items: center; min-width: 24px; height: 2
 [data-ui].plate-panel .ed-solo { width: 100%; }
 [data-ui] .ed-plate .ed-side { padding: 16px; gap: 20px; }
 [data-ui] .plate-sample { display: grid; place-items: center; height: 160px; border-radius: 10px; background: var(--ed-canvas); }
-[data-ui] .plate-sample i { width: 62%; height: 60%; border-radius: var(--corner, 22px); border: var(--sw, 3.5px) var(--dashes, dashed) var(--box, #EA5E59); background: var(--fillc, color-mix(in srgb, #C1D9FE 70%, transparent)); opacity: var(--op, 1); transition: border-radius .2s; }
+[data-ui] .plate-sample i { width: 62%; height: 60%; border-radius: var(--corner, 22px); border: var(--sw, 2px) var(--dashes, solid) var(--box, #1C1F24); background: var(--fillc, #B0E8BA); opacity: var(--op, 1); transition: border-radius .2s; }
 [data-ui] [data-part] { border-radius: 8px; outline: 2px solid transparent; outline-offset: 6px; transition: outline-color .15s; }
 [data-ui] [data-part].hot { outline-color: var(--ed-blue); }
 [data-ui] .ed-sw button.none { background: linear-gradient(to top right, transparent 46%, #FF383C 46% 54%, transparent 54%), #FFFFFF; } /* taste-skill-ignore: the system's "no colour" slash */
@@ -202,12 +201,13 @@ main kbd { display: inline-grid; place-items: center; min-width: 24px; height: 2
 /* Presets: three saved looks, side by side */
 [data-ui] .ma-presets { display: flex; justify-content: center; align-items: center; gap: clamp(10px, 3cqw, 24px); padding-inline: 16px; }
 [data-ui] .ma-preset { flex: 1; max-width: 220px; min-width: 0; display: grid; gap: 10px; justify-items: center; color: var(--on-sky); font-size: 14px; font-weight: 600; text-align: center; }
-[data-ui] .ma-frame { width: 100%; padding: clamp(12px, 3.4cqw, 26px) clamp(10px, 2.6cqw, 20px); border-radius: 14px; box-shadow: 0 18px 30px -20px rgba(5,15,40,.6); }
+[data-ui] .ma-frame { width: 100%; padding: clamp(12px, 3.4cqw, 26px) clamp(10px, 2.6cqw, 20px); border-radius: 14px; box-shadow: 0 0 0 .5px rgba(255,255,255,.18), 0 18px 30px -20px rgba(5,15,40,.6); }
 [data-ui] .ma-preset.p1 .ma-frame { background: #E9EDF2; }
-[data-ui] .ma-preset.p2 .ma-frame { background: #1C1F24; }
-[data-ui] .ma-preset.p3 .ma-frame { background: #4790FB; }
+[data-ui] .ma-preset.p2 .ma-frame { background: linear-gradient(135deg, #2A2D33, #17191D); } /* taste-skill-ignore: the app's Graphite gradient */
+[data-ui] .ma-preset.p3 .ma-frame { background: linear-gradient(135deg, #3554D9, #7A5CE6, #F06A7A); } /* taste-skill-ignore: the app's Dusk gradient */
 [data-ui] .ma-preset.on .ma-frame { outline: 2px solid var(--on-sky); outline-offset: 3px; }
-[data-ui] .ma-frame .ma-sheet { padding: .7em .8em; border-radius: 8px; font-size: clamp(10px, 2.2cqw, 13px); box-shadow: 0 8px 16px -10px rgba(0,0,0,.45); }
+/* The same light page in every frame, whatever the site's theme, so only the background changes. */
+[data-ui] .ma-frame .ma-sheet { --s-bg: #FFFFFF; --s-ink: #18181B; padding: .7em .8em; border-radius: 8px; font-size: clamp(10px, 2.2cqw, 13px); box-shadow: 0 8px 16px -10px rgba(0,0,0,.45); }
 [data-ui] .ma-frame .cap-line { gap: .5em; flex-wrap: wrap; }
 
 /* Crop: handles around the picture and its size */
@@ -227,13 +227,12 @@ main kbd { display: inline-grid; place-items: center; min-width: 24px; height: 2
 [data-ui] .ma-zoomctl i { font-style: normal; padding: 2px 9px; }
 [data-ui] .ma-zoomctl b { padding: 2px 10px; border-radius: 99px; background: var(--accent-fill); color: #FFFFFF; font-weight: 600; }
 
-/* Shortcuts: keys big enough to feel under the fingers */
-[data-ui] .ma-shortcut { align-content: center; gap: 22px; color: var(--ink); }
-[data-ui] .ma-shortcut > div { display: flex; align-items: center; justify-content: center; gap: 18px; flex-wrap: wrap; font-size: 15px; font-weight: 600; }
-[data-ui] .ma-keys { display: inline-flex; gap: 7px; }
-[data-ui] .ma-keys kbd { min-width: 42px; height: 42px; border-radius: 10px; background: var(--chip); font: 500 18px -apple-system, BlinkMacSystemFont, "Plus Jakarta Sans", sans-serif; box-shadow: 0 2px 0 rgba(10,20,40,.16), 0 0 0 .5px rgba(128,128,128,.3); }
-[data-ui] .ma-keys.big kbd { min-width: 72px; height: 72px; border-radius: 16px; font-size: 30px; box-shadow: 0 4px 0 rgba(10,20,40,.18), 0 14px 22px -14px rgba(10,20,40,.4), 0 0 0 .5px rgba(128,128,128,.3); }
-@media (max-width: 620px) { [data-ui] .ma-keys.big kbd { min-width: 54px; height: 54px; font-size: 24px; border-radius: 13px; } [data-ui] .ma-keys kbd { min-width: 34px; height: 34px; font-size: 15px; } }
+/* Shortcuts */
+[data-ui] .ma-shortcut { grid-template-columns: auto auto; justify-content: center; align-content: center; justify-items: start; gap: 12px 20px; color: var(--ink); font-size: 15px; font-weight: 600; }
+[data-ui] .ma-shortcut > div { display: contents; }
+[data-ui] .ma-keys { display: inline-flex; gap: 6px; }
+[data-ui] .ma-keys kbd { min-width: 40px; height: 40px; padding: 0; border-radius: 10px; background: var(--chip); font: 500 17px -apple-system, BlinkMacSystemFont, "Plus Jakarta Sans", sans-serif; box-shadow: 0 1px 2px rgba(10,20,40,.12), 0 0 0 .5px rgba(128,128,128,.3); }
+@media (max-width: 620px) { [data-ui] .ma-keys kbd { min-width: 34px; height: 34px; border-radius: 9px; font-size: 15px; } }
 
 /* Formats: the file you get, with the chosen one lifted */
 [data-ui] .ma-formats { display: flex; justify-content: center; align-items: center; gap: clamp(8px, 3cqw, 22px); }
@@ -292,33 +291,14 @@ main kbd { display: inline-grid; place-items: center; min-width: 24px; height: 2
 .close-sky .h2 { max-width: 16em; }
 .close-sky p { margin: 0; font-size: 14px; color: var(--on-sky2); }
 
-/* Marks the visitor adds in the hero's window */
-[data-ui] .frame { position: relative; }
-[data-ui] .mk-layer { position: absolute; inset: 0; z-index: 1; pointer-events: none; }
-[data-ui] .mk-layer svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
-[data-ui] .mk-layer text { font-family: inherit; }
-[data-ui] .mk-text { position: absolute; padding: .3em .7em; border-radius: .5em; color: #FFFFFF; font-size: 1.1em; font-weight: 600; white-space: nowrap; pointer-events: auto; outline: 0; translate: -10% -50%; }
-[data-ui] .mk-blur { position: absolute; border-radius: 4px; -webkit-backdrop-filter: blur(7px); backdrop-filter: blur(7px); }
-[data-ui] .kc button { width: calc(32 * var(--p)); height: calc(28 * var(--p)); padding: 0; border: 0; display: grid; place-items: center; border-radius: 999px; background: none; color: inherit; cursor: pointer; transition: background .12s; }
-[data-ui] .kc button svg { width: calc(17 * var(--p)); height: calc(17 * var(--p)); }
-[data-ui] .kc button:hover { background: var(--ed-f2); }
-[data-ui] .kc button.on { background: var(--ed-sel); color: var(--ed-blue); }
-[data-ui] .kc button:active { scale: .92; }
-[data-ui] .kc button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
-[data-ui] .ed-hint { flex: 1; min-width: 0; text-align: center; color: var(--ed-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-[data-ui] .ed-hint[hidden] { visibility: hidden; display: block; }
-[data-ui] .demo-pointer { position: absolute; left: 0; top: 0; z-index: 5; width: 24px; height: 24px; margin: -3px 0 0 -5px; pointer-events: none; filter: drop-shadow(0 2px 3px rgba(0,0,0,.4)); }
-[data-ui] .demo-pointer svg { width: 100%; height: 100%; }
-[data-ui] .demo-pointer path { fill: #FFFFFF; stroke: #111111; stroke-width: 1.4; stroke-linejoin: round; }
-[data-ui] .mk-ghost { opacity: .55; pointer-events: none; }
-[data-ui] .live-ed .ed-in { aspect-ratio: auto; }
-[data-ui] .live-ed .ed-canvas { align-content: start; }
-[data-ui] .live-ed .ed-canvas .frame { padding: 0; }
-/* A phone shows the part of the page the marks are on, at a size that can be read and tapped. */
+.hero-win[data-ui] .ed-in { aspect-ratio: auto; }
+.hero-win[data-ui] .ed-canvas { align-content: start; padding-bottom: calc(64 * var(--p)); }
+.hero-win[data-ui] .ed-canvas .frame { padding: 0; }
+/* A phone shows the part of the page the marks are on, at a size that can be read. */
 @container (max-width: 640px) {
-  [data-ui] .live-ed .ed-in { --p: calc(100cqw / 540); }
-  [data-ui] .live-ed .shot { grid-template-columns: minmax(0, 1fr); font-size: 1.1em; }
-  [data-ui] .live-ed .shot .col:first-child { display: none; }
-  [data-ui] .live-ed .shot .col { padding: 1.4em 2.4em 1.6em 3em; }
-  [data-ui] .live-ed .ed-acts .kc:first-child { display: none; }
+  .hero-win[data-ui] .ed-in { --p: calc(100cqw / 540); }
+  .hero-win[data-ui] .shot { grid-template-columns: minmax(0, 1fr); font-size: 1.1em; }
+  .hero-win[data-ui] .shot .col:first-child { display: none; }
+  .hero-win[data-ui] .shot .col { padding: 1.4em 2.4em 1.6em 3em; }
+  .hero-win[data-ui] .ed-acts .kc:first-child { display: none; }
 }
