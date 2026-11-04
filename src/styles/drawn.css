@@ -32,8 +32,8 @@
 [data-ui] .mk-n { width: 1.55em; height: 1.55em; border-radius: 50%; background: var(--mk); color: #fff; font-weight: 700; font-size: .82em; place-items: center; border: .14em solid #fff; box-shadow: 0 .15em .4em rgba(0,0,0,.2); }
 [data-ui] .mk-n1 { top: 50%; translate: 0 -50%; inset-inline-start: -2.35em; }
 [data-ui] .mk-n2 { top: 50%; translate: 0 -50%; inset-inline-start: -2.35em; }
-[data-ui] .mk-arrow { width: 3.8em; height: 2.9em; inset-inline-end: 3.8em; bottom: 108%; color: var(--mk); opacity: .9; }
-[data-ui] .shot[dir="rtl"] .mk-arrow { transform: scaleX(-1); }
+[data-ui] .mk-arrow { width: 3.4em; height: 1.8em; right: calc(100% + .5em); top: calc(50% - 1.32em); color: var(--mk); }
+[data-ui] .shot[dir="rtl"] .mk-arrow { right: auto; left: calc(100% + .5em); transform: scaleX(-1); }
 [data-ui] .mk-note { top: -2.25em; inset-inline-end: -.4em; font-size: .66em !important; padding: .3em .6em !important; font-weight: 600 !important; padding: .45em .8em; border-radius: .6em; background: var(--mk); color: #fff; font-weight: 700; font-size: .95em; white-space: nowrap; box-shadow: 0 .3em .8em -.2em rgba(0,0,0,.35); }
 [data-ui] .m-mark .mk-box, [data-ui] .m-mark .mk-n, [data-ui] .m-mark .mk-arrow, [data-ui] .m-mark .mk-note { display: block; }
 [data-ui] .m-mark .mk-n { display: grid; }

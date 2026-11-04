@@ -53,9 +53,7 @@ export function shotHTML(mode, lang) {
     <div class="item"><i></i><div><b>${s.item}</b><span>${s.itemSub}</span></div></div>
     <div class="line"><span>${s.sub}</span><span class="num">$48.00</span></div>
     <div class="line"><span>${s.tax}</span><span class="num">$0.00</span></div>
-    <div class="line total"><span>${s.total}</span><span class="num tot">$48.00<span class="mk mk-ell"></span></span>
-      <svg class="mk mk-arrow" viewBox="0 0 60 44" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4C22 6 38 16 50 34"/><path d="M38 31l12 4 2-12"/></svg>
-    </div>
+    <div class="line total"><span>${s.total}</span><span class="num tot">$48.00<span class="mk mk-ell"></span><svg class="mk mk-arrow" viewBox="0 0 64 34" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5C22 3 42 9 58 25"/><path d="M45.4 21.6L58 25L54.6 12.4"/></svg></span></div>
   </div>
   <div class="col">
     <b class="h5">${s.pay}</b>
