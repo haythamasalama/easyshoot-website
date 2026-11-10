@@ -2,7 +2,8 @@
 import "../styles/global.css";
 import "../styles/drawn.css";
 import Chrome from "../components/Chrome.astro";
-import { SITE, LANGS, OG_LOCALE, dirOf, type Lang } from "../i18n";
+import { SITE, LANGS, OG_LOCALE, AUTHOR_URL, dirOf, type Lang } from "../i18n";
+import { authorNode } from "../lib/seo";
 
 interface Props {
   lang: Lang;
@@ -19,7 +20,8 @@ const url = SITE + alternates[lang];
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
-    { "@type": "WebSite", "@id": `${SITE}/#site`, name: "EasyShoot", url: `${SITE}/` },
+    { "@type": "WebSite", "@id": `${SITE}/#site`, name: "EasyShoot", url: `${SITE}/`, inLanguage: [...LANGS], publisher: { "@id": `${AUTHOR_URL}/#person` } },
+    authorNode,
     { "@type": "WebPage", "@id": `${url}#page`, url, name: title, description, inLanguage: lang, isPartOf: { "@id": `${SITE}/#site` }, about: { "@id": `${SITE}/#app` } },
     ...graph,
   ],
@@ -53,6 +55,8 @@ const jsonLd = {
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content={title}>
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@haythamasalama">
+<meta name="twitter:creator" content="@haythamasalama">
 <meta name="twitter:title" content={title}>
 <meta name="twitter:description" content={description}>
 <meta name="twitter:image" content={`${SITE}/og.png`}>
@@ -62,7 +66,18 @@ const jsonLd = {
 <meta name="theme-color" content="#0A0A0B" media="(prefers-color-scheme: dark)">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Alexandria:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap">
+{Astro.url.pathname === "/" && (
+<script is:inline>
+  // First visit to the English home: open the page in the browser's own language if the site has it.
+  // A language picked from the menu is remembered and always wins.
+  try {
+    var saved = localStorage.getItem("easyshoot-lang");
+    var want = saved || ((navigator.languages && navigator.languages[0]) || navigator.language || "en").slice(0, 2).toLowerCase();
+    if (["ar", "fr", "es", "de"].indexOf(want) !== -1) location.replace("/" + want + "/" + location.search + location.hash);
+  } catch (e) {}
+</script>
+)}
 <script is:inline>
   document.documentElement.classList.add("js");
   try { var t = localStorage.getItem("easyshoot-theme"); if (t === "light" || t === "dark") document.documentElement.dataset.theme = t; } catch (e) {}

@@ -3,6 +3,7 @@ import Base from "../layouts/Base.astro";
 import { SITE, APP_STORE_URL, pagePath, useT, type Lang } from "../i18n";
 import { content, articleOf, hubPath, articlePath, alternatesFor, tagsFor, wordCount, readingTime, TOC_LABEL, GUIDES, COMPARES, type Article } from "../i18n/articles";
 import { appNode, faqNode, breadcrumbNode } from "../lib/seo";
+import AppleLogo from "./AppleLogo.astro";
 
 interface Props { lang: Lang; article: Article }
 const { lang, article } = Astro.props;
@@ -123,7 +124,7 @@ const meta = [
       <aside class="doc-cta reveal">
         <img src="/icon.png" width="72" height="72" alt="" loading="lazy">
         <div><h2>{ui.ctaTitle}</h2><p>{ui.ctaBody}</p></div>
-        <a class="btn btn-dark" href={storeHref}>{t("hero.cta")}</a>
+        <a class="btn btn-store" href={storeHref}><AppleLogo />{t("hero.cta")}</a>
       </aside>
 
       <nav class="doc-section doc-related reveal" aria-labelledby="rel-h">

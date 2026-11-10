@@ -1,5 +1,5 @@
 // The privacy policy and support page exist in English and Arabic; App Store Connect links to the English URLs.
-export const CONTACT = "haythamasalama@gmail.com";
+export const CONTACT = "support@easyshoot.app";
 const mail = `<a href="mailto:${CONTACT}" dir="ltr">${CONTACT}</a>`;
 
 export interface LegalPage {

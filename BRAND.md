@@ -12,7 +12,7 @@ Principles:
 
 1. **Content first.** The product and its marks sit on a calm sky; everything else on the page is quiet, neutral tiles.
 2. **One blue.** A single sky-to-sapphire blue. No second accent colour, no purple, no rainbow gradients.
-3. **Light is light, dark is dark.** Each theme has one complete colour set. Nothing white inside dark mode, nothing black inside light mode (the main download button is the only deliberate inverse).
+3. **Light is light, dark is dark.** Each theme has one complete colour set. Nothing white inside dark mode, nothing black inside light mode. The download buttons are the one solid blue, with the Apple logo, in both themes.
 4. **Native, not decorated.** macOS window shapes, Liquid Glass where macOS itself uses it (the floating navigation and the drawn app). No ornaments that macOS wouldn't use.
 5. **Every language is first class.** Arabic reads right to left with its own spacing; no page mixes languages.
 6. **Soft and simple.** Modest type, round tiles, room to breathe. When something feels busy, remove parts until one idea is left.
@@ -66,7 +66,7 @@ All pairs below meet WCAG AA for the text sizes they are used at.
 | `--ink2` | `#2E3036` | `#D1D2D6` | Secondary strong text |
 | `--muted` | `#565A63` (6.9:1) | `#9A9CA4` (7.2:1) | Descriptions |
 | `--line` / `--line2` | `#E4E7EC` / `#D9DBE1` | `#232327` / `#303036` | Real tables only |
-| `--cta-bg` / `--cta-ink` | `#0A0A0B` / `#FFFFFF` | `#F5F5F7` / `#0A0A0B` | The main download button (the one inverse element) |
+| `--cta-bg` / `--cta-ink` | `#0A0A0B` / `#FFFFFF` | `#F5F5F7` / `#0A0A0B` | Secondary solid buttons, such as the press kit download |
 
 ### Annotation marks (inside drawn screenshots)
 
@@ -86,16 +86,17 @@ The app always sits on a sky, never on a coloured panel.
 
 - The sky carries the hero, the flow's tiles, the pinned window, the privacy drawing and the close. Everywhere else is `--bg` with `--surface` tiles, separated by tone and space, not by lines or shadows.
 - Blur belongs to one page element: the floating navigation. Inside drawn app pieces (`[data-ui]`) the app's own glass stays.
-- The hero's sky starts full width and settles into a rounded tile as the page scrolls.
+- The hero's sky runs full width and stays still while the page scrolls.
 
 ## Shape and space
 
 | Element | Radius |
 |:--|:--|
-| The close, small-things tiles | 28 px |
-| Sky tiles | 24 px |
-| Pictures inside a small-things tile | 20 px |
-| FAQ tiles | 18 px |
+| The close, small-things tiles | 18 px |
+| Sky tiles, privacy cards | 16 px |
+| FAQ tiles | 14 px |
+| Pictures inside a small-things tile | 12 px |
+| Drawn app windows | about 10 px at full size; drawn pages about 6 px |
 | Keys | 7–16 px |
 | Buttons, nav, segments | Full pill (999 px) |
 
@@ -105,7 +106,7 @@ The app always sits on a sky, never on a coloured panel.
 
 ## Type
 
-- **Family:** Plus Jakarta Sans for Latin and Alexandria for Arabic, from Google Fonts. Drawn app pieces keep the system font, as the app does.
+- **Family:** Plus Jakarta Sans for Latin and IBM Plex Sans Arabic for Arabic, from Google Fonts. Drawn app pieces keep the system font, as the app does.
 - **Display:** weight 600, modest sizes: the hero up to 62 px, section titles up to 40 px, tracking −0.03 em. Nothing heavier than 600 on the page.
 - **Arabic:** letter spacing 0, line height 1.28.
 - **Body:** 15–17 px, line height 1.45–1.5. Descriptions in `--muted`.
@@ -121,12 +122,11 @@ The app always sits on a sky, never on a coloured panel.
 
 ## Motion
 
-Library: Motion (`src/scripts/site.ts`) for presses and the theme icon; CSS for the rest (`src/styles/home.css`).
+Library: Motion (`src/scripts/site.ts`) for presses; CSS for the rest (`src/styles/home.css`).
 
 | Moment | Motion |
 |:--|:--|
 | Page load and scroll | The parts of a section rise 16 px and fade in once, 75 ms apart |
-| Hero | The sky settles into a rounded tile over the first 420 px of scroll. |
 | Flow pictures | Each plays once as it appears: the selection is dragged, the thumbnail slides in, the marks land, the messages rise |
 | Tools section | The window holds while three statements pass and change it (wide screens only) |
 | Press | Every button and control springs to 94% and back (stiffness 600, bounce 0.55) |

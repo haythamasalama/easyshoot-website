@@ -4,26 +4,27 @@
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --s-bg: #1C1C1F; --s-alt: #202024; --s-ink: #F2F2F4; --s-muted: #9C9CA4; --s-line: #34343A; --s-sep: #2C2C31; --s-btn: #F2F2F4; --s-btn-ink: #111113; --s-tile: #333338; --s-ph: #6E6E76; --mini-bg: #1C1C1F; --mini-line: #2C2C31; --mini-blk: #2C2C31; --bar-ink: #F2F2F4; --bar-bg: rgba(0,0,0,.35); } }
 
 /* The captured page inside the canvas: a light checkout screen */
-[data-ui] .shot { --mk: #E5534B; position: relative; width: 100%; background: #fff; color: #18181B; border-radius: .5em; box-shadow: 0 .4em 1.6em rgba(0,0,0,.18); display: grid; grid-template-columns: 1fr 1.15fr; font-size: 1em; font-family: -apple-system, BlinkMacSystemFont, "Plus Jakarta Sans", "Alexandria", sans-serif; }
-[data-ui] .shot[dir="rtl"] { font-family: -apple-system, "Alexandria", sans-serif; }
+[data-ui] .shot { --mk: #E5534B; position: relative; width: 100%; background: #fff; color: #18181B; border-radius: .35em; box-shadow: 0 .4em 1.6em rgba(0,0,0,.18); display: grid; grid-template-columns: 1fr 1.15fr; font-size: 1em; font-family: -apple-system, BlinkMacSystemFont, "Plus Jakarta Sans", "IBM Plex Sans Arabic", sans-serif; }
+[data-ui] .shot[dir="rtl"] { font-family: -apple-system, "IBM Plex Sans Arabic", sans-serif; }
+[data-ui] .shot { font-weight: 400; }
 [data-ui] .shot .col { padding: 2.2em 2.4em; display: flex; flex-direction: column; gap: 1.1em; }
 [data-ui] .shot .col + .col { border-inline-start: 1px solid #EEEEF0; background: #FAFAFB; }
-[data-ui] .shot .brand { display: flex; align-items: center; gap: .6em; font-weight: 700; font-size: 1.15em; }
-[data-ui] .shot .brand i { width: 1.4em; height: 1.4em; border-radius: .4em; background: #18181B; }
-[data-ui] .shot .h5 { display: block; margin: 0; font-size: 1.35em; font-weight: 700; letter-spacing: -.01em; }
+[data-ui] .shot .brand { display: flex; align-items: center; gap: .55em; font-weight: 600; font-size: 1.05em; }
+[data-ui] .shot .brand i { width: 1.25em; height: 1.25em; border-radius: .35em; background: #18181B; }
+[data-ui] .shot .h5 { display: block; margin: 0; font-size: 1.2em; font-weight: 600; letter-spacing: -.01em; }
 [data-ui] .shot .item { display: flex; gap: .9em; align-items: center; }
 [data-ui] .shot .item i { width: 3.4em; height: 3.4em; border-radius: .7em; background: var(--s-tile); flex-shrink: 0; }
-[data-ui] .shot .item b { display: block; font-weight: 600; }
+[data-ui] .shot .item b { display: block; font-weight: 500; }
 [data-ui] .shot .item span { color: #71717A; font-size: .9em; }
 [data-ui] .shot .line { display: flex; justify-content: space-between; color: #52525B; padding-top: .2em; }
-[data-ui] .shot .line.total { position: relative; color: #18181B; font-weight: 700; font-size: 1.15em; border-top: 1px solid #EEEEF0; padding-top: .9em; margin-top: .4em; }
+[data-ui] .shot .line.total { position: relative; color: #18181B; font-weight: 600; font-size: 1.05em; border-top: 1px solid #EEEEF0; padding-top: .9em; margin-top: .4em; }
 [data-ui] .shot label { display: block; font-size: .85em; color: #71717A; margin-bottom: .35em; font-weight: 500; }
 [data-ui] .shot .in { height: 2.6em; border-radius: .55em; border: 1px solid #E4E4E7; background: #fff; display: flex; align-items: center; padding: 0 .9em; gap: .6em; }
 [data-ui] .shot .in .ph { color: #A1A1AA; }
 [data-ui] .shot .promo { position: relative; display: flex; gap: .6em; }
 [data-ui] .shot .promo .in { flex: 1; }
-[data-ui] .shot .apply { height: 2.6em; padding: 0 1.1em; border-radius: .55em; border: 1px solid #E4E4E7; display: grid; place-items: center; font-weight: 600; background: #fff; }
-[data-ui] .shot .pay { position: relative; height: 2.9em; border-radius: .6em; background: #18181B; color: #fff; display: grid; place-items: center; font-weight: 600; margin-top: .5em; }
+[data-ui] .shot .apply { height: 2.6em; padding: 0 1.1em; border-radius: .55em; border: 1px solid #E4E4E7; display: grid; place-items: center; font-weight: 500; background: #fff; }
+[data-ui] .shot .pay { position: relative; height: 2.9em; border-radius: .6em; background: #18181B; color: #fff; display: grid; place-items: center; font-weight: 500; margin-top: .5em; }
 [data-ui] .shot .num { direction: ltr; unicode-bidi: isolate; }
 [data-ui] .shot .mosaic { display: none; height: 1.25em; width: 9em; border-radius: .15em; background: repeating-conic-gradient(#8E8E96 0 25%, #C9C9CF 0 50%) 0 0 / .62em .62em; } /* taste-skill-ignore */
 /* Marks, shown per mode */
@@ -70,7 +71,7 @@
   --ed-f1: rgba(255,255,255,.10); --ed-f2: rgba(255,255,255,.08); --ed-f4: rgba(255,255,255,.03); --ed-sel: rgba(255,255,255,.08); --ed-blue: #0091FF;
   --ed-glass: rgba(44,44,48,.72); --ed-rim: rgba(255,255,255,.14); --tl1: #F06E6A; --tl2: #FFCD30; --tl3: #58C73B; }
 }
-[data-ui] .ed-in { --p: .087cqw; font: 500 calc(13 * var(--p)) / 1.25 -apple-system, BlinkMacSystemFont, "Plus Jakarta Sans", "Alexandria", sans-serif; aspect-ratio: 16 / 10; display: grid; grid-template-rows: calc(52 * var(--p)) minmax(0, 1fr); border-radius: calc(16 * var(--p)); overflow: hidden; background: var(--ed-win); color: var(--ed-ink); box-shadow: 0 0 0 .5px rgba(0,0,0,.3), 0 2.5em 5em -1em rgba(10,20,70,.5), 0 .8em 1.6em rgba(10,20,70,.18); }
+[data-ui] .ed-in { --p: .087cqw; font: 500 calc(13 * var(--p)) / 1.25 -apple-system, BlinkMacSystemFont, "Plus Jakarta Sans", "IBM Plex Sans Arabic", sans-serif; aspect-ratio: 16 / 10; display: grid; grid-template-rows: calc(52 * var(--p)) minmax(0, 1fr); border-radius: calc(10 * var(--p)); overflow: hidden; background: var(--ed-win); color: var(--ed-ink); box-shadow: 0 0 0 .5px rgba(0,0,0,.3), 0 2.5em 5em -1em rgba(10,20,70,.5), 0 .8em 1.6em rgba(10,20,70,.18); }
 [data-ui] .ed-in .shot { font-size: 1.22em; }
 [data-ui] .ed-in svg { flex-shrink: 0; }
 [data-ui] .ed-bar { display: flex; align-items: center; gap: calc(8 * var(--p)); padding-inline: calc(18 * var(--p)) calc(8 * var(--p)); border-bottom: 1px solid var(--ed-f2); }
@@ -272,3 +273,6 @@
 [data-ui] .qa-bar button { width: 28px; height: 28px; }
 [data-ui] .qa-bar .ok, [data-ui] .qa-bar button.done .go { display: none; }
 [data-ui] .qa-bar button.done .ok { display: block; }
+
+[data-ui] .ed-in:dir(rtl) { font-size: calc(12 * var(--p)); }
+[data-ui] .shot.dash:dir(rtl) { font-size: calc(100cqw / 64); }

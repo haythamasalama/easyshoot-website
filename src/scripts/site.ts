@@ -3,42 +3,32 @@ import { animate, press } from "motion";
 const root = document.documentElement;
 const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-// Theme: follows the Mac until the visitor picks one.
-const themeBtn = document.getElementById("themeBtn");
-const darkQuery = matchMedia("(prefers-color-scheme: dark)");
-const isDark = () => (root.dataset.theme ? root.dataset.theme === "dark" : darkQuery.matches);
-function updateThemeLabel() {
-  if (!themeBtn) return;
-  themeBtn.setAttribute("aria-label", (isDark() ? themeBtn.dataset.toLight : themeBtn.dataset.toDark) ?? "");
+// Theme: follows the Mac unless the visitor picks Light or Dark in the footer.
+type ThemeChoice = "system" | "light" | "dark";
+const themeButtons = [...document.querySelectorAll<HTMLButtonElement>("[data-theme-choice]")];
+const currentChoice = (): ThemeChoice => (root.dataset.theme === "light" || root.dataset.theme === "dark" ? root.dataset.theme : "system");
+function markThemeChoice() {
+  const choice = currentChoice();
+  themeButtons.forEach(b => b.setAttribute("aria-pressed", String(b.dataset.themeChoice === choice)));
 }
-function applyTheme(next: "light" | "dark") {
-  root.dataset.theme = next;
-  try { localStorage.setItem("easyshoot-theme", next); } catch {}
-  updateThemeLabel();
-}
-// The new theme grows out of the button in a circle; browsers without view transitions just switch.
-themeBtn?.addEventListener("click", () => {
-  const next = isDark() ? "light" : "dark";
-  if (!themeBtn) return;
-  if (!reduce) animate(themeBtn.querySelectorAll("svg"), { rotate: [-90, 0], scale: [0.4, 1] }, { type: "spring", bounce: 0.4, duration: 0.6 });
-  const start = (document as Document & { startViewTransition?: (cb: () => void) => { ready: Promise<void> } }).startViewTransition;
-  if (reduce || !start) return applyTheme(next);
-  const r = themeBtn.getBoundingClientRect();
-  const x = r.left + r.width / 2, y = r.top + r.height / 2;
-  const radius = Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y));
-  const t = start.call(document, () => applyTheme(next));
-  t.ready.then(() => {
-    root.animate({ clipPath: [`circle(0px at ${x}px ${y}px)`, `circle(${radius}px at ${x}px ${y}px)`] },
-      { duration: 650, easing: "cubic-bezier(.2,.8,.2,1)", pseudoElement: "::view-transition-new(root)" });
-  });
-});
-darkQuery.addEventListener("change", updateThemeLabel);
-updateThemeLabel();
+themeButtons.forEach(b => b.addEventListener("click", () => {
+  const choice = b.dataset.themeChoice as ThemeChoice;
+  if (choice === "system") delete root.dataset.theme; else root.dataset.theme = choice;
+  try { if (choice === "system") localStorage.removeItem("easyshoot-theme"); else localStorage.setItem("easyshoot-theme", choice); } catch {}
+  markThemeChoice();
+}));
+markThemeChoice();
 
 // Language menu closes on outside click and Escape.
-const langMenu = document.querySelector<HTMLDetailsElement>("details.lang");
-document.addEventListener("click", e => { if (langMenu?.open && !(e.target as Element).closest("details.lang")) langMenu.open = false; });
-document.addEventListener("keydown", e => { if (e.key === "Escape" && langMenu?.open) { langMenu.open = false; langMenu.querySelector("summary")?.focus(); } });
+document.querySelectorAll<HTMLAnchorElement>(".lang-menu a[hreflang]").forEach(a => a.addEventListener("click", () => {
+  try { localStorage.setItem("easyshoot-lang", a.hreflang); } catch {}
+}));
+const langMenus = [...document.querySelectorAll<HTMLDetailsElement>("details.lang, details.nav-more")];
+document.addEventListener("click", e => { langMenus.forEach(m => { if (m.open && !m.contains(e.target as Node)) m.open = false; }); });
+document.addEventListener("keydown", e => {
+  if (e.key !== "Escape") return;
+  langMenus.forEach(m => { if (m.open) { m.open = false; m.querySelector("summary")?.focus(); } });
+});
 
 // Press kit: copy a ready-made description.
 document.querySelectorAll<HTMLButtonElement>("[data-copy]").forEach(b => b.addEventListener("click", async () => {
@@ -149,7 +139,7 @@ document.querySelectorAll<HTMLButtonElement>("[data-show]").forEach((b, _, all) 
 
 // Every button and control gives a small spring when pressed.
 if (!reduce) {
-  press(".btn, .chip-btn, .faq summary, .lang-menu a, .links a, .foot-cols a, .foot-langs a, .pill-tag, .tongues-names button", el => {
+  press(".btn, .chip-btn, .faq summary, .lang-menu a, .links a, .foot-cols a, .pill-tag, .tongues-names button", el => {
     animate(el, { scale: 0.94 }, { type: "spring", stiffness: 600, damping: 30 });
     return () => animate(el, { scale: 1 }, { type: "spring", bounce: 0.55, duration: 0.45 });
   });
