@@ -50,4 +50,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://easyshoot.haythamasalama.me/sitemap-index.xml
+Sitemap: https://easyshoot.app/sitemap-index.xml

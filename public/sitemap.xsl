@@ -51,7 +51,7 @@
   </xsl:template>
 
   <xsl:template match="s:sitemapindex">
-    <p class="lead">An index of the sitemaps search engines read for <a href="/">easyshoot.haythamasalama.me</a>.<span class="count"><xsl:value-of select="count(s:sitemap)"/> sitemaps</span></p>
+    <p class="lead">An index of the sitemaps search engines read for <a href="/">easyshoot.app</a>.<span class="count"><xsl:value-of select="count(s:sitemap)"/> sitemaps</span></p>
     <div class="table">
       <div class="row head"><span>Sitemap</span><span></span><span>Last modified</span></div>
       <xsl:for-each select="s:sitemap">
@@ -65,7 +65,7 @@
   </xsl:template>
 
   <xsl:template match="s:urlset">
-    <p class="lead">Every page of <a href="/">easyshoot.haythamasalama.me</a> in English, Arabic, French, Spanish and German.<span class="count"><xsl:value-of select="count(s:url)"/> pages</span></p>
+    <p class="lead">Every page of <a href="/">easyshoot.app</a> in English, Arabic, French, Spanish and German.<span class="count"><xsl:value-of select="count(s:url)"/> pages</span></p>
     <div class="table">
       <div class="row head"><span>Page</span><span>Languages</span><span>Last modified</span></div>
       <xsl:for-each select="s:url">
