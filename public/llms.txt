@@ -1,6 +1,6 @@
 # EasyShoot
 
-> EasyShoot is a free screenshot app for macOS 14 and later, coming soon to the Mac App Store. It captures an area, a window or the full screen, lets you annotate the image and frame it on a clean background, and never uploads anything. The interface is in English, Arabic, French, Spanish and German.
+> EasyShoot is a free screenshot app for macOS 14 and later, on the Mac App Store: https://apps.apple.com/app/easyshoot-screenshot-markup/id6829547113. It captures an area, a window or the full screen, lets you annotate the image and frame it on a clean background, and never uploads anything. The interface is in English, Arabic, French, Spanish and German.
 
 - Website: https://easyshoot.haythamasalama.me/
 - The same page in Arabic, French, Spanish and German: https://easyshoot.haythamasalama.me/ar/, /fr/, /es/, /de/
@@ -39,7 +39,7 @@
 
 ## Install
 
-1. Get EasyShoot from the Mac App Store (coming soon).
+1. Get EasyShoot from the Mac App Store: https://apps.apple.com/app/easyshoot-screenshot-markup/id6829547113
 2. Click Allow in the Welcome window to grant Screen Recording permission. EasyShoot lives in the menu bar.
 3. Updates come from the App Store.
 
