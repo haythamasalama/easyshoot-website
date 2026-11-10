@@ -1,8 +1,7 @@
 import data from "./data.json";
 
 export const SITE = "https://easyshoot.haythamasalama.me";
-// Set this to the app's Mac App Store link once App Review approves it.
-export const APP_STORE_URL = "";
+export const APP_STORE_URL = "https://apps.apple.com/app/id6829547113";
 
 export const LANGS = ["en", "ar", "fr", "es", "de"] as const;
 export type Lang = (typeof LANGS)[number];
