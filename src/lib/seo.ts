@@ -1,4 +1,12 @@
-import { SITE, LANGS, APP_STORE_URL, APP_VERSION, APP_RELEASED, useT, type Lang } from "../i18n";
+import { SITE, LANGS, APP_STORE_URL, APP_VERSION, APP_RELEASED, AUTHOR_URL, X_URL, useT, type Lang } from "../i18n";
+
+export const authorNode = {
+  "@type": "Person",
+  "@id": `${AUTHOR_URL}/#person`,
+  name: "Haytham A. Salama",
+  url: AUTHOR_URL,
+  sameAs: [X_URL, "https://github.com/haythamasalama", "https://www.linkedin.com/in/haythamasalama"],
+};
 
 export function appNode(lang: Lang) {
   const t = useT(lang);
@@ -6,14 +14,16 @@ export function appNode(lang: Lang) {
     "@type": "SoftwareApplication",
     "@id": `${SITE}/#app`,
     name: "EasyShoot",
+    alternateName: "EasyShoot: Screenshot & Markup",
     applicationCategory: "MultimediaApplication",
     applicationSubCategory: "Screenshot tool",
     operatingSystem: "macOS 14.0 or later",
     softwareVersion: APP_VERSION,
     datePublished: APP_RELEASED,
     fileSize: "2.1 MB",
-    author: { "@type": "Person", name: "Haytham A. Salama" },
-    publisher: { "@type": "Person", name: "Haytham A. Salama" },
+    isAccessibleForFree: true,
+    author: { "@id": `${AUTHOR_URL}/#person` },
+    publisher: { "@id": `${AUTHOR_URL}/#person` },
     description: t("seo.desc"),
     url: `${SITE}/`,
     image: `${SITE}/og.png`,

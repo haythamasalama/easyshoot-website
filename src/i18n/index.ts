@@ -3,6 +3,11 @@ import data from "./data.json";
 export const SITE = "https://easyshoot.app";
 export const APP_STORE_URL = "https://apps.apple.com/app/easyshoot-screenshot-markup/id6829547113";
 // The version on the App Store and the day it came out, for search engines.
+export const SUPPORT_EMAIL = "support@easyshoot.app";
+// Apple's Standard EULA governs apps on the App Store that don't ship their own license.
+export const TERMS_URL = "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/";
+export const X_URL = "https://x.com/haythamasalama";
+export const AUTHOR_URL = "https://haythamasalama.me";
 export const APP_VERSION = "1.0.0";
 export const APP_RELEASED = "2026-11-10";
 
