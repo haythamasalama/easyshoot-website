@@ -3,7 +3,7 @@ import { copyFile } from "node:fs/promises";
 import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
-  site: "https://easyshoot.haythamasalama.me",
+  site: "https://easyshoot.app",
   trailingSlash: "ignore",
   build: { inlineStylesheets: "always", format: "preserve" },
   integrations: [
