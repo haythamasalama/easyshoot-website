@@ -48,6 +48,212 @@
   },
   "releases": [
     {
+      "version": "1.0.2",
+      "date": "",
+      "notes": {
+        "en": {
+          "intro": "Check for updates whenever you like, a new-version note that reaches every region, and a clearer way to rate EasyShoot.",
+          "groups": [
+            {
+              "h": "New",
+              "items": [
+                [
+                  "🔄",
+                  "Check for Updates",
+                  "In the menu bar menu (Command-U) and in Settings › General, with your version number and the answer right below it."
+                ],
+                [
+                  "⭐",
+                  "Rate EasyShoot",
+                  "Settings › About has a small rating card. Close it with ✕ and the button moves next to Visit Website."
+                ]
+              ]
+            },
+            {
+              "h": "Improved",
+              "items": [
+                [
+                  "⏱️",
+                  "More frequent checks",
+                  "EasyShoot looks for a new version every few hours instead of once a day, and opens the note on the screen you’re using."
+                ]
+              ]
+            },
+            {
+              "h": "Fixed",
+              "items": [
+                [
+                  "🌍",
+                  "Update note in every region",
+                  "The note about a new version didn’t show when your Mac’s region differed from your App Store country. EasyShoot now asks your App Store country too."
+                ]
+              ]
+            }
+          ]
+        },
+        "ar": {
+          "intro": "تحقّق من التحديثات متى شئت، وتنبيه بالإصدار الجديد يصل في كل المناطق، وطريقة أوضح لتقييم EasyShoot.",
+          "groups": [
+            {
+              "h": "جديد",
+              "items": [
+                [
+                  "🔄",
+                  "التحقق من التحديثات",
+                  "من قائمة شريط القوائم (Command-U) ومن الإعدادات › عام، مع رقم إصدارك والنتيجة تحته مباشرة."
+                ],
+                [
+                  "⭐",
+                  "قيّم EasyShoot",
+                  "في الإعدادات › حول بطاقة تقييم صغيرة. أغلقها بـ ✕ فينتقل الزر بجانب «زيارة الموقع»."
+                ]
+              ]
+            },
+            {
+              "h": "تحسينات",
+              "items": [
+                [
+                  "⏱️",
+                  "فحص أكثر تكرارًا",
+                  "يبحث EasyShoot عن إصدار جديد كل بضع ساعات بدل مرة في اليوم، ويفتح التنبيه على الشاشة التي تعمل عليها."
+                ]
+              ]
+            },
+            {
+              "h": "إصلاحات",
+              "items": [
+                [
+                  "🌍",
+                  "تنبيه التحديث في كل المناطق",
+                  "لم يكن تنبيه الإصدار الجديد يظهر إذا اختلفت منطقة جهازك عن بلد حسابك في App Store. صار EasyShoot يسأل متجر بلد حسابك أيضًا."
+                ]
+              ]
+            }
+          ]
+        },
+        "fr": {
+          "intro": "Recherchez les mises à jour quand vous voulez, un avis de nouvelle version qui fonctionne partout, et une façon plus claire de noter EasyShoot.",
+          "groups": [
+            {
+              "h": "Nouveau",
+              "items": [
+                [
+                  "🔄",
+                  "Rechercher les mises à jour",
+                  "Dans le menu de la barre des menus (Commande-U) et dans Réglages › Général, avec votre numéro de version et la réponse juste en dessous."
+                ],
+                [
+                  "⭐",
+                  "Noter EasyShoot",
+                  "Réglages › À propos affiche une petite carte de notation. Fermez-la avec ✕ et le bouton rejoint Visiter le site."
+                ]
+              ]
+            },
+            {
+              "h": "Améliorations",
+              "items": [
+                [
+                  "⏱️",
+                  "Vérifications plus fréquentes",
+                  "EasyShoot recherche une nouvelle version toutes les quelques heures au lieu d’une fois par jour, et ouvre l’avis sur l’écran que vous utilisez."
+                ]
+              ]
+            },
+            {
+              "h": "Corrections",
+              "items": [
+                [
+                  "🌍",
+                  "Avis de mise à jour dans toutes les régions",
+                  "L’avis de nouvelle version ne s’affichait pas quand la région de votre Mac différait du pays de votre compte App Store. EasyShoot interroge désormais aussi ce pays."
+                ]
+              ]
+            }
+          ]
+        },
+        "es": {
+          "intro": "Busca actualizaciones cuando quieras, un aviso de nueva versión que llega a todas las regiones y una forma más clara de valorar EasyShoot.",
+          "groups": [
+            {
+              "h": "Nuevo",
+              "items": [
+                [
+                  "🔄",
+                  "Buscar actualizaciones",
+                  "En el menú de la barra de menús (Comando-U) y en Ajustes › General, con tu número de versión y la respuesta justo debajo."
+                ],
+                [
+                  "⭐",
+                  "Valorar EasyShoot",
+                  "Ajustes › Acerca de muestra una pequeña tarjeta para valorar. Ciérrala con ✕ y el botón pasa junto a Visitar el sitio web."
+                ]
+              ]
+            },
+            {
+              "h": "Mejoras",
+              "items": [
+                [
+                  "⏱️",
+                  "Comprobaciones más frecuentes",
+                  "EasyShoot busca una nueva versión cada pocas horas en lugar de una vez al día, y abre el aviso en la pantalla que estás usando."
+                ]
+              ]
+            },
+            {
+              "h": "Correcciones",
+              "items": [
+                [
+                  "🌍",
+                  "Aviso de actualización en todas las regiones",
+                  "El aviso de nueva versión no aparecía si la región de tu Mac era distinta del país de tu cuenta del App Store. Ahora EasyShoot consulta también ese país."
+                ]
+              ]
+            }
+          ]
+        },
+        "de": {
+          "intro": "Nach Updates suchen, wann du willst, ein Hinweis auf neue Versionen, der in jeder Region ankommt, und ein klarerer Weg, EasyShoot zu bewerten.",
+          "groups": [
+            {
+              "h": "Neu",
+              "items": [
+                [
+                  "🔄",
+                  "Nach Updates suchen",
+                  "Im Menü in der Menüleiste (Befehl-U) und unter Einstellungen › Allgemein, mit deiner Versionsnummer und der Antwort direkt darunter."
+                ],
+                [
+                  "⭐",
+                  "EasyShoot bewerten",
+                  "Einstellungen › Über zeigt eine kleine Bewertungskarte. Schließe sie mit ✕, dann rückt die Taste neben Website besuchen."
+                ]
+              ]
+            },
+            {
+              "h": "Verbessert",
+              "items": [
+                [
+                  "⏱️",
+                  "Häufigere Suche",
+                  "EasyShoot sucht alle paar Stunden statt einmal am Tag nach einer neuen Version und öffnet den Hinweis auf dem Bildschirm, den du gerade nutzt."
+                ]
+              ]
+            },
+            {
+              "h": "Behoben",
+              "items": [
+                [
+                  "🌍",
+                  "Update-Hinweis in jeder Region",
+                  "Der Hinweis auf eine neue Version erschien nicht, wenn die Region deines Mac vom Land deines App-Store-Kontos abwich. EasyShoot fragt jetzt auch dieses Land."
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
       "version": "1.0.1",
       "date": "2026-11-11",
       "notes": {

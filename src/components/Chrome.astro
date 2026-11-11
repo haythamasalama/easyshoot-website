@@ -1,5 +1,5 @@
 ---
-import { LANGS, LANG_NAMES, APP_STORE_URL, SUPPORT_EMAIL, TERMS_URL, X_URL, AUTHOR_URL, pagePath, privacyPath, supportPath, useT, type Lang } from "../i18n";
+import { LANGS, LANG_NAMES, APP_STORE_URL, SUPPORT_EMAIL, TERMS_URL, X_URL, AUTHOR_URL, pagePath, privacyPath, supportPath, accessibilityPath, useT, type Lang } from "../i18n";
 import { GUIDES, COMPARES, articlePath } from "../i18n/articles";
 import AppleLogo from "./AppleLogo.astro";
 import signature from "../assets/haythamasalama-signature.svg?raw";
@@ -83,6 +83,7 @@ const supportHref = supportPath(lang);
       <p set:html={t("foot.copy")} />
       <nav class="foot-legal" aria-label={t("foot.help")}>
         <a href={privacyHref}>{t("foot.privacy")}</a>
+        <a href={accessibilityPath(lang)}>{t("foot.accessibility")}</a>
         <a href={TERMS_URL} rel="noopener">{t("foot.terms")}</a>
         <span class="foot-icons">
           <a class="foot-icon" href={X_URL} rel="me noopener" aria-label="X" title="X"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.75 3h3.07l-6.7 7.66L22 21h-6.17l-4.83-6.32L5.47 21H2.4l7.17-8.2L2 3h6.33l4.37 5.77L17.75 3Zm-1.08 16.2h1.7L7.4 4.73H5.58L16.67 19.2Z"/></svg></a>
