@@ -86,7 +86,7 @@
       "steps": [
         {
           "name": "Bildschirm aufnehmen",
-          "text": "Drücke Wahltaste-Umschalttaste-Befehlstaste-4 und zieh über einen Bereich. Der Editor öffnet sich mit der Aufnahme."
+          "text": "Drücke Wahltaste-Umschalttaste-Befehlstaste-4 und zieh über einen Bereich. In der Bildschirmecke erscheint eine Miniatur: Doppelklicke darauf, um die Aufnahme im Editor zu öffnen. Soll der Editor ohne Miniatur sofort aufgehen, aktiviere „Editor nach der Aufnahme öffnen“ unter Einstellungen › Allgemein."
         },
         {
           "name": "Das Wichtige umrahmen",
@@ -501,7 +501,7 @@
         },
         {
           "h2": "Wann EasyShoot hilft",
-          "html": "<ul><li>Eine ganze Seite oder einen Chat in einem Bild aufnehmen.</li><li>Etwas mit nummerierten Schritten und Pfeilen erklären.</li><li>Private Details vor dem Teilen verbergen.</li><li>Screenshots mit einem Hintergrund fertig zum Posten machen.</li></ul>"
+          "html": "<ul><li>Etwas mit nummerierten Schritten und Pfeilen erklären.</li><li>Private Details vor dem Teilen verbergen.</li><li>Screenshots mit einem Hintergrund fertig zum Posten machen.</li><li>Einer ganzen Reihe von Screenshots mit einer gesicherten Vorlage dasselbe Aussehen geben.</li></ul>"
         }
       ],
       "faq": [
