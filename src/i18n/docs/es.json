@@ -156,7 +156,7 @@
         },
         {
           "h2": "Formato, calidad y tamaño",
-          "html": "<p>La pestaña Exportar fija el <strong>formato</strong> (PNG, JPEG, HEIC o TIFF), la calidad y el tamaño. Elige la <strong>ubicación de guardado</strong> en Ajustes › General y activa <strong>Cerrar el editor después de copiar</strong> para terminar en un paso.</p>"
+          "html": "<p>La pestaña Exportar fija el <strong>formato</strong> (PNG, JPEG, HEIC o TIFF), la calidad y el tamaño. Elige la <strong>ubicación de guardado</strong> en Ajustes › General y activa <strong>Cerrar el editor tras copiar</strong> para terminar en un paso.</p>"
         }
       ]
     },

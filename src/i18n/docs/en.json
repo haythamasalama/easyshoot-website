@@ -156,7 +156,7 @@
         },
         {
           "h2": "Format, quality and size",
-          "html": "<p>The Export tab sets the <strong>Format</strong> (PNG, JPEG, HEIC or TIFF), the quality and the size. Choose the <strong>Save location</strong> in Settings › General, and turn on <strong>Close the editor after copying</strong> to finish in one step.</p>"
+          "html": "<p>The Export tab sets the <strong>Format</strong> (PNG, JPEG, HEIC or TIFF), the quality and the size. Choose the <strong>Save location</strong> in Settings › General, and turn on <strong>Close editor after copying</strong> to finish in one step.</p>"
         }
       ]
     },
