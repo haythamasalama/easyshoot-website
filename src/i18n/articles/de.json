@@ -16,7 +16,7 @@
   "hubs": {
     "guides": {
       "title": "Anleitungen für Screenshots auf dem Mac | EasyShoot",
-      "description": "Kurze, praktische Anleitungen für Screenshots auf dem Mac: private Details verbergen, Pfeile, Formen und nummerierte Schritte, arabischer Text.",
+      "description": "Kurze, praktische Anleitungen für Screenshots auf dem Mac: Kurzbefehle, Zuschneiden, Hintergründe, Details verbergen, Pfeile, Schritte und Text auf Bildern.",
       "h1": "Screenshot-Anleitungen für den Mac",
       "intro": "Kurze Antworten auf die häufigsten Fragen zu Screenshots auf dem Mac, mit genau den Tasten, die du drücken musst."
     },
@@ -180,6 +180,356 @@
         {
           "q": "Wird Hebräisch unterstützt?",
           "a": "Ja. Die automatische Richtung erkennt Hebräisch genauso wie Arabisch."
+        }
+      ]
+    },
+    "take-screenshot-mac": {
+      "short": "Screenshot machen",
+      "title": "Screenshot auf dem Mac machen: alle Kurzbefehle | EasyShoot",
+      "description": "Alle Wege zum Screenshot auf dem Mac: ganzer Bildschirm, ein Bereich oder ein Fenster, direkt in die Zwischenablage, und wo die Dateien landen.",
+      "h1": "So machst du einen Screenshot auf dem Mac",
+      "intro": "Jeder Mac hat eingebaute Kurzbefehle für Screenshots: Umschalttaste-Befehlstaste-3, 4 und 5. Hier steht, was jeder tut, wie du einen Screenshot kopierst, statt ihn zu sichern, und wo die Dateien landen. Wenn du markieren willst, was du aufnimmst, legt EasyShoot eigene Kurzbefehle daneben.",
+      "steps": [
+        {
+          "name": "Ganzen Bildschirm aufnehmen",
+          "text": "Drücke Umschalttaste-Befehlstaste-3."
+        },
+        {
+          "name": "Einen Bereich aufnehmen",
+          "text": "Drücke Umschalttaste-Befehlstaste-4 und zieh über den Bereich. Halte beim Ziehen die Leertaste gedrückt, um ihn zu verschieben, oder drücke esc zum Abbrechen."
+        },
+        {
+          "name": "Ein Fenster aufnehmen",
+          "text": "Drücke Umschalttaste-Befehlstaste-4 und dann die Leertaste. Der Zeiger wird zur Kamera; klicke auf das Fenster."
+        },
+        {
+          "name": "Finden oder kopieren",
+          "text": "Der Screenshot wird als PNG-Datei auf dem Schreibtisch gesichert. Um ihn stattdessen zu kopieren, nimm Control dazu, zum Beispiel Control-Umschalttaste-Befehlstaste-4."
+        },
+        {
+          "name": "Bei Bedarf markieren",
+          "text": "Mit EasyShoot drückst du stattdessen Wahltaste-Umschalttaste-Befehlstaste-4 und klickst auf die Miniatur, um Rahmen, nummerierte Schritte, Pfeile oder Unschärfe hinzuzufügen."
+        }
+      ],
+      "sections": [
+        {
+          "h2": "Alle Screenshot-Kurzbefehle des Mac",
+          "html": "<table><thead><tr><th>Was du aufnimmst</th><th>Kurzbefehl</th></tr></thead><tbody><tr><td>Ganzer Bildschirm</td><td><kbd dir=\"ltr\">Umschalttaste-Befehlstaste-3</kbd></td></tr><tr><td>Ein Bereich</td><td><kbd dir=\"ltr\">Umschalttaste-Befehlstaste-4</kbd>, dann ziehen</td></tr><tr><td>Ein Fenster oder Menü</td><td><kbd dir=\"ltr\">Umschalttaste-Befehlstaste-4</kbd>, dann <kbd dir=\"ltr\">Leertaste</kbd></td></tr><tr><td>Die App „Bildschirmfoto“ mit Timer und Optionen</td><td><kbd dir=\"ltr\">Umschalttaste-Befehlstaste-5</kbd></td></tr><tr><td>Kopieren statt sichern</td><td><kbd dir=\"ltr\">Control</kbd> dazunehmen</td></tr></tbody></table><p>Um den Schatten eines Fensters wegzulassen, halte beim Klicken die Wahltaste gedrückt.</p>"
+        },
+        {
+          "h2": "Speicherort ändern",
+          "html": "<p>Drücke Umschalttaste-Befehlstaste-5, klicke auf <strong>Optionen</strong> und wähle unter <strong>Sichern unter</strong> einen Ordner. Im selben Menü stellst du einen Timer ein, zeigst den Mauszeiger und schaltest die schwebende Miniatur ein oder aus. Die Kurzbefehle selbst änderst du unter Systemeinstellungen › Tastatur › Tastaturkurzbefehle › Bildschirmfotos.</p>"
+        },
+        {
+          "h2": "Aufnehmen und markieren mit EasyShoot",
+          "html": "<p>Die Kurzbefehle von EasyShoot nehmen zu denen des Mac die Wahltaste dazu, sodass beide weiter funktionieren:</p><table><thead><tr><th>Was du aufnimmst</th><th>Kurzbefehl</th></tr></thead><tbody><tr><td>Ein Bereich</td><td><kbd dir=\"ltr\">Wahltaste-Umschalttaste-Befehlstaste-4</kbd></td></tr><tr><td>Ein Fenster</td><td><kbd dir=\"ltr\">Wahltaste-Umschalttaste-Befehlstaste-5</kbd></td></tr><tr><td>Ganzer Bildschirm</td><td><kbd dir=\"ltr\">Wahltaste-Umschalttaste-Befehlstaste-3</kbd></td></tr><tr><td>Ein kopiertes Bild</td><td><kbd dir=\"ltr\">Wahltaste-Umschalttaste-Befehlstaste-7</kbd></td></tr></tbody></table><p>Standardmäßig wird jede Aufnahme in die Zwischenablage kopiert und als Miniatur in der Bildschirmecke gezeigt. Zieh sie in eine andere App, sichere sie oder klicke darauf, um den Editor zu öffnen. Einstellungen › Allgemein › <strong>Nach der Aufnahme</strong> legt fest, was von selbst passiert.</p>"
+        },
+        {
+          "h2": "Was du nimmst",
+          "html": "<p>Für einen schnellen Screenshot, den du behältst oder so verschickst, reichen die Kurzbefehle des Mac. EasyShoot hilft, wenn der Screenshot etwas erklären oder verbergen soll: Lies, wie du <a href=\"/de/guides/annotate-screenshot-mac/\">Pfeile und nummerierte Schritte hinzufügst</a>, <a href=\"/de/guides/blur-screenshot-mac/\">private Details verbirgst</a> oder <a href=\"/de/guides/crop-screenshot-mac/\">einen Screenshot zuschneidest</a>.</p>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Wo landen Screenshots auf dem Mac?",
+          "a": "Standardmäßig auf dem Schreibtisch, als PNG-Dateien mit Datum und Uhrzeit im Namen. Einen anderen Ordner wählst du unter Umschalttaste-Befehlstaste-5 › Optionen › Sichern unter."
+        },
+        {
+          "q": "Wie kopiere ich einen Screenshot in die Zwischenablage?",
+          "a": "Halte zusätzlich Control gedrückt, zum Beispiel Control-Umschalttaste-Befehlstaste-4, und füge ihn ein, wo du willst. EasyShoot kopiert jede Aufnahme standardmäßig in die Zwischenablage; das änderst du in seinen Einstellungen › Allgemein."
+        },
+        {
+          "q": "Kann ich die Screenshot-Kurzbefehle ändern?",
+          "a": "Ja. Die des Mac findest du unter Systemeinstellungen › Tastatur › Tastaturkurzbefehle › Bildschirmfotos, die von EasyShoot in seinen Einstellungen › Kurzbefehle."
+        },
+        {
+          "q": "Warum kann ich manche Fenster nicht aufnehmen?",
+          "a": "Manche Apps, etwa die Apple TV App, erlauben keine Screenshots ihrer Fenster."
+        }
+      ]
+    },
+    "crop-screenshot-mac": {
+      "short": "Screenshot zuschneiden",
+      "title": "Screenshot auf dem Mac zuschneiden | EasyShoot",
+      "description": "Schneide einen Screenshot auf dem Mac mit Markierungen oder Vorschau zu, oder in EasyShoot mit Seitenverhältnissen wie 1:1 und 16:9 und genauer Breite.",
+      "h1": "So schneidest du einen Screenshot auf dem Mac zu",
+      "intro": "Am saubersten ist der Zuschnitt, den du gar nicht brauchst: Nimm nur den Teil auf, den du willst. Hast du den Screenshot schon, schneide ihn mit den Markierungswerkzeugen des Mac oder in Vorschau zu, oder in EasyShoot mit festen Seitenverhältnissen und genauer Größe.",
+      "steps": [
+        {
+          "name": "Screenshot öffnen",
+          "text": "Nimm mit Wahltaste-Umschalttaste-Befehlstaste-4 auf und klicke auf die Miniatur, oder öffne einen vorhandenen mit „Bild öffnen …“ im EasyShoot-Menü."
+        },
+        {
+          "name": "C drücken",
+          "text": "Ein Rahmen erscheint um das Bild, und die Zuschneideleiste erscheint unter der Werkzeugleiste."
+        },
+        {
+          "name": "Rahmen ziehen",
+          "text": "Zieh seine Kanten oder Ecken nach innen, bis nur der gewünschte Teil bleibt. Für eine feste Form wähle in der Zuschneideleiste 1:1, 4:3, 3:2, 16:10, 16:9 oder 9:16."
+        },
+        {
+          "name": "Anwenden",
+          "text": "Drücke den Zeilenschalter oder klicke auf „Anwenden“. Mit C kannst du den Zuschnitt später wieder ändern."
+        },
+        {
+          "name": "Größe festlegen und teilen",
+          "text": "Ändere im Tab „Export“ die Größe in Prozent oder auf eine genaue Breite. Dann drücke Umschalttaste-Befehlstaste-C zum Kopieren oder Befehlstaste-S zum Sichern."
+        }
+      ],
+      "sections": [
+        {
+          "h2": "Mit den Werkzeugen des Mac zuschneiden",
+          "html": "<ul><li><strong>Direkt nach dem Screenshot:</strong> Klicke auf die Miniatur in der Bildschirmecke, dann in den Markierungswerkzeugen auf die Taste zum Beschneiden, und zieh die Ecken.</li><li><strong>In Vorschau:</strong> Öffne das Bild, blende die Markierungsleiste ein, wähle den Teil aus, den du behalten willst, und klicke auf die Taste zum Beschneiden.</li></ul><p>Beides reicht für einen schnellen Zuschnitt.</p>"
+        },
+        {
+          "h2": "Schon beim Aufnehmen zuschneiden",
+          "html": "<p>Wahltaste-Umschalttaste-Befehlstaste-4 nimmt nur den Bereich auf, über den du ziehst, und Wahltaste-Umschalttaste-Befehlstaste-5 nur ein Fenster ohne den Rest des Bildschirms. Oft sparst du dir damit den Zuschnitt.</p>"
+        },
+        {
+          "h2": "Zuschneiden, Größe ändern oder beides",
+          "html": "<p>Der Zuschnitt bestimmt, welchen Teil des Bildes du behältst. „Größe ändern“ im Tab „Export“ bestimmt, wie viele Pixel das exportierte Bild hat. Mit eingeschaltetem Hintergrund legt das Seitenverhältnis in der Werkzeugleiste die Form des ganzen Bildes fest; lies, <a href=\"/de/guides/screenshot-background-mac/\">wie du einem Screenshot einen Hintergrund gibst</a>.</p>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Wie schneide ich einen Screenshot quadratisch zu?",
+          "a": "Drücke C, wähle 1:1 in der Zuschneideleiste, setz den Rahmen an die gewünschte Stelle und drücke den Zeilenschalter."
+        },
+        {
+          "q": "Kann ich einen Zuschnitt widerrufen?",
+          "a": "Ja. Drücke Befehlstaste-Z, oder drücke erneut C und klicke auf „Zurücksetzen“, um das ganze Bild zurückzuholen."
+        },
+        {
+          "q": "Verschlechtert Zuschneiden die Qualität?",
+          "a": "Nein. Der Teil, den du behältst, bleibt in voller Auflösung. Nur „Größe ändern“ im Tab „Export“ ändert die Pixelgröße."
+        }
+      ]
+    },
+    "screenshot-background-mac": {
+      "short": "Hintergrund hinzufügen",
+      "title": "Hintergrund für Screenshots auf dem Mac | EasyShoot",
+      "description": "Setz einen Screenshot auf ein Schreibtischbild, einen Verlauf oder eine Farbe, mit Abstand, abgerundeten Ecken und Schatten, fertig zum Posten.",
+      "h1": "So gibst du einem Screenshot auf dem Mac einen Hintergrund",
+      "intro": "Ein Screenshot mit etwas Platz drumherum, abgerundeten Ecken und weichem Schatten ist bereit für einen Post, eine Folie oder eine README. EasyShoot macht das im Tab „Hintergrund“ und kann den Look für alle folgenden Screenshots behalten.",
+      "steps": [
+        {
+          "name": "Fenster oder Bereich aufnehmen",
+          "text": "Drücke Wahltaste-Umschalttaste-Befehlstaste-5 und klicke auf ein Fenster, oder Wahltaste-Umschalttaste-Befehlstaste-4 und zieh. Klicke auf die Miniatur, um den Editor zu öffnen."
+        },
+        {
+          "name": "Hintergrund einschalten",
+          "text": "Schalte im Tab „Hintergrund“ die Option „Hintergrund anzeigen“ ein."
+        },
+        {
+          "name": "Wählen, was dahinter kommt",
+          "text": "Nimm ein Schreibtischbild (die deines Macs, oder die Wellen und Verläufe von EasyShoot), einen Verlauf oder eine Farbe. Zeichne das Schreibtischbild weich, damit der Screenshot im Vordergrund bleibt."
+        },
+        {
+          "name": "Abstand, Ecken und Schatten einstellen",
+          "text": "Bewege die Regler „Abstand“, „Abgerundete Ecken“ und „Schatten“, bis es passt. „Zurücksetzen“ stellt einen Regler zurück."
+        },
+        {
+          "name": "Form wählen",
+          "text": "Wähle in der Werkzeugleiste ein Seitenverhältnis, etwa 1:1 für einen quadratischen Post oder 16:9 für eine Folie."
+        },
+        {
+          "name": "Kopieren oder sichern",
+          "text": "Drücke Umschalttaste-Befehlstaste-C zum Kopieren oder Befehlstaste-S zum Sichern."
+        }
+      ],
+      "sections": [
+        {
+          "h2": "Seitenverhältnisse für jeden Ort",
+          "html": "<p>Das Menü „Seitenverhältnis“ sitzt in der Werkzeugleiste neben Zuschneiden und wirkt, solange der Hintergrund an ist.</p><ul><li><strong>Auto:</strong> Der Abstand liegt gleichmäßig um den Screenshot.</li><li><strong>1:1, 4:3, 3:2, 16:10, 16:9 und 9:16:</strong> Der Hintergrund wächst, bis das ganze Bild diese Form hat, und die <strong>Ausrichtung</strong> legt fest, wo der Screenshot darin sitzt.</li></ul>"
+        },
+        {
+          "h2": "Jedes Mal derselbe Look",
+          "html": "<p>Öffne <strong>Vorlagen</strong> in der Werkzeugleiste des Editors und wähle <strong>Aktuellen Stil als Vorlage sichern …</strong>. In Einstellungen › Vorlagen wählst du <strong>Als Standard</strong>, damit jeder neue Screenshot damit beginnt. Dort findest du auch 12 fertige Looks zum Hinzufügen.</p>"
+        },
+        {
+          "h2": "Fensteraufnahmen und Schatten",
+          "html": "<p>Eine Fensteraufnahme bringt den Schatten des Fensters mit. Um nur den Schatten des Hintergrunds zu nutzen, schalte <strong>Fensterschatten einschließen</strong> unter Einstellungen › Allgemein aus; lies, <a href=\"/de/guides/screenshot-without-shadow-mac/\">wie du ein Fenster ohne Schatten aufnimmst</a>.</p>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Gibt es ein kostenloses Tool, um Screenshots auf dem Mac aufzuhübschen?",
+          "a": "EasyShoot ist kostenlos. Sein Tab „Hintergrund“ setzt einen Screenshot auf ein Schreibtischbild, einen Verlauf oder eine Farbe, mit Abstand, abgerundeten Ecken und Schatten, und nichts wird hochgeladen."
+        },
+        {
+          "q": "Kann ich ein eigenes Bild als Hintergrund nutzen?",
+          "a": "Nein. Du kannst eines der Schreibtischbilder deines Macs, die Wellen und Verläufe von EasyShoot, einen Verlauf oder eine Farbe wählen."
+        },
+        {
+          "q": "Macht der Hintergrund das Bild größer?",
+          "a": "Ja. Abstand und Seitenverhältnis fügen Platz um den Screenshot hinzu. Für eine genaue Größe stellst du die Breite im Tab „Export“ ein."
+        }
+      ]
+    },
+    "add-text-to-image-mac": {
+      "short": "Text in ein Bild einfügen",
+      "title": "Text in ein Bild einfügen auf dem Mac | EasyShoot",
+      "description": "Füge einem Foto oder Bild auf dem Mac eine Beschriftung, ein Label oder eine Notiz hinzu, in jeder Schrift und gut lesbar. Auch auf Arabisch und Hebräisch.",
+      "h1": "So fügst du auf dem Mac Text in ein Bild ein",
+      "intro": "EasyShoot ist nicht nur für Screenshots. Öffne ein beliebiges Bild auf deinem Mac oder eines, das du kopiert hast, und füge eine Beschriftung, ein Label oder eine Notiz in jeder Schrift hinzu. Die geöffnete Datei bleibt, wie sie war.",
+      "steps": [
+        {
+          "name": "Bild öffnen",
+          "text": "Klicke in der Menüleiste auf das EasyShoot-Symbol, wähle „Bild öffnen …“ und such ein Foto oder ein anderes Bild aus. Für ein kopiertes Bild drückst du Wahltaste-Umschalttaste-Befehlstaste-7."
+        },
+        {
+          "name": "Text wählen",
+          "text": "Drücke T, klicke dorthin, wo der Text hin soll, und tippe."
+        },
+        {
+          "name": "Schrift und Größe wählen",
+          "text": "Wähle im Tab „Stil“ eine Schrift auf deinem Mac oder eine Google-Schrift und stell die Größe ein. Du kannst auch an der Ecke des Textes ziehen."
+        },
+        {
+          "name": "Gut lesbar machen",
+          "text": "Stell auf einem unruhigen Foto die Darstellung auf Gefüllt, Sanft oder Dunkel, damit der Text auf einem Kasten steht, oder auf Kontur für eine Kontur um die Buchstaben."
+        },
+        {
+          "name": "Sichern oder kopieren",
+          "text": "Drücke Befehlstaste-S, um eine neue Datei zu sichern, oder Umschalttaste-Befehlstaste-C zum Kopieren. PNG, JPEG, HEIC oder TIFF wählst du im Tab „Export“."
+        }
+      ],
+      "sections": [
+        {
+          "h2": "Sieben Darstellungen für Text",
+          "html": "<ul><li><strong>Text:</strong> nur die Buchstaben, in der Farbe deiner Wahl.</li><li><strong>Gefüllt, Sanft und Dunkel:</strong> Der Text steht auf einem Kasten, mit Ecken von eckig bis rund.</li><li><strong>Umrahmt:</strong> ein Rahmen um den Text, ohne Füllung.</li><li><strong>Kontur:</strong> eine Kontur um die Buchstaben.</li><li><strong>Eigene:</strong> deine eigenen Farben für den Kasten.</li></ul>"
+        },
+        {
+          "h2": "Jede Schrift, auch Google Fonts",
+          "html": "<p>Text kann jede Schrift nutzen, die auf deinem Mac installiert ist. Wählst du eine Google-Schrift, lädt EasyShoot sie sofort; dieser Download und die Suche nach Updates sind die einzigen Momente, in denen die App online geht.</p>"
+        },
+        {
+          "h2": "Arabisch und Hebräisch",
+          "html": "<p>Mit der Richtung „Auto“ werden Arabisch und Hebräisch von rechts nach links geschrieben, mit richtig verbundenen Buchstaben. Mehr dazu, <a href=\"/de/guides/arabic-text-screenshot-mac/\">wie du Arabisch auf einen Screenshot schreibst</a>.</p>"
+        },
+        {
+          "h2": "Mehr als Text",
+          "html": "<p>Derselbe Editor fügt Pfeile, Rahmen und nummerierte Schritte hinzu, verpixelt Gesichter oder Namen (B) und schneidet das Bild zu (C).</p>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Ändert das mein Originalfoto?",
+          "a": "Nein. Befehlstaste-S sichert eine neue Datei in deinem Speicherordner, und mit „Sichern unter …“ wählst du Name und Ort. Das geöffnete Bild bleibt unverändert."
+        },
+        {
+          "q": "Kann ich iPhone-Fotos öffnen?",
+          "a": "Ja. EasyShoot öffnet die Bilddateien, die dein Mac lesen kann, auch HEIC-Fotos vom iPhone."
+        },
+        {
+          "q": "Kann ich den Text später noch ändern?",
+          "a": "Ja. Text und alle anderen Markierungen bleiben bearbeitbar, bis du das Bild exportierst."
+        },
+        {
+          "q": "Ist das kostenlos?",
+          "a": "Ja. EasyShoot ist kostenlos und braucht kein Konto."
+        }
+      ]
+    },
+    "screenshot-without-shadow-mac": {
+      "short": "Fenster ohne Schatten",
+      "title": "Fenster-Screenshot ohne Schatten auf dem Mac | EasyShoot",
+      "description": "Fenster-Screenshots auf dem Mac haben einen Schatten und breite transparente Ränder. Lass ihn mit einer Taste weg oder schalte ihn in EasyShoot aus.",
+      "h1": "So nimmst du auf dem Mac ein Fenster ohne Schatten auf",
+      "intro": "Wenn du auf dem Mac ein Fenster aufnimmst, enthält das Bild den Schatten des Fensters und damit breite transparente Ränder. Du kannst den Schatten jedes Mal mit einer Taste weglassen oder ihn in EasyShoot dauerhaft ausschalten.",
+      "steps": [
+        {
+          "name": "Fensteraufnahme starten",
+          "text": "Drücke Umschalttaste-Befehlstaste-4 und dann die Leertaste. Der Zeiger wird zur Kamera."
+        },
+        {
+          "name": "Wahltaste halten und klicken",
+          "text": "Halte die Wahltaste gedrückt, während du auf das Fenster klickst. Der Screenshot endet am Rand des Fensters."
+        },
+        {
+          "name": "Oder in EasyShoot ausschalten",
+          "text": "Öffne in EasyShoot Einstellungen › Allgemein und schalte „Fensterschatten einschließen“ aus."
+        },
+        {
+          "name": "Fenster aufnehmen",
+          "text": "Drücke Wahltaste-Umschalttaste-Befehlstaste-5 und klicke auf das Fenster. Jede Fensteraufnahme kommt jetzt ohne Schatten."
+        }
+      ],
+      "sections": [
+        {
+          "h2": "Warum ohne Schatten",
+          "html": "<p>Der Schatten liegt auf transparenten Pixeln um das Fenster. Eingefügt in ein Dokument, einen Chat oder eine Folie wirkt er wie ein ungleichmäßiger Rand, und er macht das Bild größer als das Fenster selbst.</p>"
+        },
+        {
+          "h2": "Ein Schatten nach deiner Wahl",
+          "html": "<p>Schalte den Fensterschatten aus und nutze den Tab „Hintergrund“ für Abstand, einen Hintergrund und einen Schatten, so weich oder kräftig du willst. Lies, <a href=\"/de/guides/screenshot-background-mac/\">wie du einem Screenshot einen Hintergrund gibst</a>.</p>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Warum haben meine Fenster-Screenshots einen Schatten?",
+          "a": "macOS nimmt bei Fensteraufnahmen den Schatten des Fensters mit auf, auf transparentem Hintergrund, außer du hältst beim Klicken die Wahltaste gedrückt."
+        },
+        {
+          "q": "Ändert die Einstellung in EasyShoot die Kurzbefehle des Mac?",
+          "a": "Nein. Sie ändert nur Fensteraufnahmen mit EasyShoot. Bei Umschalttaste-Befehlstaste-4 und Leertaste hältst du die Wahltaste gedrückt."
+        },
+        {
+          "q": "Ändert sie Bereichs- und Vollbildaufnahmen?",
+          "a": "Nein. Die nehmen den Bildschirm auf, wie er aussieht; die Einstellung gilt nur, wenn du ein Fenster aufnimmst."
+        }
+      ]
+    },
+    "screenshot-pdf-page-mac": {
+      "short": "PDF-Seite als Screenshot",
+      "title": "Screenshot einer PDF-Seite markieren auf dem Mac | EasyShoot",
+      "description": "Teile eine Seite oder einen Teil eines PDFs als Bild auf dem Mac, mit Pfeilen, nummerierten Schritten und verpixelten Details, und wann Vorschau besser passt.",
+      "h1": "So nimmst du eine PDF-Seite auf dem Mac auf und markierst sie",
+      "intro": "Manchmal willst du nicht das ganze PDF schicken, sondern nur eine Tabelle oder einen Absatz mit einem Pfeil darauf. Nimm diesen Teil als Bild auf, markiere ihn und füge ihn dort ein, wo andere ihn sehen. Um das PDF selbst zu bearbeiten, ist Vorschau das bessere Werkzeug.",
+      "steps": [
+        {
+          "name": "PDF öffnen und vergrößern",
+          "text": "Öffne es in Vorschau oder im Browser und vergrößere, bis der Text scharf ist. Die Aufnahme ist so scharf wie das, was auf dem Bildschirm steht."
+        },
+        {
+          "name": "Den gewünschten Teil aufnehmen",
+          "text": "Drücke Wahltaste-Umschalttaste-Befehlstaste-4 und zieh über die Seite, die Tabelle oder den Absatz. Klicke auf die Miniatur, um den Editor zu öffnen."
+        },
+        {
+          "name": "Markieren",
+          "text": "Drücke R, um eine Zeile einzurahmen, N für nummerierte Schritte, A für einen Pfeil oder B, um einen Namen, eine Adresse oder eine Unterschrift zu verpixeln."
+        },
+        {
+          "name": "Bild teilen",
+          "text": "Drücke Umschalttaste-Befehlstaste-C und füge es in einen Chat, eine E-Mail oder ein Dokument ein, oder drücke Befehlstaste-S zum Sichern."
+        }
+      ],
+      "sections": [
+        {
+          "h2": "Wann Vorschau besser passt",
+          "html": "<p>EasyShoot öffnet Bilder, keine PDF-Dateien, und exportiert ein Bild. Um dem PDF selbst Notizen, Hervorhebungen oder eine Unterschrift hinzuzufügen oder Text zu schwärzen und ein PDF zu behalten, nutze die Markierungsleiste in Vorschau.</p>"
+        },
+        {
+          "h2": "Private Details zuerst verbergen",
+          "html": "<p>Rechnungen, Verträge und Kontoauszüge enthalten Namen, Adressen und Kontonummern. Drücke B und zieh darüber, bevor du teilst; das exportierte Bild enthält nur die verborgene Version. Mehr dazu, <a href=\"/de/guides/blur-screenshot-mac/\">wie du einen Teil eines Screenshots unkenntlich machst</a>.</p>"
+        },
+        {
+          "h2": "Auf eine Sache zeigen",
+          "html": "<p>Auf einer PDF-Seite steht viel. Rahme die Zeile ein, auf die es ankommt, nummeriere die auszufüllenden Felder und schneide den Rest mit C weg, damit andere nur sehen, was du meinst.</p>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Kann EasyShoot eine PDF-Datei öffnen?",
+          "a": "Nein. Es öffnet Bilddateien und kopierte Bilder. Nimm das PDF stattdessen vom Bildschirm auf."
+        },
+        {
+          "q": "Wie bleibt der Text scharf?",
+          "a": "Vergrößere das PDF, bevor du es aufnimmst. Ein Screenshot hält fest, was auf dem Bildschirm steht: Je größer der Text dort ist, desto schärfer ist er im Bild."
+        },
+        {
+          "q": "Kann ich einen Teil eines PDFs verpixeln?",
+          "a": "In einer Aufnahme ja: Drücke B und zieh darüber. Um Text aus der PDF-Datei selbst zu entfernen, nutze das Schwärzen in Vorschau."
         }
       ]
     },

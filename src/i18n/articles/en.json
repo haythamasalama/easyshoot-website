@@ -16,7 +16,7 @@
   "hubs": {
     "guides": {
       "title": "Mac screenshot guides | EasyShoot",
-      "description": "Short, practical guides for screenshots on Mac: blurring private details, arrows, shapes and numbered steps, and Arabic text.",
+      "description": "Short, practical guides for screenshots on Mac: shortcuts, cropping, backgrounds, blurring private details, arrows and steps, and text on images.",
       "h1": "Screenshot guides for Mac",
       "intro": "Short answers to the things people ask most about screenshots on a Mac, with the exact keys to press."
     },
@@ -180,6 +180,356 @@
         {
           "q": "Does it support Hebrew?",
           "a": "Yes. Auto direction detects Hebrew as well as Arabic."
+        }
+      ]
+    },
+    "take-screenshot-mac": {
+      "short": "Take a screenshot",
+      "title": "How to take a screenshot on a Mac: every shortcut | EasyShoot",
+      "description": "Every way to take a screenshot on a Mac: the whole screen, part of it or one window, straight to the clipboard, and where the files go.",
+      "h1": "How to take a screenshot on a Mac",
+      "intro": "Every Mac has screenshot shortcuts built in: Shift-Command-3, 4 and 5. Here is what each one does, how to copy a screenshot instead of saving it, and where the files go. If you want to mark up what you capture, EasyShoot adds its own shortcuts beside them.",
+      "steps": [
+        {
+          "name": "Capture the whole screen",
+          "text": "Press Shift-Command-3."
+        },
+        {
+          "name": "Capture part of the screen",
+          "text": "Press Shift-Command-4 and drag over the area. Hold Space while you drag to move it, or press Esc to cancel."
+        },
+        {
+          "name": "Capture a window",
+          "text": "Press Shift-Command-4, then Space. The pointer turns into a camera; click the window."
+        },
+        {
+          "name": "Find or copy it",
+          "text": "The screenshot is saved to your desktop as a PNG file. To copy it instead, add Control, for example Control-Shift-Command-4."
+        },
+        {
+          "name": "Mark it up, if you need to",
+          "text": "With EasyShoot, press Option-Shift-Command-4 instead, then click the thumbnail to add boxes, numbered steps, arrows or blur."
+        }
+      ],
+      "sections": [
+        {
+          "h2": "Every Mac screenshot shortcut",
+          "html": "<table><thead><tr><th>What you capture</th><th>Shortcut</th></tr></thead><tbody><tr><td>The whole screen</td><td><kbd dir=\"ltr\">Shift-Command-3</kbd></td></tr><tr><td>Part of the screen</td><td><kbd dir=\"ltr\">Shift-Command-4</kbd>, then drag</td></tr><tr><td>A window or a menu</td><td><kbd dir=\"ltr\">Shift-Command-4</kbd>, then <kbd dir=\"ltr\">Space</kbd></td></tr><tr><td>The Screenshot app, with a timer and options</td><td><kbd dir=\"ltr\">Shift-Command-5</kbd></td></tr><tr><td>Copy instead of save</td><td>Add <kbd dir=\"ltr\">Control</kbd> to any of these</td></tr></tbody></table><p>To leave a window's shadow out, hold Option while you click the window.</p>"
+        },
+        {
+          "h2": "Change where screenshots are saved",
+          "html": "<p>Press Shift-Command-5, click <strong>Options</strong> and pick a folder under <strong>Save to</strong>. The same menu sets a timer, shows the mouse pointer and turns the floating thumbnail on or off. To change the shortcuts themselves, open System Settings › Keyboard › Keyboard Shortcuts › Screenshots.</p>"
+        },
+        {
+          "h2": "Capture and mark up with EasyShoot",
+          "html": "<p>EasyShoot's shortcuts add Option to the Mac's own, so both sets keep working:</p><table><thead><tr><th>What you capture</th><th>Shortcut</th></tr></thead><tbody><tr><td>Part of the screen</td><td><kbd dir=\"ltr\">Option-Shift-Command-4</kbd></td></tr><tr><td>A window</td><td><kbd dir=\"ltr\">Option-Shift-Command-5</kbd></td></tr><tr><td>The whole screen</td><td><kbd dir=\"ltr\">Option-Shift-Command-3</kbd></td></tr><tr><td>An image you copied</td><td><kbd dir=\"ltr\">Option-Shift-Command-7</kbd></td></tr></tbody></table><p>By default, each capture is copied to the clipboard and shown as a thumbnail in the corner of the screen. Drag it into another app, save it, or click it to open the editor. Settings › General › <strong>After capture</strong> decides what happens on its own.</p>"
+        },
+        {
+          "h2": "Which one to use",
+          "html": "<p>For a quick capture you keep or send as it is, the Mac's shortcuts are enough. EasyShoot helps when the screenshot has to explain or hide something: see how to <a href=\"/guides/annotate-screenshot-mac/\">add arrows and numbered steps</a>, <a href=\"/guides/blur-screenshot-mac/\">blur private details</a> or <a href=\"/guides/crop-screenshot-mac/\">crop a screenshot</a>.</p>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Where do screenshots go on a Mac?",
+          "a": "To the desktop by default, as PNG files whose names start with Screenshot and include the date and time. Choose another folder in Shift-Command-5 › Options › Save to."
+        },
+        {
+          "q": "How do I copy a screenshot to the clipboard on a Mac?",
+          "a": "Hold Control as well, for example Control-Shift-Command-4, then paste it anywhere. EasyShoot copies every capture to the clipboard by default; change that in its Settings › General."
+        },
+        {
+          "q": "Can I change the screenshot shortcuts?",
+          "a": "Yes. The Mac's are in System Settings › Keyboard › Keyboard Shortcuts › Screenshots, and EasyShoot's are in its Settings › Shortcuts."
+        },
+        {
+          "q": "Why can't I capture some windows?",
+          "a": "Some apps, such as the Apple TV app, don't allow screenshots of their windows."
+        }
+      ]
+    },
+    "crop-screenshot-mac": {
+      "short": "Crop a screenshot",
+      "title": "How to crop a screenshot on a Mac | EasyShoot",
+      "description": "Crop a screenshot on your Mac with Markup or Preview, or in EasyShoot with ratios like 1:1 and 16:9 and an exact width for the exported image.",
+      "h1": "How to crop a screenshot on a Mac",
+      "intro": "The neatest crop is the one you never need: capture just the part you want. When you already have a screenshot, crop it in the Mac's Markup or Preview, or in EasyShoot with fixed ratios and an exact size.",
+      "steps": [
+        {
+          "name": "Open the screenshot",
+          "text": "Capture with Option-Shift-Command-4 and click the thumbnail, or open one you already have with Open Image… in the EasyShoot menu."
+        },
+        {
+          "name": "Press C",
+          "text": "A frame appears around the picture, and the crop bar appears under the toolbar."
+        },
+        {
+          "name": "Drag the frame",
+          "text": "Drag its edges or corners in to the part you want to keep. For a fixed shape, pick 1:1, 4:3, 3:2, 16:10, 16:9 or 9:16 in the crop bar."
+        },
+        {
+          "name": "Apply",
+          "text": "Press Return or click Apply. You can press C again later to change it."
+        },
+        {
+          "name": "Set the size and share",
+          "text": "In the Export tab, resize by percent or to an exact width. Then press Shift-Command-C to copy or Command-S to save."
+        }
+      ],
+      "sections": [
+        {
+          "h2": "Crop with the Mac's own tools",
+          "html": "<ul><li><strong>Right after a screenshot:</strong> click the thumbnail in the corner of the screen, click the Crop button in Markup and drag the corners.</li><li><strong>In Preview:</strong> open the image, show the Markup toolbar, select the part to keep and click Crop.</li></ul><p>Both are fine for a quick trim.</p>"
+        },
+        {
+          "h2": "Crop before you capture",
+          "html": "<p>Option-Shift-Command-4 captures only the area you drag over, and Option-Shift-Command-5 captures one window without the rest of the screen. Either one often saves you the crop.</p>"
+        },
+        {
+          "h2": "Crop, resize or both",
+          "html": "<p>Crop decides which part of the picture you keep. Resize, in the Export tab, decides how many pixels the exported image has. With a background on, the aspect ratio in the toolbar sets the shape of the whole image; see <a href=\"/guides/screenshot-background-mac/\">how to add a background to a screenshot</a>.</p>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "How do I crop a screenshot to a square?",
+          "a": "Press C, choose 1:1 in the crop bar, move the frame where you want it and press Return."
+        },
+        {
+          "q": "Can I undo a crop?",
+          "a": "Yes. Press Command-Z, or press C again and click Reset to bring back the whole picture."
+        },
+        {
+          "q": "Does cropping lower the quality?",
+          "a": "No. The part you keep stays at full resolution. Only Resize in the Export tab changes the pixel size."
+        }
+      ]
+    },
+    "screenshot-background-mac": {
+      "short": "Add a background",
+      "title": "How to add a background to a screenshot on Mac | EasyShoot",
+      "description": "Put a screenshot on a wallpaper, a gradient or a colour, with padding, rounded corners and a shadow, ready to post. A guide for Mac with EasyShoot.",
+      "h1": "How to add a background to a screenshot on a Mac",
+      "intro": "A screenshot with some space around it, rounded corners and a soft shadow looks ready for a post, a slide or a README. EasyShoot does this in its Background tab, and can keep the look for every screenshot after.",
+      "steps": [
+        {
+          "name": "Capture a window or an area",
+          "text": "Press Option-Shift-Command-5 and click a window, or Option-Shift-Command-4 and drag. Click the thumbnail to open the editor."
+        },
+        {
+          "name": "Turn on the background",
+          "text": "In the Background tab, turn on Show background."
+        },
+        {
+          "name": "Choose what goes behind",
+          "text": "Pick a wallpaper (your Mac's own, or EasyShoot's Waves and Gradients), a gradient or a single colour. Blur a wallpaper so the screenshot stays in front."
+        },
+        {
+          "name": "Set padding, corners and shadow",
+          "text": "Move the Padding, Rounded corners and Shadow sliders until it looks right. Reset puts a slider back."
+        },
+        {
+          "name": "Choose a shape",
+          "text": "Pick an aspect ratio in the toolbar, such as 1:1 for a square post or 16:9 for a slide."
+        },
+        {
+          "name": "Copy or save",
+          "text": "Press Shift-Command-C to copy, or Command-S to save."
+        }
+      ],
+      "sections": [
+        {
+          "h2": "Aspect ratios for where you post",
+          "html": "<p>The aspect ratio menu sits in the toolbar beside Crop, and works while the background is on.</p><ul><li><strong>Auto:</strong> the padding wraps evenly around the screenshot.</li><li><strong>1:1, 4:3, 3:2, 16:10, 16:9 and 9:16:</strong> the background grows so the whole image has that shape, and <strong>Alignment</strong> decides where the screenshot sits in it.</li></ul>"
+        },
+        {
+          "h2": "The same look every time",
+          "html": "<p>Open <strong>Presets</strong> in the editor's toolbar and choose <strong>Save Current Style as Preset…</strong>. In Settings › Presets, <strong>Make Default</strong> starts every new screenshot with it. You'll also find 12 starter looks there to add.</p>"
+        },
+        {
+          "h2": "Window captures and shadows",
+          "html": "<p>A window capture brings the window's own shadow. To use only the background's shadow, turn off <strong>Include window shadow</strong> in Settings › General; see <a href=\"/guides/screenshot-without-shadow-mac/\">how to screenshot a window without the shadow</a>.</p>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is there a free screenshot beautifier for Mac?",
+          "a": "EasyShoot is free. Its Background tab puts a screenshot on a wallpaper, a gradient or a colour, with padding, rounded corners and a shadow, and nothing is uploaded."
+        },
+        {
+          "q": "Can I use my own picture as the background?",
+          "a": "No. You can pick one of your Mac's wallpapers, EasyShoot's Waves and Gradients, a gradient or a single colour."
+        },
+        {
+          "q": "Does the background make the image bigger?",
+          "a": "Yes. Padding and the aspect ratio add space around the screenshot. To post at an exact size, set the width in the Export tab."
+        }
+      ]
+    },
+    "add-text-to-image-mac": {
+      "short": "Add text to a picture",
+      "title": "How to add text to a picture on a Mac | EasyShoot",
+      "description": "Add a caption, a label or a note to any photo or image on your Mac, in any font, on a box that keeps it readable. Arabic and Hebrew work too.",
+      "h1": "How to add text to a picture on a Mac",
+      "intro": "EasyShoot isn't only for screenshots. Open any picture on your Mac, or one you've copied, and add a caption, a label or a note in any font. The file you opened stays as it was.",
+      "steps": [
+        {
+          "name": "Open the picture",
+          "text": "Click the EasyShoot icon in the menu bar, choose Open Image… and pick a photo or any other image. For a picture you've copied, press Option-Shift-Command-7."
+        },
+        {
+          "name": "Choose Text",
+          "text": "Press T, click where the text should go and type."
+        },
+        {
+          "name": "Pick a font and size",
+          "text": "In the Style tab, choose any font on your Mac or a Google font, and set the Size. You can also drag the text's corner."
+        },
+        {
+          "name": "Make it stand out",
+          "text": "On a busy photo, set Look to Filled, Soft or Dark to put the text on a box, or Outlined to draw an outline around the letters."
+        },
+        {
+          "name": "Save or copy",
+          "text": "Press Command-S to save a new file, or Shift-Command-C to copy it. Pick PNG, JPEG, HEIC or TIFF in the Export tab."
+        }
+      ],
+      "sections": [
+        {
+          "h2": "Seven looks for text",
+          "html": "<ul><li><strong>Text:</strong> just the letters, in the colour you pick.</li><li><strong>Filled, Soft and Dark:</strong> the text sits on a box, with corners from sharp to round.</li><li><strong>Framed:</strong> a frame around the text, with no fill.</li><li><strong>Outlined:</strong> an outline around the letters.</li><li><strong>Custom:</strong> your own colours for the box.</li></ul>"
+        },
+        {
+          "h2": "Any font, including Google Fonts",
+          "html": "<p>Text can use any font installed on your Mac. Pick a Google font and EasyShoot downloads it the moment you choose it; that download and the check for updates are the only times the app goes online.</p>"
+        },
+        {
+          "h2": "Arabic and Hebrew",
+          "html": "<p>With Direction set to Auto, Arabic and Hebrew are written right to left, with the letters joined correctly. More in <a href=\"/guides/arabic-text-screenshot-mac/\">how to write Arabic on a screenshot</a>.</p>"
+        },
+        {
+          "h2": "More than text",
+          "html": "<p>The same editor adds arrows, boxes and numbered steps, hides faces or names with Pixelate (B) and crops the picture (C).</p>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Does this change my original photo?",
+          "a": "No. Command-S saves a new file in your save folder, and Save As… lets you choose a name and a place. The picture you opened isn't changed."
+        },
+        {
+          "q": "Can I open iPhone photos?",
+          "a": "Yes. EasyShoot opens the image files your Mac can read, including HEIC photos from an iPhone."
+        },
+        {
+          "q": "Can I change the text after adding it?",
+          "a": "Yes. Text and every other mark stay editable until you export the image."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Yes. EasyShoot is free and needs no account."
+        }
+      ]
+    },
+    "screenshot-without-shadow-mac": {
+      "short": "Window without shadow",
+      "title": "Screenshot a window without its shadow on Mac | EasyShoot",
+      "description": "Window screenshots on a Mac come with a shadow and wide transparent edges. Leave it out with one key, or turn it off for good in EasyShoot.",
+      "h1": "How to screenshot a window without the shadow on a Mac",
+      "intro": "When you capture a window on a Mac, the picture includes the window's shadow, which adds wide transparent edges around it. You can leave the shadow out each time with one key, or turn it off for good in EasyShoot.",
+      "steps": [
+        {
+          "name": "Start a window capture",
+          "text": "Press Shift-Command-4, then Space. The pointer turns into a camera."
+        },
+        {
+          "name": "Hold Option and click",
+          "text": "Hold Option while you click the window. The screenshot ends at the window's edge."
+        },
+        {
+          "name": "Or turn it off in EasyShoot",
+          "text": "Open EasyShoot's Settings › General and turn off Include window shadow."
+        },
+        {
+          "name": "Capture the window",
+          "text": "Press Option-Shift-Command-5 and click the window. Every window capture now comes without the shadow."
+        }
+      ],
+      "sections": [
+        {
+          "h2": "Why leave the shadow out",
+          "html": "<p>The shadow is drawn on transparent pixels around the window. Pasted into a document, a chat or a slide, it can look like an uneven margin, and it makes the image larger than the window itself.</p>"
+        },
+        {
+          "h2": "A shadow you choose instead",
+          "html": "<p>Turn the window shadow off, then use the Background tab to add padding, a background and a shadow as soft or strong as you like. See <a href=\"/guides/screenshot-background-mac/\">how to add a background to a screenshot</a>.</p>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Why do my window screenshots have a shadow?",
+          "a": "macOS includes the window's shadow in window captures, on a transparent background, unless you hold Option while you click."
+        },
+        {
+          "q": "Does the EasyShoot setting change the Mac's own shortcuts?",
+          "a": "No. It only changes window captures you take with EasyShoot. For Shift-Command-4 and Space, hold Option."
+        },
+        {
+          "q": "Does it change area and full-screen captures?",
+          "a": "No. Those capture the screen as it looks; the setting only applies when you capture a window."
+        }
+      ]
+    },
+    "screenshot-pdf-page-mac": {
+      "short": "Screenshot a PDF page",
+      "title": "How to screenshot a PDF page and mark it up on Mac | EasyShoot",
+      "description": "Share one page or part of a PDF as an image on your Mac, with arrows, numbered steps and blurred details, and when Preview is the better tool.",
+      "h1": "How to screenshot a PDF page and mark it up on a Mac",
+      "intro": "Sometimes you don't want to send the whole PDF, just one table or paragraph with an arrow pointing at it. Capture that part as an image, mark it up and paste it where people will see it. To edit the PDF itself, Preview is the better tool.",
+      "steps": [
+        {
+          "name": "Open the PDF and zoom in",
+          "text": "Open it in Preview or your browser and zoom in until the text is sharp. The capture is as sharp as what's on screen."
+        },
+        {
+          "name": "Capture the part you need",
+          "text": "Press Option-Shift-Command-4 and drag over the page, the table or the paragraph. Click the thumbnail to open the editor."
+        },
+        {
+          "name": "Mark it up",
+          "text": "Press R to box a line, N to number the steps, A for an arrow, or B to blur a name, an address or a signature."
+        },
+        {
+          "name": "Share the image",
+          "text": "Press Shift-Command-C and paste it into a chat, an email or a document, or press Command-S to save it."
+        }
+      ],
+      "sections": [
+        {
+          "h2": "When Preview is the better tool",
+          "html": "<p>EasyShoot opens images, not PDF files, and what it exports is a picture. To add notes, highlights or a signature to the PDF itself, or to redact text and keep a PDF, use the Markup toolbar in Preview.</p>"
+        },
+        {
+          "h2": "Hide private details first",
+          "html": "<p>Invoices, contracts and statements carry names, addresses and account numbers. Press B and drag over them before you share; the exported image keeps only the hidden version. More in <a href=\"/guides/blur-screenshot-mac/\">how to blur part of a screenshot</a>.</p>"
+        },
+        {
+          "h2": "Point at one thing",
+          "html": "<p>A PDF page holds a lot. Box the line that matters, number the fields to fill in, and crop the rest away with C so people see only what you mean.</p>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Can EasyShoot open a PDF file?",
+          "a": "No. It opens image files and images you've copied. Capture the PDF from the screen instead."
+        },
+        {
+          "q": "How do I keep the text sharp?",
+          "a": "Zoom in on the PDF before you capture it. A screenshot keeps what's on your screen, so larger text on screen means sharper text in the image."
+        },
+        {
+          "q": "Can I blur part of a PDF?",
+          "a": "On a capture, yes: press B and drag over it. To remove text from the PDF file itself, use the redaction tool in Preview."
         }
       ]
     },

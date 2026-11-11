@@ -16,7 +16,7 @@
   "hubs": {
     "guides": {
       "title": "Guides de capture d’écran sur Mac | EasyShoot",
-      "description": "Des guides courts et pratiques pour les captures d’écran sur Mac : floutage des infos privées, flèches, formes et étapes numérotées, et texte arabe.",
+      "description": "Des guides courts et pratiques pour les captures d’écran sur Mac : raccourcis, recadrage, arrière-plans, floutage, flèches et étapes, et texte sur les images.",
       "h1": "Guides de capture d’écran sur Mac",
       "intro": "Des réponses courtes aux questions les plus fréquentes sur les captures d’écran sur Mac, avec les touches exactes à utiliser."
     },
@@ -180,6 +180,356 @@
         {
           "q": "L’hébreu est-il pris en charge ?",
           "a": "Oui. La direction Auto détecte l’hébreu comme l’arabe."
+        }
+      ]
+    },
+    "take-screenshot-mac": {
+      "short": "Faire une capture d’écran",
+      "title": "Capture d’écran sur Mac : tous les raccourcis | EasyShoot",
+      "description": "Toutes les façons de faire une capture d’écran sur Mac : tout l’écran, une partie ou une fenêtre, dans le presse-papiers, et où vont les fichiers.",
+      "h1": "Comment faire une capture d’écran sur Mac",
+      "intro": "Chaque Mac a des raccourcis de capture intégrés : Maj + Commande + 3, 4 et 5. Voici ce que fait chacun, comment copier une capture au lieu de l’enregistrer, et où vont les fichiers. Pour annoter ce que vous capturez, EasyShoot ajoute ses propres raccourcis à côté.",
+      "steps": [
+        {
+          "name": "Capturez tout l’écran",
+          "text": "Appuyez sur Maj + Commande + 3."
+        },
+        {
+          "name": "Capturez une partie de l’écran",
+          "text": "Appuyez sur Maj + Commande + 4 et faites glisser sur la zone. Maintenez la barre d’espace pendant le glissement pour la déplacer, ou appuyez sur Échap pour annuler."
+        },
+        {
+          "name": "Capturez une fenêtre",
+          "text": "Appuyez sur Maj + Commande + 4, puis sur la barre d’espace. Le pointeur devient un appareil photo ; cliquez sur la fenêtre."
+        },
+        {
+          "name": "Retrouvez-la ou copiez-la",
+          "text": "La capture est enregistrée sur le bureau au format PNG. Pour la copier à la place, ajoutez Contrôle, par exemple Contrôle + Maj + Commande + 4."
+        },
+        {
+          "name": "Annotez-la si besoin",
+          "text": "Avec EasyShoot, appuyez plutôt sur Option + Maj + Commande + 4, puis cliquez sur la vignette pour ajouter cadres, étapes numérotées, flèches ou flou."
+        }
+      ],
+      "sections": [
+        {
+          "h2": "Tous les raccourcis de capture du Mac",
+          "html": "<table><thead><tr><th>Ce que vous capturez</th><th>Raccourci</th></tr></thead><tbody><tr><td>Tout l’écran</td><td><kbd dir=\"ltr\">Maj + Commande + 3</kbd></td></tr><tr><td>Une partie de l’écran</td><td><kbd dir=\"ltr\">Maj + Commande + 4</kbd>, puis faites glisser</td></tr><tr><td>Une fenêtre ou un menu</td><td><kbd dir=\"ltr\">Maj + Commande + 4</kbd>, puis <kbd dir=\"ltr\">Espace</kbd></td></tr><tr><td>L’app Capture d’écran, avec minuteur et options</td><td><kbd dir=\"ltr\">Maj + Commande + 5</kbd></td></tr><tr><td>Copier au lieu d’enregistrer</td><td>Ajoutez <kbd dir=\"ltr\">Contrôle</kbd> à l’un d’eux</td></tr></tbody></table><p>Pour exclure l’ombre d’une fenêtre, maintenez Option pendant que vous cliquez dessus.</p>"
+        },
+        {
+          "h2": "Changer l’emplacement des captures",
+          "html": "<p>Appuyez sur Maj + Commande + 5, cliquez sur <strong>Options</strong> et choisissez un dossier sous <strong>Enregistrer dans</strong>. Le même menu règle un minuteur, affiche le pointeur et active ou désactive la vignette flottante. Pour changer les raccourcis eux-mêmes, ouvrez Réglages Système › Clavier › Raccourcis clavier › Captures d’écran.</p>"
+        },
+        {
+          "h2": "Capturer et annoter avec EasyShoot",
+          "html": "<p>Les raccourcis d’EasyShoot ajoutent Option à ceux du Mac, donc les deux continuent de fonctionner :</p><table><thead><tr><th>Ce que vous capturez</th><th>Raccourci</th></tr></thead><tbody><tr><td>Une partie de l’écran</td><td><kbd dir=\"ltr\">Option + Maj + Commande + 4</kbd></td></tr><tr><td>Une fenêtre</td><td><kbd dir=\"ltr\">Option + Maj + Commande + 5</kbd></td></tr><tr><td>Tout l’écran</td><td><kbd dir=\"ltr\">Option + Maj + Commande + 3</kbd></td></tr><tr><td>Une image copiée</td><td><kbd dir=\"ltr\">Option + Maj + Commande + 7</kbd></td></tr></tbody></table><p>Par défaut, chaque capture est copiée dans le presse-papiers et apparaît en vignette dans le coin de l’écran. Glissez-la dans une autre app, enregistrez-la, ou cliquez dessus pour ouvrir l’éditeur. Réglages › Général › <strong>Après la capture</strong> décide de ce qui se fait tout seul.</p>"
+        },
+        {
+          "h2": "Lequel utiliser",
+          "html": "<p>Pour une capture rapide que vous gardez ou envoyez telle quelle, les raccourcis du Mac suffisent. EasyShoot aide quand la capture doit expliquer ou masquer quelque chose : voyez comment <a href=\"/fr/guides/annotate-screenshot-mac/\">ajouter des flèches et des étapes numérotées</a>, <a href=\"/fr/guides/blur-screenshot-mac/\">flouter les infos privées</a> ou <a href=\"/fr/guides/crop-screenshot-mac/\">recadrer une capture</a>.</p>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Où vont les captures d’écran sur Mac ?",
+          "a": "Sur le bureau par défaut, en fichiers PNG dont le nom contient la date et l’heure. Choisissez un autre dossier dans Maj + Commande + 5 › Options › Enregistrer dans."
+        },
+        {
+          "q": "Comment copier une capture dans le presse-papiers sur Mac ?",
+          "a": "Maintenez aussi Contrôle, par exemple Contrôle + Maj + Commande + 4, puis collez où vous voulez. EasyShoot copie chaque capture dans le presse-papiers par défaut ; changez-le dans ses Réglages › Général."
+        },
+        {
+          "q": "Puis-je changer les raccourcis de capture ?",
+          "a": "Oui. Ceux du Mac sont dans Réglages Système › Clavier › Raccourcis clavier › Captures d’écran, et ceux d’EasyShoot dans ses Réglages › Raccourcis."
+        },
+        {
+          "q": "Pourquoi certaines fenêtres ne se capturent pas ?",
+          "a": "Certaines apps, comme l’app Apple TV, n’autorisent pas les captures de leurs fenêtres."
+        }
+      ]
+    },
+    "crop-screenshot-mac": {
+      "short": "Recadrer une capture",
+      "title": "Comment recadrer une capture d’écran sur Mac | EasyShoot",
+      "description": "Recadrez une capture d’écran sur Mac avec les outils d’annotation ou Aperçu, ou dans EasyShoot avec des formats comme 1:1 et 16:9 et une largeur précise.",
+      "h1": "Comment recadrer une capture d’écran sur Mac",
+      "intro": "Le meilleur recadrage est celui dont vous n’avez pas besoin : capturez seulement la partie voulue. Si vous avez déjà la capture, recadrez-la avec les outils d’annotation du Mac ou dans Aperçu, ou dans EasyShoot avec des formats fixes et une taille précise.",
+      "steps": [
+        {
+          "name": "Ouvrez la capture",
+          "text": "Capturez avec Option + Maj + Commande + 4 et cliquez sur la vignette, ou ouvrez une capture existante avec Ouvrir une image… dans le menu d’EasyShoot."
+        },
+        {
+          "name": "Appuyez sur C",
+          "text": "Un cadre apparaît autour de l’image, et la barre de recadrage s’affiche sous la barre d’outils."
+        },
+        {
+          "name": "Faites glisser le cadre",
+          "text": "Rapprochez ses bords ou ses coins de la partie à garder. Pour une forme fixe, choisissez 1:1, 4:3, 3:2, 16:10, 16:9 ou 9:16 dans la barre de recadrage."
+        },
+        {
+          "name": "Appliquez",
+          "text": "Appuyez sur Retour ou cliquez sur Appliquer. Vous pourrez appuyer de nouveau sur C pour le modifier."
+        },
+        {
+          "name": "Réglez la taille et partagez",
+          "text": "Dans l’onglet Exporter, redimensionnez en pourcentage ou à une largeur précise. Puis appuyez sur Maj + Commande + C pour copier ou sur Commande + S pour enregistrer."
+        }
+      ],
+      "sections": [
+        {
+          "h2": "Recadrer avec les outils du Mac",
+          "html": "<ul><li><strong>Juste après une capture :</strong> cliquez sur la vignette dans le coin de l’écran, puis sur le bouton de recadrage des outils d’annotation, et faites glisser les coins.</li><li><strong>Dans Aperçu :</strong> ouvrez l’image, affichez la barre d’annotation, sélectionnez la partie à garder et cliquez sur le bouton de recadrage.</li></ul><p>Les deux suffisent pour un recadrage rapide.</p>"
+        },
+        {
+          "h2": "Recadrer avant de capturer",
+          "html": "<p>Option + Maj + Commande + 4 capture seulement la zone sur laquelle vous faites glisser le pointeur, et Option + Maj + Commande + 5 capture une fenêtre sans le reste de l’écran. Souvent, l’un ou l’autre vous évite de recadrer.</p>"
+        },
+        {
+          "h2": "Recadrer, redimensionner, ou les deux",
+          "html": "<p>Le recadrage décide de la partie de l’image que vous gardez. Redimensionner, dans l’onglet Exporter, décide du nombre de pixels de l’image exportée. Avec un arrière-plan, le format choisi dans la barre d’outils fixe la forme de toute l’image ; voyez <a href=\"/fr/guides/screenshot-background-mac/\">comment ajouter un arrière-plan à une capture</a>.</p>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Comment recadrer une capture en carré ?",
+          "a": "Appuyez sur C, choisissez 1:1 dans la barre de recadrage, placez le cadre où vous voulez et appuyez sur Retour."
+        },
+        {
+          "q": "Puis-je annuler un recadrage ?",
+          "a": "Oui. Appuyez sur Commande + Z, ou appuyez de nouveau sur C et cliquez sur Réinitialiser pour retrouver toute l’image."
+        },
+        {
+          "q": "Le recadrage réduit-il la qualité ?",
+          "a": "Non. La partie gardée reste en pleine résolution. Seul Redimensionner, dans l’onglet Exporter, change la taille en pixels."
+        }
+      ]
+    },
+    "screenshot-background-mac": {
+      "short": "Ajouter un arrière-plan",
+      "title": "Ajouter un fond à une capture d’écran sur Mac | EasyShoot",
+      "description": "Placez une capture sur un fond d’écran, un dégradé ou une couleur, avec marge, coins arrondis et ombre, prête à publier. Un guide pour Mac avec EasyShoot.",
+      "h1": "Comment ajouter un arrière-plan à une capture d’écran sur Mac",
+      "intro": "Une capture avec un peu d’espace autour, des coins arrondis et une ombre douce est prête pour un post, une présentation ou un README. EasyShoot le fait dans son onglet Arrière-plan, et peut garder ce style pour toutes les captures suivantes.",
+      "steps": [
+        {
+          "name": "Capturez une fenêtre ou une zone",
+          "text": "Appuyez sur Option + Maj + Commande + 5 et cliquez sur une fenêtre, ou sur Option + Maj + Commande + 4 et faites glisser. Cliquez sur la vignette pour ouvrir l’éditeur."
+        },
+        {
+          "name": "Activez l’arrière-plan",
+          "text": "Dans l’onglet Arrière-plan, activez Afficher l’arrière-plan."
+        },
+        {
+          "name": "Choisissez ce qui va derrière",
+          "text": "Prenez un fond d’écran (ceux de votre Mac, ou les Vagues et Dégradés d’EasyShoot), un dégradé ou une couleur unie. Floutez un fond d’écran pour garder la capture au premier plan."
+        },
+        {
+          "name": "Réglez marge, coins et ombre",
+          "text": "Déplacez les curseurs Marge, Coins arrondis et Ombre jusqu’au bon résultat. Réinitialiser remet un curseur à sa valeur."
+        },
+        {
+          "name": "Choisissez une forme",
+          "text": "Choisissez un format dans la barre d’outils, par exemple 1:1 pour un post carré ou 16:9 pour une diapositive."
+        },
+        {
+          "name": "Copiez ou enregistrez",
+          "text": "Appuyez sur Maj + Commande + C pour copier, ou sur Commande + S pour enregistrer."
+        }
+      ],
+      "sections": [
+        {
+          "h2": "Un format pour chaque endroit où vous publiez",
+          "html": "<p>Le menu Format se trouve dans la barre d’outils, à côté de Recadrer, et fonctionne quand l’arrière-plan est activé.</p><ul><li><strong>Auto :</strong> la marge entoure la capture de façon égale.</li><li><strong>1:1, 4:3, 3:2, 16:10, 16:9 et 9:16 :</strong> l’arrière-plan s’agrandit pour que toute l’image ait cette forme, et l’<strong>Alignement</strong> décide où la capture s’y place.</li></ul>"
+        },
+        {
+          "h2": "Le même style à chaque fois",
+          "html": "<p>Ouvrez <strong>Préréglages</strong> dans la barre d’outils de l’éditeur et choisissez <strong>Enregistrer le style actuel comme préréglage…</strong>. Dans Réglages › Préréglages, choisissez <strong>Définir par défaut</strong> pour que chaque nouvelle capture commence avec. Vous y trouverez aussi 12 styles prêts à ajouter.</p>"
+        },
+        {
+          "h2": "Captures de fenêtre et ombres",
+          "html": "<p>Une capture de fenêtre inclut l’ombre de la fenêtre. Pour ne garder que l’ombre de l’arrière-plan, désactivez <strong>Inclure l’ombre de la fenêtre</strong> dans Réglages › Général ; voyez <a href=\"/fr/guides/screenshot-without-shadow-mac/\">comment capturer une fenêtre sans son ombre</a>.</p>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Existe-t-il une app gratuite pour embellir les captures sur Mac ?",
+          "a": "EasyShoot est gratuit. Son onglet Arrière-plan place une capture sur un fond d’écran, un dégradé ou une couleur, avec marge, coins arrondis et ombre, et rien n’est envoyé en ligne."
+        },
+        {
+          "q": "Puis-je utiliser ma propre image comme arrière-plan ?",
+          "a": "Non. Vous pouvez choisir l’un des fonds d’écran de votre Mac, les Vagues et Dégradés d’EasyShoot, un dégradé ou une couleur unie."
+        },
+        {
+          "q": "L’arrière-plan agrandit-il l’image ?",
+          "a": "Oui. La marge et le format ajoutent de l’espace autour de la capture. Pour publier à une taille précise, réglez la largeur dans l’onglet Exporter."
+        }
+      ]
+    },
+    "add-text-to-image-mac": {
+      "short": "Ajouter du texte à une image",
+      "title": "Comment ajouter du texte sur une image sur Mac | EasyShoot",
+      "description": "Ajoutez une légende, une étiquette ou une note à une photo ou une image sur Mac, dans n’importe quelle police et bien lisible. L’arabe et l’hébreu aussi.",
+      "h1": "Comment ajouter du texte sur une image sur Mac",
+      "intro": "EasyShoot ne sert pas qu’aux captures d’écran. Ouvrez n’importe quelle image de votre Mac, ou une image copiée, et ajoutez une légende, une étiquette ou une note dans la police de votre choix. Le fichier ouvert reste tel quel.",
+      "steps": [
+        {
+          "name": "Ouvrez l’image",
+          "text": "Cliquez sur l’icône d’EasyShoot dans la barre des menus, choisissez Ouvrir une image… et sélectionnez une photo ou une autre image. Pour une image copiée, appuyez sur Option + Maj + Commande + 7."
+        },
+        {
+          "name": "Choisissez Texte",
+          "text": "Appuyez sur T, cliquez là où doit aller le texte et tapez."
+        },
+        {
+          "name": "Choisissez la police et la taille",
+          "text": "Dans l’onglet Style, choisissez une police de votre Mac ou une police Google, et réglez la Taille. Vous pouvez aussi faire glisser le coin du texte."
+        },
+        {
+          "name": "Rendez-le lisible",
+          "text": "Sur une photo chargée, réglez Aspect sur Plein, Doux ou Sombre pour poser le texte sur une boîte, ou sur Contour pour tracer un contour autour des lettres."
+        },
+        {
+          "name": "Enregistrez ou copiez",
+          "text": "Appuyez sur Commande + S pour enregistrer un nouveau fichier, ou sur Maj + Commande + C pour copier. Choisissez PNG, JPEG, HEIC ou TIFF dans l’onglet Exporter."
+        }
+      ],
+      "sections": [
+        {
+          "h2": "Sept aspects pour le texte",
+          "html": "<ul><li><strong>Texte :</strong> les lettres seules, dans la couleur choisie.</li><li><strong>Plein, Doux et Sombre :</strong> le texte est posé sur une boîte, aux coins nets ou arrondis.</li><li><strong>Encadré :</strong> un cadre autour du texte, sans remplissage.</li><li><strong>Contour :</strong> un contour autour des lettres.</li><li><strong>Personnalisé :</strong> vos propres couleurs pour la boîte.</li></ul>"
+        },
+        {
+          "h2": "Toutes les polices, y compris Google Fonts",
+          "html": "<p>Le texte peut utiliser toute police installée sur votre Mac. Choisissez une police Google et EasyShoot la télécharge aussitôt ; ce téléchargement et la recherche de mises à jour sont les seuls moments où l’app se connecte à Internet.</p>"
+        },
+        {
+          "h2": "Arabe et hébreu",
+          "html": "<p>Avec Direction sur Auto, l’arabe et l’hébreu s’écrivent de droite à gauche, avec des lettres bien liées. Plus de détails dans <a href=\"/fr/guides/arabic-text-screenshot-mac/\">comment écrire en arabe sur une capture</a>.</p>"
+        },
+        {
+          "h2": "Plus que du texte",
+          "html": "<p>Le même éditeur ajoute flèches, cadres et étapes numérotées, masque visages ou noms avec Pixeliser (B) et recadre l’image (C).</p>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Cela modifie-t-il ma photo d’origine ?",
+          "a": "Non. Commande + S enregistre un nouveau fichier dans votre dossier d’enregistrement, et Enregistrer sous… vous laisse choisir le nom et l’emplacement. L’image ouverte ne change pas."
+        },
+        {
+          "q": "Puis-je ouvrir des photos d’iPhone ?",
+          "a": "Oui. EasyShoot ouvre les fichiers image que votre Mac sait lire, y compris les photos HEIC d’un iPhone."
+        },
+        {
+          "q": "Puis-je modifier le texte après l’avoir ajouté ?",
+          "a": "Oui. Le texte et tous les autres repères restent modifiables jusqu’à l’export de l’image."
+        },
+        {
+          "q": "Est-ce gratuit ?",
+          "a": "Oui. EasyShoot est gratuit et ne demande aucun compte."
+        }
+      ]
+    },
+    "screenshot-without-shadow-mac": {
+      "short": "Fenêtre sans ombre",
+      "title": "Capturer une fenêtre sans son ombre sur Mac | EasyShoot",
+      "description": "Sur Mac, les captures de fenêtre ont une ombre et de larges bords transparents. Retirez-la d’une touche, ou désactivez-la pour de bon dans EasyShoot.",
+      "h1": "Comment capturer une fenêtre sans son ombre sur Mac",
+      "intro": "Quand vous capturez une fenêtre sur Mac, l’image inclut son ombre, ce qui ajoute de larges bords transparents autour. Vous pouvez exclure l’ombre à chaque fois d’une touche, ou la désactiver pour de bon dans EasyShoot.",
+      "steps": [
+        {
+          "name": "Lancez une capture de fenêtre",
+          "text": "Appuyez sur Maj + Commande + 4, puis sur la barre d’espace. Le pointeur devient un appareil photo."
+        },
+        {
+          "name": "Maintenez Option et cliquez",
+          "text": "Maintenez Option pendant que vous cliquez sur la fenêtre. La capture s’arrête au bord de la fenêtre."
+        },
+        {
+          "name": "Ou désactivez-la dans EasyShoot",
+          "text": "Ouvrez Réglages › Général dans EasyShoot et désactivez Inclure l’ombre de la fenêtre."
+        },
+        {
+          "name": "Capturez la fenêtre",
+          "text": "Appuyez sur Option + Maj + Commande + 5 et cliquez sur la fenêtre. Chaque capture de fenêtre arrive désormais sans ombre."
+        }
+      ],
+      "sections": [
+        {
+          "h2": "Pourquoi retirer l’ombre",
+          "html": "<p>L’ombre est dessinée sur des pixels transparents autour de la fenêtre. Collée dans un document, une discussion ou une présentation, elle peut ressembler à une marge irrégulière, et elle rend l’image plus grande que la fenêtre elle-même.</p>"
+        },
+        {
+          "h2": "Une ombre que vous choisissez",
+          "html": "<p>Désactivez l’ombre de la fenêtre, puis utilisez l’onglet Arrière-plan pour ajouter une marge, un fond et une ombre aussi douce ou marquée que vous le souhaitez. Voyez <a href=\"/fr/guides/screenshot-background-mac/\">comment ajouter un arrière-plan à une capture</a>.</p>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Pourquoi mes captures de fenêtre ont-elles une ombre ?",
+          "a": "macOS inclut l’ombre de la fenêtre dans les captures de fenêtre, sur un fond transparent, sauf si vous maintenez Option en cliquant."
+        },
+        {
+          "q": "Le réglage d’EasyShoot change-t-il les raccourcis du Mac ?",
+          "a": "Non. Il ne change que les captures de fenêtre faites avec EasyShoot. Avec Maj + Commande + 4 puis Espace, maintenez Option."
+        },
+        {
+          "q": "Change-t-il les captures de zone et d’écran entier ?",
+          "a": "Non. Elles capturent l’écran tel qu’il apparaît ; le réglage ne s’applique qu’aux captures de fenêtre."
+        }
+      ]
+    },
+    "screenshot-pdf-page-mac": {
+      "short": "Capturer une page PDF",
+      "title": "Capturer une page PDF et l’annoter sur Mac | EasyShoot",
+      "description": "Partagez une page ou une partie de PDF en image sur Mac, avec flèches, étapes numérotées et détails floutés, et sachez quand Aperçu convient mieux.",
+      "h1": "Comment capturer une page PDF et l’annoter sur Mac",
+      "intro": "Parfois, vous ne voulez pas envoyer tout le PDF, juste un tableau ou un paragraphe avec une flèche dessus. Capturez cette partie en image, annotez-la et collez-la là où on la verra. Pour modifier le PDF lui-même, Aperçu est l’outil qu’il vous faut.",
+      "steps": [
+        {
+          "name": "Ouvrez le PDF et zoomez",
+          "text": "Ouvrez-le dans Aperçu ou dans votre navigateur et zoomez jusqu’à ce que le texte soit net. La capture est aussi nette que ce qui est à l’écran."
+        },
+        {
+          "name": "Capturez la partie voulue",
+          "text": "Appuyez sur Option + Maj + Commande + 4 et faites glisser sur la page, le tableau ou le paragraphe. Cliquez sur la vignette pour ouvrir l’éditeur."
+        },
+        {
+          "name": "Annotez-la",
+          "text": "Appuyez sur R pour encadrer une ligne, sur N pour numéroter les étapes, sur A pour une flèche, ou sur B pour flouter un nom, une adresse ou une signature."
+        },
+        {
+          "name": "Partagez l’image",
+          "text": "Appuyez sur Maj + Commande + C et collez-la dans une discussion, un e-mail ou un document, ou sur Commande + S pour l’enregistrer."
+        }
+      ],
+      "sections": [
+        {
+          "h2": "Quand Aperçu convient mieux",
+          "html": "<p>EasyShoot ouvre des images, pas des fichiers PDF, et ce qu’il exporte est une image. Pour ajouter des notes, du surlignage ou une signature au PDF lui-même, ou pour caviarder du texte en gardant un PDF, utilisez la barre d’annotation d’Aperçu.</p>"
+        },
+        {
+          "h2": "Masquez d’abord les infos privées",
+          "html": "<p>Factures, contrats et relevés contiennent noms, adresses et numéros de compte. Appuyez sur B et faites glisser dessus avant de partager ; l’image exportée ne garde que la version masquée. Plus de détails dans <a href=\"/fr/guides/blur-screenshot-mac/\">comment flouter une partie d’une capture</a>.</p>"
+        },
+        {
+          "h2": "Montrez une seule chose",
+          "html": "<p>Une page PDF contient beaucoup d’éléments. Encadrez la ligne qui compte, numérotez les champs à remplir, et recadrez le reste avec C pour qu’on voie seulement ce que vous voulez dire.</p>"
+        }
+      ],
+      "faq": [
+        {
+          "q": "EasyShoot peut-il ouvrir un fichier PDF ?",
+          "a": "Non. Il ouvre les fichiers image et les images copiées. Capturez plutôt le PDF à l’écran."
+        },
+        {
+          "q": "Comment garder un texte net ?",
+          "a": "Zoomez sur le PDF avant de le capturer. Une capture garde ce qui est à l’écran : plus le texte est grand à l’écran, plus il est net dans l’image."
+        },
+        {
+          "q": "Puis-je flouter une partie d’un PDF ?",
+          "a": "Sur une capture, oui : appuyez sur B et faites glisser dessus. Pour retirer du texte du fichier PDF lui-même, utilisez l’outil de caviardage d’Aperçu."
         }
       ]
     },
