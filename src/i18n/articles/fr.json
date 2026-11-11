@@ -86,7 +86,7 @@
       "steps": [
         {
           "name": "Capturez l’écran",
-          "text": "Appuyez sur Option + Maj + Commande + 4 et faites glisser le pointeur sur une zone. L’éditeur s’ouvre avec la capture."
+          "text": "Appuyez sur Option + Maj + Commande + 4 et faites glisser le pointeur sur une zone. Une vignette apparaît dans le coin de l’écran : double-cliquez dessus pour ouvrir la capture dans l’éditeur. Pour ouvrir l’éditeur tout de suite, sans vignette, activez Ouvrir l’éditeur après la capture dans Réglages › Général."
         },
         {
           "name": "Encadrez l’essentiel",
@@ -501,7 +501,7 @@
         },
         {
           "h2": "Quand EasyShoot vous aide",
-          "html": "<ul><li>Capturer une page ou une conversation entière en une seule image.</li><li>Expliquer quelque chose avec des étapes numérotées et des flèches.</li><li>Masquer les infos privées avant de partager.</li><li>Rendre vos captures prêtes à publier avec un arrière-plan.</li></ul>"
+          "html": "<ul><li>Expliquer quelque chose avec des étapes numérotées et des flèches.</li><li>Masquer les infos privées avant de partager.</li><li>Rendre vos captures prêtes à publier avec un arrière-plan.</li><li>Donner le même style à une série de captures avec un préréglage enregistré.</li></ul>"
         }
       ],
       "faq": [

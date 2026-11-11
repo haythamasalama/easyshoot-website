@@ -86,7 +86,7 @@
       "steps": [
         {
           "name": "Captura la pantalla",
-          "text": "Pulsa Opción + Mayúsculas + Comando + 4 y arrastra sobre un área. El editor se abre con la captura."
+          "text": "Pulsa Opción + Mayúsculas + Comando + 4 y arrastra sobre un área. Aparece una miniatura en la esquina de la pantalla: haz doble clic en ella para abrir la captura en el editor. Para abrir el editor al momento, sin miniatura, activa Abrir el editor tras la captura en Ajustes › General."
         },
         {
           "name": "Enmarca lo importante",
@@ -501,7 +501,7 @@
         },
         {
           "h2": "Cuándo ayuda EasyShoot",
-          "html": "<ul><li>Para capturar una página o un chat completo en una sola imagen.</li><li>Para explicar algo con pasos numerados y flechas.</li><li>Para ocultar datos privados antes de compartir.</li><li>Para dejar las capturas listas para publicar con un fondo.</li></ul>"
+          "html": "<ul><li>Para explicar algo con pasos numerados y flechas.</li><li>Para ocultar datos privados antes de compartir.</li><li>Para dejar las capturas listas para publicar con un fondo.</li><li>Para dar el mismo aspecto a una serie de capturas con un preajuste guardado.</li></ul>"
         }
       ],
       "faq": [

@@ -86,7 +86,7 @@
       "steps": [
         {
           "name": "Capture the screen",
-          "text": "Press Option-Shift-Command-4 and drag over an area. The editor opens with the capture."
+          "text": "Press Option-Shift-Command-4 and drag over an area. A thumbnail appears in the corner of the screen: double-click it to open the capture in the editor. To open the editor right away without the thumbnail, turn on Open editor after capture in Settings › General."
         },
         {
           "name": "Box the important part",
@@ -501,7 +501,7 @@
         },
         {
           "h2": "When EasyShoot helps",
-          "html": "<ul><li>Capturing a whole page or chat in one image.</li><li>Explaining something with numbered steps and arrows.</li><li>Hiding private details before you share.</li><li>Making screenshots ready to post with a background.</li></ul>"
+          "html": "<ul><li>Explaining something with numbered steps and arrows.</li><li>Hiding private details before you share.</li><li>Making screenshots ready to post with a background.</li><li>Giving a series of screenshots the same look with a saved preset.</li></ul>"
         }
       ],
       "faq": [
