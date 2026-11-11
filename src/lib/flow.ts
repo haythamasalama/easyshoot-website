@@ -25,7 +25,8 @@ function checkout(lang: string) {
 }
 
 function flowScenes(lang: string, dir: string, s: Record<string, string>, t: Record<string, string>, bar: string, rows: (m?: boolean) => string, page: (i: string, m?: boolean) => string) {
-  const select = `<div class="fx" dir="${dir}"><div class="fx-win">${bar}${page(`<div class="fx-target">${rows()}<span class="fx-sel"><span class="fx-size" dir="ltr">1280 × 720</span><svg class="fx-cross" viewBox="0 0 18 18" aria-hidden="true"><path d="M9 0v18M0 9h18" stroke="#fff" stroke-width="1.6"/></svg></span></div>`)}</div></div>`;
+  const hint = `<span class="fx-hint lg">${glyph("rect")}<b>${s.hint}</b><i></i><kbd>esc</kbd><span>${s.cancel}</span></span>`;
+  const select = `<div class="fx" dir="${dir}"><div class="fx-win">${bar}${page(`<div class="fx-target">${rows()}<span class="fx-sel"><span class="fx-size lg" dir="ltr">1280 × 720</span><svg class="fx-cross" viewBox="0 0 18 18" aria-hidden="true"><path d="M9 0v18M0 9h18" stroke="#fff" stroke-width="1.6"/></svg></span></div>`)}${hint}</div></div>`;
 
   const quick = `<div class="fx" dir="${dir}"><div class="fx-win fx-back">${bar}${page(rows())}</div>
     <div class="qa-live"><div class="qa-shot"><div class="cap">${rows()}</div></div>
@@ -60,9 +61,9 @@ export function moreArt(lang: string) {
   const sun = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>';
   const moon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>';
   return {
-    presets: `<div class="ma ma-presets" dir="${dir}">${frame("p1 on", t["pr.plain"])}${frame("p2", t["pr.dark"])}${frame("p3", "Social 16:9")}</div>`,
+    presets: `<div class="ma ma-presets" dir="${dir}">${frame("p1 on", ED[lang].waves)}${frame("p2", ED[lang].white)}${frame("p3", ED[lang].graphite)}</div>`,
     crop: `<div class="ma ma-crop" dir="${dir}"><div class="ma-cropped"><div class="ma-sheet"><div class="cap">${rows()}</div></div><span class="ma-cropbox"><i></i><i></i><i></i><i></i></span><span class="ma-size" dir="ltr">1600 × 900</span></div></div>`,
-    zoom: `<div class="ma ma-zoom" dir="ltr"><span class="cap-pay">${ED[lang].payBtn}</span><span class="ma-zoomctl"><i>−</i><b>200%</b><i>+</i></span></div>`,
+    zoom: `<div class="ma ma-zoom" dir="ltr"><span class="cap-pay">${ED[lang].payBtn}</span><span class="ma-zoomctl"><i>${glyph("minus")}</i><b>200%</b><i>${glyph("plus")}</i></span></div>`,
     keys: `<div class="ma ma-shortcut" dir="${dir}"><div><span>${t["mode.area"]}</span>${keys(["⌥", "⇧", "⌘", "4"])}</div><div><span>${t["mode.window"]}</span>${keys(["⌥", "⇧", "⌘", "5"])}</div></div>`,
     formats: `<div class="ma ma-formats" dir="ltr">${fileIcon("JPEG")}${fileIcon("PNG", true)}${fileIcon("HEIC")}${fileIcon("TIFF")}</div>`,
     theme: `<div class="ma ma-theme" dir="${dir}"><div class="ma-half light"><span class="ma-sheet">${shot}</span></div><div class="ma-half dark"><span class="ma-sheet">${shot}</span></div><span class="ma-sw"><i>${sun}</i><i>${moon}</i></span></div>`,
