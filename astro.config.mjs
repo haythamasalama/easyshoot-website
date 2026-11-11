@@ -10,6 +10,7 @@ export default defineConfig({
   integrations: [
     sitemap({
       xslURL: "/sitemap.xsl",
+      filter: page => !/\/404(\.html)?$/.test(page),
       // Home pages first, then comparisons and guides, then hubs and the rest.
       serialize(item) {
         // With build.format "preserve" the sitemap drops trailing slashes and .html; write the URLs the site serves.
