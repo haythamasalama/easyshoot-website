@@ -21,9 +21,21 @@ if (!urlList.length) {
   console.log("IndexNow: no page content changed in this push");
   process.exit(0);
 }
+// Bing rejects a key for good once it fails to fetch the key file, so never send before the file is live.
+const keyLocation = `https://${host}/${key}.txt`;
+let live = false;
+for (let attempt = 0; attempt < 6 && !live; attempt++) {
+  if (attempt) await new Promise(r => setTimeout(r, 10_000));
+  live = await fetch(keyLocation, { cache: "no-store" }).then(r => r.ok && r.text()).then(t => t?.trim() === key).catch(() => false);
+}
+if (!live) {
+  console.log(`IndexNow: ${keyLocation} doesn't serve the key yet; nothing sent`);
+  process.exit(0);
+}
+
 const res = await fetch("https://api.indexnow.org/indexnow", {
   method: "POST",
   headers: { "Content-Type": "application/json; charset=utf-8" },
-  body: JSON.stringify({ host, key, keyLocation: `https://${host}/${key}.txt`, urlList }),
+  body: JSON.stringify({ host, key, keyLocation, urlList }),
 });
-console.log(`IndexNow: ${res.status} for ${urlList.length} URLs`);
+console.log(`IndexNow: ${res.status} for ${urlList.length} URLs${res.ok ? "" : ` ${await res.text()}`}`);
