@@ -53,7 +53,7 @@
       "blocks": [
         {
           "h2": "Festlegen, was passiert",
-          "html": "<p>Einstellungen › Allgemein › <strong>Nach der Aufnahme</strong> legt fest, was von selbst passiert:</p><ul><li><strong>In die Zwischenablage kopieren</strong></li><li><strong>In Ordner sichern</strong></li><li><strong>Editor sofort öffnen</strong></li><li><strong>Schnellzugriff anzeigen</strong></li><li><strong>Ton abspielen</strong></li></ul><p><strong>Schnellzugriff schließen nach</strong> legt fest, wie lange die Miniatur bleibt: nie, 5, 10 oder 30 Sekunden.</p>"
+          "html": "<p>Einstellungen › Allgemein › <strong>Nach der Aufnahme</strong> legt fest, was von selbst passiert:</p><ul><li><strong>Schnellzugriff anzeigen</strong></li><li><strong>Editor nach der Aufnahme öffnen</strong></li><li><strong>In die Zwischenablage kopieren</strong></li><li><strong>Als Datei sichern</strong></li></ul><p>Ist <strong>Editor nach der Aufnahme öffnen</strong> an, öffnet sich statt der Miniatur der Editor.</p><p><strong>Schnellzugriff schließen nach</strong> legt fest, wie lange die Miniatur bleibt: nie, 5, 10 oder 30 Sekunden.</p><p>Der Ton hat eine eigene Einstellung auf demselben Tab: <strong>Aufnahmeton abspielen</strong> unter <strong>Aufnahme</strong>.</p>"
         }
       ]
     },

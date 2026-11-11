@@ -53,7 +53,7 @@
       "blocks": [
         {
           "h2": "Elige qué pasa",
-          "html": "<p>Ajustes › General › <strong>Después de capturar</strong> decide lo que pasa solo:</p><ul><li><strong>Copiar al portapapeles</strong></li><li><strong>Guardar en carpeta</strong></li><li><strong>Abrir el editor al instante</strong></li><li><strong>Mostrar acceso rápido</strong></li><li><strong>Reproducir sonido</strong></li></ul><p><strong>Cerrar acceso rápido tras</strong> fija cuánto dura la miniatura: nunca, 5, 10 o 30 segundos.</p>"
+          "html": "<p>Ajustes › General › <strong>Después de capturar</strong> decide lo que pasa solo:</p><ul><li><strong>Mostrar acceso rápido</strong></li><li><strong>Abrir el editor tras la captura</strong></li><li><strong>Copiar al portapapeles</strong></li><li><strong>Guardar en archivo</strong></li></ul><p>Si activas <strong>Abrir el editor tras la captura</strong>, se abre el editor en lugar de la miniatura.</p><p><strong>Cerrar el acceso rápido tras</strong> fija cuánto dura la miniatura: nunca, 5, 10 o 30 segundos.</p><p>El sonido tiene su propio ajuste en la misma pestaña: <strong>Reproducir sonido de captura</strong>, en <strong>Captura</strong>.</p>"
         }
       ]
     },
@@ -156,7 +156,7 @@
         },
         {
           "h2": "Formato, calidad y tamaño",
-          "html": "<p>La pestaña Exportar fija el <strong>formato</strong> (PNG, JPEG, HEIC o TIFF), la calidad y el tamaño. Elige la <strong>ubicación de guardado</strong> en Ajustes › General y activa <strong>Cerrar el editor después de copiar</strong> para terminar en un paso.</p>"
+          "html": "<p>La pestaña Exportar fija el <strong>formato</strong> (PNG, JPEG, HEIC o TIFF), la calidad y el tamaño. Elige la <strong>ubicación de guardado</strong> en Ajustes › General y activa <strong>Cerrar el editor tras copiar</strong> para terminar en un paso.</p>"
         }
       ]
     },
