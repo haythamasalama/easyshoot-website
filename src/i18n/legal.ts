@@ -59,7 +59,7 @@ export const LEGAL: Record<"en" | "ar", { privacy: LegalPage; support: LegalPage
     },
     accessibility: {
       title: "Accessibility | EasyShoot",
-      description: "How EasyShoot supports macOS accessibility features, including Dark Mode, information that does not rely on colour alone, sufficient contrast and keyboard shortcuts.",
+      description: "How EasyShoot supports macOS accessibility: Dark Mode, information that does not rely on colour alone, sufficient contrast and keyboard shortcuts.",
       h1: "Accessibility",
       date: "Updated 11 November 2026",
       lead: "EasyShoot uses standard macOS controls and respects the accessibility settings of your Mac. This page describes the accessibility features EasyShoot supports.",

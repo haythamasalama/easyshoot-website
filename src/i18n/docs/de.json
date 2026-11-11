@@ -48,7 +48,7 @@
     "quick-access": {
       "title": "Schnellzugriff",
       "short": "Was direkt nach einer Aufnahme passiert.",
-      "description": "Der Schnellzugriff in EasyShoot: einen Screenshot direkt nach der Aufnahme kopieren, sichern, bearbeiten oder ziehen, und festlegen, was nach jeder Aufnahme passiert.",
+      "description": "Der Schnellzugriff in EasyShoot: Screenshots direkt nach der Aufnahme kopieren, sichern, bearbeiten oder ziehen, und festlegen, was danach passiert.",
       "intro": "Nach jeder Aufnahme zeigt der Schnellzugriff eine Miniatur in der Bildschirmecke. Kopiere sie, sichere sie, öffne sie im Editor oder zieh sie direkt in eine andere App.",
       "blocks": [
         {
@@ -77,7 +77,7 @@
     "styles": {
       "title": "Stile",
       "short": "Füllung, Kontur, Ecken, Schatten, Winkel und Deckkraft.",
-      "description": "Gestalte jede Markierung in EasyShoot: Füllung, Konturfarbe und -stärke, durchgezogene, gestrichelte oder gepunktete Linien, abgerundete Ecken, Winkel, Schatten und Deckkraft.",
+      "description": "Gestalte jede Markierung in EasyShoot: Füllung, Konturfarbe und -stärke, gestrichelte oder gepunktete Linien, runde Ecken, Winkel, Schatten und Deckkraft.",
       "intro": "Der Tab „Stil“ im Inspektor folgt dem Werkzeug in der Hand oder der ausgewählten Markierung und zeigt nur, was sie nutzt.",
       "blocks": [
         {
@@ -107,7 +107,7 @@
     "text": {
       "title": "Text",
       "short": "Jede Schrift, sieben Darstellungen und Text von rechts nach links.",
-      "description": "Füge Screenshots mit EasyShoot Text hinzu: jede Mac- oder Google-Schrift, sieben Darstellungen von einfach bis dunkel, und Arabisch oder Hebräisch von rechts nach links.",
+      "description": "Text auf Screenshots mit EasyShoot: jede Mac- oder Google-Schrift, sieben Darstellungen von einfach bis dunkel, Arabisch und Hebräisch von rechts nach links.",
       "intro": "Drücke T, klicke dorthin, wo die Notiz hin soll, und tippe.",
       "blocks": [
         {
@@ -120,7 +120,7 @@
     "background-and-crop": {
       "title": "Hintergrund und Zuschneiden",
       "short": "Gestalten, zuschneiden und Größe ändern.",
-      "description": "Leg einen Screenshot in EasyShoot auf ein Schreibtischbild, einen Verlauf oder eine Farbe, mit Unschärfe, Abstand, abgerundeten Ecken und Schatten, und schneide ihn dann zu.",
+      "description": "Leg einen Screenshot in EasyShoot auf ein Bild, einen Verlauf oder eine Farbe, mit Unschärfe, Abstand, runden Ecken und Schatten, und schneide ihn zu.",
       "intro": "Der Tab „Hintergrund“ macht eine Aufnahme bereit zum Posten.",
       "blocks": [
         {

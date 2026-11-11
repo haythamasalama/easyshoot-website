@@ -77,7 +77,7 @@
     "styles": {
       "title": "Styles",
       "short": "Fond, trait, coins, ombre, angle et opacité.",
-      "description": "Réglez le style de chaque repère dans EasyShoot : fond, couleur et épaisseur du trait, trait continu, en tirets ou pointillé, coins arrondis, angle, ombre et opacité.",
+      "description": "Réglez le style de chaque repère dans EasyShoot : fond, couleur et épaisseur du trait, tirets ou pointillés, coins arrondis, angle, ombre et opacité.",
       "intro": "L’onglet Style de l’inspecteur suit l’outil en main ou le repère sélectionné, et n’affiche que ce qu’il utilise.",
       "blocks": [
         {
@@ -120,7 +120,7 @@
     "background-and-crop": {
       "title": "Arrière-plan et recadrage",
       "short": "Mettre en valeur, recadrer et redimensionner.",
-      "description": "Posez une capture sur un fond d’écran, un dégradé ou une couleur dans EasyShoot, avec flou, marges, coins arrondis et ombre, puis recadrez-la et redimensionnez-la.",
+      "description": "Posez une capture sur un fond d’écran, un dégradé ou une couleur dans EasyShoot, avec flou, marges, coins arrondis et ombre, puis recadrez-la.",
       "intro": "L’onglet Arrière-plan rend une capture prête à publier.",
       "blocks": [
         {

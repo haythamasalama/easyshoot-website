@@ -77,7 +77,7 @@
     "styles": {
       "title": "Estilos",
       "short": "Relleno, trazo, esquinas, sombra, ángulo y opacidad.",
-      "description": "Dale estilo a cualquier marca en EasyShoot: relleno, color y grosor del trazo, líneas continuas, discontinuas o punteadas, esquinas redondeadas, ángulo, sombra y opacidad.",
+      "description": "Da estilo a cualquier marca en EasyShoot: relleno, color y grosor del trazo, líneas discontinuas o punteadas, esquinas redondeadas, ángulo, sombra y opacidad.",
       "intro": "La pestaña Estilo del inspector sigue la herramienta en uso o la marca seleccionada, y muestra solo lo que esa marca usa.",
       "blocks": [
         {
@@ -120,7 +120,7 @@
     "background-and-crop": {
       "title": "Fondo y recorte",
       "short": "Enmarca, recorta y cambia el tamaño.",
-      "description": "Pon una captura sobre un fondo de pantalla, un degradado o un color en EasyShoot, con desenfoque, márgenes, esquinas redondeadas y sombra, y luego recórtala y cambia su tamaño.",
+      "description": "Pon una captura sobre un fondo de pantalla, un degradado o un color en EasyShoot, con desenfoque, márgenes, esquinas redondeadas y sombra, y recórtala.",
       "intro": "La pestaña Fondo deja una captura lista para publicar.",
       "blocks": [
         {
