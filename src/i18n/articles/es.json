@@ -112,7 +112,7 @@
         },
         {
           "h2": "Un estilo para cada marca",
-          "html": "<ul><li><strong>Líneas y formas:</strong> trazo continuo, discontinuo o punteado, de fino a grueso.</li><li><strong>Rectángulo, rombo y elipse:</strong> un color de fondo, bordes rectos o redondeados y cualquier ángulo.</li><li><strong>Flechas:</strong> punta estándar o afilada; arrastra el tirador central para curvarla.</li><li><strong>Pasos numerados:</strong> sin fondo, en su propio color o con un relleno claro.</li><li><strong>Varias a la vez:</strong> Comando-A, Mayúsculas-clic o arrastra un recuadro sobre una zona vacía, y muévelas, cambia su estilo o bórralas juntas.</li></ul>"
+          "html": "<ul><li><strong>Líneas y formas:</strong> trazo continuo, discontinuo o punteado, de fino a grueso.</li><li><strong>Rectángulo, rombo y elipse:</strong> un relleno y un contorno que puedes ocultar, esquinas de rectas a redondas, sombra y cualquier ángulo.</li><li><strong>Flechas:</strong> punta estándar o afilada; arrastra el tirador central para curvarla.</li><li><strong>Pasos numerados:</strong> sin fondo, en su propio color o con un relleno claro.</li><li><strong>Varias a la vez:</strong> Comando-A, Mayúsculas-clic o arrastra un recuadro sobre una zona vacía, y muévelas, cambia su estilo o bórralas juntas.</li></ul>"
         },
         {
           "h2": "Que se lea bien",
@@ -155,7 +155,7 @@
         },
         {
           "name": "Elige fuente y tamaño",
-          "text": "En la pestaña Estilo, elige cualquier fuente de tu Mac y ajusta el tamaño. Para una etiqueta que destaque, pon el aspecto en Burbuja o Contorno."
+          "text": "En la pestaña Estilo, elige cualquier fuente de tu Mac y ajusta el tamaño. Para una etiqueta que destaque, pon el aspecto en Fondo, Enmarcado u Oscuro."
         }
       ],
       "sections": [

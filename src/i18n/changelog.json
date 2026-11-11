@@ -48,6 +48,537 @@
   },
   "releases": [
     {
+      "version": "1.0.1",
+      "date": "",
+      "notes": {
+        "en": {
+          "intro": "Wallpapers behind your screenshots, a fill and an outline for every shape, ready-made looks, and marks you can copy and paste.",
+          "groups": [
+            {
+              "h": "New",
+              "items": [
+                [
+                  "🖼️",
+                  "Wallpaper backgrounds",
+                  "Turn on Show background and pick a wallpaper: your Mac's own, or EasyShoot's Waves and Gradients. Blur it as much as you like, or choose a gradient or a colour instead."
+                ],
+                [
+                  "💾",
+                  "Starter looks",
+                  "Presets now start empty, with 12 ready looks to add in Settings › Presets."
+                ],
+                [
+                  "🔤",
+                  "Seven text looks",
+                  "Plain, Background, Soft, Framed, Outline, Dark and Custom."
+                ],
+                [
+                  "📋",
+                  "Copy, cut, paste and duplicate marks",
+                  "Command-C, Command-X, Command-V and Command-D now work on the marks you select."
+                ],
+                [
+                  "⭐",
+                  "Rate EasyShoot",
+                  "In Settings › About. After a few days of use, EasyShoot may ask once for a rating with Apple's own prompt."
+                ]
+              ]
+            },
+            {
+              "h": "Improved",
+              "items": [
+                [
+                  "🔷",
+                  "Shapes",
+                  "Every shape has a background and a stroke, and the outline can go once there is a fill. New Rounded corners and Shadow sliders."
+                ],
+                [
+                  "🎨",
+                  "Apple's colours",
+                  "The quick colours are the Mac's own, and each fill matches its stroke."
+                ],
+                [
+                  "✋",
+                  "Easier to handle",
+                  "Four corner handles, rotate and resize pointers, and a mark lets go once it's drawn. With a drawing tool, press on a mark to select it, or hold Option to draw over it."
+                ],
+                [
+                  "🎚️",
+                  "Background controls",
+                  "Background blur, Padding, Rounded corners, Shadow and Shadow opacity, each with a Reset button."
+                ],
+                [
+                  "🧰",
+                  "Tool bar and zoom",
+                  "The tools sit in glass groups, with the aspect ratio beside Crop, and zoom has its own buttons in the corner of the canvas."
+                ],
+                [
+                  "👋",
+                  "A clearer welcome",
+                  "Three steps: allow screen recording, choose where screenshots go, and you're ready. The capture hint is new too."
+                ],
+                [
+                  "⚙️",
+                  "Settings",
+                  "Back and forward buttons, and icons like those in System Settings."
+                ],
+                [
+                  "🔔",
+                  "Update notice",
+                  "A short notice when a newer version is on the Mac App Store."
+                ],
+                [
+                  "⚡",
+                  "Faster and lighter",
+                  "Wallpapers are drawn from a ready copy, and memory is freed when you close the editor."
+                ]
+              ]
+            },
+            {
+              "h": "Fixed",
+              "items": [
+                [
+                  "🖥️",
+                  "Full-screen apps",
+                  "Capture now works while an app is in full screen."
+                ],
+                [
+                  "⏱️",
+                  "Quick Access waits for you",
+                  "The thumbnail no longer closes while the pointer is on it."
+                ],
+                [
+                  "🚫",
+                  "Cancel means cancel",
+                  "Cancelling Save from Quick Access no longer shows an error."
+                ]
+              ]
+            }
+          ]
+        },
+        "ar": {
+          "intro": "صور خلفية خلف لقطاتك، وتعبئة وخط خارجي لكل شكل، وقوالب جاهزة، وعلامات يمكنك نسخها ولصقها.",
+          "groups": [
+            {
+              "h": "جديد",
+              "items": [
+                [
+                  "🖼️",
+                  "صور الخلفية",
+                  "فعّل «إظهار الخلفية» واختر صورة: خلفيات جهازك، أو أمواج وتدرّجات EasyShoot. موّهها بالقدر الذي تريده، أو اختر تدرّجًا أو لونًا بدلًا منها."
+                ],
+                [
+                  "💾",
+                  "قوالب جاهزة",
+                  "قائمة القوالب تبدأ الآن فارغة، ومعها 12 قالبًا جاهزًا تضيفه من الإعدادات › القوالب."
+                ],
+                [
+                  "🔤",
+                  "سبعة أشكال للنص",
+                  "عادي، وبخلفية، وفاتح، وبإطار، ومحدَّد، وداكن، ومخصص."
+                ],
+                [
+                  "📋",
+                  "نسخ العلامات وقصّها ولصقها وتكرارها",
+                  "‏Command-C وCommand-X وCommand-V وCommand-D تعمل الآن على العلامات التي تحدّدها."
+                ],
+                [
+                  "⭐",
+                  "قيّم EasyShoot",
+                  "من الإعدادات › حول. وبعد أيام من الاستخدام قد يطلب EasyShoot تقييمك مرة واحدة بنافذة آبل نفسها."
+                ]
+              ]
+            },
+            {
+              "h": "تحسينات",
+              "items": [
+                [
+                  "🔷",
+                  "الأشكال",
+                  "لكل شكل خلفية وخط خارجي، ويمكن إخفاء الخط بعد أن تملأ الشكل. وشريطان جديدان للزوايا المدوّرة والظل."
+                ],
+                [
+                  "🎨",
+                  "ألوان آبل",
+                  "الألوان السريعة هي ألوان الماك نفسها، وكل تعبئة تطابق لون خطها."
+                ],
+                [
+                  "✋",
+                  "تحكّم أسهل",
+                  "أربعة مقابض في الزوايا، ومؤشرات للتدوير وتغيير الحجم، والعلامة يُلغى تحديدها بعد رسمها. ومع أداة رسم، اضغط على علامة لتحدّدها، أو اضغط Option لترسم فوقها."
+                ],
+                [
+                  "🎚️",
+                  "إعدادات الخلفية",
+                  "تمويه الخلفية والهوامش والزوايا المدوّرة والظل وشفافية الظل، ولكل منها زر «إعادة ضبط»."
+                ],
+                [
+                  "🧰",
+                  "شريط الأدوات والتكبير",
+                  "الأدوات في مجموعات زجاجية، ونسبة الأبعاد بجانب القص، وللتكبير أزراره الخاصة في زاوية مساحة الرسم."
+                ],
+                [
+                  "👋",
+                  "ترحيب أوضح",
+                  "ثلاث خطوات: اسمح بتسجيل الشاشة، واختر مكان حفظ اللقطات، وأنت جاهز. وتلميح الالتقاط جديد أيضًا."
+                ],
+                [
+                  "⚙️",
+                  "الإعدادات",
+                  "زرّا رجوع وتقدّم، وأيقونات مثل التي في إعدادات النظام."
+                ],
+                [
+                  "🔔",
+                  "تنبيه التحديث",
+                  "تنبيه قصير عندما يتوفر إصدار أحدث في متجر تطبيقات الماك."
+                ],
+                [
+                  "⚡",
+                  "أسرع وأخف",
+                  "الخلفيات تُرسم من نسخة جاهزة، والذاكرة تتحرّر عند إغلاق المحرر."
+                ]
+              ]
+            },
+            {
+              "h": "إصلاحات",
+              "items": [
+                [
+                  "🖥️",
+                  "التطبيقات بملء الشاشة",
+                  "الالتقاط يعمل الآن أثناء فتح تطبيق بملء الشاشة."
+                ],
+                [
+                  "⏱️",
+                  "الوصول السريع ينتظرك",
+                  "الصورة المصغّرة لم تعد تُغلق والمؤشر فوقها."
+                ],
+                [
+                  "🚫",
+                  "الإلغاء يعني الإلغاء",
+                  "إلغاء الحفظ من الوصول السريع لم يعد يُظهر رسالة خطأ."
+                ]
+              ]
+            }
+          ]
+        },
+        "fr": {
+          "intro": "Des fonds d’écran derrière vos captures, un fond et un contour pour chaque forme, des styles prêts à l’emploi, et des repères à copier-coller.",
+          "groups": [
+            {
+              "h": "Nouveau",
+              "items": [
+                [
+                  "🖼️",
+                  "Fonds d’écran",
+                  "Activez Afficher l’arrière-plan et choisissez un fond d’écran : ceux de votre Mac, ou les Vagues et Dégradés d’EasyShoot. Floutez-le à votre goût, ou choisissez plutôt un dégradé ou une couleur."
+                ],
+                [
+                  "💾",
+                  "Styles prêts",
+                  "Les préréglages commencent vides, avec 12 styles prêts à ajouter dans Réglages › Préréglages."
+                ],
+                [
+                  "🔤",
+                  "Sept aspects de texte",
+                  "Simple, Arrière-plan, Doux, Encadré, Contour, Sombre et Personnalisé."
+                ],
+                [
+                  "📋",
+                  "Copier, couper, coller et dupliquer les repères",
+                  "Commande-C, Commande-X, Commande-V et Commande-D agissent sur les repères sélectionnés."
+                ],
+                [
+                  "⭐",
+                  "Noter EasyShoot",
+                  "Dans Réglages › À propos. Après quelques jours d’usage, EasyShoot peut demander une fois une note, avec la fenêtre d’Apple."
+                ]
+              ]
+            },
+            {
+              "h": "Améliorations",
+              "items": [
+                [
+                  "🔷",
+                  "Formes",
+                  "Chaque forme a un fond et un trait, et le contour peut disparaître dès qu’il y a un fond. Nouveaux curseurs Coins arrondis et Ombre."
+                ],
+                [
+                  "🎨",
+                  "Les couleurs d’Apple",
+                  "Les couleurs rapides sont celles du Mac, et chaque fond s’accorde à son trait."
+                ],
+                [
+                  "✋",
+                  "Plus simple à manier",
+                  "Quatre poignées aux coins, des pointeurs de rotation et de redimensionnement, et un repère se désélectionne une fois tracé. Avec un outil de dessin, cliquez sur un repère pour le sélectionner, ou maintenez Option pour dessiner par-dessus."
+                ],
+                [
+                  "🎚️",
+                  "Réglages de l’arrière-plan",
+                  "Flou d’arrière-plan, Marge, Coins arrondis, Ombre et Opacité de l’ombre, chacun avec un bouton Réinitialiser."
+                ],
+                [
+                  "🧰",
+                  "Barre d’outils et zoom",
+                  "Les outils sont groupés dans du verre, le format est à côté de Recadrer, et le zoom a ses boutons dans le coin de la zone de travail."
+                ],
+                [
+                  "👋",
+                  "Un accueil plus clair",
+                  "Trois étapes : autorisez l’enregistrement de l’écran, choisissez où vont les captures, et c’est prêt. L’indication de capture est nouvelle aussi."
+                ],
+                [
+                  "⚙️",
+                  "Réglages",
+                  "Boutons précédent et suivant, et des icônes comme dans Réglages Système."
+                ],
+                [
+                  "🔔",
+                  "Avis de mise à jour",
+                  "Un court avis quand une version plus récente est sur le Mac App Store."
+                ],
+                [
+                  "⚡",
+                  "Plus rapide et plus léger",
+                  "Les fonds d’écran sont dessinés depuis une copie prête, et la mémoire est libérée quand vous fermez l’éditeur."
+                ]
+              ]
+            },
+            {
+              "h": "Corrections",
+              "items": [
+                [
+                  "🖥️",
+                  "Apps en plein écran",
+                  "La capture fonctionne maintenant quand une app est en plein écran."
+                ],
+                [
+                  "⏱️",
+                  "Accès rapide vous attend",
+                  "La vignette ne se ferme plus tant que le pointeur est dessus."
+                ],
+                [
+                  "🚫",
+                  "Annuler, c’est annuler",
+                  "Annuler l’enregistrement depuis l’accès rapide n’affiche plus d’erreur."
+                ]
+              ]
+            }
+          ]
+        },
+        "es": {
+          "intro": "Fondos de pantalla detrás de tus capturas, relleno y contorno para cada forma, estilos listos y marcas que puedes copiar y pegar.",
+          "groups": [
+            {
+              "h": "Nuevo",
+              "items": [
+                [
+                  "🖼️",
+                  "Fondos de pantalla",
+                  "Activa Mostrar fondo y elige un fondo: los de tu Mac, o las Ondas y Degradados de EasyShoot. Desenfócalo tanto como quieras, o elige un degradado o un color."
+                ],
+                [
+                  "💾",
+                  "Estilos listos",
+                  "Los preajustes empiezan vacíos, con 12 estilos listos para añadir en Ajustes › Preajustes."
+                ],
+                [
+                  "🔤",
+                  "Siete aspectos de texto",
+                  "Simple, Fondo, Suave, Enmarcado, Contorno, Oscuro y Personalizado."
+                ],
+                [
+                  "📋",
+                  "Copiar, cortar, pegar y duplicar marcas",
+                  "Comando-C, Comando-X, Comando-V y Comando-D funcionan ahora con las marcas que seleccionas."
+                ],
+                [
+                  "⭐",
+                  "Valorar EasyShoot",
+                  "En Ajustes › Acerca de. Tras unos días de uso, EasyShoot puede pedirte una valoración una vez, con la ventana de Apple."
+                ]
+              ]
+            },
+            {
+              "h": "Mejoras",
+              "items": [
+                [
+                  "🔷",
+                  "Formas",
+                  "Cada forma tiene fondo y trazo, y el contorno puede quitarse cuando hay relleno. Nuevos controles de Esquinas redondeadas y Sombra."
+                ],
+                [
+                  "🎨",
+                  "Los colores de Apple",
+                  "Los colores rápidos son los del Mac, y cada relleno combina con su trazo."
+                ],
+                [
+                  "✋",
+                  "Más fácil de manejar",
+                  "Cuatro tiradores en las esquinas, punteros para girar y cambiar el tamaño, y una marca se deselecciona al terminar de dibujarla. Con una herramienta de dibujo, pulsa sobre una marca para seleccionarla, o mantén Opción para dibujar encima."
+                ],
+                [
+                  "🎚️",
+                  "Ajustes del fondo",
+                  "Desenfoque de fondo, Margen, Esquinas redondeadas, Sombra y Opacidad de la sombra, cada uno con un botón Restablecer."
+                ],
+                [
+                  "🧰",
+                  "Barra de herramientas y zoom",
+                  "Las herramientas van en grupos de cristal, la proporción junto a Recortar, y el zoom tiene sus botones en la esquina del lienzo."
+                ],
+                [
+                  "👋",
+                  "Una bienvenida más clara",
+                  "Tres pasos: permite la grabación de pantalla, elige dónde se guardan las capturas, y listo. La indicación de captura también es nueva."
+                ],
+                [
+                  "⚙️",
+                  "Ajustes",
+                  "Botones de atrás y adelante, e iconos como los de Ajustes del Sistema."
+                ],
+                [
+                  "🔔",
+                  "Aviso de actualización",
+                  "Un aviso breve cuando hay una versión más reciente en el Mac App Store."
+                ],
+                [
+                  "⚡",
+                  "Más rápido y ligero",
+                  "Los fondos se dibujan desde una copia preparada, y la memoria se libera al cerrar el editor."
+                ]
+              ]
+            },
+            {
+              "h": "Correcciones",
+              "items": [
+                [
+                  "🖥️",
+                  "Apps a pantalla completa",
+                  "La captura funciona ahora cuando una app está a pantalla completa."
+                ],
+                [
+                  "⏱️",
+                  "Acceso rápido te espera",
+                  "La miniatura ya no se cierra mientras el puntero está encima."
+                ],
+                [
+                  "🚫",
+                  "Cancelar es cancelar",
+                  "Cancelar Guardar desde Acceso rápido ya no muestra un error."
+                ]
+              ]
+            }
+          ]
+        },
+        "de": {
+          "intro": "Hintergrundbilder hinter deinen Screenshots, Füllung und Kontur für jede Form, fertige Looks und Markierungen zum Kopieren und Einsetzen.",
+          "groups": [
+            {
+              "h": "Neu",
+              "items": [
+                [
+                  "🖼️",
+                  "Hintergrundbilder",
+                  "Schalte Hintergrund anzeigen ein und wähle ein Bild: die deines Macs, oder die Wellen und Verläufe von EasyShoot. Zeichne es so weich, wie du magst, oder nimm stattdessen einen Verlauf oder eine Farbe."
+                ],
+                [
+                  "💾",
+                  "Fertige Looks",
+                  "Vorlagen beginnen jetzt leer, mit 12 fertigen Looks zum Hinzufügen unter Einstellungen › Vorlagen."
+                ],
+                [
+                  "🔤",
+                  "Sieben Textdarstellungen",
+                  "Einfach, Hintergrund, Sanft, Umrahmt, Kontur, Dunkel und Eigene."
+                ],
+                [
+                  "📋",
+                  "Markierungen kopieren, ausschneiden, einsetzen und duplizieren",
+                  "Befehl-C, Befehl-X, Befehl-V und Befehl-D wirken jetzt auf die ausgewählten Markierungen."
+                ],
+                [
+                  "⭐",
+                  "EasyShoot bewerten",
+                  "Unter Einstellungen › Über. Nach ein paar Tagen fragt EasyShoot vielleicht einmal mit Apples eigenem Fenster nach einer Bewertung."
+                ]
+              ]
+            },
+            {
+              "h": "Verbessert",
+              "items": [
+                [
+                  "🔷",
+                  "Formen",
+                  "Jede Form hat Hintergrund und Kontur, und die Kontur kann weg, sobald eine Füllung da ist. Neue Regler für abgerundete Ecken und Schatten."
+                ],
+                [
+                  "🎨",
+                  "Apples Farben",
+                  "Die Schnellfarben sind die des Macs, und jede Füllung passt zu ihrer Kontur."
+                ],
+                [
+                  "✋",
+                  "Leichter zu greifen",
+                  "Vier Eckgriffe, Zeiger zum Drehen und Skalieren, und eine Markierung wird nach dem Zeichnen abgewählt. Mit einem Zeichenwerkzeug wählst du eine Markierung per Klick aus, oder hältst Wahl gedrückt, um darüber zu zeichnen."
+                ],
+                [
+                  "🎚️",
+                  "Hintergrund-Regler",
+                  "Hintergrundunschärfe, Abstand, abgerundete Ecken, Schatten und Schattendeckkraft, jeweils mit Zurücksetzen."
+                ],
+                [
+                  "🧰",
+                  "Werkzeugleiste und Zoom",
+                  "Die Werkzeuge sitzen in Glasgruppen, das Seitenverhältnis neben Zuschneiden, und der Zoom hat eigene Tasten in der Ecke der Arbeitsfläche."
+                ],
+                [
+                  "👋",
+                  "Klarere Begrüßung",
+                  "Drei Schritte: Bildschirmaufnahme erlauben, Speicherort wählen, fertig. Auch der Aufnahmehinweis ist neu."
+                ],
+                [
+                  "⚙️",
+                  "Einstellungen",
+                  "Tasten für zurück und vor, und Symbole wie in den Systemeinstellungen."
+                ],
+                [
+                  "🔔",
+                  "Update-Hinweis",
+                  "Ein kurzer Hinweis, wenn im Mac App Store eine neuere Version bereitsteht."
+                ],
+                [
+                  "⚡",
+                  "Schneller und leichter",
+                  "Hintergrundbilder kommen aus einer fertigen Kopie, und der Speicher wird frei, wenn du den Editor schließt."
+                ]
+              ]
+            },
+            {
+              "h": "Behoben",
+              "items": [
+                [
+                  "🖥️",
+                  "Apps im Vollbild",
+                  "Aufnehmen klappt jetzt auch, während eine App im Vollbild ist."
+                ],
+                [
+                  "⏱️",
+                  "Schnellzugriff wartet",
+                  "Die Miniatur schließt sich nicht mehr, solange der Zeiger darauf liegt."
+                ],
+                [
+                  "🚫",
+                  "Abbrechen heißt abbrechen",
+                  "Wenn du Sichern im Schnellzugriff abbrichst, erscheint kein Fehler mehr."
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
       "version": "1.0",
       "date": "2026-11-10",
       "major": true,

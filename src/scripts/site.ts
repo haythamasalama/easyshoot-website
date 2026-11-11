@@ -59,14 +59,36 @@ document.querySelectorAll<HTMLElement>("[data-controls]").forEach(fig => {
       x.classList.toggle("on", x === b);
       x.setAttribute("aria-pressed", String(x === b));
     });
+    b.closest(".ed-pane")?.querySelectorAll(".last").forEach(x => x.classList.remove("last"));
+    b.classList.add("last");
     out().style.setProperty(`--${b.dataset.ctl}`, b.dataset.v!);
   }));
   fig.querySelectorAll<HTMLInputElement>("input[data-ctl]").forEach(i => i.addEventListener("input", () => {
     const share = (+i.value - +i.min) / (+i.max - +i.min);
     i.style.setProperty("--v", `${share * 100}%`);
     out().style.setProperty(`--${i.dataset.ctl}`, String(share));
-    const shown = i.previousElementSibling?.querySelector("em");
+    const row = i.closest<HTMLElement>(".ed-row");
+    const shown = row ? row.querySelector(".ed-cap em") : i.previousElementSibling?.querySelector("em");
     if (shown) shown.textContent = shown.textContent!.replace(/\d+/, i.value);
+    row?.classList.toggle("moved", i.value !== row.dataset.def);
+  }));
+  fig.querySelectorAll<HTMLButtonElement>(".ed-reset").forEach(b => b.addEventListener("click", () => {
+    const row = b.closest<HTMLElement>(".ed-row"), input = row?.querySelector<HTMLInputElement>("input");
+    if (!row || !input) return;
+    input.value = row.dataset.def!;
+    input.dispatchEvent(new Event("input"));
+  }));
+  // Wallpaper, Gradient and Color: each shows its own picks, and keeps the one chosen in it.
+  fig.querySelectorAll<HTMLButtonElement>("button[data-pane]").forEach(b => b.addEventListener("click", () => {
+    const host = b.closest<HTMLElement>("[data-pane]:not(button)");
+    if (!host) return;
+    host.dataset.pane = out().dataset.pane = b.dataset.pane!;
+    host.querySelectorAll<HTMLButtonElement>("button[data-pane]").forEach(x => {
+      x.classList.toggle("on", x === b);
+      x.setAttribute("aria-pressed", String(x === b));
+    });
+    const pane = host.querySelector<HTMLElement>(`.ed-pane[data-for="${b.dataset.pane}"]`);
+    (pane?.querySelector<HTMLButtonElement>("button.last") ?? pane?.querySelector<HTMLButtonElement>("button[data-ctl]"))?.click();
   }));
 });
 

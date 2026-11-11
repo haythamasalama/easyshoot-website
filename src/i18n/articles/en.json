@@ -112,7 +112,7 @@
         },
         {
           "h2": "Style every mark",
-          "html": "<ul><li><strong>Lines and shapes:</strong> solid, dashed or dotted strokes, from thin to bold.</li><li><strong>Rectangle, Diamond and Ellipse:</strong> a background colour, sharp or round edges, and any angle.</li><li><strong>Arrows:</strong> a standard or swept head; drag the middle handle to bend one.</li><li><strong>Numbered steps:</strong> no background, their own colour or a light fill.</li><li><strong>Several at once:</strong> Command-A, Shift-click or drag a box over empty canvas, then move, restyle or delete them together.</li></ul>"
+          "html": "<ul><li><strong>Lines and shapes:</strong> solid, dashed or dotted strokes, from thin to bold.</li><li><strong>Rectangle, Diamond and Ellipse:</strong> a fill and an outline you can hide, rounded corners from sharp to round, a shadow and any angle.</li><li><strong>Arrows:</strong> a standard or swept head; drag the middle handle to bend one.</li><li><strong>Numbered steps:</strong> no background, their own colour or a light fill.</li><li><strong>Several at once:</strong> Command-A, Shift-click or drag a box over empty canvas, then move, restyle or delete them together.</li></ul>"
         },
         {
           "h2": "Keep it readable",
@@ -155,7 +155,7 @@
         },
         {
           "name": "Pick a font and size",
-          "text": "In the Style tab, choose any font on your Mac and set the Size. For a label that stands out, set Look to Bubble or Outline."
+          "text": "In the Style tab, choose any font on your Mac and set the Size. For a label that stands out, set Look to Background, Framed or Dark."
         }
       ],
       "sections": [

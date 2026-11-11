@@ -118,6 +118,8 @@ The app always sits on a sky, never on a coloured panel.
 - The flow's four pictures tell one story with the same checkout page (`src/lib/flow.ts`): it is selected, floats in the corner, gets marked up, then lands in a chat.
 - The small-things tiles each hold a scene of their feature (`moreArt` in `src/lib/flow.ts`), in tiles of different widths. Each scene says one thing: no tilted layers, no extra marks, no detail that needs a second look. Zoom is one large button and its percentage; Presets is three straight frames with their names.
 - The privacy drawing puts the icon's four selection corners around a padlock, in white on the sky.
+- Wallpapers in the drawn Background tab and the Presets tile are EasyShoot's own Waves (`public/art/wallpapers`, small JPEG copies of the app's `scripts/generate-waves.swift` output). Never use Apple's macOS wallpapers on the site.
+- Glass on drawn controls follows macOS: regular glass on the editor's bars, clear glass with white glyphs on controls that sit over a picture (Quick Access, the capture hint, the selection size).
 - Marks inside pictures: one box, two numbered steps, one short arrow, one short note. Steps sit beside what they mark, never on text.
 
 ## Motion

@@ -22,7 +22,7 @@
       "blocks": [
         {
           "h2": "Prêt en une minute",
-          "html": "<ul><li>Téléchargez EasyShoot sur le Mac App Store.</li><li>Ouvrez-le. La fenêtre de <strong>bienvenue</strong> demande l’enregistrement de l’écran, nécessaire à chaque capture. Cliquez sur <strong>Autoriser…</strong>, activez EasyShoot dans la liste, puis appuyez sur <strong>Redémarrer</strong>.</li><li>EasyShoot vit dans la barre des menus. Cliquez sur son icône et choisissez <strong>Capturer une zone…</strong>, ou appuyez sur <kbd dir=\"ltr\">⌥⇧⌘4</kbd>.</li></ul>"
+          "html": "<ul><li>Téléchargez EasyShoot sur le Mac App Store.</li><li>Ouvrez-le. La fenêtre de <strong>bienvenue</strong> tient en trois étapes : autorisez l’enregistrement de l’écran, nécessaire à chaque capture (cliquez sur <strong>Autoriser…</strong>, activez EasyShoot dans la liste, puis appuyez sur <strong>Redémarrer</strong>), choisissez où enregistrer les captures, et c’est prêt.</li><li>EasyShoot vit dans la barre des menus. Cliquez sur son icône et choisissez <strong>Capturer une zone…</strong>, ou appuyez sur <kbd dir=\"ltr\">⌥⇧⌘4</kbd>. La capture fonctionne aussi par-dessus une app en plein écran.</li></ul>"
         },
         {
           "h2": "Vous ne voyez pas l’icône ?",
@@ -70,20 +70,20 @@
         },
         {
           "h2": "Modifier un repère",
-          "html": "<p>Appuyez sur <kbd dir=\"ltr\">V</kbd> pour sélectionner. Faites glisser un repère pour le déplacer, une poignée pour le redimensionner, et appuyez sur Supprimer pour l’effacer. Chaque repère reste modifiable jusqu’à l’export.</p>"
+          "html": "<p>Appuyez sur <kbd dir=\"ltr\">V</kbd> pour sélectionner. Faites glisser un repère pour le déplacer, un de ses quatre coins pour le redimensionner, et appuyez sur Supprimer pour l’effacer. Un nouveau repère se désélectionne une fois tracé. Avec un outil de dessin en main, cliquez sur un repère pour le sélectionner, ou maintenez Option pour dessiner par-dessus. Copiez, coupez, collez et dupliquez les repères avec <kbd dir=\"ltr\">⌘C</kbd>, <kbd dir=\"ltr\">⌘X</kbd>, <kbd dir=\"ltr\">⌘V</kbd> et <kbd dir=\"ltr\">⌘D</kbd>. Chaque repère reste modifiable jusqu’à l’export.</p>"
         }
       ]
     },
     "styles": {
       "title": "Styles",
-      "short": "Couleur, trait, fond, bords, angle et opacité.",
-      "description": "Réglez le style de chaque repère dans EasyShoot : couleur, épaisseur, trait continu, en tirets ou pointillé, fond, bords arrondis, angle, opacité et ombre.",
+      "short": "Fond, trait, coins, ombre, angle et opacité.",
+      "description": "Réglez le style de chaque repère dans EasyShoot : fond, couleur et épaisseur du trait, trait continu, en tirets ou pointillé, coins arrondis, angle, ombre et opacité.",
       "intro": "L’onglet Style de l’inspecteur suit l’outil en main ou le repère sélectionné, et n’affiche que ce qu’il utilise.",
       "blocks": [
         {
           "art": "shape",
           "alt": "L’onglet Style avec un cadre en tirets rempli et une ellipse en pointillé sur la capture.",
-          "html": "<ul class=\"feature-grid\"><li><strong>Couleur et épaisseur</strong>Cinq couleurs, et plus avec « Plus de couleurs ». Fin, moyen ou épais, ou toute épaisseur de 1 à 30.</li><li><strong>Style du trait</strong>Lignes et formes continues, en tirets ou pointillées.</li><li><strong>Fond</strong>Un fond clair pour rectangles, losanges, ellipses et étapes.</li><li><strong>Bords et angle</strong>Coins droits ou arrondis. Tapez un angle ou tournez la poignée ; Maj aimante à 15°.</li><li><strong>Pointe de flèche</strong>Standard ou effilée.</li><li><strong>Opacité et ombre</strong>Atténuez un repère, et ajoutez une ombre douce si vous voulez.</li></ul>"
+          "html": "<ul class=\"feature-grid\"><li><strong>Fond</strong>Un remplissage pour rectangles, losanges, ellipses et étapes, dans une teinte claire du trait ou n’importe quelle couleur.</li><li><strong>Trait et épaisseur</strong>Les six couleurs d’Apple, ou toute couleur avec « Plus de couleurs ». Dès qu’une forme est remplie, son contour peut disparaître. Fin, moyen ou épais, ou toute épaisseur de 1 à 30.</li><li><strong>Style du trait</strong>Lignes et formes continues, en tirets ou pointillées.</li><li><strong>Coins arrondis et angle</strong>Un curseur, des angles vifs aux coins ronds. Tapez un angle ou tournez la poignée ; Maj aimante à 15°.</li><li><strong>Pointe de flèche</strong>Standard ou effilée.</li><li><strong>Ombre et opacité</strong>Une ombre légère ou marquée, et une opacité pour chaque repère.</li></ul>"
         },
         {
           "h2": "Plusieurs repères à la fois",
@@ -106,42 +106,42 @@
     },
     "text": {
       "title": "Texte",
-      "short": "N’importe quelle police, trois aspects et l’écriture de droite à gauche.",
-      "description": "Ajoutez du texte aux captures avec EasyShoot : toute police du Mac ou de Google, simple, en bulle ou avec contour, et l’arabe ou l’hébreu de droite à gauche.",
+      "short": "N’importe quelle police, sept aspects et l’écriture de droite à gauche.",
+      "description": "Ajoutez du texte aux captures avec EasyShoot : toute police du Mac ou de Google, sept aspects du simple au sombre, et l’arabe ou l’hébreu de droite à gauche.",
       "intro": "Appuyez sur T, cliquez où va la note et tapez.",
       "blocks": [
         {
           "art": "ar",
           "alt": "Une note en bulle sur la capture, avec la police, la taille, l’aspect et la direction dans l’onglet Style.",
-          "html": "<ul class=\"feature-grid\"><li><strong>Police</strong>Toute police de votre Mac, ou une police Google téléchargée dès que vous la choisissez.</li><li><strong>Taille</strong>Le curseur, ou faites glisser le coin du texte.</li><li><strong>Aspect</strong>Simple, Bulle ou Contour.</li><li><strong>Direction</strong>Auto écrit l’arabe et l’hébreu de droite à gauche, lettres bien liées ; LTR ou RTL force une ligne.</li></ul>"
+          "html": "<ul class=\"feature-grid\"><li><strong>Police</strong>Toute police de votre Mac, ou une police Google téléchargée dès que vous la choisissez.</li><li><strong>Taille</strong>Le curseur, ou faites glisser le coin du texte.</li><li><strong>Aspect</strong>Simple, Arrière-plan, Doux, Encadré, Contour, Sombre ou Personnalisé, avec des coins arrondis pour les aspects en boîte.</li><li><strong>Direction</strong>Auto écrit l’arabe et l’hébreu de droite à gauche, lettres bien liées ; LTR ou RTL force une ligne.</li></ul>"
         }
       ]
     },
     "background-and-crop": {
       "title": "Arrière-plan et recadrage",
       "short": "Mettre en valeur, recadrer et redimensionner.",
-      "description": "Posez une capture sur un fond avec marges, coins arrondis et ombre dans EasyShoot, puis recadrez-la et redimensionnez-la.",
+      "description": "Posez une capture sur un fond d’écran, un dégradé ou une couleur dans EasyShoot, avec flou, marges, coins arrondis et ombre, puis recadrez-la et redimensionnez-la.",
       "intro": "L’onglet Arrière-plan rend une capture prête à publier.",
       "blocks": [
         {
           "art": "bg",
-          "alt": "La capture sur un dégradé doux, avec remplissage, marge, arrondi et ombre dans l’onglet Arrière-plan.",
-          "html": "<p>Choisissez un dégradé, une couleur unie, votre propre couleur ou aucun fond, puis réglez marge, arrondi des coins, ombre, format et alignement.</p>"
+          "alt": "La capture sur un fond d’écran à vagues, avec fonds d’écran, marge, coins arrondis et ombre dans l’onglet Arrière-plan.",
+          "html": "<p>Activez <strong>Afficher l’arrière-plan</strong>, puis choisissez un <strong>Fond d’écran</strong> (ceux de votre Mac, ou les Vagues et Dégradés d’EasyShoot), un <strong>Dégradé</strong> ou une <strong>Couleur</strong>. Réglez le flou d’un fond d’écran, puis marge, coins arrondis, ombre, opacité de l’ombre et alignement. <strong>Réinitialiser</strong> remet un curseur à sa valeur. Le format se trouve dans la barre d’outils, à côté de Recadrer.</p>"
         },
         {
           "h2": "Recadrer, redimensionner et zoomer",
-          "html": "<ul class=\"feature-grid\"><li><strong>Recadrer · C</strong>Libre, ou fixe en 1:1, 4:3 ou 16:9.</li><li><strong>Redimensionner</strong>En pourcentage, ou à une largeur précise.</li><li><strong>Zoom</strong>⌘+ et ⌘− pour les détails ; ⌘0 taille réelle et ⌘9 ajuste à la fenêtre.</li></ul>"
+          "html": "<ul class=\"feature-grid\"><li><strong>Recadrer · C</strong>Libre, ou fixe en 1:1, 4:3 ou 16:9.</li><li><strong>Redimensionner</strong>En pourcentage, ou à une largeur précise.</li><li><strong>Zoom</strong>Les boutons − et + dans le coin de la zone de travail, ou ⌘+ et ⌘− ; ⌘0 taille réelle et ⌘9 ajuste à la fenêtre.</li></ul>"
         }
       ]
     },
     "presets": {
       "title": "Préréglages",
-      "short": "Enregistrer un style et le réutiliser.",
+      "short": "Partir d’un style prêt, ou enregistrer le vôtre.",
       "description": "Enregistrez un arrière-plan, un style de repères et des réglages d’export comme préréglage dans EasyShoot, et faites-en le défaut.",
-      "intro": "Un préréglage garde ensemble un arrière-plan, un style de repères et des réglages d’export.",
+      "intro": "Un préréglage garde ensemble un arrière-plan, un style de repères et des réglages d’export. Votre liste commence vide, avec 12 styles prêts à ajouter.",
       "blocks": [
         {
-          "html": "<ul><li>Pour en créer un, ouvrez <strong>Préréglages</strong> dans la barre d’outils de l’éditeur et choisissez <strong>Enregistrer le style actuel comme préréglage…</strong>.</li><li>Pour l’utiliser, choisissez-le dans le même menu.</li><li>Dans Réglages › Préréglages, choisissez <strong>Définir par défaut</strong> pour que chaque capture commence avec, ou <strong>Restaurer les préréglages intégrés</strong>.</li></ul><p>Sans préréglage par défaut, chaque capture reprend vos derniers réglages.</p>"
+          "html": "<ul><li>Pour partir d’un style prêt, ouvrez Réglages › Préréglages et cliquez sur <strong>Ajouter</strong> sous l’un des 12 styles prêts.</li><li>Pour créer le vôtre, ouvrez <strong>Préréglages</strong> dans la barre d’outils de l’éditeur et choisissez <strong>Enregistrer le style actuel comme préréglage…</strong>.</li><li>Pour l’utiliser, choisissez-le dans le même menu. <strong>Gérer les préréglages…</strong> ouvre les Réglages.</li><li>Dans Réglages › Préréglages, choisissez <strong>Définir par défaut</strong> pour que chaque capture commence avec.</li></ul><p>Sans préréglage par défaut, chaque capture reprend vos derniers réglages.</p>"
         }
       ]
     },
@@ -176,7 +176,7 @@
         },
         {
           "h2": "Commandes de l’éditeur",
-          "html": "<table><thead><tr><th>Commande</th><th>Raccourci</th></tr></thead><tbody><tr><td>Copier l’image</td><td><kbd dir=\"ltr\">⇧⌘C</kbd></td></tr><tr><td>Enregistrer</td><td><kbd dir=\"ltr\">⌘S</kbd></td></tr><tr><td>Annuler</td><td><kbd dir=\"ltr\">⌘Z</kbd></td></tr><tr><td>Rétablir</td><td><kbd dir=\"ltr\">⇧⌘Z</kbd></td></tr><tr><td>Tout sélectionner</td><td><kbd dir=\"ltr\">⌘A</kbd></td></tr><tr><td>Zoom avant / arrière</td><td><kbd dir=\"ltr\">⌘+ / ⌘−</kbd></td></tr><tr><td>Taille réelle / ajuster</td><td><kbd dir=\"ltr\">⌘0 / ⌘9</kbd></td></tr><tr><td>Afficher ou masquer l’inspecteur</td><td><kbd dir=\"ltr\">⌥⌘I</kbd></td></tr></tbody></table>"
+          "html": "<table><thead><tr><th>Commande</th><th>Raccourci</th></tr></thead><tbody><tr><td>Copier l’image</td><td><kbd dir=\"ltr\">⇧⌘C</kbd></td></tr><tr><td>Enregistrer</td><td><kbd dir=\"ltr\">⌘S</kbd></td></tr><tr><td>Annuler</td><td><kbd dir=\"ltr\">⌘Z</kbd></td></tr><tr><td>Rétablir</td><td><kbd dir=\"ltr\">⇧⌘Z</kbd></td></tr><tr><td>Copier, couper ou coller un repère</td><td><kbd dir=\"ltr\">⌘C / ⌘X / ⌘V</kbd></td></tr><tr><td>Dupliquer un repère</td><td><kbd dir=\"ltr\">⌘D</kbd></td></tr><tr><td>Tout sélectionner</td><td><kbd dir=\"ltr\">⌘A</kbd></td></tr><tr><td>Zoom avant / arrière</td><td><kbd dir=\"ltr\">⌘+ / ⌘−</kbd></td></tr><tr><td>Taille réelle / ajuster</td><td><kbd dir=\"ltr\">⌘0 / ⌘9</kbd></td></tr><tr><td>Afficher ou masquer l’inspecteur</td><td><kbd dir=\"ltr\">⌥⌘I</kbd></td></tr></tbody></table>"
         }
       ]
     },
@@ -187,7 +187,7 @@
       "intro": "Ouvrez Réglages… depuis l’icône de la barre des menus, ou appuyez sur ⌘, quand EasyShoot est au premier plan.",
       "blocks": [
         {
-          "html": "<ul class=\"feature-grid\"><li><strong>Général</strong>Ce qui se passe après la capture, l’emplacement d’enregistrement, l’ombre des fenêtres, les options de l’éditeur et les avis de mise à jour.</li><li><strong>Raccourcis</strong>Enregistrez vos propres raccourcis de capture.</li><li><strong>Préréglages</strong>Renommez, supprimez, définissez par défaut ou restaurez les préréglages intégrés.</li><li><strong>Autorisations</strong>Vérifiez l’enregistrement de l’écran, nécessaire à chaque capture.</li><li><strong>À propos</strong>Version, site web et assistance.</li></ul>"
+          "html": "<ul class=\"feature-grid\"><li><strong>Général</strong>Ce qui se passe après la capture, l’emplacement d’enregistrement, l’ombre des fenêtres, les options de l’éditeur et les avis de mise à jour.</li><li><strong>Raccourcis</strong>Enregistrez vos propres raccourcis de capture.</li><li><strong>Préréglages</strong>Vos préréglages, celui par défaut, et 12 styles prêts à ajouter.</li><li><strong>Autorisations</strong>Vérifiez l’enregistrement de l’écran, nécessaire à chaque capture.</li><li><strong>À propos</strong>Version, site web, assistance et <strong>Noter EasyShoot</strong>.</li></ul>"
         }
       ]
     },

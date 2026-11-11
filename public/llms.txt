@@ -15,17 +15,17 @@
 
 - Capture: area, window and fullscreen, each on a global shortcut you can record yourself.
 - Quick Access: a floating thumbnail after each capture to copy, save, annotate or drag into another app.
-- Annotations: arrows, lines, rectangles, diamonds, ellipses, text, numbered steps, pen and pixelate. Every mark stays editable.
-- Style: every tool's settings live in the inspector's Style tab: colour, stroke width (thin, medium, bold or 1 to 30), solid, dashed or dotted strokes, a background colour for shapes and steps, sharp or round edges, an angle (Shift snaps to 15°), opacity and an optional shadow. Arrows have a standard or swept head and bend by dragging their middle handle.
+- Annotations: arrows, lines, rectangles, diamonds, ellipses, text, numbered steps, pen and pixelate. Every mark stays editable, with four corner handles to resize it. Copy, cut, paste and duplicate marks with Command-C, X, V and D.
+- Style: every tool's settings live in the inspector's Style tab: Apple's six system colours with matching light fills, stroke width (thin, medium, bold or 1 to 30), solid, dashed or dotted strokes, a background (fill) for shapes and steps with an outline that can be hidden, a rounded-corners slider, a shadow slider, an angle (Shift snaps to 15°) and opacity. Arrows have a standard or swept head and bend by dragging their middle handle.
 - Pixelate: pixels or blur, with a strength.
-- Text looks: plain, bubble or outline; direction auto, left to right or right to left.
+- Text looks: plain, background, soft, framed, outline, dark or custom; direction auto, left to right or right to left.
 - Selection: Command-A, Shift-click or a box dragged over empty canvas selects several marks to move, restyle or delete together.
 - Text: any font installed on the Mac, plus Google Fonts downloaded on demand. Arabic and Hebrew are written right-to-left with correct shaping.
-- Background tool: gradients, solid colours or transparent, with padding, corner radius, shadow, aspect ratio and alignment.
+- Background: a Show background switch, then a wallpaper (the Mac's own desktop pictures, or EasyShoot's Waves and Gradients), a gradient or a colour, with background blur, padding, rounded corners, shadow, shadow opacity, aspect ratio and alignment. Each slider has a Reset.
 - Crop and resize: free or fixed ratios (1:1, 4:3, 16:9), resize by percent or to an exact width.
-- Presets: save a style and make it the default; without a default, each screenshot starts with the last settings.
+- Presets: the list starts empty, with 12 starter looks to add in Settings › Presets. Save your own style and make it the default; without a default, each screenshot starts with the last settings.
 - Export: PNG, JPEG, HEIC or TIFF; copy with Shift-Command-C, save with Command-S.
-- Zoom: zoom the canvas in and out with Command-Plus and Command-Minus.
+- Zoom: the − and + buttons in the corner of the canvas, or Command-Plus and Command-Minus.
 - Editor keys: A arrow, L line, R rectangle, O ellipse, T text, N numbered step, D diamond, P pen, B pixelate, C crop, V select.
 - Look: native SwiftUI and AppKit, light and dark, Liquid Glass on macOS 26.
 - Privacy: no account, no cloud, no analytics. The app only goes online to download a Google font you pick and to check the App Store for a newer version.
@@ -40,7 +40,7 @@
 ## Install
 
 1. Get EasyShoot from the Mac App Store: https://apps.apple.com/app/easyshoot-screenshot-markup/id6829547113
-2. Click Allow in the Welcome window to grant Screen Recording permission. EasyShoot lives in the menu bar.
+2. The Welcome window takes three steps: allow Screen Recording, choose where screenshots are saved, and you're ready. EasyShoot lives in the menu bar.
 3. Updates come from the App Store.
 
 ## User guide
@@ -51,11 +51,11 @@ One page per topic, in English, Arabic, French, Spanish and German: https://easy
 - [Capture](https://easyshoot.app/docs/capture/): Area, window, full screen, or an image you already have.
 - [Quick Access](https://easyshoot.app/docs/quick-access/): What happens right after a capture.
 - [Mark up](https://easyshoot.app/docs/mark-up/): Arrows, shapes, numbered steps, text and pen.
-- [Styles](https://easyshoot.app/docs/styles/): Colour, stroke, fill, edges, angle and opacity.
+- [Styles](https://easyshoot.app/docs/styles/): Fill, stroke, corners, shadow, angle and opacity.
 - [Hide private details](https://easyshoot.app/docs/hide-details/): Pixelate or blur emails, names and card numbers.
-- [Text](https://easyshoot.app/docs/text/): Any font, three looks, and right-to-left text.
+- [Text](https://easyshoot.app/docs/text/): Any font, seven looks, and right-to-left text.
 - [Background and crop](https://easyshoot.app/docs/background-and-crop/): Frame a shot, crop it and resize it.
-- [Presets](https://easyshoot.app/docs/presets/): Save a look and reuse it.
+- [Presets](https://easyshoot.app/docs/presets/): Start from a ready look, or save your own.
 - [Export and share](https://easyshoot.app/docs/export/): Copy, save, formats and size.
 - [Keyboard shortcuts](https://easyshoot.app/docs/shortcuts/): Every key in one place.
 - [Settings](https://easyshoot.app/docs/settings/): General, Shortcuts, Presets, Permissions and About.
