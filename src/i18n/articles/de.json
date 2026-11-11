@@ -112,7 +112,7 @@
         },
         {
           "h2": "Jede Markierung gestalten",
-          "html": "<ul><li><strong>Linien und Formen:</strong> durchgezogen, gestrichelt oder gepunktet, von dünn bis kräftig.</li><li><strong>Rechteck, Raute und Ellipse:</strong> eine Hintergrundfarbe, eckige oder abgerundete Ecken und jeder Winkel.</li><li><strong>Pfeile:</strong> eine normale oder spitze Spitze; zieh am mittleren Griff, um ihn zu biegen.</li><li><strong>Nummerierte Schritte:</strong> ohne Hintergrund, in eigener Farbe oder mit heller Füllung.</li><li><strong>Mehrere auf einmal:</strong> Befehl-A, Umschalt-Klick oder ein Rahmen über leere Fläche, dann gemeinsam bewegen, gestalten oder löschen.</li></ul>"
+          "html": "<ul><li><strong>Linien und Formen:</strong> durchgezogen, gestrichelt oder gepunktet, von dünn bis kräftig.</li><li><strong>Rechteck, Raute und Ellipse:</strong> eine Füllung und eine Kontur, die du ausblenden kannst, Ecken von spitz bis rund, ein Schatten und jeder Winkel.</li><li><strong>Pfeile:</strong> eine normale oder spitze Spitze; zieh am mittleren Griff, um ihn zu biegen.</li><li><strong>Nummerierte Schritte:</strong> ohne Hintergrund, in eigener Farbe oder mit heller Füllung.</li><li><strong>Mehrere auf einmal:</strong> Befehl-A, Umschalt-Klick oder ein Rahmen über leere Fläche, dann gemeinsam bewegen, gestalten oder löschen.</li></ul>"
         },
         {
           "h2": "Gut lesbar bleiben",
@@ -155,7 +155,7 @@
         },
         {
           "name": "Schrift und Größe wählen",
-          "text": "Wähle im Tab Stil eine beliebige Schrift deines Macs und stelle die Größe ein. Für ein auffälliges Etikett stelle die Darstellung auf Sprechblase oder Kontur."
+          "text": "Wähle im Tab Stil eine beliebige Schrift deines Macs und stelle die Größe ein. Für ein auffälliges Etikett stelle die Darstellung auf Hintergrund, Umrahmt oder Dunkel."
         }
       ],
       "sections": [

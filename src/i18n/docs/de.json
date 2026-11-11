@@ -22,7 +22,7 @@
       "blocks": [
         {
           "h2": "In einer Minute bereit",
-          "html": "<ul><li>Lade EasyShoot aus dem Mac App Store.</li><li>Öffne es. Das <strong>Willkommensfenster</strong> fragt nach der Bildschirmaufnahme, die jeder Screenshot braucht. Klicke auf <strong>Erlauben …</strong>, schalte EasyShoot in der Liste ein und drücke dann <strong>Neu starten</strong>.</li><li>EasyShoot lebt in der Menüleiste. Klicke auf das Symbol und wähle <strong>Bereich aufnehmen…</strong>, oder drücke <kbd dir=\"ltr\">⌥⇧⌘4</kbd>.</li></ul>"
+          "html": "<ul><li>Lade EasyShoot aus dem Mac App Store.</li><li>Öffne es. Das <strong>Willkommensfenster</strong> hat drei Schritte: Bildschirmaufnahme erlauben, die jeder Screenshot braucht (klicke auf <strong>Erlauben …</strong>, schalte EasyShoot in der Liste ein und klicke auf <strong>Neu starten</strong>), den Ort für deine Screenshots wählen, und fertig.</li><li>EasyShoot wohnt in der Menüleiste. Klicke auf sein Symbol und wähle <strong>Bereich aufnehmen…</strong>, oder drücke <kbd dir=\"ltr\">⌥⇧⌘4</kbd>. Aufnehmen klappt auch über Apps im Vollbild.</li></ul>"
         },
         {
           "h2": "Symbol nicht zu sehen?",
@@ -70,20 +70,20 @@
         },
         {
           "h2": "Eine Markierung ändern",
-          "html": "<p>Drücke <kbd dir=\"ltr\">V</kbd> zum Auswählen. Zieh eine Markierung, um sie zu bewegen, einen Griff, um ihre Größe zu ändern, und drücke Löschen, um sie zu entfernen. Jede Markierung bleibt bis zum Export bearbeitbar.</p>"
+          "html": "<p>Drücke <kbd dir=\"ltr\">V</kbd> zum Auswählen. Zieh eine Markierung, um sie zu bewegen, eine ihrer vier Ecken, um die Größe zu ändern, und drücke Entfernen, um sie zu löschen. Eine neue Markierung wird nach dem Zeichnen abgewählt. Mit einem Zeichenwerkzeug in der Hand wählst du eine Markierung per Klick aus, oder hältst Wahl gedrückt, um darüber zu zeichnen. Kopieren, ausschneiden, einsetzen und duplizieren mit <kbd dir=\"ltr\">⌘C</kbd>, <kbd dir=\"ltr\">⌘X</kbd>, <kbd dir=\"ltr\">⌘V</kbd> und <kbd dir=\"ltr\">⌘D</kbd>. Jede Markierung bleibt bis zum Export bearbeitbar.</p>"
         }
       ]
     },
     "styles": {
       "title": "Stile",
-      "short": "Farbe, Linie, Füllung, Ecken, Winkel und Deckkraft.",
-      "description": "Gestalte jede Markierung in EasyShoot: Farbe, Linienstärke, durchgezogene, gestrichelte oder gepunktete Linien, Füllung, runde Ecken, Winkel, Deckkraft und Schatten.",
+      "short": "Füllung, Kontur, Ecken, Schatten, Winkel und Deckkraft.",
+      "description": "Gestalte jede Markierung in EasyShoot: Füllung, Konturfarbe und -stärke, durchgezogene, gestrichelte oder gepunktete Linien, abgerundete Ecken, Winkel, Schatten und Deckkraft.",
       "intro": "Der Tab „Stil“ im Inspektor folgt dem Werkzeug in der Hand oder der ausgewählten Markierung und zeigt nur, was sie nutzt.",
       "blocks": [
         {
           "art": "shape",
           "alt": "Der Tab „Stil“ mit einem gestrichelten, gefüllten Rahmen und einer gepunkteten Ellipse auf dem Screenshot.",
-          "html": "<ul class=\"feature-grid\"><li><strong>Farbe und Stärke</strong>Fünf Farben, mehr unter „Weitere Farben“. Dünn, mittel oder fett, oder jede Stärke von 1 bis 30.</li><li><strong>Linienstil</strong>Durchgezogene, gestrichelte oder gepunktete Linien und Formen.</li><li><strong>Hintergrund</strong>Eine helle Füllung für Rechtecke, Rauten, Ellipsen und Schritte.</li><li><strong>Ecken und Winkel</strong>Eckig oder abgerundet. Tippe einen Winkel oder dreh am Griff; Umschalt rastet bei 15° ein.</li><li><strong>Pfeilspitze</strong>Normal oder spitz.</li><li><strong>Deckkraft und Schatten</strong>Blende eine Markierung ab und gib ihr bei Bedarf einen weichen Schatten.</li></ul>"
+          "html": "<ul class=\"feature-grid\"><li><strong>Hintergrund</strong>Eine Füllung für Rechtecke, Rauten, Ellipsen und nummerierte Schritte, in einem hellen Ton der Kontur oder jeder Farbe.</li><li><strong>Kontur und Stärke</strong>Die sechs Farben von Apple, oder jede Farbe über „Weitere Farben“. Sobald eine Form gefüllt ist, kann ihre Kontur weg. Dünn, mittel oder fett, oder jede Stärke von 1 bis 30.</li><li><strong>Linienstil</strong>Durchgezogene, gestrichelte oder gepunktete Linien und Formen.</li><li><strong>Abgerundete Ecken und Winkel</strong>Ein Regler von spitz bis rund. Gib einen Winkel ein oder dreh am Griff; Umschalt rastet bei 15° ein.</li><li><strong>Pfeilspitze</strong>Standard oder geschwungen.</li><li><strong>Schatten und Deckkraft</strong>Ein leichter oder kräftiger Schatten und eine Deckkraft für jede Markierung.</li></ul>"
         },
         {
           "h2": "Mehrere auf einmal",
@@ -106,42 +106,42 @@
     },
     "text": {
       "title": "Text",
-      "short": "Jede Schrift, drei Darstellungen und Rechts-nach-links.",
-      "description": "Füge mit EasyShoot Text zu Screenshots hinzu: jede Mac- oder Google-Schrift, einfach, als Sprechblase oder mit Kontur, und Arabisch oder Hebräisch von rechts nach links.",
+      "short": "Jede Schrift, sieben Darstellungen und Text von rechts nach links.",
+      "description": "Füge Screenshots mit EasyShoot Text hinzu: jede Mac- oder Google-Schrift, sieben Darstellungen von einfach bis dunkel, und Arabisch oder Hebräisch von rechts nach links.",
       "intro": "Drücke T, klicke dorthin, wo die Notiz hin soll, und tippe.",
       "blocks": [
         {
           "art": "ar",
           "alt": "Eine Notiz als Sprechblase auf dem Screenshot, mit Schrift, Größe, Darstellung und Richtung im Tab „Stil“.",
-          "html": "<ul class=\"feature-grid\"><li><strong>Schrift</strong>Jede Schrift deines Macs, oder eine Google-Schrift, die beim Auswählen geladen wird.</li><li><strong>Größe</strong>Mit dem Regler, oder zieh an der Ecke des Textes.</li><li><strong>Darstellung</strong>Einfach, Sprechblase oder Kontur.</li><li><strong>Richtung</strong>Auto schreibt Arabisch und Hebräisch von rechts nach links, Buchstaben korrekt verbunden; LTR oder RTL legt eine Zeile fest.</li></ul>"
+          "html": "<ul class=\"feature-grid\"><li><strong>Schrift</strong>Jede Schrift auf deinem Mac, oder eine Google-Schrift, die geladen wird, sobald du sie wählst.</li><li><strong>Größe</strong>Mit dem Regler, oder zieh an der Ecke des Textes.</li><li><strong>Darstellung</strong>Einfach, Hintergrund, Sanft, Umrahmt, Kontur, Dunkel oder Eigene, mit abgerundeten Ecken für die Darstellungen mit Kasten.</li><li><strong>Richtung</strong>Auto schreibt Arabisch und Hebräisch von rechts nach links mit richtig verbundenen Buchstaben; LTR oder RTL legt eine Zeile fest.</li></ul>"
         }
       ]
     },
     "background-and-crop": {
       "title": "Hintergrund und Zuschneiden",
       "short": "Gestalten, zuschneiden und Größe ändern.",
-      "description": "Leg einen Screenshot in EasyShoot auf einen Hintergrund mit Abstand, runden Ecken und Schatten, dann schneide ihn zu und ändere seine Größe.",
+      "description": "Leg einen Screenshot in EasyShoot auf ein Schreibtischbild, einen Verlauf oder eine Farbe, mit Unschärfe, Abstand, abgerundeten Ecken und Schatten, und schneide ihn dann zu.",
       "intro": "Der Tab „Hintergrund“ macht eine Aufnahme bereit zum Posten.",
       "blocks": [
         {
           "art": "bg",
-          "alt": "Der Screenshot auf einem sanften Verlauf, mit Füllung, Abstand, Eckenradius und Schatten im Tab „Hintergrund“.",
-          "html": "<p>Wähle einen Verlauf, eine Farbe, deine eigene Farbe oder keinen Hintergrund, dann Abstand, Eckenradius, Schatten, Seitenverhältnis und Ausrichtung.</p>"
+          "alt": "Der Screenshot auf einem Wellen-Hintergrundbild, mit Hintergrundbildern, Abstand, abgerundeten Ecken und Schatten im Tab Hintergrund.",
+          "html": "<p>Schalte <strong>Hintergrund anzeigen</strong> ein und wähle ein <strong>Schreibtischbild</strong> (die deines Macs, oder die Wellen und Verläufe von EasyShoot), einen <strong>Verlauf</strong> oder eine <strong>Farbe</strong>. Stell die Unschärfe eines Schreibtischbilds ein, dann Abstand, abgerundete Ecken, Schatten, Schattendeckkraft und Ausrichtung. <strong>Zurücksetzen</strong> stellt einen Regler zurück. Das Seitenverhältnis sitzt in der Werkzeugleiste neben Zuschneiden.</p>"
         },
         {
           "h2": "Zuschneiden, Größe und Zoom",
-          "html": "<ul class=\"feature-grid\"><li><strong>Zuschneiden · C</strong>Frei, oder fest auf 1:1, 4:3 oder 16:9.</li><li><strong>Größe ändern</strong>In Prozent oder auf eine genaue Breite.</li><li><strong>Zoom</strong>⌘+ und ⌘− für Details; ⌘0 Originalgröße und ⌘9 ins Fenster einpassen.</li></ul>"
+          "html": "<ul class=\"feature-grid\"><li><strong>Zuschneiden · C</strong>Frei, oder fest auf 1:1, 4:3 oder 16:9.</li><li><strong>Größe ändern</strong>In Prozent, oder auf eine genaue Breite.</li><li><strong>Zoom</strong>Die Tasten − und + in der Ecke der Arbeitsfläche, oder ⌘+ und ⌘−; ⌘0 zeigt die Originalgröße und ⌘9 passt ins Fenster.</li></ul>"
         }
       ]
     },
     "presets": {
       "title": "Vorlagen",
-      "short": "Einen Stil sichern und wiederverwenden.",
+      "short": "Mit einem fertigen Look starten oder den eigenen sichern.",
       "description": "Sichere in EasyShoot Hintergrund, Markierungsstil und Export als Vorlage und mach sie zum Standard.",
-      "intro": "Eine Vorlage hält Hintergrund, Markierungsstil und Exporteinstellungen zusammen.",
+      "intro": "Eine Vorlage hält Hintergrund, Markierungsstil und Export-Einstellungen zusammen. Deine Liste beginnt leer, mit 12 fertigen Looks zum Hinzufügen.",
       "blocks": [
         {
-          "html": "<ul><li>Zum Sichern öffne <strong>Vorlagen</strong> in der Werkzeugleiste des Editors und wähle <strong>Aktuellen Stil als Vorlage sichern …</strong>.</li><li>Zum Verwenden wähle sie im selben Menü.</li><li>Unter Einstellungen › Vorlagen wähle <strong>Als Standard</strong>, damit jeder neue Screenshot damit beginnt, oder <strong>Integrierte Vorlagen wiederherstellen</strong>.</li></ul><p>Ohne Standard beginnt jeder Screenshot mit den zuletzt benutzten Einstellungen.</p>"
+          "html": "<ul><li>Um mit einem fertigen Look zu starten, öffne Einstellungen › Vorlagen und klicke unter einem der 12 fertigen Looks auf <strong>Hinzufügen</strong>.</li><li>Um deinen eigenen zu sichern, öffne <strong>Vorlagen</strong> in der Werkzeugleiste des Editors und wähle <strong>Aktuellen Stil als Vorlage sichern …</strong>.</li><li>Um ihn zu nutzen, wähle ihn im selben Menü. <strong>Vorlagen verwalten…</strong> öffnet die Einstellungen.</li><li>In Einstellungen › Vorlagen wählst du <strong>Als Standard</strong>, damit jeder neue Screenshot damit beginnt.</li></ul><p>Ohne Standard beginnt jeder Screenshot mit den Einstellungen, die du zuletzt benutzt hast.</p>"
         }
       ]
     },
@@ -176,7 +176,7 @@
         },
         {
           "h2": "Editor-Befehle",
-          "html": "<table><thead><tr><th>Befehl</th><th>Kürzel</th></tr></thead><tbody><tr><td>Bild kopieren</td><td><kbd dir=\"ltr\">⇧⌘C</kbd></td></tr><tr><td>Sichern</td><td><kbd dir=\"ltr\">⌘S</kbd></td></tr><tr><td>Widerrufen</td><td><kbd dir=\"ltr\">⌘Z</kbd></td></tr><tr><td>Wiederholen</td><td><kbd dir=\"ltr\">⇧⌘Z</kbd></td></tr><tr><td>Alle Markierungen auswählen</td><td><kbd dir=\"ltr\">⌘A</kbd></td></tr><tr><td>Vergrößern / verkleinern</td><td><kbd dir=\"ltr\">⌘+ / ⌘−</kbd></td></tr><tr><td>Originalgröße / einpassen</td><td><kbd dir=\"ltr\">⌘0 / ⌘9</kbd></td></tr><tr><td>Inspektor ein- oder ausblenden</td><td><kbd dir=\"ltr\">⌥⌘I</kbd></td></tr></tbody></table>"
+          "html": "<table><thead><tr><th>Befehl</th><th>Kürzel</th></tr></thead><tbody><tr><td>Bild kopieren</td><td><kbd dir=\"ltr\">⇧⌘C</kbd></td></tr><tr><td>Sichern</td><td><kbd dir=\"ltr\">⌘S</kbd></td></tr><tr><td>Widerrufen</td><td><kbd dir=\"ltr\">⌘Z</kbd></td></tr><tr><td>Wiederholen</td><td><kbd dir=\"ltr\">⇧⌘Z</kbd></td></tr><tr><td>Markierung kopieren, ausschneiden oder einsetzen</td><td><kbd dir=\"ltr\">⌘C / ⌘X / ⌘V</kbd></td></tr><tr><td>Markierung duplizieren</td><td><kbd dir=\"ltr\">⌘D</kbd></td></tr><tr><td>Alle Markierungen auswählen</td><td><kbd dir=\"ltr\">⌘A</kbd></td></tr><tr><td>Vergrößern / verkleinern</td><td><kbd dir=\"ltr\">⌘+ / ⌘−</kbd></td></tr><tr><td>Originalgröße / einpassen</td><td><kbd dir=\"ltr\">⌘0 / ⌘9</kbd></td></tr><tr><td>Inspektor ein- oder ausblenden</td><td><kbd dir=\"ltr\">⌥⌘I</kbd></td></tr></tbody></table>"
         }
       ]
     },
@@ -187,7 +187,7 @@
       "intro": "Öffne Einstellungen … über das Symbol in der Menüleiste, oder drücke ⌘, wenn EasyShoot vorne ist.",
       "blocks": [
         {
-          "html": "<ul class=\"feature-grid\"><li><strong>Allgemein</strong>Was nach der Aufnahme passiert, Speicherort, Fensterschatten, Editor-Optionen und Update-Hinweise.</li><li><strong>Kurzbefehle</strong>Nimm deine eigenen Aufnahme-Kürzel auf.</li><li><strong>Vorlagen</strong>Umbenennen, löschen, als Standard festlegen oder die integrierten wiederherstellen.</li><li><strong>Berechtigungen</strong>Prüfe die Bildschirmaufnahme, die jeder Screenshot braucht.</li><li><strong>Über</strong>Version, Website und Support.</li></ul>"
+          "html": "<ul class=\"feature-grid\"><li><strong>Allgemein</strong>Was nach der Aufnahme passiert, der Speicherort, der Fensterschatten, Editor-Optionen und Update-Hinweise.</li><li><strong>Kurzbefehle</strong>Nimm deine eigenen Kurzbefehle auf.</li><li><strong>Vorlagen</strong>Deine Vorlagen, der Standard und 12 fertige Looks zum Hinzufügen.</li><li><strong>Berechtigungen</strong>Prüfe die Bildschirmaufnahme, die jeder Screenshot braucht.</li><li><strong>Über</strong>Version, Website, Support und <strong>EasyShoot bewerten</strong>.</li></ul>"
         }
       ]
     },

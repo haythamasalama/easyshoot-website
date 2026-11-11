@@ -8,7 +8,7 @@ export const SUPPORT_EMAIL = "support@easyshoot.app";
 export const TERMS_URL = "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/";
 export const X_URL = "https://x.com/haythamasalama";
 export const AUTHOR_URL = "https://haythamasalama.me";
-export const APP_VERSION = "1.0.0";
+export const APP_VERSION = "1.0.1";
 export const APP_RELEASED = "2026-11-10";
 
 export const LANGS = ["en", "ar", "fr", "es", "de"] as const;

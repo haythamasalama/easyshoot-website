@@ -22,7 +22,7 @@
       "blocks": [
         {
           "h2": "Set up in a minute",
-          "html": "<ul><li>Get EasyShoot from the Mac App Store.</li><li>Open it. The <strong>Welcome</strong> window asks for Screen Recording, which every screenshot needs. Click <strong>Allow…</strong>, turn on EasyShoot in the list, then press <strong>Restart</strong>.</li><li>EasyShoot lives in the menu bar. Click its icon and choose <strong>Capture Area…</strong>, or press <kbd dir=\"ltr\">⌥⇧⌘4</kbd>.</li></ul>"
+          "html": "<ul><li>Get EasyShoot from the Mac App Store.</li><li>Open it. The <strong>Welcome</strong> window takes three steps: allow Screen Recording, which every screenshot needs (click <strong>Allow…</strong>, turn on EasyShoot in the list, then press <strong>Restart</strong>), choose where screenshots are saved, and you're ready.</li><li>EasyShoot lives in the menu bar. Click its icon and choose <strong>Capture Area…</strong>, or press <kbd dir=\"ltr\">⌥⇧⌘4</kbd>. Capture works over apps in full screen, too.</li></ul>"
         },
         {
           "h2": "Can't see the icon?",
@@ -70,20 +70,20 @@
         },
         {
           "h2": "Change a mark",
-          "html": "<p>Press <kbd dir=\"ltr\">V</kbd> to select. Drag a mark to move it, drag a handle to resize it, and press Delete to remove it. Every mark stays editable until you export.</p>"
+          "html": "<p>Press <kbd dir=\"ltr\">V</kbd> to select. Drag a mark to move it, drag one of its four corners to resize it, and press Delete to remove it. A new mark lets go once it's drawn. With a drawing tool in hand, press on a mark to select it, or hold Option to draw over it. Copy, cut, paste and duplicate marks with <kbd dir=\"ltr\">⌘C</kbd>, <kbd dir=\"ltr\">⌘X</kbd>, <kbd dir=\"ltr\">⌘V</kbd> and <kbd dir=\"ltr\">⌘D</kbd>. Every mark stays editable until you export.</p>"
         }
       ]
     },
     "styles": {
       "title": "Styles",
-      "short": "Colour, stroke, fill, edges, angle and opacity.",
-      "description": "Style any mark in EasyShoot: colour, stroke width, solid, dashed or dotted lines, fills, rounded edges, angle, opacity and shadow.",
+      "short": "Fill, stroke, corners, shadow, angle and opacity.",
+      "description": "Style any mark in EasyShoot: fill, stroke colour and width, solid, dashed or dotted lines, rounded corners, angle, shadow and opacity.",
       "intro": "The Style tab in the inspector follows the tool in your hand or the mark you selected, and shows only what that mark uses.",
       "blocks": [
         {
           "art": "shape",
           "alt": "The Style tab with a dashed, filled box and a dotted ellipse on the screenshot.",
-          "html": "<ul class=\"feature-grid\"><li><strong>Stroke and width</strong>Five colours, or more in the colour picker. Thin, medium or bold, or any width from 1 to 30.</li><li><strong>Stroke style</strong>Solid, dashed or dotted lines and shapes.</li><li><strong>Background</strong>A light fill for rectangles, diamonds, ellipses and numbered steps.</li><li><strong>Edges and angle</strong>Sharp or round corners. Type an angle or turn the handle; Shift snaps to 15°.</li><li><strong>Arrow head</strong>Standard or swept.</li><li><strong>Opacity and shadow</strong>Fade any mark, and add a soft shadow if you want one.</li></ul>"
+          "html": "<ul class=\"feature-grid\"><li><strong>Background</strong>A fill for rectangles, diamonds, ellipses and numbered steps, in a light tint of the stroke colour or any colour.</li><li><strong>Stroke and width</strong>Apple's six colours, or any colour in the picker. Once a shape has a fill, its outline can go. Thin, medium or bold, or any width from 1 to 30.</li><li><strong>Stroke style</strong>Solid, dashed or dotted lines and shapes.</li><li><strong>Rounded corners and angle</strong>A slider from sharp to round. Type an angle or turn the handle; Shift snaps to 15°.</li><li><strong>Arrow head</strong>Standard or swept.</li><li><strong>Shadow and opacity</strong>A shadow as soft or strong as you like, and an opacity for any mark.</li></ul>"
         },
         {
           "h2": "Several marks at once",
@@ -106,42 +106,42 @@
     },
     "text": {
       "title": "Text",
-      "short": "Any font, three looks, and right-to-left text.",
-      "description": "Add text to screenshots with EasyShoot: any Mac or Google font, plain, bubble or outline, and Arabic or Hebrew right to left.",
+      "short": "Any font, seven looks, and right-to-left text.",
+      "description": "Add text to screenshots with EasyShoot: any Mac or Google font, seven looks from plain to dark, and Arabic or Hebrew right to left.",
       "intro": "Press T, click where the note goes and type.",
       "blocks": [
         {
           "art": "ar",
           "alt": "A note in a bubble on the screenshot, with the Style tab showing font, size, look and direction.",
-          "html": "<ul class=\"feature-grid\"><li><strong>Font</strong>Any font on your Mac, or a Google font downloaded the moment you pick it.</li><li><strong>Size</strong>Use the slider, or drag the text's corner.</li><li><strong>Look</strong>Plain, Bubble or Outline.</li><li><strong>Direction</strong>Auto writes Arabic and Hebrew right to left with letters joined correctly; LTR or RTL forces a line.</li></ul>"
+          "html": "<ul class=\"feature-grid\"><li><strong>Font</strong>Any font on your Mac, or a Google font downloaded the moment you pick it.</li><li><strong>Size</strong>Use the slider, or drag the text's corner.</li><li><strong>Look</strong>Plain, Background, Soft, Framed, Outline, Dark or Custom, with rounded corners for the looks that have a box.</li><li><strong>Direction</strong>Auto writes Arabic and Hebrew right to left with letters joined correctly; LTR or RTL forces a line.</li></ul>"
         }
       ]
     },
     "background-and-crop": {
       "title": "Background and crop",
       "short": "Frame a shot, crop it and resize it.",
-      "description": "Put a screenshot on a background with padding, rounded corners and shadow in EasyShoot, then crop and resize it.",
+      "description": "Put a screenshot on a wallpaper, a gradient or a colour in EasyShoot, with blur, padding, rounded corners and shadow, then crop and resize it.",
       "intro": "The Background tab makes a capture ready to post.",
       "blocks": [
         {
           "art": "bg",
-          "alt": "The screenshot on a soft gradient, with fill, padding, corner radius and shadow in the Background tab.",
-          "html": "<p>Pick a gradient, a solid colour, your own colour or none, then set padding, corner radius, shadow, aspect ratio and alignment.</p>"
+          "alt": "The screenshot on a wave wallpaper, with wallpapers, padding, rounded corners and shadow in the Background tab.",
+          "html": "<p>Turn on <strong>Show background</strong>, then pick a <strong>Wallpaper</strong> (your Mac's own, or EasyShoot's Waves and Gradients), a <strong>Gradient</strong> or a <strong>Color</strong>. Set the background blur for a wallpaper, then padding, rounded corners, shadow, shadow opacity and alignment. <strong>Reset</strong> puts a slider back. The aspect ratio sits in the tool bar, beside Crop.</p>"
         },
         {
           "h2": "Crop, resize and zoom",
-          "html": "<ul class=\"feature-grid\"><li><strong>Crop · C</strong>Free, or fixed at 1:1, 4:3 or 16:9.</li><li><strong>Resize</strong>By percent, or to an exact width.</li><li><strong>Zoom</strong>⌘+ and ⌘− for small details; ⌘0 shows actual size and ⌘9 fits the window.</li></ul>"
+          "html": "<ul class=\"feature-grid\"><li><strong>Crop · C</strong>Free, or fixed at 1:1, 4:3 or 16:9.</li><li><strong>Resize</strong>By percent, or to an exact width.</li><li><strong>Zoom</strong>The − and + buttons in the corner of the canvas, or ⌘+ and ⌘−; ⌘0 shows actual size and ⌘9 fits the window.</li></ul>"
         }
       ]
     },
     "presets": {
       "title": "Presets",
-      "short": "Save a look and reuse it.",
+      "short": "Start from a ready look, or save your own.",
       "description": "Save a background, mark style and export settings as a preset in EasyShoot, and make it the default.",
-      "intro": "A preset keeps a background, a mark style and export settings together.",
+      "intro": "A preset keeps a background, a mark style and export settings together. Your list starts empty, with 12 starter looks ready to add.",
       "blocks": [
         {
-          "html": "<ul><li>To save one, open <strong>Presets</strong> in the editor's toolbar and choose <strong>Save Current Style as Preset…</strong>.</li><li>To use one, pick it from the same menu.</li><li>In Settings › Presets, choose <strong>Make Default</strong> so every new screenshot starts with it, or <strong>Restore Built-in Presets</strong>.</li></ul><p>With no default, each screenshot starts with the settings you used last.</p>"
+          "html": "<ul><li>To start from a ready look, open Settings › Presets and click <strong>Add</strong> under one of the 12 starter looks.</li><li>To save your own, open <strong>Presets</strong> in the editor's toolbar and choose <strong>Save Current Style as Preset…</strong>.</li><li>To use one, pick it from the same menu. <strong>Manage Presets…</strong> opens Settings.</li><li>In Settings › Presets, choose <strong>Make Default</strong> so every new screenshot starts with it.</li></ul><p>With no default, each screenshot starts with the settings you used last.</p>"
         }
       ]
     },
@@ -176,7 +176,7 @@
         },
         {
           "h2": "Editor commands",
-          "html": "<table><thead><tr><th>Command</th><th>Shortcut</th></tr></thead><tbody><tr><td>Copy the image</td><td><kbd dir=\"ltr\">⇧⌘C</kbd></td></tr><tr><td>Save</td><td><kbd dir=\"ltr\">⌘S</kbd></td></tr><tr><td>Undo</td><td><kbd dir=\"ltr\">⌘Z</kbd></td></tr><tr><td>Redo</td><td><kbd dir=\"ltr\">⇧⌘Z</kbd></td></tr><tr><td>Select all marks</td><td><kbd dir=\"ltr\">⌘A</kbd></td></tr><tr><td>Zoom in / out</td><td><kbd dir=\"ltr\">⌘+ / ⌘−</kbd></td></tr><tr><td>Actual size / zoom to fit</td><td><kbd dir=\"ltr\">⌘0 / ⌘9</kbd></td></tr><tr><td>Show or hide the inspector</td><td><kbd dir=\"ltr\">⌥⌘I</kbd></td></tr></tbody></table>"
+          "html": "<table><thead><tr><th>Command</th><th>Shortcut</th></tr></thead><tbody><tr><td>Copy the image</td><td><kbd dir=\"ltr\">⇧⌘C</kbd></td></tr><tr><td>Save</td><td><kbd dir=\"ltr\">⌘S</kbd></td></tr><tr><td>Undo</td><td><kbd dir=\"ltr\">⌘Z</kbd></td></tr><tr><td>Redo</td><td><kbd dir=\"ltr\">⇧⌘Z</kbd></td></tr><tr><td>Copy, cut or paste a mark</td><td><kbd dir=\"ltr\">⌘C / ⌘X / ⌘V</kbd></td></tr><tr><td>Duplicate a mark</td><td><kbd dir=\"ltr\">⌘D</kbd></td></tr><tr><td>Select all marks</td><td><kbd dir=\"ltr\">⌘A</kbd></td></tr><tr><td>Zoom in / out</td><td><kbd dir=\"ltr\">⌘+ / ⌘−</kbd></td></tr><tr><td>Actual size / zoom to fit</td><td><kbd dir=\"ltr\">⌘0 / ⌘9</kbd></td></tr><tr><td>Show or hide the inspector</td><td><kbd dir=\"ltr\">⌥⌘I</kbd></td></tr></tbody></table>"
         }
       ]
     },
@@ -187,7 +187,7 @@
       "intro": "Open Settings… from the menu bar icon, or press ⌘, while EasyShoot is in front.",
       "blocks": [
         {
-          "html": "<ul class=\"feature-grid\"><li><strong>General</strong>What happens after capture, the save location, window shadow, editor options and update notices.</li><li><strong>Shortcuts</strong>Record your own capture shortcuts.</li><li><strong>Presets</strong>Rename, delete, make default or restore the built-in presets.</li><li><strong>Permissions</strong>Check Screen Recording, which every screenshot needs.</li><li><strong>About</strong>Version, website and support.</li></ul>"
+          "html": "<ul class=\"feature-grid\"><li><strong>General</strong>What happens after capture, the save location, window shadow, editor options and update notices.</li><li><strong>Shortcuts</strong>Record your own capture shortcuts.</li><li><strong>Presets</strong>Your presets, the default, and 12 starter looks to add.</li><li><strong>Permissions</strong>Check Screen Recording, which every screenshot needs.</li><li><strong>About</strong>Version, website, support, and <strong>Rate EasyShoot</strong>.</li></ul>"
         }
       ]
     },

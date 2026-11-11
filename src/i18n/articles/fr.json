@@ -112,7 +112,7 @@
         },
         {
           "h2": "Un style pour chaque repère",
-          "html": "<ul><li><strong>Lignes et formes :</strong> trait continu, en tirets ou pointillé, du plus fin au plus épais.</li><li><strong>Rectangle, losange et ellipse :</strong> une couleur de fond, des bords droits ou arrondis et n’importe quel angle.</li><li><strong>Flèches :</strong> une pointe standard ou effilée ; tirez la poignée du milieu pour la courber.</li><li><strong>Étapes numérotées :</strong> sans fond, dans leur couleur ou avec un fond clair.</li><li><strong>Plusieurs à la fois :</strong> Commande-A, Maj-clic ou un cadre tracé sur une zone vide, puis déplacez, restylez ou supprimez-les ensemble.</li></ul>"
+          "html": "<ul><li><strong>Lignes et formes :</strong> trait continu, en tirets ou pointillé, du plus fin au plus épais.</li><li><strong>Rectangle, losange et ellipse :</strong> un fond et un contour que l’on peut masquer, des coins des plus vifs aux plus ronds, une ombre et n’importe quel angle.</li><li><strong>Flèches :</strong> une pointe standard ou effilée ; tirez la poignée du milieu pour la courber.</li><li><strong>Étapes numérotées :</strong> sans fond, dans leur couleur ou avec un fond clair.</li><li><strong>Plusieurs à la fois :</strong> Commande-A, Maj-clic ou un cadre tracé sur une zone vide, puis déplacez, restylez ou supprimez-les ensemble.</li></ul>"
         },
         {
           "h2": "Restez lisible",
@@ -155,7 +155,7 @@
         },
         {
           "name": "Choisissez la police et la taille",
-          "text": "Dans l’onglet Style, choisissez n’importe quelle police de votre Mac et réglez la taille. Pour une étiquette bien visible, réglez l’aspect sur Bulle ou Contour."
+          "text": "Dans l’onglet Style, choisissez n’importe quelle police de votre Mac et réglez la taille. Pour une étiquette bien visible, réglez l’aspect sur Arrière-plan, Encadré ou Sombre."
         }
       ],
       "sections": [
