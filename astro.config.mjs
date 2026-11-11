@@ -1,6 +1,7 @@
 import { defineConfig } from "astro/config";
 import { copyFile } from "node:fs/promises";
 import sitemap from "@astrojs/sitemap";
+import { pageModified } from "./src/lib/dates.mjs";
 
 export default defineConfig({
   site: "https://easyshoot.app",
@@ -8,8 +9,8 @@ export default defineConfig({
   build: { inlineStylesheets: "always", format: "preserve" },
   integrations: [
     sitemap({
-      lastmod: new Date(),
       xslURL: "/sitemap.xsl",
+      filter: page => !/\/404(\.html)?$/.test(page),
       // Home pages first, then comparisons and guides, then hubs and the rest.
       serialize(item) {
         // With build.format "preserve" the sitemap drops trailing slashes and .html; write the URLs the site serves.
@@ -26,6 +27,9 @@ export default defineConfig({
         const path = new URL(item.url).pathname.replace(/^\/(ar|fr|es|de)\//, "/");
         item.priority = path === "/" ? 1 : /^\/(compare|guides|docs)\/[^/]+\/$/.test(path) ? 0.8 : /^\/(compare|guides|docs)\/$/.test(path) ? 0.7 : 0.5;
         item.changefreq = path === "/" ? "weekly" : "monthly";
+        const lastmod = pageModified(new URL(item.url).pathname);
+        if (lastmod) item.lastmod = lastmod;
+        else delete item.lastmod;
         return item;
       },
       i18n: {

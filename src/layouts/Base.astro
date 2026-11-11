@@ -13,8 +13,9 @@ interface Props {
   graph?: object[];
   ogType?: string;
   meta?: { property: string; content: string }[];
+  notFound?: boolean;
 }
-const { lang, title, description, alternates, graph = [], ogType = "website", meta = [] } = Astro.props;
+const { lang, title, description, alternates, graph = [], ogType = "website", meta = [], notFound = false } = Astro.props;
 const url = SITE + alternates[lang];
 
 const jsonLd = {
@@ -22,7 +23,7 @@ const jsonLd = {
   "@graph": [
     { "@type": "WebSite", "@id": `${SITE}/#site`, name: "EasyShoot", alternateName: ["EasyShoot for Mac", "EasyShoot: Screenshot & Markup"], url: `${SITE}/`, inLanguage: [...LANGS], publisher: { "@id": `${AUTHOR_URL}/#person` } },
     authorNode,
-    { "@type": "WebPage", "@id": `${url}#page`, url, name: title, description, inLanguage: lang, isPartOf: { "@id": `${SITE}/#site` }, about: { "@id": `${SITE}/#app` } },
+    ...(notFound ? [] : [{ "@type": "WebPage", "@id": `${url}#page`, url, name: title, description, inLanguage: lang, isPartOf: { "@id": `${SITE}/#site` }, about: { "@id": `${SITE}/#app` } }]),
     ...graph,
   ],
 };
@@ -34,11 +35,11 @@ const jsonLd = {
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{title}</title>
 <meta name="description" content={description}>
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="robots" content={notFound ? "noindex, follow" : "index, follow, max-image-preview:large, max-snippet:-1"}>
 <meta name="application-name" content="EasyShoot">
-<link rel="canonical" href={url}>
-{LANGS.filter(l => alternates[l]).map(l => <link rel="alternate" hreflang={l} href={SITE + alternates[l]}>)}
-<link rel="alternate" hreflang="x-default" href={SITE + alternates.en}>
+{!notFound && <link rel="canonical" href={url}>}
+{!notFound && LANGS.filter(l => alternates[l]).map(l => <link rel="alternate" hreflang={l} href={SITE + alternates[l]}>)}
+{!notFound && <link rel="alternate" hreflang="x-default" href={SITE + alternates.en}>}
 <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly summary">
 <link rel="alternate" type="text/plain" href="/llms-full.txt" title="Full documentation as plain text">
 <link rel="sitemap" href="/sitemap-index.xml">
@@ -66,9 +67,8 @@ const jsonLd = {
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0A0A0B" media="(prefers-color-scheme: dark)">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap">
+<link rel="preload" href="/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+{lang === "ar" && <link rel="preload" href="/fonts/ibm-plex-sans-arabic-400.woff2" as="font" type="font/woff2" crossorigin>}
 {Astro.url.pathname === "/" && (
 <script is:inline>
   // First visit to the English home: open the page in the browser's own language if the site has it.

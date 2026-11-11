@@ -1,0 +1,38 @@
+---
+import Base from "../layouts/Base.astro";
+import { LANGS, LANG_NAMES, pagePath, supportPath, useT, type Lang } from "../i18n";
+import { content, hubPath, alternatesFor } from "../i18n/articles";
+import { docsPath } from "../i18n/docs";
+
+const lang: Lang = "en";
+const t = useT(lang);
+const ui = content(lang).ui;
+const HOME_IN: Record<Lang, string> = { en: "Home", ar: "الصفحة الرئيسية", fr: "Accueil", es: "Inicio", de: "Startseite" };
+const pages = [
+  { name: HOME_IN.en, href: pagePath(lang) },
+  { name: t("nav.docs"), href: docsPath(lang) },
+  { name: ui.guides, href: hubPath(lang, "guides") },
+  { name: ui.compare, href: hubPath(lang, "compare") },
+  { name: t("foot.support"), href: supportPath(lang) },
+];
+---
+<Base lang={lang} title="Page not found | EasyShoot" description="This page doesn't exist or has moved. Find EasyShoot's user guide, guides and support from here." alternates={alternatesFor(pagePath)} notFound>
+<main class="doc">
+  <div class="wrap narrow-doc">
+    <header class="doc-head">
+      <h1>Page not found</h1>
+      <p class="doc-lead">This page doesn't exist or has moved. These links lead back into the site.</p>
+    </header>
+    <div class="map-groups">
+      <section class="map-group">
+        <h2>EasyShoot</h2>
+        <ul>{pages.map(p => <li><a href={p.href}>{p.name}</a></li>)}</ul>
+      </section>
+      <section class="map-group">
+        <h2>Other languages</h2>
+        <ul>{LANGS.filter(l => l !== lang).map(l => <li><a href={pagePath(l)} lang={l} dir={l === "ar" ? "rtl" : "ltr"}>{LANG_NAMES[l]} · {HOME_IN[l]}</a></li>)}</ul>
+      </section>
+    </div>
+  </div>
+</main>
+</Base>

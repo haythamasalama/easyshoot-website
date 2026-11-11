@@ -3,7 +3,7 @@
     "home": "Accueil",
     "guides": "Guides",
     "compare": "Comparatifs",
-    "updated": "Mis à jour le 1er novembre 2026",
+    "updated": "Mis à jour le {date}",
     "steps": "Étapes",
     "faq": "Questions",
     "related": "À lire aussi",

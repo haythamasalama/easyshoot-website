@@ -1,7 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import { SITE, APP_STORE_URL, pagePath, useT, type Lang } from "../i18n";
-import { content, articleOf, hubPath, articlePath, alternatesFor, tagsFor, wordCount, readingTime, TOC_LABEL, GUIDES, COMPARES, type Article } from "../i18n/articles";
+import { content, articleOf, hubPath, articlePath, alternatesFor, tagsFor, wordCount, readingTime, articleDates, formatDay, TOC_LABEL, GUIDES, COMPARES, type Article } from "../i18n/articles";
 import { appNode, faqNode, breadcrumbNode } from "../lib/seo";
 import AppleLogo from "./AppleLogo.astro";
 
@@ -16,8 +16,7 @@ const isGuide = article.kind === "guides";
 const storeHref = APP_STORE_URL || pagePath(lang) + "#get";
 const tags = tagsFor(lang, article.slug);
 const words = wordCount(a);
-const published = "2026-11-01";
-const modified = "2026-11-01";
+const { published, modified } = articleDates(lang, article.slug, path);
 const crumbs = [
   { name: ui.home, path: pagePath(lang) },
   { name: ui[article.kind], path: hubPath(lang, article.kind) },
@@ -85,7 +84,7 @@ const meta = [
           <a class="pill-tag kind" href={hubPath(lang, article.kind)}>{ui[article.kind]}</a>
           <span>{readingTime(lang, words)}</span>
           <span aria-hidden="true">·</span>
-          <time datetime={modified}>{ui.updated}</time>
+          <time datetime={modified}>{ui.updated.replace("{date}", formatDay(lang, modified))}</time>
         </div>
         <ul class="tag-list" aria-label="Tags">{tags.map(tag => <li class="pill-tag">{tag}</li>)}</ul>
       </header>
