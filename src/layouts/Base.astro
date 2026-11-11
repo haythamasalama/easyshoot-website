@@ -20,7 +20,7 @@ const url = SITE + alternates[lang];
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
-    { "@type": "WebSite", "@id": `${SITE}/#site`, name: "EasyShoot", url: `${SITE}/`, inLanguage: [...LANGS], publisher: { "@id": `${AUTHOR_URL}/#person` } },
+    { "@type": "WebSite", "@id": `${SITE}/#site`, name: "EasyShoot", alternateName: ["EasyShoot for Mac", "EasyShoot: Screenshot & Markup"], url: `${SITE}/`, inLanguage: [...LANGS], publisher: { "@id": `${AUTHOR_URL}/#person` } },
     authorNode,
     { "@type": "WebPage", "@id": `${url}#page`, url, name: title, description, inLanguage: lang, isPartOf: { "@id": `${SITE}/#site` }, about: { "@id": `${SITE}/#app` } },
     ...graph,
@@ -60,8 +60,10 @@ const jsonLd = {
 <meta name="twitter:title" content={title}>
 <meta name="twitter:description" content={description}>
 <meta name="twitter:image" content={`${SITE}/og.png`}>
+<link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/icon.png">
+<link rel="icon" href="/favicon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0A0A0B" media="(prefers-color-scheme: dark)">
 <link rel="preconnect" href="https://fonts.googleapis.com">
