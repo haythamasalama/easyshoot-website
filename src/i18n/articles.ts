@@ -1,4 +1,5 @@
 import { LANGS, pagePath, type Lang } from "./index";
+import { jsonAdded, pageModified } from "../lib/dates.mjs";
 
 const files = import.meta.glob<any>("./articles/*.json", { eager: true, import: "default" });
 // Until a language file exists, its pages fall back to English.
@@ -65,3 +66,16 @@ export function wordCount(a: any) {
   return parts.join(" ").replace(/<[^>]+>/g, " ").split(/\s+/).filter(Boolean).length;
 }
 export const readingTime = (lang: Lang, words: number) => READ[lang](Math.max(1, Math.round(words / 200)));
+
+const FIRST_PUBLISHED = "2026-11-01T00:00:00.000Z";
+export function articleDates(lang: Lang, slug: string, path: string) {
+  const keys = ["articles", slug];
+  const published = jsonAdded(`src/i18n/articles/${lang}.json`, keys) ?? jsonAdded("src/i18n/articles/en.json", keys) ?? FIRST_PUBLISHED;
+  return { published, modified: pageModified(path) ?? published };
+}
+
+const DATE_LOCALE: Record<Lang, string> = { en: "en-GB", ar: "ar-u-nu-latn", fr: "fr-FR", es: "es-ES", de: "de-DE" };
+export function formatDay(lang: Lang, iso: string) {
+  const day = new Intl.DateTimeFormat(DATE_LOCALE[lang], { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }).format(new Date(iso));
+  return lang === "fr" ? day.replace(/^1 /, "1er ") : day;
+}

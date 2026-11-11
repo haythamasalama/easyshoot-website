@@ -3,7 +3,7 @@
     "home": "Inicio",
     "guides": "Guías",
     "compare": "Comparar",
-    "updated": "Actualizado el 1 de noviembre de 2026",
+    "updated": "Actualizado el {date}",
     "steps": "Pasos",
     "faq": "Preguntas",
     "related": "Sigue leyendo",
