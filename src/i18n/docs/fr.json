@@ -53,7 +53,7 @@
       "blocks": [
         {
           "h2": "Choisir ce qui se passe",
-          "html": "<p>Réglages › Général › <strong>Après la capture</strong> décide de ce qui se fait tout seul :</p><ul><li><strong>Copier dans le presse-papiers</strong></li><li><strong>Enregistrer dans un dossier</strong></li><li><strong>Ouvrir l’éditeur immédiatement</strong></li><li><strong>Afficher l’accès rapide</strong></li><li><strong>Jouer un son</strong></li></ul><p><strong>Fermer l’accès rapide après</strong> règle la durée de la vignette : jamais, 5, 10 ou 30 secondes.</p>"
+          "html": "<p>Réglages › Général › <strong>Après la capture</strong> décide de ce qui se fait tout seul :</p><ul><li><strong>Afficher l’accès rapide</strong></li><li><strong>Ouvrir l’éditeur après la capture</strong></li><li><strong>Copier dans le presse-papiers</strong></li><li><strong>Enregistrer dans un fichier</strong></li></ul><p>Si <strong>Ouvrir l’éditeur après la capture</strong> est activé, l’éditeur s’ouvre à la place de la vignette.</p><p><strong>Fermer l’accès rapide après</strong> règle la durée de la vignette : jamais, 5, 10 ou 30 secondes.</p><p>Le son a son propre réglage dans le même onglet : <strong>Jouer le son de capture</strong>, sous <strong>Capture</strong>.</p>"
         }
       ]
     },

@@ -53,7 +53,7 @@
       "blocks": [
         {
           "h2": "Choose what happens",
-          "html": "<p>Settings › General › <strong>After capture</strong> decides what happens on its own:</p><ul><li><strong>Copy to clipboard</strong></li><li><strong>Save to folder</strong></li><li><strong>Open the editor immediately</strong></li><li><strong>Show Quick Access overlay</strong></li><li><strong>Play sound</strong></li></ul><p><strong>Close Quick Access after</strong> sets how long the thumbnail stays: never, 5, 10 or 30 seconds.</p>"
+          "html": "<p>Settings › General › <strong>After capture</strong> decides what happens on its own:</p><ul><li><strong>Show Quick Access overlay</strong></li><li><strong>Open editor after capture</strong></li><li><strong>Copy to clipboard</strong></li><li><strong>Save to file</strong></li></ul><p>When <strong>Open editor after capture</strong> is on, the editor opens instead of the thumbnail.</p><p><strong>Close Quick Access overlay after</strong> sets how long the thumbnail stays: never, 5, 10 or 30 seconds.</p><p>The capture sound has its own switch on the same tab: <strong>Play capture sound</strong>, under <strong>Capture</strong>.</p>"
         }
       ]
     },
