@@ -11,7 +11,10 @@ export type Kind = "guides" | "compare";
 export interface Article { slug: string; kind: Kind; short: Record<Lang, string> }
 
 const ORDER: Record<Kind, string[]> = {
-  guides: ["blur-screenshot-mac", "annotate-screenshot-mac", "arabic-text-screenshot-mac"],
+  guides: [
+    "take-screenshot-mac", "blur-screenshot-mac", "annotate-screenshot-mac", "crop-screenshot-mac", "screenshot-background-mac",
+    "add-text-to-image-mac", "screenshot-without-shadow-mac", "screenshot-pdf-page-mac", "arabic-text-screenshot-mac",
+  ],
   compare: ["cleanshot-x-alternative", "shottr-alternative", "snagit-alternative", "lightshot-alternative", "macos-screenshot-alternative"],
 };
 
@@ -38,11 +41,21 @@ const TAG_NAMES: Record<string, Record<Lang, string>> = {
   comparison: { en: "Comparison", ar: "مقارنة", fr: "Comparatif", es: "Comparativa", de: "Vergleich" },
   alternatives: { en: "Alternatives", ar: "بدائل", fr: "Alternatives", es: "Alternativas", de: "Alternativen" },
   free: { en: "Free apps", ar: "تطبيقات مجانية", fr: "Apps gratuites", es: "Apps gratis", de: "Kostenlose Apps" },
+  editing: { en: "Editing", ar: "التعديل", fr: "Retouche", es: "Edición", de: "Bearbeiten" },
+  backgrounds: { en: "Backgrounds", ar: "الخلفيات", fr: "Arrière-plans", es: "Fondos", de: "Hintergründe" },
+  images: { en: "Images", ar: "الصور", fr: "Images", es: "Imágenes", de: "Bilder" },
+  pdf: { en: "PDF", ar: "PDF", fr: "PDF", es: "PDF", de: "PDF" },
 };
 const ARTICLE_TAGS: Record<string, string[]> = {
   "blur-screenshot-mac": ["privacy", "markup", "screenshots"],
   "annotate-screenshot-mac": ["markup", "shortcuts", "screenshots"],
   "arabic-text-screenshot-mac": ["arabic", "markup", "mac"],
+  "take-screenshot-mac": ["shortcuts", "screenshots", "mac"],
+  "crop-screenshot-mac": ["editing", "screenshots", "mac"],
+  "screenshot-background-mac": ["backgrounds", "screenshots", "mac"],
+  "add-text-to-image-mac": ["images", "markup", "arabic"],
+  "screenshot-without-shadow-mac": ["screenshots", "shortcuts", "mac"],
+  "screenshot-pdf-page-mac": ["pdf", "markup", "privacy"],
   "cleanshot-x-alternative": ["comparison", "alternatives", "free"],
   "shottr-alternative": ["comparison", "alternatives", "free"],
   "snagit-alternative": ["comparison", "alternatives", "free"],
