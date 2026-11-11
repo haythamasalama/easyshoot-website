@@ -15,7 +15,7 @@ export default defineConfig({
         // With build.format "preserve" the sitemap drops trailing slashes and .html; write the URLs the site serves.
         const real = url => {
           const u = new URL(url);
-          if (/^\/((ar|fr|es|de)\/)?(privacy|support)$/.test(u.pathname)) u.pathname += ".html";
+          if (/^\/((ar|fr|es|de)\/)?(privacy|support|accessibility)$/.test(u.pathname)) u.pathname += ".html";
           else if (!u.pathname.endsWith("/") && !u.pathname.endsWith(".html")) u.pathname += "/";
           return u.href;
         };

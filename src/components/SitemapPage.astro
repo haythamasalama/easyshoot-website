@@ -1,6 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
-import { SITE, pagePath, privacyPath, supportPath, useT, type Lang } from "../i18n";
+import { SITE, pagePath, privacyPath, supportPath, accessibilityPath, useT, type Lang } from "../i18n";
 import { content, articleOf, hubPath, articlePath, alternatesFor, GUIDES, COMPARES } from "../i18n/articles";
 import { breadcrumbNode } from "../lib/seo";
 import press from "../i18n/press.json";
@@ -25,6 +25,7 @@ const groups = [
   { h: t("foot.help"), links: [
     { name: t("foot.support"), href: supportPath(lang) },
     { name: t("foot.privacy"), href: privacyPath(lang) },
+    { name: t("foot.accessibility"), href: accessibilityPath(lang) },
   ] },
 ];
 ---

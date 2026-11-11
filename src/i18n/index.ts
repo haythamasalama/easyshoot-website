@@ -36,3 +36,4 @@ export const shotAlts = (lang: Lang) => (data.shots as Record<Lang, string[]>)[l
 // The privacy and support pages exist in English and Arabic only.
 export const privacyPath = (lang: Lang) => (lang === "ar" ? "/ar/privacy.html" : "/privacy.html");
 export const supportPath = (lang: Lang) => (lang === "ar" ? "/ar/support.html" : "/support.html");
+export const accessibilityPath = (lang: Lang) => (lang === "ar" ? "/ar/accessibility.html" : "/accessibility.html");
