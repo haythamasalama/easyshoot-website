@@ -37,7 +37,7 @@
       "steps": [
         {
           "name": "Capture or open the image",
-          "text": "Take a screenshot with EasyShoot, or copy an image and choose Annotate Clipboard Image."
+          "text": "Take a screenshot with EasyShoot, or copy an image and choose Open from Clipboard."
         },
         {
           "name": "Choose Pixelate",
@@ -143,7 +143,7 @@
       "steps": [
         {
           "name": "Capture or open the image",
-          "text": "Take a screenshot, or copy an image and choose Annotate Clipboard Image."
+          "text": "Take a screenshot, or copy an image and choose Open from Clipboard."
         },
         {
           "name": "Choose Text",

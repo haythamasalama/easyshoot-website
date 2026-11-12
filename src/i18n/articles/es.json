@@ -37,7 +37,7 @@
       "steps": [
         {
           "name": "Captura o abre la imagen",
-          "text": "Haz una captura con EasyShoot, o copia una imagen y elige Anotar imagen del portapapeles."
+          "text": "Haz una captura con EasyShoot, o copia una imagen y elige Abrir desde el portapapeles."
         },
         {
           "name": "Elige Pixelar",
@@ -143,7 +143,7 @@
       "steps": [
         {
           "name": "Captura o abre la imagen",
-          "text": "Haz una captura, o copia una imagen y elige Anotar imagen del portapapeles."
+          "text": "Haz una captura, o copia una imagen y elige Abrir desde el portapapeles."
         },
         {
           "name": "Elige Texto",

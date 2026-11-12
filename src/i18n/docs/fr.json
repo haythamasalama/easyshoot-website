@@ -37,7 +37,7 @@
       "intro": "Chaque capture a son raccourci. Ceux par défaut utilisent Option-Maj-Commande pour ne jamais gêner ceux du Mac.",
       "blocks": [
         {
-          "html": "<table><thead><tr><th>Capture</th><th>Raccourci</th></tr></thead><tbody><tr><td>Zone : faites glisser</td><td><kbd dir=\"ltr\">⌥⇧⌘4</kbd></td></tr><tr><td>Fenêtre : cliquez sur une fenêtre</td><td><kbd dir=\"ltr\">⌥⇧⌘5</kbd></td></tr><tr><td>Tout l’écran</td><td><kbd dir=\"ltr\">⌥⇧⌘3</kbd></td></tr><tr><td>Annoter l’image du presse-papiers</td><td><kbd dir=\"ltr\">⌥⇧⌘7</kbd></td></tr><tr><td>Ouvrir une image… : modifier un fichier</td><td><kbd dir=\"ltr\">⌘O</kbd></td></tr></tbody></table>"
+          "html": "<table><thead><tr><th>Capture</th><th>Raccourci</th></tr></thead><tbody><tr><td>Zone : faites glisser</td><td><kbd dir=\"ltr\">⌥⇧⌘4</kbd></td></tr><tr><td>Fenêtre : cliquez sur une fenêtre</td><td><kbd dir=\"ltr\">⌥⇧⌘5</kbd></td></tr><tr><td>Tout l’écran</td><td><kbd dir=\"ltr\">⌥⇧⌘3</kbd></td></tr><tr><td>Ouvrir depuis le presse-papiers</td><td><kbd dir=\"ltr\">⌥⇧⌘7</kbd></td></tr><tr><td>Ouvrir une image… : modifier un fichier</td><td><kbd dir=\"ltr\">⌘O</kbd></td></tr></tbody></table>"
         },
         {
           "h2": "Ombre de la fenêtre",
@@ -168,7 +168,7 @@
       "blocks": [
         {
           "h2": "Capture",
-          "html": "<table><thead><tr><th>Capture</th><th>Raccourci</th></tr></thead><tbody><tr><td>Capturer une zone</td><td><kbd dir=\"ltr\">⌥⇧⌘4</kbd></td></tr><tr><td>Capturer une fenêtre</td><td><kbd dir=\"ltr\">⌥⇧⌘5</kbd></td></tr><tr><td>Capturer l’écran entier</td><td><kbd dir=\"ltr\">⌥⇧⌘3</kbd></td></tr><tr><td>Annoter l’image du presse-papiers</td><td><kbd dir=\"ltr\">⌥⇧⌘7</kbd></td></tr></tbody></table>"
+          "html": "<table><thead><tr><th>Capture</th><th>Raccourci</th></tr></thead><tbody><tr><td>Capturer une zone</td><td><kbd dir=\"ltr\">⌥⇧⌘4</kbd></td></tr><tr><td>Capturer une fenêtre</td><td><kbd dir=\"ltr\">⌥⇧⌘5</kbd></td></tr><tr><td>Capturer l’écran entier</td><td><kbd dir=\"ltr\">⌥⇧⌘3</kbd></td></tr><tr><td>Ouvrir depuis le presse-papiers</td><td><kbd dir=\"ltr\">⌥⇧⌘7</kbd></td></tr></tbody></table>"
         },
         {
           "h2": "Outils de l’éditeur",

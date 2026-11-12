@@ -37,7 +37,7 @@
       "steps": [
         {
           "name": "Capturez ou ouvrez l’image",
-          "text": "Faites une capture d’écran avec EasyShoot, ou copiez une image et choisissez Annoter l’image du presse-papiers."
+          "text": "Faites une capture d’écran avec EasyShoot, ou copiez une image et choisissez Ouvrir depuis le presse-papiers."
         },
         {
           "name": "Choisissez Pixeliser",
@@ -143,7 +143,7 @@
       "steps": [
         {
           "name": "Capturez ou ouvrez l’image",
-          "text": "Faites une capture d’écran, ou copiez une image et choisissez Annoter l’image du presse-papiers."
+          "text": "Faites une capture d’écran, ou copiez une image et choisissez Ouvrir depuis le presse-papiers."
         },
         {
           "name": "Choisissez Texte",
