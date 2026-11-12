@@ -22,7 +22,7 @@
       "blocks": [
         {
           "h2": "In einer Minute bereit",
-          "html": "<ul><li>Lade EasyShoot aus dem Mac App Store.</li><li>Öffne es. Das <strong>Willkommensfenster</strong> hat drei Schritte: Bildschirmaufnahme erlauben, die jeder Screenshot braucht (klicke auf <strong>Erlauben …</strong>, schalte EasyShoot in der Liste ein und klicke auf <strong>Neu starten</strong>), den Ort für deine Screenshots wählen, und fertig.</li><li>EasyShoot wohnt in der Menüleiste. Klicke auf sein Symbol und wähle <strong>Bereich aufnehmen…</strong>, oder drücke <kbd dir=\"ltr\">⌥⇧⌘4</kbd>. Aufnehmen klappt auch über Apps im Vollbild.</li></ul>"
+          "html": "<ul><li>Lade EasyShoot aus dem Mac App Store.</li><li>Öffne es. Das <strong>Willkommensfenster</strong> hat vier kurze Seiten: Klicke auf <strong>Los geht’s</strong>, erlaube die Bildschirmaufnahme, die jeder Screenshot braucht (klicke auf <strong>Erlauben …</strong>, schalte EasyShoot in der Liste ein und klicke auf <strong>Neu starten</strong>), und prüfe den Speicherordner. Danach siehst du die Aufnahme-Kürzel und wählst einen Hintergrund oder eine Vorlage.</li><li>EasyShoot wohnt in der Menüleiste. Klicke auf sein Symbol und wähle <strong>Bereich aufnehmen…</strong>, oder drücke <kbd dir=\"ltr\">⌥⇧⌘4</kbd>. Aufnehmen klappt auch über Apps im Vollbild.</li></ul>"
         },
         {
           "h2": "Symbol nicht zu sehen?",
@@ -41,7 +41,7 @@
         },
         {
           "h2": "Fensterschatten",
-          "html": "<p>Um den Fensterschatten wegzulassen, schalte <strong>Fensterschatten einschließen</strong> unter Einstellungen › Allgemein aus.</p>"
+          "html": "<p>Fensteraufnahmen lassen den Schatten des Fensters weg und liegen so sauber auf einem Hintergrund.</p>"
         }
       ]
     },
@@ -52,8 +52,12 @@
       "intro": "Nach jeder Aufnahme zeigt der Schnellzugriff eine Miniatur in der Bildschirmecke. Kopiere sie, sichere sie, öffne sie im Editor oder zieh sie direkt in eine andere App.",
       "blocks": [
         {
+          "h2": "Tastaturkurzbefehle",
+          "html": "<p>Mit dem Zeiger über der Miniatur:</p><table><thead><tr><th>Aktion</th><th>Kürzel</th></tr></thead><tbody><tr><td>Kopieren</td><td><kbd dir=\"ltr\">⌘C</kbd></td></tr><tr><td>Sichern</td><td><kbd dir=\"ltr\">⌘S</kbd></td></tr><tr><td>Im Editor öffnen</td><td><kbd dir=\"ltr\">⌘E</kbd></td></tr><tr><td>Schließen</td><td><kbd dir=\"ltr\">⌘W</kbd> oder <kbd dir=\"ltr\">Esc</kbd></td></tr></tbody></table><p>Halte den Zeiger über eine Taste, um ihren Namen und ihr Kürzel zu sehen.</p>"
+        },
+        {
           "h2": "Festlegen, was passiert",
-          "html": "<p>Einstellungen › Allgemein › <strong>Nach der Aufnahme</strong> legt fest, was von selbst passiert:</p><ul><li><strong>Schnellzugriff anzeigen</strong></li><li><strong>Editor nach der Aufnahme öffnen</strong></li><li><strong>In die Zwischenablage kopieren</strong></li><li><strong>Als Datei sichern</strong></li></ul><p>Ist <strong>Editor nach der Aufnahme öffnen</strong> an, öffnet sich statt der Miniatur der Editor.</p><p><strong>Schnellzugriff schließen nach</strong> legt fest, wie lange die Miniatur bleibt: nie, 5, 10 oder 30 Sekunden.</p><p>Der Ton hat eine eigene Einstellung auf demselben Tab: <strong>Aufnahmeton abspielen</strong> unter <strong>Aufnahme</strong>.</p>"
+          "html": "<p>Einstellungen › Allgemein legt fest, was von selbst passiert. Unter <strong>Nach der Aufnahme</strong>:</p><ul><li><strong>In die Zwischenablage kopieren</strong></li><li><strong>In Ordner sichern</strong></li><li><strong>Im Editor öffnen</strong></li><li><strong>Ton abspielen</strong></li></ul><p>Ist <strong>Im Editor öffnen</strong> an, öffnet sich statt der Miniatur der Editor.</p><p>Unter <strong>Schnellzugriff</strong> schaltet <strong>Nach der Aufnahme anzeigen</strong> die Miniatur ein oder aus, und <strong>Schließen nach</strong> legt fest, wie lange sie bleibt: nie, 5, 10 oder 30 Sekunden.</p>"
         }
       ]
     },
@@ -130,7 +134,7 @@
         },
         {
           "h2": "Zuschneiden, Größe und Zoom",
-          "html": "<ul class=\"feature-grid\"><li><strong>Zuschneiden · C</strong>Frei, oder fest auf 1:1, 4:3 oder 16:9.</li><li><strong>Größe ändern</strong>In Prozent, oder auf eine genaue Breite.</li><li><strong>Zoom</strong>Die Tasten − und + in der Ecke der Arbeitsfläche, oder ⌘+ und ⌘−; ⌘0 zeigt die Originalgröße und ⌘9 passt ins Fenster.</li></ul>"
+          "html": "<ul class=\"feature-grid\"><li><strong>Zuschneiden · C</strong>Frei, oder fest auf 1:1, 4:3 oder 16:9. Zieh an einer beliebigen Kante oder Ecke; die Größe steht unter dem Rahmen.</li><li><strong>Größe ändern</strong>In Prozent, oder auf eine genaue Breite.</li><li><strong>Zoom</strong>Die Tasten − und + in der Ecke der Arbeitsfläche, oder ⌘+ und ⌘−; ⌘0 zeigt die Originalgröße und ⌘9 passt ins Fenster.</li></ul>"
         }
       ]
     },
@@ -141,7 +145,7 @@
       "intro": "Eine Vorlage hält Hintergrund, Markierungsstil und Export-Einstellungen zusammen. Deine Liste beginnt leer, mit 12 fertigen Looks zum Hinzufügen.",
       "blocks": [
         {
-          "html": "<ul><li>Um mit einem fertigen Look zu starten, öffne Einstellungen › Vorlagen und klicke unter einem der 12 fertigen Looks auf <strong>Hinzufügen</strong>.</li><li>Um deinen eigenen zu sichern, öffne <strong>Vorlagen</strong> in der Werkzeugleiste des Editors und wähle <strong>Aktuellen Stil als Vorlage sichern …</strong>.</li><li>Um ihn zu nutzen, wähle ihn im selben Menü. <strong>Vorlagen verwalten…</strong> öffnet die Einstellungen.</li><li>In Einstellungen › Vorlagen wählst du <strong>Als Standard</strong>, damit jeder neue Screenshot damit beginnt.</li></ul><p>Ohne Standard beginnt jeder Screenshot mit den Einstellungen, die du zuletzt benutzt hast.</p>"
+          "html": "<ul><li>Um mit einem fertigen Look zu starten, öffne Einstellungen › Vorlagen und klicke unter <strong>Fertigen Look hinzufügen</strong> auf einen der 12 Looks.</li><li>Um deinen eigenen zu sichern, öffne <strong>Vorlagen</strong> in der Werkzeugleiste des Editors und wähle <strong>Aktuellen Stil als Vorlage sichern …</strong>.</li><li>Um ihn zu nutzen, wähle ihn im selben Menü. <strong>Vorlagen verwalten…</strong> öffnet die Einstellungen.</li><li>In Einstellungen › Vorlagen wählst du bei <strong>Für neue Aufnahmen verwenden</strong> eine Vorlage, damit jeder neue Screenshot damit beginnt.</li></ul><p>Mit <strong>Keine</strong> beginnt jeder Screenshot mit den Einstellungen, die du zuletzt benutzt hast.</p>"
         }
       ]
     },
@@ -156,7 +160,7 @@
         },
         {
           "h2": "Format, Qualität und Größe",
-          "html": "<p>Der Tab „Export“ legt <strong>Format</strong> (PNG, JPEG, HEIC oder TIFF), Qualität und Größe fest. Wähle den <strong>Speicherort</strong> unter Einstellungen › Allgemein und schalte <strong>Editor nach dem Kopieren schließen</strong> ein, um in einem Schritt fertig zu sein.</p>"
+          "html": "<p>Der Tab „Export“ legt <strong>Format</strong> (PNG, JPEG, HEIC oder TIFF), Qualität und Größe fest. Wähle den <strong>Ordner</strong> unter Einstellungen › Allgemein (Dokumente › EasyShoot, wenn du keinen anderen wählst) und schalte <strong>Nach dem Kopieren schließen</strong> unter Editor ein, um in einem Schritt fertig zu sein.</p>"
         }
       ]
     },
@@ -164,7 +168,7 @@
       "title": "Tastaturkurzbefehle",
       "short": "Alle Tasten an einem Ort.",
       "description": "Alle Kurzbefehle von EasyShoot: globale Aufnahme-Kürzel, Werkzeuge und Befehle des Editors.",
-      "intro": "Ändere die Aufnahme-Kürzel unter Einstellungen › Kurzbefehle. Die Editor-Tasten funktionieren, solange du keinen Text tippst.",
+      "intro": "Ändere die Aufnahme-Kürzel unter Einstellungen › Kurzbefehle, wo der Tab „Editor“ auch die Editor-Tasten zeigt. Die Editor-Tasten funktionieren, solange du keinen Text tippst.",
       "blocks": [
         {
           "h2": "Aufnahme",
@@ -177,6 +181,10 @@
         {
           "h2": "Editor-Befehle",
           "html": "<table><thead><tr><th>Befehl</th><th>Kürzel</th></tr></thead><tbody><tr><td>Bild kopieren</td><td><kbd dir=\"ltr\">⇧⌘C</kbd></td></tr><tr><td>Sichern</td><td><kbd dir=\"ltr\">⌘S</kbd></td></tr><tr><td>Widerrufen</td><td><kbd dir=\"ltr\">⌘Z</kbd></td></tr><tr><td>Wiederholen</td><td><kbd dir=\"ltr\">⇧⌘Z</kbd></td></tr><tr><td>Markierung kopieren, ausschneiden oder einsetzen</td><td><kbd dir=\"ltr\">⌘C / ⌘X / ⌘V</kbd></td></tr><tr><td>Markierung duplizieren</td><td><kbd dir=\"ltr\">⌘D</kbd></td></tr><tr><td>Alle Markierungen auswählen</td><td><kbd dir=\"ltr\">⌘A</kbd></td></tr><tr><td>Vergrößern / verkleinern</td><td><kbd dir=\"ltr\">⌘+ / ⌘−</kbd></td></tr><tr><td>Originalgröße / einpassen</td><td><kbd dir=\"ltr\">⌘0 / ⌘9</kbd></td></tr><tr><td>Inspektor ein- oder ausblenden</td><td><kbd dir=\"ltr\">⌥⌘I</kbd></td></tr></tbody></table>"
+        },
+        {
+          "h2": "Schnellzugriff",
+          "html": "<table><thead><tr><th>Mit dem Zeiger über der Miniatur</th><th>Kürzel</th></tr></thead><tbody><tr><td>Kopieren</td><td><kbd dir=\"ltr\">⌘C</kbd></td></tr><tr><td>Sichern</td><td><kbd dir=\"ltr\">⌘S</kbd></td></tr><tr><td>Im Editor öffnen</td><td><kbd dir=\"ltr\">⌘E</kbd></td></tr><tr><td>Schließen</td><td><kbd dir=\"ltr\">⌘W</kbd> oder <kbd dir=\"ltr\">Esc</kbd></td></tr></tbody></table>"
         }
       ]
     },
@@ -187,7 +195,7 @@
       "intro": "Öffne Einstellungen … über das Symbol in der Menüleiste, oder drücke ⌘, wenn EasyShoot vorne ist.",
       "blocks": [
         {
-          "html": "<ul class=\"feature-grid\"><li><strong>Allgemein</strong>Was nach der Aufnahme passiert, der Speicherort, der Fensterschatten, Editor-Optionen und Update-Hinweise.</li><li><strong>Kurzbefehle</strong>Nimm deine eigenen Kurzbefehle auf.</li><li><strong>Vorlagen</strong>Deine Vorlagen, der Standard und 12 fertige Looks zum Hinzufügen.</li><li><strong>Berechtigungen</strong>Prüfe die Bildschirmaufnahme, die jeder Screenshot braucht.</li><li><strong>Über</strong>Version, Website, Support und <strong>EasyShoot bewerten</strong>.</li></ul>"
+          "html": "<ul class=\"feature-grid\"><li><strong>Allgemein</strong>Was nach der Aufnahme passiert, der Speicherordner, der Schnellzugriff, der Editor und Updates.</li><li><strong>Kurzbefehle</strong>Nimm deine Aufnahme-Kürzel auf und sieh dir alle Editor-Tasten an.</li><li><strong>Vorlagen</strong>Deine Vorlagen, die Vorlage für neue Aufnahmen und 12 fertige Looks zum Hinzufügen.</li><li><strong>Berechtigungen</strong>Prüfe die Bildschirmaufnahme, die jeder Screenshot braucht, und starte EasyShoot neu.</li><li><strong>Über</strong>Bewerte EasyShoot im App Store, besuche die Website oder hol dir Support.</li></ul>"
         }
       ]
     },
@@ -199,7 +207,7 @@
       "blocks": [
         {
           "h2": "Wann EasyShoot online geht",
-          "html": "<ul><li>Um eine Google-Schrift zu laden, die du für Text wählst.</li><li>Um im App Store nach einer neueren Version zu sehen. Schalte das mit <strong>Mitteilen, wenn ein Update verfügbar ist</strong> unter Einstellungen › Allgemein aus.</li></ul>"
+          "html": "<ul><li>Um eine Google-Schrift zu laden, die du für Text wählst.</li><li>Um im App Store nach einer neueren Version zu sehen. Schalte das mit <strong>Automatisch suchen</strong> unter Updates in Einstellungen › Allgemein aus.</li></ul>"
         },
         {
           "html": "<p>Lies die vollständige <a href=\"/privacy.html\">Datenschutzerklärung</a>.</p>"

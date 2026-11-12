@@ -86,7 +86,7 @@
       "steps": [
         {
           "name": "Bildschirm aufnehmen",
-          "text": "Drücke Wahltaste-Umschalttaste-Befehlstaste-4 und zieh über einen Bereich. In der Bildschirmecke erscheint eine Miniatur: Doppelklicke darauf, um die Aufnahme im Editor zu öffnen. Soll der Editor ohne Miniatur sofort aufgehen, aktiviere „Editor nach der Aufnahme öffnen“ unter Einstellungen › Allgemein."
+          "text": "Drücke Wahltaste-Umschalttaste-Befehlstaste-4 und zieh über einen Bereich. In der Bildschirmecke erscheint eine Miniatur: Doppelklicke darauf, um die Aufnahme im Editor zu öffnen. Soll der Editor ohne Miniatur sofort aufgehen, aktiviere „Im Editor öffnen“ unter Einstellungen › Allgemein."
         },
         {
           "name": "Das Wichtige umrahmen",
@@ -344,11 +344,11 @@
         },
         {
           "h2": "Jedes Mal derselbe Look",
-          "html": "<p>Öffne <strong>Vorlagen</strong> in der Werkzeugleiste des Editors und wähle <strong>Aktuellen Stil als Vorlage sichern …</strong>. In Einstellungen › Vorlagen wählst du <strong>Als Standard</strong>, damit jeder neue Screenshot damit beginnt. Dort findest du auch 12 fertige Looks zum Hinzufügen.</p>"
+          "html": "<p>Öffne <strong>Vorlagen</strong> in der Werkzeugleiste des Editors und wähle <strong>Aktuellen Stil als Vorlage sichern …</strong>. In Einstellungen › Vorlagen wählst du die Vorlage bei <strong>Für neue Aufnahmen verwenden</strong>, damit jeder neue Screenshot damit beginnt. Dort findest du auch 12 fertige Looks zum Hinzufügen.</p>"
         },
         {
           "h2": "Fensteraufnahmen und Schatten",
-          "html": "<p>Eine Fensteraufnahme bringt den Schatten des Fensters mit. Um nur den Schatten des Hintergrunds zu nutzen, schalte <strong>Fensterschatten einschließen</strong> unter Einstellungen › Allgemein aus; lies, <a href=\"/de/guides/screenshot-without-shadow-mac/\">wie du ein Fenster ohne Schatten aufnimmst</a>.</p>"
+          "html": "<p>Die Fensteraufnahmen von EasyShoot lassen den Schatten des Fensters weg, sodass nur der Schatten des Hintergrunds bleibt. Lies, <a href=\"/de/guides/screenshot-without-shadow-mac/\">wie du ein Fenster ohne Schatten aufnimmst</a>.</p>"
         }
       ],
       "faq": [
@@ -434,9 +434,9 @@
     "screenshot-without-shadow-mac": {
       "short": "Fenster ohne Schatten",
       "title": "Fenster-Screenshot ohne Schatten auf dem Mac | EasyShoot",
-      "description": "Fenster-Screenshots auf dem Mac haben einen Schatten und breite transparente Ränder. Lass ihn mit einer Taste weg oder schalte ihn in EasyShoot aus.",
+      "description": "Fenster-Screenshots auf dem Mac haben einen Schatten und breite transparente Ränder. Lass ihn mit einer Taste weg oder nimm mit EasyShoot auf, das ihn jedes Mal weglässt.",
       "h1": "So nimmst du auf dem Mac ein Fenster ohne Schatten auf",
-      "intro": "Wenn du auf dem Mac ein Fenster aufnimmst, enthält das Bild den Schatten des Fensters und damit breite transparente Ränder. Du kannst den Schatten jedes Mal mit einer Taste weglassen oder ihn in EasyShoot dauerhaft ausschalten.",
+      "intro": "Wenn du auf dem Mac ein Fenster aufnimmst, enthält das Bild den Schatten des Fensters und damit breite transparente Ränder. Du kannst den Schatten jedes Mal mit einer Taste weglassen oder mit EasyShoot aufnehmen, dessen Fensteraufnahmen ihn nie enthalten.",
       "steps": [
         {
           "name": "Fensteraufnahme starten",
@@ -447,12 +447,12 @@
           "text": "Halte die Wahltaste gedrückt, während du auf das Fenster klickst. Der Screenshot endet am Rand des Fensters."
         },
         {
-          "name": "Oder in EasyShoot ausschalten",
-          "text": "Öffne in EasyShoot Einstellungen › Allgemein und schalte „Fensterschatten einschließen“ aus."
+          "name": "Oder mit EasyShoot aufnehmen",
+          "text": "Die Fensteraufnahmen von EasyShoot enthalten den Schatten nie, du musst also nichts ausschalten."
         },
         {
           "name": "Fenster aufnehmen",
-          "text": "Drücke Wahltaste-Umschalttaste-Befehlstaste-5 und klicke auf das Fenster. Jede Fensteraufnahme kommt jetzt ohne Schatten."
+          "text": "Drücke Wahltaste-Umschalttaste-Befehlstaste-5 und klicke auf das Fenster. Die Aufnahme endet am Rand des Fensters."
         }
       ],
       "sections": [
@@ -462,7 +462,7 @@
         },
         {
           "h2": "Ein Schatten nach deiner Wahl",
-          "html": "<p>Schalte den Fensterschatten aus und nutze den Tab „Hintergrund“ für Abstand, einen Hintergrund und einen Schatten, so weich oder kräftig du willst. Lies, <a href=\"/de/guides/screenshot-background-mac/\">wie du einem Screenshot einen Hintergrund gibst</a>.</p>"
+          "html": "<p>Nimm das Fenster ohne seinen Schatten auf und nutze den Tab „Hintergrund“ für Abstand, einen Hintergrund und einen Schatten, so weich oder kräftig du willst. Lies, <a href=\"/de/guides/screenshot-background-mac/\">wie du einem Screenshot einen Hintergrund gibst</a>.</p>"
         }
       ],
       "faq": [
@@ -471,12 +471,12 @@
           "a": "macOS nimmt bei Fensteraufnahmen den Schatten des Fensters mit auf, auf transparentem Hintergrund, außer du hältst beim Klicken die Wahltaste gedrückt."
         },
         {
-          "q": "Ändert die Einstellung in EasyShoot die Kurzbefehle des Mac?",
-          "a": "Nein. Sie ändert nur Fensteraufnahmen mit EasyShoot. Bei Umschalttaste-Befehlstaste-4 und Leertaste hältst du die Wahltaste gedrückt."
+          "q": "Ändert EasyShoot die Kurzbefehle des Mac?",
+          "a": "Nein. Die Fensteraufnahmen von EasyShoot lassen den Schatten von selbst weg. Bei Umschalttaste-Befehlstaste-4 und Leertaste hältst du die Wahltaste gedrückt."
         },
         {
-          "q": "Ändert sie Bereichs- und Vollbildaufnahmen?",
-          "a": "Nein. Die nehmen den Bildschirm auf, wie er aussieht; die Einstellung gilt nur, wenn du ein Fenster aufnimmst."
+          "q": "Ändert es Bereichs- und Vollbildaufnahmen?",
+          "a": "Nein. Die nehmen den Bildschirm auf, wie er aussieht; nur Fensteraufnahmen lassen den Schatten weg."
         }
       ]
     },

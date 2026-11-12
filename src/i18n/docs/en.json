@@ -22,7 +22,7 @@
       "blocks": [
         {
           "h2": "Set up in a minute",
-          "html": "<ul><li>Get EasyShoot from the Mac App Store.</li><li>Open it. The <strong>Welcome</strong> window takes three steps: allow Screen Recording, which every screenshot needs (click <strong>Allow…</strong>, turn on EasyShoot in the list, then press <strong>Restart</strong>), choose where screenshots are saved, and you're ready.</li><li>EasyShoot lives in the menu bar. Click its icon and choose <strong>Capture Area…</strong>, or press <kbd dir=\"ltr\">⌥⇧⌘4</kbd>. Capture works over apps in full screen, too.</li></ul>"
+          "html": "<ul><li>Get EasyShoot from the Mac App Store.</li><li>Open it. The <strong>Welcome</strong> window has four short pages: click <strong>Get Started</strong>, allow Screen Recording, which every screenshot needs (click <strong>Allow…</strong>, turn on EasyShoot in the list, then press <strong>Restart</strong>), and check the save folder. Then see the capture shortcuts, and pick a background or a preset.</li><li>EasyShoot lives in the menu bar. Click its icon and choose <strong>Capture Area…</strong>, or press <kbd dir=\"ltr\">⌥⇧⌘4</kbd>. Capture works over apps in full screen, too.</li></ul>"
         },
         {
           "h2": "Can't see the icon?",
@@ -41,7 +41,7 @@
         },
         {
           "h2": "Window shadow",
-          "html": "<p>To leave the window's shadow out of window captures, turn off <strong>Include window shadow</strong> in Settings › General.</p>"
+          "html": "<p>Window captures leave out the window's shadow, so they sit cleanly on a background.</p>"
         }
       ]
     },
@@ -52,8 +52,12 @@
       "intro": "After every capture, Quick Access shows a thumbnail in the corner of the screen. Copy it, save it, open it in the editor or drag it straight into another app.",
       "blocks": [
         {
+          "h2": "Keyboard shortcuts",
+          "html": "<p>With the pointer over the thumbnail:</p><table><thead><tr><th>Action</th><th>Shortcut</th></tr></thead><tbody><tr><td>Copy</td><td><kbd dir=\"ltr\">⌘C</kbd></td></tr><tr><td>Save</td><td><kbd dir=\"ltr\">⌘S</kbd></td></tr><tr><td>Open in the editor</td><td><kbd dir=\"ltr\">⌘E</kbd></td></tr><tr><td>Close</td><td><kbd dir=\"ltr\">⌘W</kbd> or <kbd dir=\"ltr\">Esc</kbd></td></tr></tbody></table><p>Hover a button to see its name and shortcut.</p>"
+        },
+        {
           "h2": "Choose what happens",
-          "html": "<p>Settings › General › <strong>After capture</strong> decides what happens on its own:</p><ul><li><strong>Show Quick Access overlay</strong></li><li><strong>Open editor after capture</strong></li><li><strong>Copy to clipboard</strong></li><li><strong>Save to file</strong></li></ul><p>When <strong>Open editor after capture</strong> is on, the editor opens instead of the thumbnail.</p><p><strong>Close Quick Access overlay after</strong> sets how long the thumbnail stays: never, 5, 10 or 30 seconds.</p><p>The capture sound has its own switch on the same tab: <strong>Play capture sound</strong>, under <strong>Capture</strong>.</p>"
+          "html": "<p>Settings › General decides what happens on its own. Under <strong>After capture</strong>:</p><ul><li><strong>Copy to clipboard</strong></li><li><strong>Save to folder</strong></li><li><strong>Open in editor</strong></li><li><strong>Play sound</strong></li></ul><p>When <strong>Open in editor</strong> is on, the editor opens instead of the thumbnail.</p><p>Under <strong>Quick Access</strong>, <strong>Show after capture</strong> turns the thumbnail on or off, and <strong>Close after</strong> sets how long it stays: never, 5, 10 or 30 seconds.</p>"
         }
       ]
     },
@@ -130,7 +134,7 @@
         },
         {
           "h2": "Crop, resize and zoom",
-          "html": "<ul class=\"feature-grid\"><li><strong>Crop · C</strong>Free, or fixed at 1:1, 4:3 or 16:9.</li><li><strong>Resize</strong>By percent, or to an exact width.</li><li><strong>Zoom</strong>The − and + buttons in the corner of the canvas, or ⌘+ and ⌘−; ⌘0 shows actual size and ⌘9 fits the window.</li></ul>"
+          "html": "<ul class=\"feature-grid\"><li><strong>Crop · C</strong>Free, or fixed at 1:1, 4:3 or 16:9. Drag any edge or corner; the size shows under the box.</li><li><strong>Resize</strong>By percent, or to an exact width.</li><li><strong>Zoom</strong>The − and + buttons in the corner of the canvas, or ⌘+ and ⌘−; ⌘0 shows actual size and ⌘9 fits the window.</li></ul>"
         }
       ]
     },
@@ -141,7 +145,7 @@
       "intro": "A preset keeps a background, a mark style and export settings together. Your list starts empty, with 12 starter looks ready to add.",
       "blocks": [
         {
-          "html": "<ul><li>To start from a ready look, open Settings › Presets and click <strong>Add</strong> under one of the 12 starter looks.</li><li>To save your own, open <strong>Presets</strong> in the editor's toolbar and choose <strong>Save Current Style as Preset…</strong>.</li><li>To use one, pick it from the same menu. <strong>Manage Presets…</strong> opens Settings.</li><li>In Settings › Presets, choose <strong>Make Default</strong> so every new screenshot starts with it.</li></ul><p>With no default, each screenshot starts with the settings you used last.</p>"
+          "html": "<ul><li>To start from a ready look, open Settings › Presets and click one of the 12 looks under <strong>Add a starter look</strong>.</li><li>To save your own, open <strong>Presets</strong> in the editor's toolbar and choose <strong>Save Current Style as Preset…</strong>.</li><li>To use one, pick it from the same menu. <strong>Manage Presets…</strong> opens Settings.</li><li>In Settings › Presets, choose a preset in <strong>Use for new captures</strong> so every new screenshot starts with it.</li></ul><p>With <strong>None</strong>, each screenshot starts with the settings you used last.</p>"
         }
       ]
     },
@@ -156,7 +160,7 @@
         },
         {
           "h2": "Format, quality and size",
-          "html": "<p>The Export tab sets the <strong>Format</strong> (PNG, JPEG, HEIC or TIFF), the quality and the size. Choose the <strong>Save location</strong> in Settings › General, and turn on <strong>Close editor after copying</strong> to finish in one step.</p>"
+          "html": "<p>The Export tab sets the <strong>Format</strong> (PNG, JPEG, HEIC or TIFF), the quality and the size. Choose the <strong>Folder</strong> in Settings › General (Documents › EasyShoot unless you pick another), and turn on <strong>Close after copying</strong>, under Editor, to finish in one step.</p>"
         }
       ]
     },
@@ -164,7 +168,7 @@
       "title": "Keyboard shortcuts",
       "short": "Every key in one place.",
       "description": "Every EasyShoot keyboard shortcut: global capture shortcuts, editor tools and editor commands.",
-      "intro": "Change the capture shortcuts in Settings › Shortcuts. The editor keys work whenever you're not typing text.",
+      "intro": "Change the capture shortcuts in Settings › Shortcuts, whose Editor tab lists the editor keys too. The editor keys work whenever you're not typing text.",
       "blocks": [
         {
           "h2": "Capture",
@@ -177,6 +181,10 @@
         {
           "h2": "Editor commands",
           "html": "<table><thead><tr><th>Command</th><th>Shortcut</th></tr></thead><tbody><tr><td>Copy the image</td><td><kbd dir=\"ltr\">⇧⌘C</kbd></td></tr><tr><td>Save</td><td><kbd dir=\"ltr\">⌘S</kbd></td></tr><tr><td>Undo</td><td><kbd dir=\"ltr\">⌘Z</kbd></td></tr><tr><td>Redo</td><td><kbd dir=\"ltr\">⇧⌘Z</kbd></td></tr><tr><td>Copy, cut or paste a mark</td><td><kbd dir=\"ltr\">⌘C / ⌘X / ⌘V</kbd></td></tr><tr><td>Duplicate a mark</td><td><kbd dir=\"ltr\">⌘D</kbd></td></tr><tr><td>Select all marks</td><td><kbd dir=\"ltr\">⌘A</kbd></td></tr><tr><td>Zoom in / out</td><td><kbd dir=\"ltr\">⌘+ / ⌘−</kbd></td></tr><tr><td>Actual size / zoom to fit</td><td><kbd dir=\"ltr\">⌘0 / ⌘9</kbd></td></tr><tr><td>Show or hide the inspector</td><td><kbd dir=\"ltr\">⌥⌘I</kbd></td></tr></tbody></table>"
+        },
+        {
+          "h2": "Quick Access",
+          "html": "<table><thead><tr><th>With the pointer over the thumbnail</th><th>Shortcut</th></tr></thead><tbody><tr><td>Copy</td><td><kbd dir=\"ltr\">⌘C</kbd></td></tr><tr><td>Save</td><td><kbd dir=\"ltr\">⌘S</kbd></td></tr><tr><td>Open in the editor</td><td><kbd dir=\"ltr\">⌘E</kbd></td></tr><tr><td>Close</td><td><kbd dir=\"ltr\">⌘W</kbd> or <kbd dir=\"ltr\">Esc</kbd></td></tr></tbody></table>"
         }
       ]
     },
@@ -187,7 +195,7 @@
       "intro": "Open Settings… from the menu bar icon, or press ⌘, while EasyShoot is in front.",
       "blocks": [
         {
-          "html": "<ul class=\"feature-grid\"><li><strong>General</strong>What happens after capture, the save location, window shadow, editor options and update notices.</li><li><strong>Shortcuts</strong>Record your own capture shortcuts.</li><li><strong>Presets</strong>Your presets, the default, and 12 starter looks to add.</li><li><strong>Permissions</strong>Check Screen Recording, which every screenshot needs.</li><li><strong>About</strong>Version, website, support, and <strong>Rate EasyShoot</strong>.</li></ul>"
+          "html": "<ul class=\"feature-grid\"><li><strong>General</strong>What happens after capture, the save folder, Quick Access, the editor and updates.</li><li><strong>Shortcuts</strong>Record your capture shortcuts, and see every editor key.</li><li><strong>Presets</strong>Your presets, the one new captures use, and 12 starter looks to add.</li><li><strong>Permissions</strong>Check Screen Recording, which every screenshot needs, and restart EasyShoot.</li><li><strong>About</strong>Rate EasyShoot on the App Store, visit the website or get support.</li></ul>"
         }
       ]
     },
@@ -199,7 +207,7 @@
       "blocks": [
         {
           "h2": "When EasyShoot goes online",
-          "html": "<ul><li>To download a Google font you pick for text.</li><li>To check the App Store for a newer version. Turn this off with <strong>Tell me when an update is available</strong> in Settings › General.</li></ul>"
+          "html": "<ul><li>To download a Google font you pick for text.</li><li>To check the App Store for a newer version. Turn this off with <strong>Check automatically</strong>, under Updates in Settings › General.</li></ul>"
         },
         {
           "html": "<p>Read the full <a href=\"/privacy.html\">privacy policy</a>.</p>"

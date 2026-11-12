@@ -22,7 +22,7 @@
       "blocks": [
         {
           "h2": "Prêt en une minute",
-          "html": "<ul><li>Téléchargez EasyShoot sur le Mac App Store.</li><li>Ouvrez-le. La fenêtre de <strong>bienvenue</strong> tient en trois étapes : autorisez l’enregistrement de l’écran, nécessaire à chaque capture (cliquez sur <strong>Autoriser…</strong>, activez EasyShoot dans la liste, puis appuyez sur <strong>Redémarrer</strong>), choisissez où enregistrer les captures, et c’est prêt.</li><li>EasyShoot vit dans la barre des menus. Cliquez sur son icône et choisissez <strong>Capturer une zone…</strong>, ou appuyez sur <kbd dir=\"ltr\">⌥⇧⌘4</kbd>. La capture fonctionne aussi par-dessus une app en plein écran.</li></ul>"
+          "html": "<ul><li>Téléchargez EasyShoot sur le Mac App Store.</li><li>Ouvrez-le. La fenêtre de <strong>bienvenue</strong> compte quatre courtes pages : cliquez sur <strong>Commencer</strong>, autorisez l’enregistrement de l’écran, nécessaire à chaque capture (cliquez sur <strong>Autoriser…</strong>, activez EasyShoot dans la liste, puis appuyez sur <strong>Redémarrer</strong>), et vérifiez le dossier d’enregistrement. Découvrez ensuite les raccourcis de capture, puis choisissez un arrière-plan ou un préréglage.</li><li>EasyShoot vit dans la barre des menus. Cliquez sur son icône et choisissez <strong>Capturer une zone…</strong>, ou appuyez sur <kbd dir=\"ltr\">⌥⇧⌘4</kbd>. La capture fonctionne aussi par-dessus une app en plein écran.</li></ul>"
         },
         {
           "h2": "Vous ne voyez pas l’icône ?",
@@ -41,7 +41,7 @@
         },
         {
           "h2": "Ombre de la fenêtre",
-          "html": "<p>Pour exclure l’ombre des captures de fenêtre, désactivez <strong>Inclure l’ombre de la fenêtre</strong> dans Réglages › Général.</p>"
+          "html": "<p>Les captures de fenêtre excluent l’ombre de la fenêtre, et se posent ainsi proprement sur un arrière-plan.</p>"
         }
       ]
     },
@@ -52,8 +52,12 @@
       "intro": "Après chaque capture, l’accès rapide affiche une vignette dans le coin de l’écran. Copiez-la, enregistrez-la, ouvrez-la dans l’éditeur ou glissez-la dans une autre app.",
       "blocks": [
         {
+          "h2": "Raccourcis clavier",
+          "html": "<p>Avec le pointeur sur la vignette :</p><table><thead><tr><th>Action</th><th>Raccourci</th></tr></thead><tbody><tr><td>Copier</td><td><kbd dir=\"ltr\">⌘C</kbd></td></tr><tr><td>Enregistrer</td><td><kbd dir=\"ltr\">⌘S</kbd></td></tr><tr><td>Ouvrir dans l’éditeur</td><td><kbd dir=\"ltr\">⌘E</kbd></td></tr><tr><td>Fermer</td><td><kbd dir=\"ltr\">⌘W</kbd> ou <kbd dir=\"ltr\">Esc</kbd></td></tr></tbody></table><p>Survolez un bouton pour voir son nom et son raccourci.</p>"
+        },
+        {
           "h2": "Choisir ce qui se passe",
-          "html": "<p>Réglages › Général › <strong>Après la capture</strong> décide de ce qui se fait tout seul :</p><ul><li><strong>Afficher l’accès rapide</strong></li><li><strong>Ouvrir l’éditeur après la capture</strong></li><li><strong>Copier dans le presse-papiers</strong></li><li><strong>Enregistrer dans un fichier</strong></li></ul><p>Si <strong>Ouvrir l’éditeur après la capture</strong> est activé, l’éditeur s’ouvre à la place de la vignette.</p><p><strong>Fermer l’accès rapide après</strong> règle la durée de la vignette : jamais, 5, 10 ou 30 secondes.</p><p>Le son a son propre réglage dans le même onglet : <strong>Jouer le son de capture</strong>, sous <strong>Capture</strong>.</p>"
+          "html": "<p>Réglages › Général décide de ce qui se fait tout seul. Sous <strong>Après la capture</strong> :</p><ul><li><strong>Copier dans le presse-papiers</strong></li><li><strong>Enregistrer dans un dossier</strong></li><li><strong>Ouvrir dans l’éditeur</strong></li><li><strong>Jouer un son</strong></li></ul><p>Si <strong>Ouvrir dans l’éditeur</strong> est activé, l’éditeur s’ouvre à la place de la vignette.</p><p>Sous <strong>Accès rapide</strong>, <strong>Afficher après la capture</strong> active ou désactive la vignette, et <strong>Fermer après</strong> règle combien de temps elle reste affichée : jamais, 5, 10 ou 30 secondes.</p>"
         }
       ]
     },
@@ -130,7 +134,7 @@
         },
         {
           "h2": "Recadrer, redimensionner et zoomer",
-          "html": "<ul class=\"feature-grid\"><li><strong>Recadrer · C</strong>Libre, ou fixe en 1:1, 4:3 ou 16:9.</li><li><strong>Redimensionner</strong>En pourcentage, ou à une largeur précise.</li><li><strong>Zoom</strong>Les boutons − et + dans le coin de la zone de travail, ou ⌘+ et ⌘− ; ⌘0 taille réelle et ⌘9 ajuste à la fenêtre.</li></ul>"
+          "html": "<ul class=\"feature-grid\"><li><strong>Recadrer · C</strong>Libre, ou fixe en 1:1, 4:3 ou 16:9. Faites glisser un bord ou un coin ; la taille s’affiche sous le cadre.</li><li><strong>Redimensionner</strong>En pourcentage, ou à une largeur précise.</li><li><strong>Zoom</strong>Les boutons − et + dans le coin de la zone de travail, ou ⌘+ et ⌘− ; ⌘0 taille réelle et ⌘9 ajuste à la fenêtre.</li></ul>"
         }
       ]
     },
@@ -141,7 +145,7 @@
       "intro": "Un préréglage garde ensemble un arrière-plan, un style de repères et des réglages d’export. Votre liste commence vide, avec 12 styles prêts à ajouter.",
       "blocks": [
         {
-          "html": "<ul><li>Pour partir d’un style prêt, ouvrez Réglages › Préréglages et cliquez sur <strong>Ajouter</strong> sous l’un des 12 styles prêts.</li><li>Pour créer le vôtre, ouvrez <strong>Préréglages</strong> dans la barre d’outils de l’éditeur et choisissez <strong>Enregistrer le style actuel comme préréglage…</strong>.</li><li>Pour l’utiliser, choisissez-le dans le même menu. <strong>Gérer les préréglages…</strong> ouvre les Réglages.</li><li>Dans Réglages › Préréglages, choisissez <strong>Définir par défaut</strong> pour que chaque capture commence avec.</li></ul><p>Sans préréglage par défaut, chaque capture reprend vos derniers réglages.</p>"
+          "html": "<ul><li>Pour partir d’un style prêt, ouvrez Réglages › Préréglages et cliquez sur l’un des 12 styles sous <strong>Ajouter un style prêt</strong>.</li><li>Pour créer le vôtre, ouvrez <strong>Préréglages</strong> dans la barre d’outils de l’éditeur et choisissez <strong>Enregistrer le style actuel comme préréglage…</strong>.</li><li>Pour l’utiliser, choisissez-le dans le même menu. <strong>Gérer les préréglages…</strong> ouvre les Réglages.</li><li>Dans Réglages › Préréglages, choisissez un préréglage dans <strong>Utiliser pour les nouvelles captures</strong> pour que chaque capture commence avec.</li></ul><p>Avec <strong>Aucun</strong>, chaque capture reprend vos derniers réglages.</p>"
         }
       ]
     },
@@ -156,7 +160,7 @@
         },
         {
           "h2": "Format, qualité et taille",
-          "html": "<p>L’onglet Exporter règle le <strong>format</strong> (PNG, JPEG, HEIC ou TIFF), la qualité et la taille. Choisissez l’<strong>emplacement d’enregistrement</strong> dans Réglages › Général, et activez <strong>Fermer l’éditeur après la copie</strong> pour finir en un geste.</p>"
+          "html": "<p>L’onglet Exporter règle le <strong>format</strong> (PNG, JPEG, HEIC ou TIFF), la qualité et la taille. Choisissez le <strong>dossier</strong> dans Réglages › Général (Documents › EasyShoot, sauf si vous en choisissez un autre), et activez <strong>Fermer après la copie</strong>, sous Éditeur, pour finir en un geste.</p>"
         }
       ]
     },
@@ -164,7 +168,7 @@
       "title": "Raccourcis clavier",
       "short": "Toutes les touches au même endroit.",
       "description": "Tous les raccourcis d’EasyShoot : raccourcis de capture globaux, outils de l’éditeur et commandes de l’éditeur.",
-      "intro": "Modifiez les raccourcis de capture dans Réglages › Raccourcis. Les touches de l’éditeur marchent tant que vous ne tapez pas de texte.",
+      "intro": "Modifiez les raccourcis de capture dans Réglages › Raccourcis, dont l’onglet Éditeur liste aussi les touches de l’éditeur. Les touches de l’éditeur marchent tant que vous ne tapez pas de texte.",
       "blocks": [
         {
           "h2": "Capture",
@@ -177,6 +181,10 @@
         {
           "h2": "Commandes de l’éditeur",
           "html": "<table><thead><tr><th>Commande</th><th>Raccourci</th></tr></thead><tbody><tr><td>Copier l’image</td><td><kbd dir=\"ltr\">⇧⌘C</kbd></td></tr><tr><td>Enregistrer</td><td><kbd dir=\"ltr\">⌘S</kbd></td></tr><tr><td>Annuler</td><td><kbd dir=\"ltr\">⌘Z</kbd></td></tr><tr><td>Rétablir</td><td><kbd dir=\"ltr\">⇧⌘Z</kbd></td></tr><tr><td>Copier, couper ou coller un repère</td><td><kbd dir=\"ltr\">⌘C / ⌘X / ⌘V</kbd></td></tr><tr><td>Dupliquer un repère</td><td><kbd dir=\"ltr\">⌘D</kbd></td></tr><tr><td>Tout sélectionner</td><td><kbd dir=\"ltr\">⌘A</kbd></td></tr><tr><td>Zoom avant / arrière</td><td><kbd dir=\"ltr\">⌘+ / ⌘−</kbd></td></tr><tr><td>Taille réelle / ajuster</td><td><kbd dir=\"ltr\">⌘0 / ⌘9</kbd></td></tr><tr><td>Afficher ou masquer l’inspecteur</td><td><kbd dir=\"ltr\">⌥⌘I</kbd></td></tr></tbody></table>"
+        },
+        {
+          "h2": "Accès rapide",
+          "html": "<table><thead><tr><th>Avec le pointeur sur la vignette</th><th>Raccourci</th></tr></thead><tbody><tr><td>Copier</td><td><kbd dir=\"ltr\">⌘C</kbd></td></tr><tr><td>Enregistrer</td><td><kbd dir=\"ltr\">⌘S</kbd></td></tr><tr><td>Ouvrir dans l’éditeur</td><td><kbd dir=\"ltr\">⌘E</kbd></td></tr><tr><td>Fermer</td><td><kbd dir=\"ltr\">⌘W</kbd> ou <kbd dir=\"ltr\">Esc</kbd></td></tr></tbody></table>"
         }
       ]
     },
@@ -187,7 +195,7 @@
       "intro": "Ouvrez Réglages… depuis l’icône de la barre des menus, ou appuyez sur ⌘, quand EasyShoot est au premier plan.",
       "blocks": [
         {
-          "html": "<ul class=\"feature-grid\"><li><strong>Général</strong>Ce qui se passe après la capture, l’emplacement d’enregistrement, l’ombre des fenêtres, les options de l’éditeur et les avis de mise à jour.</li><li><strong>Raccourcis</strong>Enregistrez vos propres raccourcis de capture.</li><li><strong>Préréglages</strong>Vos préréglages, celui par défaut, et 12 styles prêts à ajouter.</li><li><strong>Autorisations</strong>Vérifiez l’enregistrement de l’écran, nécessaire à chaque capture.</li><li><strong>À propos</strong>Version, site web, assistance et <strong>Noter EasyShoot</strong>.</li></ul>"
+          "html": "<ul class=\"feature-grid\"><li><strong>Général</strong>Ce qui se passe après la capture, le dossier d’enregistrement, l’accès rapide, l’éditeur et les mises à jour.</li><li><strong>Raccourcis</strong>Enregistrez vos raccourcis de capture, et consultez toutes les touches de l’éditeur.</li><li><strong>Préréglages</strong>Vos préréglages, celui qu’utilisent les nouvelles captures, et 12 styles prêts à ajouter.</li><li><strong>Autorisations</strong>Vérifiez l’enregistrement de l’écran, nécessaire à chaque capture, et redémarrez EasyShoot.</li><li><strong>À propos</strong>Notez EasyShoot sur l’App Store, visitez le site web ou obtenez de l’aide.</li></ul>"
         }
       ]
     },
@@ -199,7 +207,7 @@
       "blocks": [
         {
           "h2": "Quand EasyShoot se connecte",
-          "html": "<ul><li>Pour télécharger une police Google choisie pour le texte.</li><li>Pour vérifier s’il existe une version plus récente sur l’App Store. Désactivez-le avec <strong>Me prévenir quand une mise à jour est disponible</strong> dans Réglages › Général.</li></ul>"
+          "html": "<ul><li>Pour télécharger une police Google choisie pour le texte.</li><li>Pour vérifier s’il existe une version plus récente sur l’App Store. Désactivez-le avec <strong>Vérifier automatiquement</strong>, sous Mises à jour dans Réglages › Général.</li></ul>"
         },
         {
           "html": "<p>Lisez la <a href=\"/privacy.html\">politique de confidentialité</a> complète.</p>"

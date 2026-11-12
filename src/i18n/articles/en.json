@@ -86,7 +86,7 @@
       "steps": [
         {
           "name": "Capture the screen",
-          "text": "Press Option-Shift-Command-4 and drag over an area. A thumbnail appears in the corner of the screen: double-click it to open the capture in the editor. To open the editor right away without the thumbnail, turn on Open editor after capture in Settings › General."
+          "text": "Press Option-Shift-Command-4 and drag over an area. A thumbnail appears in the corner of the screen: double-click it to open the capture in the editor. To open the editor right away without the thumbnail, turn on Open in editor in Settings › General."
         },
         {
           "name": "Box the important part",
@@ -344,11 +344,11 @@
         },
         {
           "h2": "The same look every time",
-          "html": "<p>Open <strong>Presets</strong> in the editor's toolbar and choose <strong>Save Current Style as Preset…</strong>. In Settings › Presets, <strong>Make Default</strong> starts every new screenshot with it. You'll also find 12 starter looks there to add.</p>"
+          "html": "<p>Open <strong>Presets</strong> in the editor's toolbar and choose <strong>Save Current Style as Preset…</strong>. In Settings › Presets, <strong>Use for new captures</strong> starts every new screenshot with it. You'll also find 12 starter looks there to add.</p>"
         },
         {
           "h2": "Window captures and shadows",
-          "html": "<p>A window capture brings the window's own shadow. To use only the background's shadow, turn off <strong>Include window shadow</strong> in Settings › General; see <a href=\"/guides/screenshot-without-shadow-mac/\">how to screenshot a window without the shadow</a>.</p>"
+          "html": "<p>EasyShoot's window captures leave out the window's own shadow, so the background's shadow is the only one. See <a href=\"/guides/screenshot-without-shadow-mac/\">how to screenshot a window without the shadow</a>.</p>"
         }
       ],
       "faq": [
@@ -434,9 +434,9 @@
     "screenshot-without-shadow-mac": {
       "short": "Window without shadow",
       "title": "Screenshot a window without its shadow on Mac | EasyShoot",
-      "description": "Window screenshots on a Mac come with a shadow and wide transparent edges. Leave it out with one key, or turn it off for good in EasyShoot.",
+      "description": "Window screenshots on a Mac come with a shadow and wide transparent edges. Leave it out with one key, or capture with EasyShoot, which leaves it out every time.",
       "h1": "How to screenshot a window without the shadow on a Mac",
-      "intro": "When you capture a window on a Mac, the picture includes the window's shadow, which adds wide transparent edges around it. You can leave the shadow out each time with one key, or turn it off for good in EasyShoot.",
+      "intro": "When you capture a window on a Mac, the picture includes the window's shadow, which adds wide transparent edges around it. You can leave the shadow out each time with one key, or capture with EasyShoot, whose window captures never include it.",
       "steps": [
         {
           "name": "Start a window capture",
@@ -447,12 +447,12 @@
           "text": "Hold Option while you click the window. The screenshot ends at the window's edge."
         },
         {
-          "name": "Or turn it off in EasyShoot",
-          "text": "Open EasyShoot's Settings › General and turn off Include window shadow."
+          "name": "Or capture with EasyShoot",
+          "text": "EasyShoot's window captures never include the shadow, so there's nothing to turn off."
         },
         {
           "name": "Capture the window",
-          "text": "Press Option-Shift-Command-5 and click the window. Every window capture now comes without the shadow."
+          "text": "Press Option-Shift-Command-5 and click the window. The capture ends at the window's edge."
         }
       ],
       "sections": [
@@ -462,7 +462,7 @@
         },
         {
           "h2": "A shadow you choose instead",
-          "html": "<p>Turn the window shadow off, then use the Background tab to add padding, a background and a shadow as soft or strong as you like. See <a href=\"/guides/screenshot-background-mac/\">how to add a background to a screenshot</a>.</p>"
+          "html": "<p>Capture the window without its shadow, then use the Background tab to add padding, a background and a shadow as soft or strong as you like. See <a href=\"/guides/screenshot-background-mac/\">how to add a background to a screenshot</a>.</p>"
         }
       ],
       "faq": [
@@ -471,12 +471,12 @@
           "a": "macOS includes the window's shadow in window captures, on a transparent background, unless you hold Option while you click."
         },
         {
-          "q": "Does the EasyShoot setting change the Mac's own shortcuts?",
-          "a": "No. It only changes window captures you take with EasyShoot. For Shift-Command-4 and Space, hold Option."
+          "q": "Does EasyShoot change the Mac's own shortcuts?",
+          "a": "No. EasyShoot's window captures leave the shadow out on their own. For Shift-Command-4 and Space, hold Option."
         },
         {
           "q": "Does it change area and full-screen captures?",
-          "a": "No. Those capture the screen as it looks; the setting only applies when you capture a window."
+          "a": "No. Those capture the screen as it looks; only window captures leave the shadow out."
         }
       ]
     },

@@ -86,7 +86,7 @@
       "steps": [
         {
           "name": "Captura la pantalla",
-          "text": "Pulsa Opción + Mayúsculas + Comando + 4 y arrastra sobre un área. Aparece una miniatura en la esquina de la pantalla: haz doble clic en ella para abrir la captura en el editor. Para abrir el editor al momento, sin miniatura, activa Abrir el editor tras la captura en Ajustes › General."
+          "text": "Pulsa Opción + Mayúsculas + Comando + 4 y arrastra sobre un área. Aparece una miniatura en la esquina de la pantalla: haz doble clic en ella para abrir la captura en el editor. Para abrir el editor al momento, sin miniatura, activa Abrir en el editor en Ajustes › General."
         },
         {
           "name": "Enmarca lo importante",
@@ -344,11 +344,11 @@
         },
         {
           "h2": "El mismo estilo cada vez",
-          "html": "<p>Abre <strong>Preajustes</strong> en la barra de herramientas del editor y elige <strong>Guardar estilo actual como preajuste…</strong>. En Ajustes › Preajustes, elige <strong>Usar por defecto</strong> para que cada captura nueva empiece con él. Ahí también hay 12 estilos listos para añadir.</p>"
+          "html": "<p>Abre <strong>Preajustes</strong> en la barra de herramientas del editor y elige <strong>Guardar estilo actual como preajuste…</strong>. En Ajustes › Preajustes, elígelo en <strong>Usar en capturas nuevas</strong> para que cada captura nueva empiece con él. Ahí también hay 12 estilos listos para añadir.</p>"
         },
         {
           "h2": "Capturas de ventana y sombras",
-          "html": "<p>Una captura de ventana trae la sombra de la propia ventana. Para usar solo la sombra del fondo, desactiva <strong>Incluir sombra de la ventana</strong> en Ajustes › General; mira <a href=\"/es/guides/screenshot-without-shadow-mac/\">cómo capturar una ventana sin su sombra</a>.</p>"
+          "html": "<p>Las capturas de ventana de EasyShoot dejan fuera la sombra de la propia ventana, así que la sombra del fondo es la única. Mira <a href=\"/es/guides/screenshot-without-shadow-mac/\">cómo capturar una ventana sin su sombra</a>.</p>"
         }
       ],
       "faq": [
@@ -434,9 +434,9 @@
     "screenshot-without-shadow-mac": {
       "short": "Ventana sin sombra",
       "title": "Capturar una ventana sin su sombra en Mac | EasyShoot",
-      "description": "En Mac, las capturas de ventana traen una sombra y anchos bordes transparentes. Quítala con una tecla o desactívala para siempre en EasyShoot.",
+      "description": "En Mac, las capturas de ventana traen una sombra y anchos bordes transparentes. Quítala con una tecla o captura con EasyShoot, que la deja fuera siempre.",
       "h1": "Cómo capturar una ventana sin su sombra en Mac",
-      "intro": "Cuando capturas una ventana en Mac, la imagen incluye su sombra, que añade anchos bordes transparentes alrededor. Puedes dejar la sombra fuera cada vez con una tecla, o desactivarla para siempre en EasyShoot.",
+      "intro": "Cuando capturas una ventana en Mac, la imagen incluye su sombra, que añade anchos bordes transparentes alrededor. Puedes dejar la sombra fuera cada vez con una tecla, o capturar con EasyShoot, cuyas capturas de ventana nunca la incluyen.",
       "steps": [
         {
           "name": "Empieza una captura de ventana",
@@ -447,12 +447,12 @@
           "text": "Mantén pulsada Opción mientras haces clic en la ventana. La captura termina en el borde de la ventana."
         },
         {
-          "name": "O desactívala en EasyShoot",
-          "text": "Abre Ajustes › General en EasyShoot y desactiva Incluir sombra de la ventana."
+          "name": "O captura con EasyShoot",
+          "text": "Las capturas de ventana de EasyShoot nunca incluyen la sombra, así que no hay nada que desactivar."
         },
         {
           "name": "Captura la ventana",
-          "text": "Pulsa Opción + Mayúsculas + Comando + 5 y haz clic en la ventana. Cada captura de ventana llega ahora sin sombra."
+          "text": "Pulsa Opción + Mayúsculas + Comando + 5 y haz clic en la ventana. La captura termina en el borde de la ventana."
         }
       ],
       "sections": [
@@ -462,7 +462,7 @@
         },
         {
           "h2": "Una sombra que eliges tú",
-          "html": "<p>Desactiva la sombra de la ventana y usa la pestaña Fondo para añadir margen, un fondo y una sombra tan suave o marcada como quieras. Mira <a href=\"/es/guides/screenshot-background-mac/\">cómo añadir un fondo a una captura</a>.</p>"
+          "html": "<p>Captura la ventana sin su sombra y usa la pestaña Fondo para añadir margen, un fondo y una sombra tan suave o marcada como quieras. Mira <a href=\"/es/guides/screenshot-background-mac/\">cómo añadir un fondo a una captura</a>.</p>"
         }
       ],
       "faq": [
@@ -471,12 +471,12 @@
           "a": "macOS incluye la sombra de la ventana en las capturas de ventana, sobre un fondo transparente, salvo que mantengas pulsada Opción al hacer clic."
         },
         {
-          "q": "¿El ajuste de EasyShoot cambia los atajos del Mac?",
-          "a": "No. Solo cambia las capturas de ventana que haces con EasyShoot. Con Mayúsculas + Comando + 4 y Espacio, mantén pulsada Opción."
+          "q": "¿EasyShoot cambia los atajos del Mac?",
+          "a": "No. Las capturas de ventana de EasyShoot dejan fuera la sombra por sí solas. Con Mayúsculas + Comando + 4 y Espacio, mantén pulsada Opción."
         },
         {
           "q": "¿Cambia las capturas de área y de pantalla completa?",
-          "a": "No. Esas capturan la pantalla tal como se ve; el ajuste solo se aplica al capturar una ventana."
+          "a": "No. Esas capturan la pantalla tal como se ve; solo las capturas de ventana dejan fuera la sombra."
         }
       ]
     },
