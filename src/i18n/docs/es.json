@@ -22,7 +22,7 @@
       "blocks": [
         {
           "h2": "Listo en un minuto",
-          "html": "<ul><li>Descarga EasyShoot del Mac App Store.</li><li>Ábrelo. La ventana de <strong>bienvenida</strong> tiene tres pasos: permite la grabación de pantalla, que necesita cada captura (haz clic en <strong>Permitir…</strong>, activa EasyShoot en la lista y pulsa <strong>Reiniciar</strong>), elige dónde se guardan las capturas, y listo.</li><li>EasyShoot vive en la barra de menús. Haz clic en su icono y elige <strong>Capturar área…</strong>, o pulsa <kbd dir=\"ltr\">⌥⇧⌘4</kbd>. La captura también funciona sobre apps a pantalla completa.</li></ul>"
+          "html": "<ul><li>Descarga EasyShoot del Mac App Store.</li><li>Ábrelo. La ventana de <strong>bienvenida</strong> tiene cuatro páginas cortas: haz clic en <strong>Empezar</strong>, permite la grabación de pantalla, que necesita cada captura (haz clic en <strong>Permitir…</strong>, activa EasyShoot en la lista y pulsa <strong>Reiniciar</strong>), y comprueba la carpeta de guardado. Después, mira los atajos de captura y elige un fondo o un preajuste.</li><li>EasyShoot vive en la barra de menús. Haz clic en su icono y elige <strong>Capturar área…</strong>, o pulsa <kbd dir=\"ltr\">⌥⇧⌘4</kbd>. La captura también funciona sobre apps a pantalla completa.</li></ul>"
         },
         {
           "h2": "¿No ves el icono?",
@@ -41,7 +41,7 @@
         },
         {
           "h2": "Sombra de la ventana",
-          "html": "<p>Para quitar la sombra de las capturas de ventana, desactiva <strong>Incluir sombra de la ventana</strong> en Ajustes › General.</p>"
+          "html": "<p>Las capturas de ventana dejan fuera la sombra de la ventana, así que quedan limpias sobre un fondo.</p>"
         }
       ]
     },
@@ -52,8 +52,12 @@
       "intro": "Tras cada captura, el acceso rápido muestra una miniatura en la esquina de la pantalla. Cópiala, guárdala, ábrela en el editor o arrástrala a otra app.",
       "blocks": [
         {
+          "h2": "Atajos de teclado",
+          "html": "<p>Con el puntero sobre la miniatura:</p><table><thead><tr><th>Acción</th><th>Atajo</th></tr></thead><tbody><tr><td>Copiar</td><td><kbd dir=\"ltr\">⌘C</kbd></td></tr><tr><td>Guardar</td><td><kbd dir=\"ltr\">⌘S</kbd></td></tr><tr><td>Abrir en el editor</td><td><kbd dir=\"ltr\">⌘E</kbd></td></tr><tr><td>Cerrar</td><td><kbd dir=\"ltr\">⌘W</kbd> o <kbd dir=\"ltr\">Esc</kbd></td></tr></tbody></table><p>Pasa el puntero sobre un botón para ver su nombre y su atajo.</p>"
+        },
+        {
           "h2": "Elige qué pasa",
-          "html": "<p>Ajustes › General › <strong>Después de capturar</strong> decide lo que pasa solo:</p><ul><li><strong>Mostrar acceso rápido</strong></li><li><strong>Abrir el editor tras la captura</strong></li><li><strong>Copiar al portapapeles</strong></li><li><strong>Guardar en archivo</strong></li></ul><p>Si activas <strong>Abrir el editor tras la captura</strong>, se abre el editor en lugar de la miniatura.</p><p><strong>Cerrar el acceso rápido tras</strong> fija cuánto dura la miniatura: nunca, 5, 10 o 30 segundos.</p><p>El sonido tiene su propio ajuste en la misma pestaña: <strong>Reproducir sonido de captura</strong>, en <strong>Captura</strong>.</p>"
+          "html": "<p>Ajustes › General decide lo que pasa solo. En <strong>Después de capturar</strong>:</p><ul><li><strong>Copiar al portapapeles</strong></li><li><strong>Guardar en carpeta</strong></li><li><strong>Abrir en el editor</strong></li><li><strong>Reproducir sonido</strong></li></ul><p>Si activas <strong>Abrir en el editor</strong>, se abre el editor en lugar de la miniatura.</p><p>En <strong>Acceso rápido</strong>, <strong>Mostrar tras la captura</strong> activa o desactiva la miniatura, y <strong>Cerrar tras</strong> fija cuánto dura: nunca, 5, 10 o 30 segundos.</p>"
         }
       ]
     },
@@ -130,7 +134,7 @@
         },
         {
           "h2": "Recortar, cambiar tamaño y zoom",
-          "html": "<ul class=\"feature-grid\"><li><strong>Recortar · C</strong>Libre, o fijo en 1:1, 4:3 o 16:9.</li><li><strong>Cambiar tamaño</strong>En porcentaje, o a un ancho exacto.</li><li><strong>Zoom</strong>Los botones − y + en la esquina del lienzo, o ⌘+ y ⌘−; ⌘0 muestra el tamaño real y ⌘9 ajusta a la ventana.</li></ul>"
+          "html": "<ul class=\"feature-grid\"><li><strong>Recortar · C</strong>Libre, o fijo en 1:1, 4:3 o 16:9. Arrastra cualquier borde o esquina; el tamaño aparece bajo el recuadro.</li><li><strong>Cambiar tamaño</strong>En porcentaje, o a un ancho exacto.</li><li><strong>Zoom</strong>Los botones − y + en la esquina del lienzo, o ⌘+ y ⌘−; ⌘0 muestra el tamaño real y ⌘9 ajusta a la ventana.</li></ul>"
         }
       ]
     },
@@ -141,7 +145,7 @@
       "intro": "Un preajuste guarda juntos un fondo, un estilo de marcas y los ajustes de exportación. Tu lista empieza vacía, con 12 estilos listos para añadir.",
       "blocks": [
         {
-          "html": "<ul><li>Para empezar con un estilo listo, abre Ajustes › Preajustes y haz clic en <strong>Añadir</strong> bajo uno de los 12 estilos listos.</li><li>Para guardar el tuyo, abre <strong>Preajustes</strong> en la barra de herramientas del editor y elige <strong>Guardar estilo actual como preajuste…</strong>.</li><li>Para usarlo, elígelo en el mismo menú. <strong>Gestionar preajustes…</strong> abre Ajustes.</li><li>En Ajustes › Preajustes, elige <strong>Usar por defecto</strong> para que cada captura nueva empiece con él.</li></ul><p>Sin preajuste por defecto, cada captura empieza con los últimos ajustes que usaste.</p>"
+          "html": "<ul><li>Para empezar con un estilo listo, abre Ajustes › Preajustes y haz clic en uno de los 12 estilos bajo <strong>Añadir un estilo listo</strong>.</li><li>Para guardar el tuyo, abre <strong>Preajustes</strong> en la barra de herramientas del editor y elige <strong>Guardar estilo actual como preajuste…</strong>.</li><li>Para usarlo, elígelo en el mismo menú. <strong>Gestionar preajustes…</strong> abre Ajustes.</li><li>En Ajustes › Preajustes, elige un preajuste en <strong>Usar en capturas nuevas</strong> para que cada captura nueva empiece con él.</li></ul><p>Con <strong>Ninguno</strong>, cada captura empieza con los últimos ajustes que usaste.</p>"
         }
       ]
     },
@@ -156,7 +160,7 @@
         },
         {
           "h2": "Formato, calidad y tamaño",
-          "html": "<p>La pestaña Exportar fija el <strong>formato</strong> (PNG, JPEG, HEIC o TIFF), la calidad y el tamaño. Elige la <strong>ubicación de guardado</strong> en Ajustes › General y activa <strong>Cerrar el editor tras copiar</strong> para terminar en un paso.</p>"
+          "html": "<p>La pestaña Exportar fija el <strong>formato</strong> (PNG, JPEG, HEIC o TIFF), la calidad y el tamaño. Elige la <strong>carpeta</strong> en Ajustes › General (Documentos › EasyShoot si no eliges otra) y activa <strong>Cerrar tras copiar</strong>, en Editor, para terminar en un paso.</p>"
         }
       ]
     },
@@ -164,7 +168,7 @@
       "title": "Atajos de teclado",
       "short": "Todas las teclas en un sitio.",
       "description": "Todos los atajos de EasyShoot: atajos de captura globales, herramientas y comandos del editor.",
-      "intro": "Cambia los atajos de captura en Ajustes › Atajos. Las teclas del editor funcionan mientras no escribas texto.",
+      "intro": "Cambia los atajos de captura en Ajustes › Atajos, cuya pestaña Editor también muestra las teclas del editor. Las teclas del editor funcionan mientras no escribas texto.",
       "blocks": [
         {
           "h2": "Captura",
@@ -177,6 +181,10 @@
         {
           "h2": "Comandos del editor",
           "html": "<table><thead><tr><th>Comando</th><th>Atajo</th></tr></thead><tbody><tr><td>Copiar la imagen</td><td><kbd dir=\"ltr\">⇧⌘C</kbd></td></tr><tr><td>Guardar</td><td><kbd dir=\"ltr\">⌘S</kbd></td></tr><tr><td>Deshacer</td><td><kbd dir=\"ltr\">⌘Z</kbd></td></tr><tr><td>Rehacer</td><td><kbd dir=\"ltr\">⇧⌘Z</kbd></td></tr><tr><td>Copiar, cortar o pegar una marca</td><td><kbd dir=\"ltr\">⌘C / ⌘X / ⌘V</kbd></td></tr><tr><td>Duplicar una marca</td><td><kbd dir=\"ltr\">⌘D</kbd></td></tr><tr><td>Seleccionar todas las marcas</td><td><kbd dir=\"ltr\">⌘A</kbd></td></tr><tr><td>Acercar / alejar</td><td><kbd dir=\"ltr\">⌘+ / ⌘−</kbd></td></tr><tr><td>Tamaño real / ajustar</td><td><kbd dir=\"ltr\">⌘0 / ⌘9</kbd></td></tr><tr><td>Mostrar u ocultar el inspector</td><td><kbd dir=\"ltr\">⌥⌘I</kbd></td></tr></tbody></table>"
+        },
+        {
+          "h2": "Acceso rápido",
+          "html": "<table><thead><tr><th>Con el puntero sobre la miniatura</th><th>Atajo</th></tr></thead><tbody><tr><td>Copiar</td><td><kbd dir=\"ltr\">⌘C</kbd></td></tr><tr><td>Guardar</td><td><kbd dir=\"ltr\">⌘S</kbd></td></tr><tr><td>Abrir en el editor</td><td><kbd dir=\"ltr\">⌘E</kbd></td></tr><tr><td>Cerrar</td><td><kbd dir=\"ltr\">⌘W</kbd> o <kbd dir=\"ltr\">Esc</kbd></td></tr></tbody></table>"
         }
       ]
     },
@@ -187,7 +195,7 @@
       "intro": "Abre Ajustes… desde el icono de la barra de menús, o pulsa ⌘, con EasyShoot delante.",
       "blocks": [
         {
-          "html": "<ul class=\"feature-grid\"><li><strong>General</strong>Qué pasa después de capturar, dónde se guarda, la sombra de las ventanas, opciones del editor y avisos de actualización.</li><li><strong>Atajos</strong>Graba tus propios atajos de captura.</li><li><strong>Preajustes</strong>Tus preajustes, el de por defecto y 12 estilos listos para añadir.</li><li><strong>Permisos</strong>Comprueba la grabación de pantalla, que necesita cada captura.</li><li><strong>Acerca de</strong>Versión, web, soporte y <strong>Valorar EasyShoot</strong>.</li></ul>"
+          "html": "<ul class=\"feature-grid\"><li><strong>General</strong>Qué pasa después de capturar, la carpeta de guardado, el acceso rápido, el editor y las actualizaciones.</li><li><strong>Atajos</strong>Graba tus atajos de captura y consulta todas las teclas del editor.</li><li><strong>Preajustes</strong>Tus preajustes, el que usan las capturas nuevas y 12 estilos listos para añadir.</li><li><strong>Permisos</strong>Comprueba la grabación de pantalla, que necesita cada captura, y reinicia EasyShoot.</li><li><strong>Acerca de</strong>Valora EasyShoot en el App Store, visita la web u obtén ayuda.</li></ul>"
         }
       ]
     },
@@ -199,7 +207,7 @@
       "blocks": [
         {
           "h2": "Cuándo se conecta EasyShoot",
-          "html": "<ul><li>Para descargar una fuente de Google que elijas para el texto.</li><li>Para comprobar si hay una versión nueva en la App Store. Desactívalo con <strong>Avisarme cuando haya una actualización</strong> en Ajustes › General.</li></ul>"
+          "html": "<ul><li>Para descargar una fuente de Google que elijas para el texto.</li><li>Para comprobar si hay una versión nueva en la App Store. Desactívalo con <strong>Buscar automáticamente</strong>, en Actualizaciones de Ajustes › General.</li></ul>"
         },
         {
           "html": "<p>Lee la <a href=\"/privacy.html\">política de privacidad</a> completa.</p>"

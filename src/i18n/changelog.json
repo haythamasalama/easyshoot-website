@@ -48,8 +48,314 @@
   },
   "releases": [
     {
-      "version": "1.0.2",
+      "version": "1.1.0",
       "date": "",
+      "notes": {
+        "en": {
+          "intro": "A shorter welcome, keyboard shortcuts in Quick Access, redesigned Settings, and a crop box you can drag from any edge.",
+          "groups": [
+            {
+              "h": "New",
+              "items": [
+                [
+                  "👋",
+                  "A shorter welcome",
+                  "Four short pages: get started, allow Screen Recording and check the save folder, see the capture shortcuts, and pick a background or a preset. It shows once; after an update you see only what's new."
+                ],
+                [
+                  "⌨️",
+                  "Quick Access shortcuts",
+                  "With the pointer over the thumbnail, ⌘C copies, ⌘S saves, ⌘E opens the editor, and ⌘W or Esc closes it. Hover a button to see its name and shortcut."
+                ],
+                [
+                  "⚙️",
+                  "Redesigned Settings",
+                  "One window and one sidebar list. Updates sit in General; Shortcuts has Capture and Editor tabs; Presets has Use for new captures and 12 starter looks as tiles; Permissions has Restart EasyShoot; About has Rate on the App Store, Website and Get Support."
+                ]
+              ]
+            },
+            {
+              "h": "Improved",
+              "items": [
+                [
+                  "🖼️",
+                  "A smaller Quick Access thumbnail",
+                  "A 192 × 120 card with a softer shadow, and buttons that read on light and dark screenshots."
+                ],
+                [
+                  "📁",
+                  "Saved to Documents",
+                  "Screenshots go to Documents › EasyShoot by default instead of the Desktop. A folder you picked before stays."
+                ],
+                [
+                  "📋",
+                  "A tidier menu",
+                  "The menu bar menu is in a clearer order, with Open from Clipboard (same shortcut, ⌥⇧⌘7). About opens Settings › About."
+                ]
+              ]
+            },
+            {
+              "h": "Fixed",
+              "items": [
+                [
+                  "✂️",
+                  "Crop from any edge",
+                  "Drag any edge or corner of the crop box, even on the image's border. A click outside the image no longer starts a new box."
+                ],
+                [
+                  "📏",
+                  "The crop size stays out of the way",
+                  "The size shows in a small label under the box and no longer covers the picture."
+                ]
+              ]
+            }
+          ]
+        },
+        "ar": {
+          "intro": "ترحيب أقصر، واختصارات لوحة المفاتيح في الوصول السريع، وإعدادات بتصميم جديد، وإطار قص تسحبه من أي حافة.",
+          "groups": [
+            {
+              "h": "جديد",
+              "items": [
+                [
+                  "👋",
+                  "ترحيب أقصر",
+                  "أربع صفحات قصيرة: ابدأ، ثم اسمح بتسجيل الشاشة وتأكّد من مجلد الحفظ، وتعرّف على اختصارات الالتقاط، واختر خلفية أو قالبًا. يظهر مرة واحدة، وبعد كل تحديث ترى الجديد فقط."
+                ],
+                [
+                  "⌨️",
+                  "اختصارات الوصول السريع",
+                  "حين يكون المؤشر فوق الصورة المصغّرة: ⁦⌘C⁩ للنسخ، و⁦⌘S⁩ للحفظ، و⁦⌘E⁩ لفتح المحرر، و⁦⌘W⁩ أو ⁦Esc⁩ للإغلاق. مرّر المؤشر فوق أي زر لترى اسمه واختصاره."
+                ],
+                [
+                  "⚙️",
+                  "إعدادات بتصميم جديد",
+                  "نافذة واحدة وقائمة جانبية واحدة. التحديثات في «عام»، وفي «الاختصارات» تبويبا «الالتقاط» و«المحرر»، وفي «القوالب» خيار «استخدامه للقطات الجديدة» و12 قالبًا جاهزًا، وفي «الأذونات» «إعادة تشغيل EasyShoot»، وفي «حول» «قيّمه في App Store» و«الموقع» و«الدعم والمساعدة»."
+                ]
+              ]
+            },
+            {
+              "h": "تحسينات",
+              "items": [
+                [
+                  "🖼️",
+                  "بطاقة وصول سريع أصغر",
+                  "بطاقة بمقاس 192 × 120 بظل أنعم، وأزرار واضحة فوق اللقطات الفاتحة والغامقة."
+                ],
+                [
+                  "📁",
+                  "الحفظ في المستندات",
+                  "تُحفظ اللقطات افتراضيًا في المستندات › EasyShoot بدل سطح المكتب، ويبقى المجلد الذي اخترته من قبل كما هو."
+                ],
+                [
+                  "📋",
+                  "قائمة أكثر ترتيبًا",
+                  "قائمة شريط القوائم بترتيب أوضح، وفيها «فتح من الحافظة» بالاختصار نفسه (⁦⌥⇧⌘7⁩). و«حول» يفتح الإعدادات › حول."
+                ]
+              ]
+            },
+            {
+              "h": "إصلاحات",
+              "items": [
+                [
+                  "✂️",
+                  "القص من أي حافة",
+                  "اسحب أي حافة أو زاوية من إطار القص، حتى لو كانت على حافة الصورة. والنقر خارج الصورة لم يعد يبدأ تحديدًا جديدًا."
+                ],
+                [
+                  "📏",
+                  "مقاس القص لا يغطي الصورة",
+                  "يظهر المقاس في ملصق صغير تحت الإطار، ولم يعد يغطي الصورة."
+                ]
+              ]
+            }
+          ]
+        },
+        "fr": {
+          "intro": "Un accueil plus court, des raccourcis clavier dans l’accès rapide, des Réglages repensés et un cadre de recadrage qui se tire par n’importe quel bord.",
+          "groups": [
+            {
+              "h": "Nouveau",
+              "items": [
+                [
+                  "👋",
+                  "Un accueil plus court",
+                  "Quatre pages courtes : Commencer, autoriser l’enregistrement de l’écran et vérifier le dossier d’enregistrement, découvrir les raccourcis de capture, puis choisir un arrière-plan ou un préréglage. Il s’affiche une fois ; après une mise à jour, vous ne voyez que les nouveautés."
+                ],
+                [
+                  "⌨️",
+                  "Raccourcis dans l’accès rapide",
+                  "Avec le pointeur sur la vignette, ⌘C copie, ⌘S enregistre, ⌘E ouvre l’éditeur et ⌘W ou Esc la ferme. Survolez un bouton pour voir son nom et son raccourci."
+                ],
+                [
+                  "⚙️",
+                  "Des Réglages repensés",
+                  "Une fenêtre et une seule liste dans la barre latérale. Les mises à jour sont dans Général ; Raccourcis a les onglets Capture et Éditeur ; Préréglages a Utiliser pour les nouvelles captures et 12 styles prêts en vignettes ; Autorisations a Redémarrer EasyShoot ; À propos a Noter sur l’App Store, Site web et Obtenir de l’aide."
+                ]
+              ]
+            },
+            {
+              "h": "Améliorations",
+              "items": [
+                [
+                  "🖼️",
+                  "Une vignette d’accès rapide plus petite",
+                  "Une carte de 192 × 120 avec une ombre plus douce, et des boutons lisibles sur les captures claires comme sombres."
+                ],
+                [
+                  "📁",
+                  "Enregistré dans Documents",
+                  "Les captures sont enregistrées par défaut dans Documents › EasyShoot au lieu du Bureau. Un dossier que vous aviez choisi reste le même."
+                ],
+                [
+                  "📋",
+                  "Un menu mieux rangé",
+                  "Le menu de la barre des menus suit un ordre plus clair, avec Ouvrir depuis le presse-papiers (même raccourci, ⌥⇧⌘7). À propos ouvre Réglages › À propos."
+                ]
+              ]
+            },
+            {
+              "h": "Corrections",
+              "items": [
+                [
+                  "✂️",
+                  "Recadrer par n’importe quel bord",
+                  "Faites glisser n’importe quel bord ou coin du cadre, même sur le bord de l’image. Un clic hors de l’image ne crée plus de nouveau cadre."
+                ],
+                [
+                  "📏",
+                  "La taille ne cache plus l’image",
+                  "La taille s’affiche dans une petite étiquette sous le cadre et ne cache plus l’image."
+                ]
+              ]
+            }
+          ]
+        },
+        "es": {
+          "intro": "Una bienvenida más corta, atajos de teclado en el acceso rápido, unos Ajustes rediseñados y un recuadro de recorte que arrastras desde cualquier borde.",
+          "groups": [
+            {
+              "h": "Nuevo",
+              "items": [
+                [
+                  "👋",
+                  "Una bienvenida más corta",
+                  "Cuatro páginas cortas: Empezar, permitir la grabación de pantalla y comprobar la carpeta de guardado, ver los atajos de captura y elegir un fondo o un preajuste. Aparece una vez; tras una actualización solo ves lo nuevo."
+                ],
+                [
+                  "⌨️",
+                  "Atajos en el acceso rápido",
+                  "Con el puntero sobre la miniatura, ⌘C copia, ⌘S guarda, ⌘E abre el editor y ⌘W o Esc la cierra. Pasa el puntero sobre un botón para ver su nombre y su atajo."
+                ],
+                [
+                  "⚙️",
+                  "Ajustes rediseñados",
+                  "Una ventana y una sola lista en la barra lateral. Las actualizaciones están en General; Atajos tiene las pestañas Captura y Editor; Preajustes tiene Usar en capturas nuevas y 12 estilos listos en mosaico; Permisos tiene Reiniciar EasyShoot; y Acerca de tiene Valorar en el App Store, Sitio web y Obtener ayuda."
+                ]
+              ]
+            },
+            {
+              "h": "Mejoras",
+              "items": [
+                [
+                  "🖼️",
+                  "Una miniatura de acceso rápido más pequeña",
+                  "Una tarjeta de 192 × 120 con una sombra más suave, y botones que se leen bien sobre capturas claras y oscuras."
+                ],
+                [
+                  "📁",
+                  "Guardado en Documentos",
+                  "Las capturas se guardan por defecto en Documentos › EasyShoot en lugar del Escritorio. La carpeta que elegiste antes se mantiene."
+                ],
+                [
+                  "📋",
+                  "Un menú más ordenado",
+                  "El menú de la barra de menús tiene un orden más claro, con Abrir desde el portapapeles (mismo atajo, ⌥⇧⌘7). Acerca de abre Ajustes › Acerca de."
+                ]
+              ]
+            },
+            {
+              "h": "Correcciones",
+              "items": [
+                [
+                  "✂️",
+                  "Recorta desde cualquier borde",
+                  "Arrastra cualquier borde o esquina del recuadro, incluso en el borde de la imagen. Un clic fuera de la imagen ya no empieza un recuadro nuevo."
+                ],
+                [
+                  "📏",
+                  "El tamaño ya no tapa la imagen",
+                  "El tamaño aparece en una pequeña etiqueta bajo el recuadro y ya no tapa la imagen."
+                ]
+              ]
+            }
+          ]
+        },
+        "de": {
+          "intro": "Ein kürzerer Willkommensbildschirm, Tastaturkurzbefehle im Schnellzugriff, neu gestaltete Einstellungen und ein Zuschneiderahmen, den du an jeder Kante ziehst.",
+          "groups": [
+            {
+              "h": "Neu",
+              "items": [
+                [
+                  "👋",
+                  "Ein kürzerer Willkommensbildschirm",
+                  "Vier kurze Seiten: Los geht’s, die Bildschirmaufnahme erlauben und den Speicherordner prüfen, die Aufnahme-Kurzbefehle sehen und einen Hintergrund oder eine Vorlage wählen. Er erscheint einmal; nach einem Update siehst du nur das Neue."
+                ],
+                [
+                  "⌨️",
+                  "Kurzbefehle im Schnellzugriff",
+                  "Mit dem Zeiger über der Miniatur kopiert ⌘C, ⌘S sichert, ⌘E öffnet den Editor und ⌘W oder Esc schließt sie. Halte den Zeiger über eine Taste, um ihren Namen und ihr Kürzel zu sehen."
+                ],
+                [
+                  "⚙️",
+                  "Neu gestaltete Einstellungen",
+                  "Ein Fenster und eine Liste in der Seitenleiste. Updates stehen unter Allgemein, Kurzbefehle hat die Tabs Aufnahme und Editor, Vorlagen hat „Für neue Aufnahmen verwenden“ und 12 fertige Looks als Kacheln, Berechtigungen hat „EasyShoot neu starten“, und Über hat „Im App Store bewerten“, Website und „Hilfe erhalten“."
+                ]
+              ]
+            },
+            {
+              "h": "Verbessert",
+              "items": [
+                [
+                  "🖼️",
+                  "Eine kleinere Schnellzugriff-Vorschau",
+                  "Eine Karte mit 192 × 120 und weicherem Schatten; ihre Tasten sind auf hellen und dunklen Bildschirmfotos gut lesbar."
+                ],
+                [
+                  "📁",
+                  "Gesichert in Dokumente",
+                  "Bildschirmfotos landen standardmäßig in Dokumente › EasyShoot statt auf dem Schreibtisch. Ein Ordner, den du gewählt hast, bleibt."
+                ],
+                [
+                  "📋",
+                  "Ein aufgeräumteres Menü",
+                  "Das Menü in der Menüleiste hat eine klarere Reihenfolge, mit „Aus Zwischenablage öffnen“ (gleiches Kürzel, ⌥⇧⌘7). Über öffnet Einstellungen › Über."
+                ]
+              ]
+            },
+            {
+              "h": "Behoben",
+              "items": [
+                [
+                  "✂️",
+                  "Zuschneiden an jeder Kante",
+                  "Zieh an jeder Kante oder Ecke des Rahmens, auch am Bildrand. Ein Klick neben das Bild beginnt keinen neuen Rahmen mehr."
+                ],
+                [
+                  "📏",
+                  "Die Größe verdeckt nichts mehr",
+                  "Die Größe steht in einem kleinen Etikett unter dem Rahmen und verdeckt das Bild nicht mehr."
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "version": "1.0.2",
+      "date": "2026-11-12",
       "notes": {
         "en": {
           "intro": "Check for updates whenever you like, a new-version note that reaches every region, and a clearer way to rate EasyShoot.",

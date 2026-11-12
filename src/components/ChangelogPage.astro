@@ -22,7 +22,8 @@ const url = SITE + changelogPath(lang);
 const LOCALE: Record<Lang, string> = { en: "en-GB", ar: "ar-u-nu-latn", fr: "fr-FR", es: "es-ES", de: "de-DE" };
 const dateFormat = new Intl.DateTimeFormat(LOCALE[lang], { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
 const when = (date: string) => (date ? dateFormat.format(new Date(date)) : c.soon);
-const latest = releases[0];
+// A release without a date is still coming, so the latest one is the newest that has come out.
+const latest = releases.find((r) => r.date) ?? releases[0];
 ---
 <Base lang={lang} title={c.title} description={c.description} alternates={alternatesFor(changelogPath)} graph={[breadcrumbNode(url, [{ name: "EasyShoot", path: pagePath(lang) }, { name: c.h1, path: changelogPath(lang) }])]}>
 <main class="doc changelog">
