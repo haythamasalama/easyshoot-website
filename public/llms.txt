@@ -35,7 +35,7 @@
 - Capture area: Option-Shift-Command-4
 - Capture window: Option-Shift-Command-5
 - Capture fullscreen: Option-Shift-Command-3
-- Annotate the clipboard image: Option-Shift-Command-7
+- Open from clipboard: Option-Shift-Command-7
 
 ## Install
 

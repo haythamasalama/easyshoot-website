@@ -37,7 +37,7 @@
       "intro": "Cada captura tiene su atajo. Los predeterminados usan Opción-Mayúsculas-Comando para no chocar con los del Mac.",
       "blocks": [
         {
-          "html": "<table><thead><tr><th>Captura</th><th>Atajo</th></tr></thead><tbody><tr><td>Área: arrastra sobre lo que quieras</td><td><kbd dir=\"ltr\">⌥⇧⌘4</kbd></td></tr><tr><td>Ventana: haz clic en una ventana</td><td><kbd dir=\"ltr\">⌥⇧⌘5</kbd></td></tr><tr><td>Pantalla completa</td><td><kbd dir=\"ltr\">⌥⇧⌘3</kbd></td></tr><tr><td>Anotar imagen del portapapeles</td><td><kbd dir=\"ltr\">⌥⇧⌘7</kbd></td></tr><tr><td>Abrir imagen…: editar un archivo</td><td><kbd dir=\"ltr\">⌘O</kbd></td></tr></tbody></table>"
+          "html": "<table><thead><tr><th>Captura</th><th>Atajo</th></tr></thead><tbody><tr><td>Área: arrastra sobre lo que quieras</td><td><kbd dir=\"ltr\">⌥⇧⌘4</kbd></td></tr><tr><td>Ventana: haz clic en una ventana</td><td><kbd dir=\"ltr\">⌥⇧⌘5</kbd></td></tr><tr><td>Pantalla completa</td><td><kbd dir=\"ltr\">⌥⇧⌘3</kbd></td></tr><tr><td>Abrir desde el portapapeles</td><td><kbd dir=\"ltr\">⌥⇧⌘7</kbd></td></tr><tr><td>Abrir imagen…: editar un archivo</td><td><kbd dir=\"ltr\">⌘O</kbd></td></tr></tbody></table>"
         },
         {
           "h2": "Sombra de la ventana",
@@ -168,7 +168,7 @@
       "blocks": [
         {
           "h2": "Captura",
-          "html": "<table><thead><tr><th>Captura</th><th>Atajo</th></tr></thead><tbody><tr><td>Capturar área</td><td><kbd dir=\"ltr\">⌥⇧⌘4</kbd></td></tr><tr><td>Capturar ventana</td><td><kbd dir=\"ltr\">⌥⇧⌘5</kbd></td></tr><tr><td>Capturar pantalla completa</td><td><kbd dir=\"ltr\">⌥⇧⌘3</kbd></td></tr><tr><td>Anotar imagen del portapapeles</td><td><kbd dir=\"ltr\">⌥⇧⌘7</kbd></td></tr></tbody></table>"
+          "html": "<table><thead><tr><th>Captura</th><th>Atajo</th></tr></thead><tbody><tr><td>Capturar área</td><td><kbd dir=\"ltr\">⌥⇧⌘4</kbd></td></tr><tr><td>Capturar ventana</td><td><kbd dir=\"ltr\">⌥⇧⌘5</kbd></td></tr><tr><td>Capturar pantalla completa</td><td><kbd dir=\"ltr\">⌥⇧⌘3</kbd></td></tr><tr><td>Abrir desde el portapapeles</td><td><kbd dir=\"ltr\">⌥⇧⌘7</kbd></td></tr></tbody></table>"
         },
         {
           "h2": "Herramientas del editor",

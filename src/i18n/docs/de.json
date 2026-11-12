@@ -37,7 +37,7 @@
       "intro": "Jede Aufnahme hat ihr eigenes Kürzel. Die Standards nutzen Wahl-Umschalt-Befehl, damit sie den Mac-Kürzeln nie in die Quere kommen.",
       "blocks": [
         {
-          "html": "<table><thead><tr><th>Aufnahme</th><th>Kürzel</th></tr></thead><tbody><tr><td>Bereich: über das Gewünschte ziehen</td><td><kbd dir=\"ltr\">⌥⇧⌘4</kbd></td></tr><tr><td>Fenster: ein Fenster anklicken</td><td><kbd dir=\"ltr\">⌥⇧⌘5</kbd></td></tr><tr><td>Ganzer Bildschirm</td><td><kbd dir=\"ltr\">⌥⇧⌘3</kbd></td></tr><tr><td>Bild aus der Zwischenablage bearbeiten</td><td><kbd dir=\"ltr\">⌥⇧⌘7</kbd></td></tr><tr><td>Bild öffnen …: eine Datei bearbeiten</td><td><kbd dir=\"ltr\">⌘O</kbd></td></tr></tbody></table>"
+          "html": "<table><thead><tr><th>Aufnahme</th><th>Kürzel</th></tr></thead><tbody><tr><td>Bereich: über das Gewünschte ziehen</td><td><kbd dir=\"ltr\">⌥⇧⌘4</kbd></td></tr><tr><td>Fenster: ein Fenster anklicken</td><td><kbd dir=\"ltr\">⌥⇧⌘5</kbd></td></tr><tr><td>Ganzer Bildschirm</td><td><kbd dir=\"ltr\">⌥⇧⌘3</kbd></td></tr><tr><td>Aus Zwischenablage öffnen</td><td><kbd dir=\"ltr\">⌥⇧⌘7</kbd></td></tr><tr><td>Bild öffnen …: eine Datei bearbeiten</td><td><kbd dir=\"ltr\">⌘O</kbd></td></tr></tbody></table>"
         },
         {
           "h2": "Fensterschatten",
@@ -168,7 +168,7 @@
       "blocks": [
         {
           "h2": "Aufnahme",
-          "html": "<table><thead><tr><th>Aufnahme</th><th>Kürzel</th></tr></thead><tbody><tr><td>Bereich aufnehmen</td><td><kbd dir=\"ltr\">⌥⇧⌘4</kbd></td></tr><tr><td>Fenster aufnehmen</td><td><kbd dir=\"ltr\">⌥⇧⌘5</kbd></td></tr><tr><td>Ganzen Bildschirm aufnehmen</td><td><kbd dir=\"ltr\">⌥⇧⌘3</kbd></td></tr><tr><td>Bild aus der Zwischenablage bearbeiten</td><td><kbd dir=\"ltr\">⌥⇧⌘7</kbd></td></tr></tbody></table>"
+          "html": "<table><thead><tr><th>Aufnahme</th><th>Kürzel</th></tr></thead><tbody><tr><td>Bereich aufnehmen</td><td><kbd dir=\"ltr\">⌥⇧⌘4</kbd></td></tr><tr><td>Fenster aufnehmen</td><td><kbd dir=\"ltr\">⌥⇧⌘5</kbd></td></tr><tr><td>Ganzen Bildschirm aufnehmen</td><td><kbd dir=\"ltr\">⌥⇧⌘3</kbd></td></tr><tr><td>Aus Zwischenablage öffnen</td><td><kbd dir=\"ltr\">⌥⇧⌘7</kbd></td></tr></tbody></table>"
         },
         {
           "h2": "Editor-Werkzeuge",
